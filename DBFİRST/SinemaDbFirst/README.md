@@ -2,7 +2,7 @@
 
 
 
-<img src="screenshots/home.png" alt="CINEWAM Anasayfa" width="800"/>
+<img src="screenshots/user-anasayfa.png" alt="CINEWAM Anasayfa" width="800"/>
 
 
 
@@ -92,11 +92,11 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
 
 
-  <img src="screenshots/user-anasayfa.png" alt="Kuulanıcı AnaSayfa" width="800"/>
+  <img src="screenshots/biletlerim2.png" alt="Biletler" width="800"/>
 
   <br/>
 
-  <i>Kullanıcı Ana Sayfa Ekranı</i>
+  <i>Kullanıcının Kendine Ait Bilet Görüntüleme Ekranı</i>
 
   <br/><br/>
 
@@ -106,7 +106,7 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
   <br/>
 
-  <i>Kullanıcının Kendine Ait Bilet Görüntüleme Ekranı</i>
+  <i>Baska Bir Kullanıcının Kendine Ait Bilet Görüntüleme Ekranı</i>
 
   <br/><br/>
 
