@@ -47,7 +47,7 @@ Diğer ekran görüntülerine screenshots adlı klasörden ulaşabilirsiniz.
 
 1. **Bağımlılıklar:** .NET 8.0 SDK ve SQL Server kurulumunun yapılmış olduğundan emin olun.
 2. **Yapılandırma:** Her iki projenin (`ApiProject` ve `MvcProject`) `appsettings.json` dosyalarındaki `ConnectionStrings` kısmını kendi SQL Server yapılandırmanıza göre güncelleyin.
-3. **Veritabanı Göçleri:**
+3. **Veritabanı değişiklikleri:**
 
    ```bash
    # ApiProject için
