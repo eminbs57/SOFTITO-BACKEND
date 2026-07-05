@@ -48,10 +48,3 @@ Proje, bağımsız modüller üzerine kurulu olup temel olarak şu sınıfları 
   <img src="screenshots/login.png" alt="Giriş Ekranı" width="800"/>
   <br/><i>Güvenli Yetkilendirme Sayfası</i>
 </div>
-
-## ⚙️ Kurulum
-
-1. Proje dizininde gerekli paketleri derleyin:
-   ```bash
-   dotnet build
-   ```
