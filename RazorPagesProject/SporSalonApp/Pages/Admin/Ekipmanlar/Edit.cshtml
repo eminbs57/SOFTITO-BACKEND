@@ -1,0 +1,39 @@
+@page
+@model SporSalonApp.Pages.Admin.Ekipmanlar.EditModel
+@{
+}
+
+<br />
+<h2>Ekipman Düzenle</h2>
+
+<form method="POST">
+    <input type="hidden" name="id" value="@Model.E.ID" />
+    
+    <div class="row mb-3">
+        <label class="col-sm-3">Ekipman Adı</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="ad" value="@Model.E.Ad" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Durum</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="durum" value="@Model.E.Durum" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Satın Alma Tarihi</label>
+        <div class="col-sm-6">
+            <input type="date" class="form-control" name="tarih" value="@Model.E.SatinAlmaTarihi" />
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/Admin/Ekipmanlar/Index">İptal</a>
+        </div>
+    </div>
+</form>

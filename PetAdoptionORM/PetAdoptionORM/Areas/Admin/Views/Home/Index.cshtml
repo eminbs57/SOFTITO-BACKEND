@@ -1,0 +1,166 @@
+@model PetAdoptionORM.Model.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Genel Bakış";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="fw-bold mb-0 text-dark">Hoş Geldiniz, Yönetici</h2>
+        <p class="text-muted mb-0">Pet Adoption Yönetim Paneline Genel Bakış</p>
+    </div>
+</div>
+
+<!-- Özet Kartları -->
+<div class="row g-4 mb-4">
+    <div class="col-md-6">
+        <div class="card p-4 border-0 bg-white shadow-sm h-100" style="border-radius: 15px;">
+            <div class="d-flex align-items-center">
+                <div class="rounded-circle d-flex align-items-center justify-content-center me-4"
+                     style="width: 60px; height: 60px; background-color: rgba(30, 60, 114, 0.1);">
+                    <i class="bi bi-list-ul fs-3" style="color: #1e3c72;"></i>
+                </div>
+                <div>
+                    <p class="text-muted mb-0 fs-5">Toplam Tür Sayısı</p>
+                    <h2 class="fw-bold mb-0">@Model.TotalSpecies</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card p-4 border-0 bg-white shadow-sm h-100" style="border-radius: 15px;">
+            <div class="d-flex align-items-center">
+                <div class="rounded-circle d-flex align-items-center justify-content-center me-4"
+                     style="width: 60px; height: 60px; background-color: rgba(42, 82, 152, 0.1);">
+                    <i class="bi bi-tags fs-3" style="color: #2a5298;"></i>
+                </div>
+                <div>
+                    <p class="text-muted mb-0 fs-5">Toplam Irk Sayısı</p>
+                    <h2 class="fw-bold mb-0">@Model.TotalBreeds</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card p-4 border-0 bg-white shadow-sm h-100" style="border-radius: 15px;">
+            <div class="d-flex align-items-center">
+                <div class="rounded-circle d-flex align-items-center justify-content-center me-4"
+                     style="width: 60px; height: 60px; background-color: rgba(0, 198, 255, 0.1);">
+                    <i class="bi bi-emoji-smile fs-3" style="color: #00c6ff;"></i>
+                </div>
+                <div>
+                    <p class="text-muted mb-0 fs-5">Sahip Bekleyen Canlar</p>
+                    <h2 class="fw-bold mb-0">@Model.TotalPets</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card p-4 border-0 bg-white shadow-sm h-100" style="border-radius: 15px;">
+            <div class="d-flex align-items-center">
+                <div class="rounded-circle d-flex align-items-center justify-content-center me-4"
+                     style="width: 60px; height: 60px; background-color: rgba(25, 135, 84, 0.1);">
+                    <i class="bi bi-file-earmark-bar-graph fs-3 text-success"></i>
+                </div>
+                <div>
+                    <p class="text-muted mb-0 fs-5">Sistem Raporları</p>
+                    <h2 class="fw-bold mb-0">@Model.TotalReports</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <!-- Grafik Bölümü -->
+    <div class="col-md-8">
+        <div class="card border-0 bg-white shadow-sm h-100" style="border-radius: 15px;">
+            <div class="card-body p-4">
+                <h5 class="fw-bold text-dark mb-4">Türlere Göre Hayvan Sayısı</h5>
+                <canvas id="petsChart" height="100"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Son Aktiviteler Bölümü -->
+    <div class="card border-0 bg-white shadow-sm h-100 mb-4" style="border-radius: 15px;">
+        <div class="card-body p-4">
+            <h5 class="fw-bold text-dark mb-4">Son Aktiviteler</h5>
+
+            @if (Model.RecentActivities.Any())
+            {
+                <ul class="list-unstyled mb-0">
+                    @foreach (var activity in Model.RecentActivities)
+                    {
+                        <li class="d-flex mb-3 align-items-start">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                 style="width: 40px; height: 40px; background-color: #f8f9fa;">
+                                <i class="bi @activity.IconClass @activity.IconColorClass fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold text-dark">@activity.Title</h6>
+                                <p class="text-muted mb-0" style="font-size: 0.85rem;">@activity.Description</p>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <div class="text-center text-muted my-5">
+                    <i class="bi bi-clock-history fs-1 mb-2"></i>
+                    <p>Henüz bir aktivite yok.</p>
+                </div>
+            }
+        </div>
+    </div>
+
+        
+</div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Setup Chart.js
+            const ctx = document.getElementById('petsChart').getContext('2d');
+
+            // Serialize data from C# Model to JS arrays
+            const labels = @Html.Raw(Json.Serialize(Model.ChartLabels));
+            const data = @Html.Raw(Json.Serialize(Model.ChartData));
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Kayıtlı Hayvan Sayısı',
+                        data: data,
+                        backgroundColor: 'rgba(42, 82, 152, 0.7)',
+                        borderColor: '#1e3c72',
+                        borderWidth: 1,
+                        borderRadius: 5,
+                        hoverBackgroundColor: 'rgba(0, 198, 255, 0.8)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+}

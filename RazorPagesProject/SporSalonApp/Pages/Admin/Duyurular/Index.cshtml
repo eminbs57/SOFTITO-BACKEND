@@ -1,0 +1,45 @@
+@page
+@model SporSalonApp.Pages.Admin.Duyurular.IndexModel
+@{
+}
+
+<br />
+<h2>Duyurular Listesi</h2>
+<a class="btn btn-primary btn-sm mb-3" href="/Admin/Duyurular/Create">Duyuru Ekle</a>
+
+<form method="GET" class="mb-3">
+    <div class="input-group">
+        <input type="text" class="form-control" name="search" value="@Model.SearchTerm"
+               placeholder="Başlık veya içerik ara...">
+        <button type="submit" class="btn btn-primary">Ara</button>
+        <a href="/Admin/Duyurular/Index" class="btn btn-secondary">Temizle</a>
+    </div>
+</form>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Başlık</th>
+            <th>İçerik</th>
+            <th>Tarih</th>
+            <th>İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Liste)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Baslik</td>
+                <td>@item.Icerik</td>
+                <td>@item.Tarih</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Admin/Duyurular/Edit?id=@item.ID">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Admin/Duyurular/Delete?id=@item.ID"
+                       onclick="return confirm('Emin misiniz?');">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

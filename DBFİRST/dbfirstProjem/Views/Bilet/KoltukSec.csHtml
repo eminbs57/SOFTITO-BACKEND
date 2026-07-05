@@ -1,0 +1,40 @@
+@model List<dbfirstProjem.Models.Koltuklar>
+
+<div class="container text-center mt-5">
+    <h2 class="text-white mb-4">@ViewBag.FilmAdi - Koltuk Seçimi</h2>
+    
+    <h5 class="text-secondary">PERDE</h5>
+    <div class="bg-secondary p-1 mb-5 mx-auto" style="width: 50%; height: 5px;"></div>
+
+    <div class="row row-cols-8 g-3 justify-content-center">
+        @foreach (var koltuk in Model)
+        {
+            <div class="col">
+                @if (koltuk.DoluMu)
+                {
+                    <button class="btn btn-secondary" disabled>@koltuk.Numara</button>
+                }
+                else
+                {
+                    <button id="koltuk-@koltuk.KoltukId" 
+                            class="btn btn-outline-success" 
+                            onclick="koltukSec(@koltuk.KoltukId)">
+                        @koltuk.Numara
+                    </button>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    function koltukSec(koltukId) {
+        // Seçim yapıldığında düğme rengini değiştir
+        document.getElementById('koltuk-' + koltukId).className = "btn btn-warning";
+        
+        // Burası "hoca, ben burada AJAX kullanıyorum" diyeceğin kısım
+        if(confirm(koltukId + " numaralı koltuğu rezerve etmek istiyor musun?")) {
+            window.location.href = '/Bilet/SatinAl?seansId=@ViewBag.SeansId&koltukId=' + koltukId;
+        }
+    }
+</script>

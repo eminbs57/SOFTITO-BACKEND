@@ -1,0 +1,31 @@
+﻿@inject Kutuphane.Data.Data.ApplicationDbContext _context
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1 class="display-4">Kütüphane Yönetim Sistemine Hoş Geldiniz!</h1>
+    <p class="lead">Buradan kitap envanterinizi yönetebilir, üyelerin ödünç işlemlerini takip edebilir ve hızlıca
+        raporlara erişebilirsiniz.</p>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3 bg-light">
+                    <h3>@_context.Books.Count()</h3>
+                    <p>Toplam Kitap Sayısı</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 bg-light">
+                    <h3>@_context.Users.Count()</h3>
+                    <p>Toplam Üye Sayısı</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 bg-light">
+                    <h3>@_context.Loans.Count()</h3>
+                    <p>Aktif Ödünç Kaydı</p>
+                </div>
+            </div>
+        </div>
+    </div>

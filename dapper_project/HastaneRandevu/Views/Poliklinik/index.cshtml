@@ -1,0 +1,58 @@
+@model IEnumerable<HastaneRandevu.Models.PoliklinikModel>
+@{
+    ViewData["Title"] = "Poliklinikler";
+}
+
+<div class="container-fluid py-3">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="fw-bold text-dark mb-0">Poliklinik Listesi</h3>
+        <a href="/Poliklinik/EY" class="btn btn-primary shadow-sm"><i class="bi bi-plus-circle me-1"></i> Yeni Poliklinik Ekle</a>
+    </div>
+
+    <div class="card card-modern">
+        <div class="card-header bg-white border-bottom py-3 d-flex justify-content-end align-items-center">
+            <form method="get" action="/Poliklinik/Index" class="d-flex w-100" style="max-width: 400px;">
+                <div class="input-group">
+                    <span class="input-group-text bg-white text-muted border-end-0"><i class="bi bi-search"></i></span>
+                    <input type="text" name="searchTerm" class="form-control border-start-0 ps-0" placeholder="Poliklinik Adı ile ara..." value="@ViewBag.SearchTerm" />
+                    <button type="submit" class="btn btn-outline-primary">Ara</button>
+                    @if(!string.IsNullOrEmpty((string)ViewBag.SearchTerm)) {
+                        <a href="/Poliklinik/Index" class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i></a>
+                    }
+                </div>
+            </form>
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-modern table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>Poliklinik Adı</th>
+                        <th class="text-end">İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="fw-semibold">@item.PoliklinikAdi</td>
+                            <td class="text-end">
+                                <a href="/Poliklinik/EY/@item.PoliklinikNo" class="btn btn-outline-secondary icon-btn shadow-sm" title="Düzenle">
+                                    <i class="bi bi-pencil"></i>
+                                </a>
+                                <a href="/Poliklinik/Delete/@item.PoliklinikNo" class="btn btn-outline-danger icon-btn shadow-sm ms-1" onclick="return confirm('Bu polikliniği silmek istediğinize emin misiniz?');" title="Sil">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                    @if(!Model.Any()) {
+                        <tr>
+                            <td colspan="2" class="text-center py-4 text-muted">Kayıt bulunamadı.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

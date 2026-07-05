@@ -1,0 +1,21 @@
+@model Species
+
+@{
+    ViewData["Title"] = "Yeni Tür Ekle";
+}
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Yeni Tür Kaydı</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="SpeciesName">Tür Adı (Örn: Kedi, Köpek)</label>
+            <input asp-for="SpeciesName" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:150px">Kaydet</button>
+        <a href="/Admin/Species/Index" class="btn btn-secondary" style="width:150px">Listeye Dön</a>
+    </div>
+</form>

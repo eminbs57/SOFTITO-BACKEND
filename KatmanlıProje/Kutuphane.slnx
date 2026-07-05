@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Kutuphane.Data/Kutuphane.Data.csproj" />
+  <Project Path="Kutuphane.Model/Kutuphane.Model.csproj" />
+  <Project Path="KutuphaneUI/KutuphaneUI.csproj" />
+</Solution>

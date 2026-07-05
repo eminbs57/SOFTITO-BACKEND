@@ -1,0 +1,71 @@
+@model IEnumerable<HastaneRandevu.Models.RandevuRaporModel>
+@{
+    ViewData["Title"] = "Detaylı Randevu Raporu";
+}
+
+<div class="container-fluid py-3">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="fw-bold text-dark mb-1">Gelişmiş Raporlar</h3>
+            <p class="text-muted mb-0">Hasta, Doktor ve Poliklinik bilgilerinin konsolide görünümü</p>
+        </div>
+        <button class="btn btn-outline-secondary shadow-sm" onclick="window.print();">
+            <i class="bi bi-printer me-1"></i> Yazdır
+        </button>
+    </div>
+
+    <div class="card card-modern">
+        <div class="table-responsive">
+            <table class="table table-modern table-hover align-middle mb-0">
+                <thead>
+                    <tr>
+                        <th>Tarih</th>
+                        <th>Durum</th>
+                        <th>Hasta Adı Soyadı</th>
+                        <th>Hasta TC No</th>
+                        <th>Doktor Adı Soyadı</th>
+                        <th>Poliklinik</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <i class="bi bi-calendar-event text-muted me-1"></i> @item.RandevuTarihi.ToString("dd.MM.yyyy") <br/>
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> @item.RandevuTarihi.ToString("HH:mm")</small>
+                            </td>
+                            <td>
+                                @if(item.Durum == "İptal")
+                                {
+                                    <span class="badge bg-danger">@item.Durum</span>
+                                }
+                                else if(item.Durum == "Tamamlandı")
+                                {
+                                    <span class="badge bg-success">@item.Durum</span>
+                                }
+                                else if(item.Durum == "Aktif")
+                                {
+                                    <span class="badge bg-primary">@item.Durum</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary border">@item.Durum</span>
+                                }
+                            </td>
+                            <td class="fw-semibold">@item.HastaAdSoyad</td>
+                            <td><span class="text-muted">@item.TCKimlikNo</span></td>
+                            <td>@item.DoktorAdSoyad</td>
+                            <td><span class="badge bg-light text-dark border">@item.PoliklinikAdi</span></td>
+                        </tr>
+                    }
+                    @if(!Model.Any()) {
+                        <tr>
+                            <td colspan="6" class="text-center py-4 text-muted">Kayıt bulunamadı.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

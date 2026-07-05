@@ -1,0 +1,56 @@
+@model projectcodefirst.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Giriş Yap";
+}
+
+<div class="text-center mb-6">
+    <h2 class="text-2xl font-bold text-gray-800">Yönetici Girişi</h2>
+    <p class="text-sm text-gray-500 mt-2">Lütfen panele erişmek için bilgilerinizi giriniz.</p>
+</div>
+
+<form asp-action="Login" method="post" class="space-y-5">
+    <div asp-validation-summary="ModelOnly" class="text-red-500 text-sm font-medium"></div>
+    
+    <div>
+        <label asp-for="Email" class="block text-sm font-medium text-gray-700 mb-1"></label>
+        <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <i class="fa-regular fa-envelope text-gray-400"></i>
+            </div>
+            <input asp-for="Email" class="pl-10 w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors" placeholder="ornek@admin.com" />
+        </div>
+        <span asp-validation-for="Email" class="text-red-500 text-xs mt-1 block"></span>
+    </div>
+    
+    <div>
+        <label asp-for="Password" class="block text-sm font-medium text-gray-700 mb-1">Şifre</label>
+        <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <i class="fa-solid fa-lock text-gray-400"></i>
+            </div>
+            <input asp-for="Password" class="pl-10 w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors" placeholder="••••••••" />
+        </div>
+        <span asp-validation-for="Password" class="text-red-500 text-xs mt-1 block"></span>
+    </div>
+    
+    <div class="flex items-center justify-between">
+        <div class="flex items-center">
+            <input asp-for="RememberMe" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" />
+            <label asp-for="RememberMe" class="ml-2 block text-sm text-gray-900">Beni Hatırla</label>
+        </div>
+        <div class="text-sm">
+            <a href="/Account/VerifyEmail" class="font-medium text-indigo-600 hover:text-indigo-500">Şifremi Unuttum</a>
+        </div>
+    </div>
+    
+    <button type="submit" class="w-full flex justify-center py-2.5 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">
+        Giriş Yap
+    </button>
+    
+    <div class="text-center mt-4 border-t pt-4 border-gray-100">
+        <p class="text-sm text-gray-600">
+            Hesabınız yok mu? 
+            <a href="/Account/Register" class="font-medium text-indigo-600 hover:text-indigo-500">Kayıt Ol</a>
+        </p>
+    </div>
+</form>

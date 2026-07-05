@@ -1,0 +1,43 @@
+@model Pet
+
+@{
+    ViewData["Title"] = "Yeni Hayvan Ekle";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Yeni Hayvan Kaydı</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Age"></label>
+            <input asp-for="Age" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="HealthStatus">Sağlık Durumu</label>
+            <input asp-for="HealthStatus" class="form-control" />
+        </div>
+        
+        <!-- COMBOBOX (Dropdown) -->
+        <div class="mb-3">
+            <label asp-for="BreedId">Irk</label>
+            <select asp-for="BreedId" asp-items="ViewBag.BreedList" class="form-select">
+                <option disabled selected>-- Irk Seçiniz --</option>
+            </select>
+        </div>
+
+        <!-- IMAGE UPLOAD -->
+        <div class="mb-3">
+            <label>Hayvan Fotoğrafı Yükle</label>
+            <input type="file" name="file" class="form-control" accept="image/*" />
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:150px">Kaydet</button>
+        <a href="/Admin/Pet/Index" class="btn btn-secondary" style="width:150px">Listeye Dön</a>
+    </div>
+</form>

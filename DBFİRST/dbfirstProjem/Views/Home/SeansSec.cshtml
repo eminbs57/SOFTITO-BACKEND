@@ -1,0 +1,46 @@
+@model List<dbfirstProjem.Models.Seanslar>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card bg-dark text-white border-secondary shadow-lg">
+                <div class="card-body p-5">
+                    <h2 class="card-title text-danger text-center mb-4">@ViewBag.FilmAdi</h2>
+                    <p class="card-text text-center text-secondary mb-4">Lütfen izlemek istediğiniz seansı seçiniz.</p>
+
+                    @if (Model == null || !Model.Any())
+                    {
+                        <div class="alert alert-warning text-center">
+                            Bu filme ait aktif bir seans bulunmamaktadır.
+                        </div>
+                        <div class="text-center mt-3">
+                            <a asp-action="KullaniciEkrani" class="btn btn-outline-light">Filmlere Dön</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <form method="get" asp-controller="Bilet" asp-action="KoltukSec">
+                            <div class="mb-4">
+                                <label for="seansId" class="form-label text-light">Seans (Tarih & Salon)</label>
+                                <select name="seansId" id="seansId" class="form-select bg-dark text-white border-secondary" required>
+                                    <option value="" disabled selected>Seans Seçiniz...</option>
+                                    @foreach (var seans in Model)
+                                    {
+                                        <option value="@seans.SeansId">
+                                            @seans.BaslamaZamani.ToString("dd.MM.yyyy HH:mm") - @seans.Salon.Ad
+                                        </option>
+                                    }
+                                </select>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-danger btn-lg">Koltuk Seçimine Git <i class="fas fa-arrow-right ms-2"></i></button>
+                                <a asp-action="KullaniciEkrani" class="btn btn-outline-secondary">Geri Dön</a>
+                            </div>
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

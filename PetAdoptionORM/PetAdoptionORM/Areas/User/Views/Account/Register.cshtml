@@ -1,0 +1,97 @@
+@model PetAdoptionORM.Model.RegisterViewModel
+
+@{
+    ViewData["Title"] = Model.IsAdmin ? "Yönetici Kayıt" : "Kullanıcı Kayıt";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+                <div class="row g-0 flex-row-reverse">
+                    <!-- Sağ Taraf - Karşılama -->
+                    <div class="col-md-5 d-none d-md-flex flex-column justify-content-center p-5 text-white" style="background: linear-gradient(135deg, #00c6ff 0%, #1e3c72 100%); position: relative;">
+                        <div class="position-absolute rounded-circle" style="width: 250px; height: 250px; background: rgba(255,255,255,0.05); top: -30px; left: -30px;"></div>
+                        
+                        <div style="z-index: 1;">
+                            <i class="bi bi-person-plus-fill mb-4 d-block" style="font-size: 3rem; color: #fff;"></i>
+                            <h2 class="fw-bold mb-3">Aramıza Katılın!</h2>
+                            <p class="lead" style="font-size: 1rem; opacity: 0.9;">
+                                Sadece bir dakika içinde hesabınızı oluşturun ve bir cana sıcak bir yuva olmanın ilk adımını atın.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Sol Taraf - Form -->
+                    <div class="col-md-7 p-5 bg-white">
+                        <div class="mb-4">
+                            <h3 class="fw-bold" style="color: #1e3c72;">@(Model.IsAdmin ? "Yönetici Kayıt" : "Kullanıcı Kayıt") Formu</h3>
+                            <p class="text-muted">Sisteme kayıt olmak için bilgilerinizi eksiksiz doldurunuz.</p>
+                        </div>
+
+                        <form method="post">
+                            <input type="hidden" asp-for="IsAdmin" />
+                            
+                            <div asp-validation-summary="All" class="alert alert-danger border-0 rounded-3 mb-4" style="display: @(ViewData.ModelState.IsValid ? "none" : "block")"></div>
+
+                            <div class="mb-3">
+                                <label asp-for="FullName" class="form-label fw-semibold text-muted small">Ad Soyad</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0" style="border-radius: 10px 0 0 10px;"><i class="bi bi-person text-muted"></i></span>
+                                    <input asp-for="FullName" class="form-control border-start-0 bg-light" style="border-radius: 0 10px 10px 0; padding: 10px;" placeholder="Adınız Soyadınız" />
+                                </div>
+                                <span asp-validation-for="FullName" class="text-danger small mt-1 d-block"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Email" class="form-label fw-semibold text-muted small">E-Posta Adresi</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0" style="border-radius: 10px 0 0 10px;"><i class="bi bi-envelope text-muted"></i></span>
+                                    <input asp-for="Email" class="form-control border-start-0 bg-light" style="border-radius: 0 10px 10px 0; padding: 10px;" placeholder="ornek@mail.com" />
+                                </div>
+                                <span asp-validation-for="Email" class="text-danger small mt-1 d-block"></span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="Password" class="form-label fw-semibold text-muted small">Şifre</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0" style="border-radius: 10px 0 0 10px;"><i class="bi bi-lock text-muted"></i></span>
+                                        <input asp-for="Password" class="form-control border-start-0 bg-light" style="border-radius: 0 10px 10px 0; padding: 10px;" type="password" placeholder="Şifre" />
+                                    </div>
+                                    <span asp-validation-for="Password" class="text-danger small mt-1 d-block"></span>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="ConfirmPassword" class="form-label fw-semibold text-muted small">Şifre Tekrar</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light border-end-0" style="border-radius: 10px 0 0 10px;"><i class="bi bi-shield-check text-muted"></i></span>
+                                        <input asp-for="ConfirmPassword" class="form-control border-start-0 bg-light" style="border-radius: 0 10px 10px 0; padding: 10px;" type="password" placeholder="Şifre Tekrar" />
+                                    </div>
+                                    <span asp-validation-for="ConfirmPassword" class="text-danger small mt-1 d-block"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label asp-for="Address" class="form-label fw-semibold text-muted small">Adres (İsteğe Bağlı)</label>
+                                <textarea asp-for="Address" class="form-control bg-light" rows="2" style="border-radius: 10px; padding: 10px;" placeholder="Adres bilgileriniz..."></textarea>
+                            </div>
+
+                            <div class="d-grid mt-4">
+                                <button type="submit" class="btn btn-lg fw-bold shadow-sm" style="background-color: #1e3c72; color: white; border-radius: 10px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#2a5298'" onmouseout="this.style.backgroundColor='#1e3c72'">
+                                    Hesabımı Oluştur
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <div class="text-center mt-4 pt-3 border-top">
+                            <span class="text-muted">Zaten hesabınız var mı?</span> 
+                            <a href="@(Model.IsAdmin ? "/User/Account/AdminLogin" : "/User/Account/Login")" class="text-decoration-none fw-bold ms-1" style="color: #00c6ff;">
+                                Giriş Yapın
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

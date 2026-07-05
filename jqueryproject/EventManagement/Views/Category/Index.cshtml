@@ -1,0 +1,61 @@
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4 mt-3">
+        <h3 class="fw-bold text-dark mb-0">Kategoriler</h3>
+        <button id="btnAddCategory" class="btn btn-primary rounded-pill px-4 shadow-sm"><i class="bi bi-plus-lg"></i> Yeni Kategori Ekle</button>
+    </div>
+    
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <input type="text" id="searchInput" class="form-control" placeholder="Kategori ara..." />
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body p-0">
+            <table class="table table-hover mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th class="border-0">Kategori Adı</th>
+                        <th class="border-0 text-end pe-4">İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody id="table_data" class="border-top-0">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="CategoryModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="categoryHeading">Kategori Ekle</h4>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="CategoryId" />
+
+                <div class="form-group mb-3">
+
+                    <div class="form-group mb-3">
+                        <label>Kategori ismi</label>
+                        <input type="text" id="Name" placeholder="Kategori ismi gir" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="AddCategory" class="btn btn-primary" onclick="AddCategory()">Kaydet</button>
+                <button id="btnUpdate" class="btn btn-primary" onclick="UpdateCategory()"
+                        style="display:none">Güncelle</button>
+                <button class="btn btn-secondary" onclick="HideModalPopUp()">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Category.js" asp-append-version="true"></script>
+}

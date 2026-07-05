@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Kayıt Ol";
+    var role = ViewBag.Role as string ?? "User";
+}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card bg-dark text-white border-secondary p-4">
+                <div class="card-body">
+                    <h3 class="card-title text-center mb-4">@((role == "Admin") ? "Yönetici" : "Kullanıcı") Kayıt Ekranı</h3>
+                    
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            <div asp-validation-summary="All"></div>
+                        </div>
+                    }
+
+                    <form asp-controller="Account" asp-action="Register" method="post">
+                        <input type="hidden" name="role" value="@role" />
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Kullanıcı Adı</label>
+                            <input type="text" name="username" class="form-control bg-dark text-white" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Şifre</label>
+                            <input type="password" name="password" class="form-control bg-dark text-white" required />
+                        </div>
+                        <button type="submit" class="btn @(role == "Admin" ? "btn-outline-light" : "btn-danger") w-100">Kayıt Ol</button>
+                    </form>
+                    
+                    <div class="mt-3 text-center">
+                        <a href="@(role == "Admin" ? Url.Action("Login", "Admin") : Url.Action("Login", "Home"))" class="text-secondary text-decoration-none">
+                            Zaten hesabınız var mı? Giriş yapın.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

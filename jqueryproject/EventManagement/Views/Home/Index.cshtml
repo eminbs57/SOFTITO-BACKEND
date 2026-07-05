@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1 class="display-4 fw-bold text-primary mb-4">Etkinlik Yönetim Sistemine Hoş Geldiniz</h1>
+            <p class="lead text-muted">
+                Burada kampüs içindeki ve dışındaki tüm etkinlikleri kolayca takip edebilir, ilgi alanlarınıza uygun
+                organizasyonlara katılabilirsiniz.
+                Sistemimiz üzerinden güncel etkinliklerin tarih, saat ve kategori bilgilerine hızlıca erişmeniz
+                mümkündür.
+            </p>
+            <hr class="my-4">
+            <div class="mt-4">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a href="/Admin/Index" class="btn btn-danger btn-lg px-5 rounded-pill shadow-sm">Admin Paneline Git</a>
+                    }
+                    else
+                    {
+                        <a href="/Home/UserScreen" class="btn btn-primary btn-lg px-5 me-2 rounded-pill shadow-sm">Etkinlikleri Keşfet</a>
+                        <a href="/Home/MyEvents" class="btn btn-success btn-lg px-5 rounded-pill shadow-sm">Etkinliklerim</a>
+                    }
+                }
+                else
+                {
+                    <a href="/Account/Login" class="btn btn-primary btn-lg px-5 me-2 rounded-pill shadow-sm">Giriş Yap</a>
+                    <a href="/Account/Register" class="btn btn-outline-success btn-lg px-5 rounded-pill shadow-sm">Kayıt Ol</a>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>

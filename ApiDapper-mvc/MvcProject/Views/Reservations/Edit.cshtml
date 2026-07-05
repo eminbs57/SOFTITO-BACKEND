@@ -1,0 +1,117 @@
+@model MvcProject.Models.Reservation
+
+@{
+    ViewData["Title"] = "Rezervasyon Düzenle";
+}
+
+<div class="form-card-wrapper mt-4">
+    <div class="card premium-card">
+        <div class="card-body p-4 p-md-5">
+            <div class="text-center mb-4">
+                <h3 class="fw-bold" style="color: #0A192F;">Rezervasyon Düzenle</h3>
+                <hr class="text-muted opacity-25" />
+            </div>
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger shadow-sm border-0 rounded-3 mb-4">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>@TempData["ErrorMessage"]
+                </div>
+            }
+
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <input type="hidden" asp-for="Id" />
+                
+                <div class="form-group mb-4">
+                    <label asp-for="GuestId" class="control-label fw-medium text-secondary mb-1">Müşteri</label>
+                    <select asp-for="GuestId" class="form-control form-input-custom" asp-items="ViewBag.Guests">
+                        <option value="">-- Lütfen Seçiniz --</option>
+                    </select>
+                    <span asp-validation-for="GuestId" class="text-danger small"></span>
+                </div>
+                
+                <div class="form-group mb-4">
+                    <label asp-for="RoomId" class="control-label fw-medium text-secondary mb-1">Oda Numarası</label>
+                    <select asp-for="RoomId" id="RoomId" class="form-control form-input-custom" asp-items="ViewBag.Rooms">
+                        <option value="">-- Lütfen Seçiniz --</option>
+                    </select>
+                    <span asp-validation-for="RoomId" class="text-danger small"></span>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 form-group mb-4">
+                        <label asp-for="CheckInDate" class="control-label fw-medium text-secondary mb-1">Giriş Tarihi</label>
+                        <input asp-for="CheckInDate" id="CheckInDate" class="form-control form-input-custom" type="date" />
+                        <span asp-validation-for="CheckInDate" class="text-danger small"></span>
+                    </div>
+                    
+                    <div class="col-md-6 form-group mb-4">
+                        <label asp-for="CheckOutDate" class="control-label fw-medium text-secondary mb-1">Çıkış Tarihi</label>
+                        <input asp-for="CheckOutDate" id="CheckOutDate" class="form-control form-input-custom" type="date" />
+                        <span asp-validation-for="CheckOutDate" class="text-danger small"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group mb-4 text-center p-3 bg-light rounded-3" id="TotalPriceContainer" style="display:block; border: 1px dashed #ced4da;">
+                    <input asp-for="TotalPrice" id="TotalPrice" type="hidden" />
+                    <h5 class="mb-0 fw-bold" style="color: #10b981;">Toplam Tutar: <span id="TotalPriceSpan">@Model.TotalPrice</span> ₺</h5>
+                    <span asp-validation-for="TotalPrice" class="text-danger small"></span>
+                </div>
+                
+                <div class="d-flex justify-content-between align-items-center mt-5">
+                    <a asp-action="Index" class="btn btn-outline-grey">
+                        <i class="bi bi-arrow-left me-1"></i>İptal
+                    </a>
+                    <button type="submit" class="btn btn-premium">
+                        <i class="bi bi-check-lg me-1"></i>Değişiklikleri Kaydet
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        var roomPrices = @Html.Raw(ViewBag.RoomPrices ?? "[]");
+
+        function calculatePrice() {
+            var roomIdStr = document.getElementById("RoomId").value;
+            var checkInStr = document.getElementById("CheckInDate").value;
+            var checkOutStr = document.getElementById("CheckOutDate").value;
+
+            if (!roomIdStr || !checkInStr || !checkOutStr) {
+                document.getElementById("TotalPrice").value = "";
+                document.getElementById("TotalPriceContainer").style.display = "none";
+                return;
+            }
+
+            var roomId = parseInt(roomIdStr);
+            var checkIn = new Date(checkInStr);
+            var checkOut = new Date(checkOutStr);
+
+            var diffTime = checkOut - checkIn;
+            var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+            if (diffDays <= 0) {
+                document.getElementById("TotalPrice").value = "0";
+                document.getElementById("TotalPriceContainer").style.display = "none";
+                return;
+            }
+
+            var roomObj = roomPrices.find(r => r.RoomId === roomId);
+            if (roomObj) {
+                var total = roomObj.Price * diffDays;
+                document.getElementById("TotalPrice").value = total;
+                document.getElementById("TotalPriceSpan").innerText = total;
+                document.getElementById("TotalPriceContainer").style.display = "block";
+            }
+        }
+
+        document.getElementById("RoomId").addEventListener("change", calculatePrice);
+        document.getElementById("CheckInDate").addEventListener("change", calculatePrice);
+        document.getElementById("CheckOutDate").addEventListener("change", calculatePrice);
+    </script>
+}

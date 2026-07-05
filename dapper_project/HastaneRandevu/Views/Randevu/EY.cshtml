@@ -1,0 +1,113 @@
+@model HastaneRandevu.Models.RandevuModel
+@{
+    ViewData["Title"] = Model == null ? "Yeni Randevu" : "Randevu Düzenle";
+}
+
+<div class="container mt-4">
+    <h2>@(Model == null ? "Yeni Randevu Ekle" : "Randevu Düzenle")</h2>
+
+    <form method="post" action="/Randevu/EY">
+        <input type="hidden" name="RandevuNo" value="@(Model?.RandevuNo ?? 0)" />
+
+        <div class="mb-3">
+            <label class="form-label">Hasta</label>
+            <select name="HastaNo" class="form-control" required>
+                <option value="">Hasta Seçiniz...</option>
+                @foreach (var hasta in ViewBag.Hastalar)
+                {
+                    if (Model != null && Model.HastaNo == hasta.HastaNo)
+                    {
+                        <option value="@hasta.HastaNo" selected>@hasta.AdSoyad</option>
+                    }
+                    else
+                    {
+                        <option value="@hasta.HastaNo">@hasta.AdSoyad</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Poliklinik</label>
+            <select id="poliklinikSelect" class="form-control" required>
+                <option value="">Önce Poliklinik Seçiniz...</option>
+                @foreach (var pol in ViewBag.Poliklinikler)
+                {
+                    <option value="@pol.PoliklinikNo">@pol.PoliklinikAdi</option>
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Doktor</label>
+            <select id="doktorSelect" name="DoktorNo" class="form-control" required>
+                @if (Model != null)
+                {
+                    @foreach (var doktor in ViewBag.Doktorlar)
+                    {
+                        if (Model.DoktorNo == doktor.DoktorNo)
+                        {
+                            <option value="@doktor.DoktorNo" selected>@doktor.AdSoyad</option>
+                        }
+                    }
+                }
+                else
+                {
+                    <option value="">Önce poliklinik seçin...</option>
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Randevu Tarihi ve Saati</label>
+            <input type="datetime-local" name="RandevuTarihi" class="form-control"
+                   value="@(Model?.RandevuTarihi.ToString("yyyy-MM-ddTHH:mm"))" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Durum</label>
+            <select name="Durum" class="form-control">
+                <option value="Aktif" selected="@(Model?.Durum == "Aktif" ? "selected" : null)">Aktif</option>
+                <option value="İptal" selected="@(Model?.Durum == "İptal" ? "selected" : null)">İptal</option>
+                <option value="Tamamlandı" selected="@(Model?.Durum == "Tamamlandı" ? "selected" : null)">Tamamlandı
+                </option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success">Kaydet</button>
+        <a href="/Randevu/Index" class="btn btn-secondary">İptal</a>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+        $("#poliklinikSelect").change(function () {
+        var secilenPolNo = $(this).val();
+        var doktorSelect = $("#doktorSelect");
+
+        // Doktor listesini temizle
+        doktorSelect.empty();
+
+        if (secilenPolNo) {
+        // Controller'daki metoda AJAX isteği atıyoruz
+        $.ajax({
+        url: '/Randevu/PoliklinikDoktorlariniGetir',
+        type: 'GET',
+        data: { poliklinikNo: secilenPolNo },
+        success: function (data) {
+        doktorSelect.append('<option value="">Doktor Seçiniz...</option>');
+        // Gelen JSON verisini dönüp doktorları ekliyoruz
+        $.each(data, function (index, doktor) {
+        doktorSelect.append('<option value="' + doktor.doktorNo + '">' + doktor.adSoyad + '</option>');
+        });
+        }
+        });
+        } else {
+        doktorSelect.append('<option value="">Önce poliklinik seçin...</option>');
+        }
+        });
+        });
+    </script>
+}

@@ -1,0 +1,71 @@
+@model IEnumerable<Breed>
+
+@{
+    ViewData["Title"] = "Irk Listesi";
+}
+
+<div class="row pt-4 mb-3">
+    <div class="col-12">
+        <h2 class="text-primary fw-bold">Irk Listesi</h2>
+    </div>
+</div>
+
+<div class="card shadow-sm border-0 rounded-4">
+    <div class="card-body p-4">
+        <table id="tblData" class="table table-hover align-middle" style="width:100%">
+            <thead class="table-light text-primary">
+                <tr>
+                    <th>Tür</th>
+                    <th>Irk Adı</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td><span class="badge bg-secondary">@(item.Species?.SpeciesName ?? "-")</span></td>
+                        <td class="fw-bold">@item.BreedName</td>
+                        <td>
+                            <a href="/Admin/Breed/Edit?id=@item.Id" class="btn btn-sm btn-info text-white"><i class="bi bi-pencil"></i> Düzenle</a>
+                            <a href="/Admin/Breed/Delete?id=@item.Id" onclick="return confirm('Silmek istediğinize emin misiniz?')" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i> Sil</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#tblData').DataTable({
+                dom: "<'row mb-3 align-items-center'<'col-md-6 d-flex gap-2'B><'col-md-6'f>>" + 
+                     "<'row'<'col-sm-12'tr>>" + 
+                     "<'row mt-3'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+                buttons: [
+                    {
+                        text: '<i class="bi bi-plus-circle"></i> Yeni Ekle',
+                        className: 'btn btn-primary shadow-sm rounded-pill px-3',
+                        action: function (e, dt, node, config) {
+                            window.location.href = '/Admin/Breed/Create';
+                        }
+                    },
+                    { extend: 'excelHtml5', text: '<i class="bi bi-file-earmark-excel"></i> Excel Çıktısı', className: 'btn btn-success shadow-sm rounded-pill px-3 ms-2' },
+                    { extend: 'pdfHtml5', text: '<i class="bi bi-file-earmark-pdf"></i> PDF Çıktısı', className: 'btn btn-danger shadow-sm rounded-pill px-3 ms-2' }
+                ],
+                columnDefs: [
+                    { targets: -1, searchable: false, orderable: false }
+                ],
+                language: {
+                    url: "//cdn.datatables.net/plug-ins/1.13.6/i18n/tr.json"
+                },
+                initComplete: function () {
+                    $('.dataTables_filter input').addClass('form-control shadow-sm rounded-pill w-100').attr('placeholder', 'Ara...');
+                    $('.dataTables_filter label').contents().filter(function() { return this.nodeType === 3; }).replaceWith('');
+                }
+            });
+        });
+    </script>
+}

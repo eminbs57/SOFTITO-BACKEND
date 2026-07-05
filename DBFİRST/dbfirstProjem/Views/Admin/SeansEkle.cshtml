@@ -1,0 +1,53 @@
+@model dbfirstProjem.Models.Seanslar
+
+@{
+    ViewData["Title"] = "Yeni Seans Ekle";
+    var filmler = ViewBag.Filmler as List<dbfirstProjem.Models.Filmler>;
+    var salonlar = ViewBag.Salonlar as List<dbfirstProjem.Models.Salonlar>;
+}
+
+<div class="card bg-dark text-white border-secondary mb-4 shadow-sm">
+    <div class="card-header border-secondary d-flex justify-content-between align-items-center">
+        <h5 class="mb-0 text-danger"><i class="fas fa-calendar-plus me-2"></i>Yeni Seans Ekle</h5>
+        <a asp-action="Seanslar" class="btn btn-sm btn-outline-secondary">Listeye Dön</a>
+    </div>
+    <div class="card-body">
+        <form asp-action="SeansEkle" method="post">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label asp-for="FilmId" class="form-label">Film Seçiniz</label>
+                    <select asp-for="FilmId" class="form-select bg-dark text-white border-secondary" required>
+                        <option value="" disabled selected>Lütfen film seçin...</option>
+                        @if (filmler != null)
+                        {
+                            foreach (var f in filmler)
+                            {
+                                <option value="@f.FilmId">@f.Ad</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label asp-for="SalonId" class="form-label">Salon Seçiniz</label>
+                    <select asp-for="SalonId" class="form-select bg-dark text-white border-secondary" required>
+                        <option value="" disabled selected>Lütfen salon seçin...</option>
+                        @if (salonlar != null)
+                        {
+                            foreach (var s in salonlar)
+                            {
+                                <option value="@s.SalonId">@s.Ad (Kapasite: @s.Kapasite)</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label asp-for="BaslamaZamani" class="form-label">Tarih ve Saat</label>
+                    <input asp-for="BaslamaZamani" type="datetime-local" class="form-control bg-dark text-white border-secondary" required />
+                </div>
+            </div>
+            <div class="text-end mt-3">
+                <button type="submit" class="btn btn-danger"><i class="fas fa-save me-2"></i>Kaydet</button>
+            </div>
+        </form>
+    </div>
+</div>

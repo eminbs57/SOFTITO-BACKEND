@@ -1,0 +1,120 @@
+@model projectcodefirst.Models.Order
+
+@{
+    ViewData["Title"] = "Sipariş Düzenle";
+    var customers = ViewBag.Customers as List<projectcodefirst.Models.Customer>;
+    var products = ViewBag.Products as List<projectcodefirst.Models.Product>;
+}
+
+<div class="max-w-2xl mx-auto bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden mt-6">
+    <!-- Header -->
+    <div class="px-6 py-4 border-b border-gray-200">
+        <h2 class="text-xl font-semibold text-gray-800">Sipariş Düzenle</h2>
+        <p class="text-sm text-gray-500 mt-1">Mevcut sipariş detaylarını güncellemek için formu kullanın.</p>
+    </div>
+
+    <!-- Form -->
+    <form asp-action="Edit" method="post" class="p-6">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        
+        <div class="space-y-6">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Müşteri Seçimi -->
+                <div>
+                    <label for="CustomerId" class="block text-sm font-medium text-gray-700 mb-1">Müşteri</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fa-solid fa-user text-gray-400"></i>
+                        </div>
+                        <select id="CustomerId" name="CustomerId" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors appearance-none" required>
+                            <option value="" disabled>-- Müşteri Seçin --</option>
+                            @if (customers != null)
+                            {
+                                foreach (var customer in customers)
+                                {
+                                    if (customer.Id == Model.CustomerId)
+                                    {
+                                        <option value="@customer.Id" selected>@customer.FullName</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@customer.Id">@customer.FullName</option>
+                                    }
+                                }
+                            }
+                        </select>
+                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                            <i class="fa-solid fa-chevron-down text-gray-400 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ürün Seçimi -->
+                <div>
+                    <label for="ProductId" class="block text-sm font-medium text-gray-700 mb-1">Ürün</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fa-solid fa-box text-gray-400"></i>
+                        </div>
+                        <select id="ProductId" name="ProductId" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors appearance-none" required>
+                            <option value="" disabled>-- Ürün Seçin --</option>
+                            @if (products != null)
+                            {
+                                foreach (var product in products)
+                                {
+                                    if (product.Id == Model.ProductId)
+                                    {
+                                        <option value="@product.Id" selected>@product.Name - @product.Price.ToString("C")</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@product.Id">@product.Name - @product.Price.ToString("C")</option>
+                                    }
+                                }
+                            }
+                        </select>
+                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                            <i class="fa-solid fa-chevron-down text-gray-400 text-sm"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Adet -->
+                <div>
+                    <label for="Quantity" class="block text-sm font-medium text-gray-700 mb-1">Adet</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fa-solid fa-hashtag text-gray-400"></i>
+                        </div>
+                        <input type="number" id="Quantity" name="Quantity" min="1" value="@Model.Quantity" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors" required />
+                    </div>
+                </div>
+
+                <!-- Sipariş Tarihi -->
+                <div>
+                    <label for="OrderDate" class="block text-sm font-medium text-gray-700 mb-1">Sipariş Tarihi</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i class="fa-regular fa-calendar text-gray-400"></i>
+                        </div>
+                        <input type="datetime-local" id="OrderDate" name="OrderDate" value="@Model.OrderDate.ToString("yyyy-MM-ddTHH:mm")" class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors" required />
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- İşlem Butonları -->
+        <div class="mt-8 pt-5 border-t border-gray-100 flex justify-end gap-4">
+            <a href="/Order/Index" class="inline-flex justify-center items-center px-4 py-2 bg-white border border-gray-300 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors shadow-sm">
+                İptal
+            </a>
+            <button type="submit" class="inline-flex justify-center items-center px-6 py-2 bg-indigo-600 border border-transparent text-sm font-medium text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors shadow-sm">
+                <i class="fa-solid fa-check mr-2"></i> Güncelle
+            </button>
+        </div>
+    </form>
+</div>

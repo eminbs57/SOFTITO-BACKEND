@@ -1,0 +1,41 @@
+@model HastaneRandevu.Models.DoktorModel
+@{
+    ViewData["Title"] = Model == null ? "Yeni Doktor" : "Doktor Düzenle";
+}
+
+<div class="container mt-4">
+    <h2>@(Model == null ? "Yeni Doktor Ekle" : "Doktor Düzenle")</h2>
+
+    <form method="post" action="/Doktor/EY">
+        <input type="hidden" name="DoktorNo" value="@(Model?.DoktorNo ?? 0)" />
+
+        <div class="mb-3">
+            <label class="form-label">Ad Soyad</label>
+            <input type="text" name="AdSoyad" class="form-control" value="@Model?.AdSoyad" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Unvan</label>
+            <input type="text" name="Unvan" class="form-control" value="@Model?.Unvan" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Bağlı Olduğu Poliklinik</label>
+            <select name="PoliklinikNo" class="form-control" required>
+                <option value="">Seçiniz...</option>
+                @foreach (var pol in ViewBag.Poliklinikler)
+                {
+                    if (Model != null && Model.PoliklinikNo == pol.PoliklinikNo)
+                    {
+                        <option value="@pol.PoliklinikNo" selected>@pol.PoliklinikAdi</option>
+                    }
+                    else
+                    {
+                        <option value="@pol.PoliklinikNo">@pol.PoliklinikAdi</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success">Kaydet</button>
+        <a href="/Doktor/Index" class="btn btn-secondary">İptal</a>
+    </form>
+</div>

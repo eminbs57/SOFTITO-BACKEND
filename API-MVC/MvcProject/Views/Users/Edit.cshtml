@@ -1,0 +1,55 @@
+@model MvcProject.Models.User
+
+@{
+    ViewData["Title"] = "Kullanıcı Düzenle";
+}
+
+<h1>Kullanıcı Düzenle</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            
+            <div class="form-group mb-3">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" type="email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="newPassword" class="control-label">Yeni Şifre (Güncellemek istemiyorsanız boş bırakın)</label>
+                <input type="password" name="newPassword" id="newPassword" class="form-control" />
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="RoleId" class="control-label"></label>
+                <select asp-for="RoleId" class="form-control" asp-items="ViewBag.RoleId"></select>
+                <span asp-validation-for="RoleId" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Güncelle" class="btn btn-warning" />
+                <a asp-action="Index" class="btn btn-secondary">Listeye Dön</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,12 @@
+body {
+  background: #0f0f0f; /* Tamamen koyu sinema teması */
+  color: #e0e0e0;
+}
+
+/* Kartların üzerine gelince büyüme efekti */
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,42 @@
+@page
+@model SporSalonApp.Pages.Admin.Duyurular.EditModel
+@{
+}
+
+<br />
+<h2>Duyuru Düzenle</h2>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">@Model.ErrorMessage</div>
+}
+
+<form method="POST">
+    <input type="hidden" name="id" value="@Model.DuyuruBilgi.ID" />
+    <div class="row mb-3">
+        <label class="col-sm-3">Başlık</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="baslik" value="@Model.DuyuruBilgi.Baslik" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">İçerik</label>
+        <div class="col-sm-6">
+            <textarea class="form-control" name="icerik">@Model.DuyuruBilgi.Icerik</textarea>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Tarih</label>
+        <div class="col-sm-6">
+            <input type="date" class="form-control" name="tarih" value="@Model.DuyuruBilgi.Tarih" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/Admin/Duyurular/Index">İptal</a>
+        </div>
+    </div>
+</form>

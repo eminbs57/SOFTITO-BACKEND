@@ -1,0 +1,21 @@
+@model Kutuphane.Model.Loan
+
+<h2>Ödünç Kaydını Düzenle</h2>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="BookId" class="form-label">Kitap</label>
+        <select asp-for="BookId" class="form-control" asp-items="ViewBag.BookId"></select>
+    </div>
+    <div class="mb-3">
+        <label asp-for="UserId" class="form-label">Kullanıcı</label>
+        <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
+    </div>
+    <div class="mb-3">
+        <label asp-for="LoanDate" class="form-label">Tarih</label>
+        <input asp-for="LoanDate" class="form-control" type="date" />
+    </div>
+    <button type="submit" class="btn btn-warning">Güncelle</button>
+    <a asp-action="Index" class="btn btn-secondary">İptal</a>
+</form>

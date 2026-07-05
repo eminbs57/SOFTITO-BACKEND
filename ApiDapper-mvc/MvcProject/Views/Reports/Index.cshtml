@@ -1,0 +1,195 @@
+@model MvcProject.Models.ReportsViewModel
+@{
+    ViewData["Title"] = "Raporlar";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="page-title">Raporlar</h2>
+        <div class="title-accent"></div>
+    </div>
+</div>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<div class="card premium-card">
+    <div class="card-header bg-white border-bottom-0 pt-4 pb-0">
+        <ul class="nav nav-tabs card-header-tabs" id="reportTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active fw-bold text-dark" id="revenue-tab" data-bs-toggle="tab" data-bs-target="#revenue" type="button" role="tab" aria-controls="revenue" aria-selected="true">
+                    <i class="bi bi-cash-stack text-success me-1"></i>Oda Tipi Gelirleri
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-bold text-dark" id="guests-tab" data-bs-toggle="tab" data-bs-target="#guests" type="button" role="tab" aria-controls="guests" aria-selected="false">
+                    <i class="bi bi-people-fill text-primary me-1"></i>Sadık Müşteriler
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-bold text-dark" id="availability-tab" data-bs-toggle="tab" data-bs-target="#availability" type="button" role="tab" aria-controls="availability" aria-selected="false">
+                    <i class="bi bi-door-open-fill text-warning me-1"></i>Doluluk Oranları
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-bold text-dark" id="upcoming-tab" data-bs-toggle="tab" data-bs-target="#upcoming" type="button" role="tab" aria-controls="upcoming" aria-selected="false">
+                    <i class="bi bi-calendar-event-fill text-danger me-1"></i>Yaklaşanlar
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-bold text-dark" id="monthly-tab" data-bs-toggle="tab" data-bs-target="#monthly" type="button" role="tab" aria-controls="monthly" aria-selected="false">
+                    <i class="bi bi-graph-up-arrow text-info me-1"></i>Aylık Ciro
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="card-body p-0 mt-3">
+        <div class="tab-content" id="reportTabsContent">
+            
+            <!-- Rapor 1 -->
+            <div class="tab-pane fade show active" id="revenue" role="tabpanel" aria-labelledby="revenue-tab">
+                <div class="table-responsive">
+                    <table class="table table-custom table-hover mb-0">
+                        <thead class="bg-light">
+                            <tr>
+                                <th class="ps-4">Oda Tipi</th>
+                                <th>Satış Adedi</th>
+                                <th class="text-end pe-4">Toplam Gelir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.RoomTypeRevenues != null) {
+                                foreach (var item in Model.RoomTypeRevenues) {
+                                    <tr>
+                                        <td class="ps-4 fw-medium">@item.RoomTypeName</td>
+                                        <td><span class="badge bg-secondary">@item.TotalReservations</span></td>
+                                        <td class="text-end pe-4 text-success fw-bold">@item.TotalRevenue.ToString("C2")</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Rapor 2 -->
+            <div class="tab-pane fade" id="guests" role="tabpanel" aria-labelledby="guests-tab">
+                <div class="table-responsive">
+                    <table class="table table-custom table-hover mb-0">
+                        <thead class="bg-light">
+                            <tr>
+                                <th class="ps-4">Müşteri Adı Soyadı</th>
+                                <th>Konaklama Sayısı</th>
+                                <th class="text-end pe-4">Toplam Harcama</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.GuestStays != null) {
+                                foreach (var item in Model.GuestStays) {
+                                    <tr>
+                                        <td class="ps-4 fw-medium">@item.FirstName @item.LastName</td>
+                                        <td><span class="badge bg-primary">@item.TotalStays</span></td>
+                                        <td class="text-end pe-4 text-success fw-bold">@item.TotalSpent.ToString("C2")</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Rapor 3 -->
+            <div class="tab-pane fade" id="availability" role="tabpanel" aria-labelledby="availability-tab">
+                <div class="table-responsive">
+                    <table class="table table-custom table-hover mb-0">
+                        <thead class="bg-light">
+                            <tr>
+                                <th class="ps-4">Oda Tipi</th>
+                                <th>Müsait Oda</th>
+                                <th>Dolu Oda</th>
+                                <th>Doluluk Durumu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.RoomAvailabilities != null) {
+                                foreach (var item in Model.RoomAvailabilities) {
+                                    int total = item.AvailableCount + item.OccupiedCount;
+                                    double perc = total == 0 ? 0 : ((double)item.OccupiedCount / total) * 100;
+                                    <tr>
+                                        <td class="ps-4 fw-medium">@item.RoomTypeName</td>
+                                        <td><span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2">@item.AvailableCount</span></td>
+                                        <td><span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 px-2">@item.OccupiedCount</span></td>
+                                        <td>
+                                            <div class="progress" style="height: 10px;">
+                                              <div class="progress-bar bg-warning" role="progressbar" style="width: @perc%" aria-valuenow="@perc" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Rapor 4 -->
+            <div class="tab-pane fade" id="upcoming" role="tabpanel" aria-labelledby="upcoming-tab">
+                <div class="table-responsive">
+                    <table class="table table-custom table-hover mb-0">
+                        <thead class="bg-light">
+                            <tr>
+                                <th class="ps-4">Müşteri</th>
+                                <th>Oda Numarası</th>
+                                <th>Giriş Tarihi</th>
+                                <th>Çıkış Tarihi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.UpcomingReservations != null) {
+                                foreach (var item in Model.UpcomingReservations) {
+                                    <tr>
+                                        <td class="ps-4 fw-medium">@item.FirstName @item.LastName</td>
+                                        <td>@item.RoomNumber</td>
+                                        <td>@item.CheckInDate.ToString("dd.MM.yyyy")</td>
+                                        <td>@item.CheckOutDate.ToString("dd.MM.yyyy")</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Rapor 5 -->
+            <div class="tab-pane fade" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                <div class="table-responsive">
+                    <table class="table table-custom table-hover mb-0">
+                        <thead class="bg-light">
+                            <tr>
+                                <th class="ps-4">Yıl / Ay</th>
+                                <th>Toplam İşlem</th>
+                                <th class="text-end pe-4">Aylık Ciro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.MonthlyRevenues != null) {
+                                foreach (var item in Model.MonthlyRevenues) {
+                                    <tr>
+                                        <td class="ps-4 fw-medium">@item.Year - @System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(item.Month)</td>
+                                        <td><span class="badge bg-info">@item.TotalBookings</span></td>
+                                        <td class="text-end pe-4 text-success fw-bold">@item.MonthlyRevenue.ToString("C2")</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+@{
+    ViewData["Title"] = "Raporlar";
+}
+
+<div class="mb-8">
+    <h2 class="text-2xl font-bold text-gray-800">Rapor Merkezi</h2>
+    <p class="text-gray-500 mt-2">Aşağıdaki rapor kartlarına tıklayarak sistem istatistiklerine anında ulaşabilirsiniz.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <!-- Rapor 1 -->
+    <a href="/Report/TopCustomers" class="block group">
+        <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm transition-all duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                <i class="fa-solid fa-crown text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-800 mb-2">En Çok Sipariş Veren Müşteriler</h3>
+            <p class="text-sm text-gray-500">Sisteme en çok değer katan sadık müşterilerinizin listesini görüntüleyin.</p>
+        </div>
+    </a>
+
+    <!-- Rapor 2 -->
+    <a href="/Report/CategorySales" class="block group">
+        <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm transition-all duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-green-600 mb-4 group-hover:bg-green-600 group-hover:text-white transition-colors duration-300">
+                <i class="fa-solid fa-chart-line text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-800 mb-2">Kategori Bazlı Satış ve Gelir</h3>
+            <p class="text-sm text-gray-500">Hangi kategorinin size ne kadar gelir getirdiğini ve ürün sattığını analiz edin.</p>
+        </div>
+    </a>
+
+    <!-- Rapor 3 -->
+    <a href="/Report/ProductStock" class="block group">
+        <div class="bg-white rounded-xl border border-gray-200 p-6 shadow-sm transition-all duration-300 transform group-hover:-translate-y-2 group-hover:shadow-lg flex flex-col items-center text-center">
+            <div class="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center text-red-600 mb-4 group-hover:bg-red-600 group-hover:text-white transition-colors duration-300">
+                <i class="fa-solid fa-boxes-stacked text-2xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-800 mb-2">Stok Durumu Raporu</h3>
+            <p class="text-sm text-gray-500">Stoğu tükenmekte olan ürünleri listeleyerek tedarik planınızı yapın.</p>
+        </div>
+    </a>
+    
+</div>

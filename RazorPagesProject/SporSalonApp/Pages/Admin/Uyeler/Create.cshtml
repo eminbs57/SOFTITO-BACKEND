@@ -1,0 +1,47 @@
+@page
+@model SporSalonApp.Pages.Admin.Uyeler.CreateModel
+@{
+}
+
+<br />
+<h2>Yeni Üye Ekleme</h2>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-warning">@Model.ErrorMessage</div>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <label class="col-sm-3">Ad Soyad</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="adsoyad" value="@Model.UyeBilgi.AdSoyad" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Email</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="email" value="@Model.UyeBilgi.Email" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Telefon</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="telefon" value="@Model.UyeBilgi.Telefon" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3">Kayıt Tarihi</label>
+        <div class="col-sm-6">
+            <input type="date" class="form-control" name="kayittarihi" value="@Model.UyeBilgi.KayitTarihi" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/Admin/Uyeler/Index">İptal</a>
+        </div>
+    </div>
+</form>

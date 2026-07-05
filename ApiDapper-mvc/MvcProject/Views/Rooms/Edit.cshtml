@@ -1,0 +1,53 @@
+@model MvcProject.Models.Room
+
+@{
+    ViewData["Title"] = "Odayı Düzenle";
+}
+
+<div class="form-card-wrapper mt-4">
+    <div class="card premium-card">
+        <div class="card-body p-4 p-md-5">
+            <div class="text-center mb-4">
+                <h3 class="fw-bold" style="color: #0A192F;">Odayı Düzenle</h3>
+                <hr class="text-muted opacity-25" />
+            </div>
+
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <input type="hidden" asp-for="Id" />
+                
+                <div class="form-group mb-4">
+                    <label asp-for="RoomNumber" class="control-label fw-medium text-secondary mb-1">Oda Numarası</label>
+                    <input asp-for="RoomNumber" class="form-control form-input-custom" />
+                    <span asp-validation-for="RoomNumber" class="text-danger small"></span>
+                </div>
+                
+                <div class="form-group mb-4">
+                    <label asp-for="RoomTypeId" class="control-label fw-medium text-secondary mb-1">Oda Tipi</label>
+                    <select asp-for="RoomTypeId" class="form-control form-input-custom" asp-items="ViewBag.RoomTypes">
+                        <option value="">-- Lütfen Seçiniz --</option>
+                    </select>
+                    <span asp-validation-for="RoomTypeId" class="text-danger small"></span>
+                </div>
+                
+                <div class="form-group form-check mb-5">
+                    <input class="form-check-input" asp-for="IsAvailable" /> 
+                    <label class="form-check-label ms-1 fw-medium text-secondary">Müsait mi?</label>
+                </div>
+                
+                <div class="d-flex justify-content-between align-items-center">
+                    <a asp-action="Index" class="btn btn-outline-grey">
+                        <i class="bi bi-arrow-left me-1"></i>İptal
+                    </a>
+                    <button type="submit" class="btn btn-premium">
+                        <i class="bi bi-check-lg me-1"></i>Kaydet
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

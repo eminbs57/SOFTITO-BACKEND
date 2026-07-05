@@ -1,0 +1,22 @@
+@model Species
+
+@{
+    ViewData["Title"] = "Türü Düzenle";
+}
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Tür Düzenle</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="SpeciesName">Tür Adı</label>
+            <input asp-for="SpeciesName" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:150px">Güncelle</button>
+        <a href="/Admin/Species/Index" class="btn btn-secondary" style="width:150px">Listeye Dön</a>
+    </div>
+</form>

@@ -1,0 +1,170 @@
+@model IEnumerable<PetAdoptionORM.Model.ReportViewModel>
+@{
+    ViewData["Title"] = "Gelişmiş Raporlar";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="fw-bold" style="color: #1e3c72;">
+                <i class="bi bi-graph-up-arrow me-2"></i> Gelişmiş Dinamik Raporlama
+            </h2>
+            <p class="text-muted">Filtreleme kriterlerini seçerek gelişmiş veritabanı raporlarına ulaşabilirsiniz.</p>
+        </div>
+    </div>
+
+    <!-- Filter Card -->
+    <div class="card shadow-sm border-0 rounded-4 mb-5">
+        <div class="card-body p-4" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+            <form method="get" asp-action="Index">
+                <div class="row align-items-end">
+                    <!-- Report Type Dropdown -->
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label fw-bold" style="color: #1e3c72;">Rapor Türü Seçiniz</label>
+                        <select name="reportType" id="reportType" class="form-select shadow-sm" onchange="updateParameterDropdown()">
+                            <option value="">-- Rapor Seçin --</option>
+                            <option value="1" selected="@(ViewBag.SelectedReport == 1 ? "selected" : null)">1. Türe Göre Hayvan Listesi</option>
+                            <option value="2" selected="@(ViewBag.SelectedReport == 2 ? "selected" : null)">2. Irka Göre Hayvan Listesi</option>
+                            <option value="3" selected="@(ViewBag.SelectedReport == 3 ? "selected" : null)">3. Sağlık Durumuna Göre Hayvanlar</option>
+                            <option value="4" selected="@(ViewBag.SelectedReport == 4 ? "selected" : null)">4. Yaşına Göre Hayvan Listesi</option>
+                            <option value="5" selected="@(ViewBag.SelectedReport == 5 ? "selected" : null)">5. Hayvan Adına Göre Arama</option>
+                        </select>
+                    </div>
+
+                    <!-- Parameter Dropdown (Dynamic) -->
+                    <div class="col-md-5 mb-3" id="parameterContainer" style="display:none;">
+                        <label class="form-label fw-bold" style="color: #2a5298;" id="parameterLabel">Parametre</label>
+                        <select name="parameterValue" id="parameterValue" class="form-select shadow-sm">
+                            <!-- Populated by JS -->
+                        </select>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="col-md-3 mb-3">
+                        <button type="submit" class="btn w-100 shadow-sm text-white fw-bold" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);">
+                            <i class="bi bi-search me-1"></i> Raporu Getir
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Results Table -->
+    @if (Model != null && Model.Any())
+    {
+        <div class="card shadow-sm border-0 rounded-4">
+            <div class="card-header bg-white py-3">
+                <h5 class="mb-0 fw-bold" style="color: #1e3c72;">Rapor Sonuçları (@Model.Count() Kayıt)</h5>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead style="background-color: #f1f4f8; color: #1e3c72;">
+                            <tr>
+                                <th class="ps-4">Sıra</th>
+                                <th>Hayvan Adı</th>
+                                <th>Tür</th>
+                                <th>Irk</th>
+                                <th>Yaş</th>
+                                <th>Sağlık Durumu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                int index = 1;
+                            }
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="ps-4 text-muted fw-bold">#@index</td>
+                                    <td class="fw-bold">@item.PetName</td>
+                                    <td><span class="badge bg-secondary">@item.SpeciesName</span></td>
+                                    <td><span class="badge bg-info text-dark">@item.BreedName</span></td>
+                                    <td>@item.Age</td>
+                                    <td>
+                                        @if (item.HealthStatus.ToLower() == "sağlıklı")
+                                        {
+                                            <span class="badge bg-success">@item.HealthStatus</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-warning text-dark">@item.HealthStatus</span>
+                                        }
+                                    </td>
+                                </tr>
+                                index++;
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+    else if (ViewBag.SelectedReport != null)
+    {
+        <div class="alert alert-warning shadow-sm rounded-4 border-0 mt-4" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i> Seçilen kriterlere uygun veri bulunamadı. Lütfen başka bir parametre deneyin.
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        // Data from server ViewBags
+        var speciesData = @Html.Raw(Json.Serialize(ViewBag.SpeciesList));
+        var breedData = @Html.Raw(Json.Serialize(ViewBag.BreedList));
+        var petData = @Html.Raw(Json.Serialize(ViewBag.PetList));
+        var healthData = @Html.Raw(Json.Serialize(ViewBag.HealthStatusList));
+        var ageData = @Html.Raw(Json.Serialize(ViewBag.AgeList));
+
+        function updateParameterDropdown() {
+            var reportType = document.getElementById("reportType").value;
+            var paramContainer = document.getElementById("parameterContainer");
+            var paramLabel = document.getElementById("parameterLabel");
+            var paramSelect = document.getElementById("parameterValue");
+
+            paramSelect.innerHTML = ""; // Clear existing
+
+            if (!reportType) {
+                paramContainer.style.display = "none";
+                return;
+            }
+
+            paramContainer.style.display = "block";
+            var targetData = [];
+
+            if (reportType == "1") {
+                paramLabel.innerText = "Hangi Türü Filtrelemek İstiyorsunuz?";
+                targetData = speciesData;
+            } else if (reportType == "2") {
+                paramLabel.innerText = "Hangi Irkı Filtrelemek İstiyorsunuz?";
+                targetData = breedData;
+            } else if (reportType == "3") {
+                paramLabel.innerText = "Hangi Sağlık Durumunu Arıyorsunuz?";
+                targetData = healthData;
+            } else if (reportType == "4") {
+                paramLabel.innerText = "Kaç Yaşındaki Hayvanları Listelemek İstiyorsunuz?";
+                targetData = ageData;
+            } else if (reportType == "5") {
+                paramLabel.innerText = "Hangi Hayvanı Aramak İstiyorsunuz?";
+                targetData = petData;
+            }
+
+            // Populate options
+            targetData.forEach(function (item) {
+                var option = document.createElement("option");
+                option.value = item.value;
+                option.text = item.text;
+                paramSelect.appendChild(option);
+            });
+        }
+
+        // Initialize on load if a report type is already selected (after form submit)
+        window.onload = function () {
+            if (document.getElementById("reportType").value) {
+                updateParameterDropdown();
+            }
+        };
+    </script>
+}

@@ -1,0 +1,52 @@
+@model IEnumerable<MvcProject.Models.Driver>
+
+@{
+    ViewData["Title"] = "Şoförler";
+}
+
+<h1>Şoför Listesi</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Yeni Şoför Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LicenseClass)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LicenseClass)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Düzenle</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger" onclick="return confirm('Bu şoförü silmek istediğinize emin misiniz?');">Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

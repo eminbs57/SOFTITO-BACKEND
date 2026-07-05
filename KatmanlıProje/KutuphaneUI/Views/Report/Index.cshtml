@@ -1,0 +1,162 @@
+@{
+    ViewData["Title"] = "Raporlar";
+}
+
+<h2>Kütüphane Yönetim Paneli - Raporlar</h2>
+
+
+<div class="accordion" id="reportAccordion">
+
+    <div class="card">
+        <div class="card-header"><button class="btn btn-link" data-toggle="collapse" data-target="#c1">Stokta Kalmayan
+            Kitaplar</button></div>
+            <div id="c1" class="collapse" data-parent="#reportAccordion">
+                <div class="card-body">
+                    <table class="table">@foreach (var item in ViewBag.OutOfStock) {
+                        <tr>
+                            <td>@item.Title</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><button class="btn btn-link" data-toggle="collapse" data-target="#c2">Kategori Bazlı
+            Stok</button></div>
+            <div id="c2" class="collapse" data-parent="#reportAccordion">
+                <div class="card-body">
+                    <table class="table">
+                        <tr>
+                            <th>Kategori</th>
+                            <th>Stok</th>
+                        </tr>@foreach (var item in ViewBag.CategoryStats) {
+                        <tr>
+                            <td>@item.CategoryName</td>
+                            <td>@item.TotalStock</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header"><button class="btn btn-link" data-toggle="collapse" data-target="#c3">Kullanıcı Ödünç
+            Hareketleri</button></div>
+            <div id="c3" class="collapse" data-parent="#reportAccordion">
+                <div class="card-body">
+                    <table class="table">
+                        <tr>
+                            <th>Kitap</th>
+                            <th>Kullanıcı</th>
+                            <th>Tarih</th>
+                        </tr>
+                        @foreach (var item in ViewBag.LoanUserReport)
+                        {
+                            <tr>
+                                <td>@item.Kitap</td>
+                                <td>@item.Kullanici</td>
+                                <td>@item.Tarih.ToShortDateString()</td>
+                            </tr>
+                        }
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><button class="btn btn-link" data-toggle="collapse" data-target="#c4">Kitap-Kategori
+                Listesi</button></div>
+                <div id="c4" class="collapse" data-parent="#reportAccordion">
+                    <div class="card-body">
+                        <table class="table">
+                            <tr>
+                                <th>Kitap</th>
+                                <th>Kategori</th>
+                                <th>Stok</th>
+                            </tr>
+                            @foreach (var item in ViewBag.BookCategoryReport)
+                            {
+                                <tr>
+                                    <td>@item.Kitap</td>
+                                    <td>@item.Kategori</td>
+                                    <td>@item.Stok</td>
+                                </tr>
+                            }
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header"><button class="btn btn-link" data-toggle="collapse" data-target="#c5">Ödünç Alınan
+                    Kategori Dağılımı</button></div>
+                    <div id="c5" class="collapse" data-parent="#reportAccordion">
+                        <div class="card-body">
+                            <table class="table">
+                                <tr>
+                                    <th>Kategori</th>
+                                    <th>Ödünç Alınan Kitap</th>
+                                </tr>
+                                @foreach (var item in ViewBag.CategoryLoanCountReport)
+                                {
+                                    <tr>
+                                        <td>@item.Kategori</td>
+                                        <td>@item.Kitap</td>
+                                    </tr>
+                                }
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><button class="btn btn-link" data-toggle="collapse" data-target="#c6">En Popüler 5
+                        Kitap</button></div>
+                        <div id="c6" class="collapse" data-parent="#reportAccordion">
+                            <div class="card-body">
+                                <table class="table">@foreach (var item in ViewBag.PopularBooks) {
+                                    <tr>
+                                        <td>@item.Title</td>
+                                        <td>@item.Count adet</td>
+                                    </tr>
+                                }
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><button class="btn btn-link" data-toggle="collapse" data-target="#c7">Aktif Ödünç
+                        Listesi</button></div>
+                        <div id="c7" class="collapse" data-parent="#reportAccordion">
+                            <div class="card-body">
+                                <table class="table">@foreach (var item in ViewBag.ActiveLoans) {
+                                    <tr>
+                                        <td>@item.Title (@item.Name)</td>
+                                    </tr>
+                                }
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><button class="btn btn-link" data-toggle="collapse" data-target="#c8">En Aktif 5
+                        Kullanıcı</button></div>
+                        <div id="c8" class="collapse" data-parent="#reportAccordion">
+                            <div class="card-body">
+                                <table class="table">@foreach (var item in ViewBag.TopUsers) {
+                                    <tr>
+                                        <td>@item.Name</td>
+                                        <td>@item.Count işlem</td>
+                                    </tr>
+                                }
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>

@@ -1,0 +1,97 @@
+@model IEnumerable<EventManagement.Models.Event>
+@{
+    ViewData["Title"] = "Kullanıcı Ekranı - Etkinlikler";
+}
+
+<style>
+    .event-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    .event-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    }
+    .event-img-container {
+        position: relative;
+        height: 220px;
+        overflow: hidden;
+    }
+    .event-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .event-badge {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+        background-color: rgba(255, 255, 255, 0.95);
+        color: #2563eb;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-dark display-6">Yaklaşan Etkinlikler</h2>
+        <p class="text-muted">En güncel etkinlikleri keşfedin ve yerinizi ayırtın.</p>
+    </div>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger text-center">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 event-card">
+                        <div class="event-img-container">
+                            <img src="@(string.IsNullOrEmpty(item.ImageUrl) ? "https://images.unsplash.com/photo-1540575467063-112a20a5fc9e?q=80&w=600&auto=format&fit=crop" : item.ImageUrl)" class="event-img" alt="Etkinlik Görseli" />
+                            <span class="event-badge">@item.CategoryName</span>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title text-dark fw-bold mb-3">@item.Title</h4>
+                            <p class="card-text text-muted mb-4">@item.Description</p>
+                            
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="text-secondary fw-semibold" style="font-size: 0.9rem;">
+                                    <i class="bi bi-calendar-event text-primary me-2"></i>@item.Date.ToString("dd MMM yyyy")
+                                </span>
+                                <span class="text-secondary fw-semibold" style="font-size: 0.9rem;">
+                                    <i class="bi bi-people-fill text-primary me-2"></i>@item.Kota Kişi
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-4 px-4 pt-0">
+                            @if (item.Kota > 0)
+                            {
+                                <a href="/Home/JoinEvent/@item.Id" class="btn btn-primary w-100 rounded-pill fw-bold py-2 shadow-sm">Etkinliğe Katıl</a>
+                            }
+                            else
+                            {
+                                <button class="btn btn-secondary w-100 rounded-pill fw-bold py-2 shadow-sm" disabled>Kontenjan Dolu</button>
+                            }
+                        </div>
+                    </div>
+                    </div>
+                }
+            }
+        else
+            {
+                <div class="col-12 text-center">
+                    <p class="text-muted">Şu an için planlanmış bir etkinlik bulunmuyor.</p>
+                </div>
+            }
+        </div>
+    </div>

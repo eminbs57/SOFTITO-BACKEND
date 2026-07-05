@@ -1,0 +1,48 @@
+@model List<dbfirstProjem.Models.Biletler>
+
+@{
+    ViewData["Title"] = "Biletlerim";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="text-light"><i class="fas fa-ticket-alt me-2 text-danger"></i>Biletlerim</h3>
+        <a asp-controller="Home" asp-action="KullaniciEkrani" class="btn btn-outline-secondary">Filmlere Dön</a>
+    </div>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="card bg-dark text-white border-secondary shadow-sm">
+            <div class="card-body text-center py-5">
+                <i class="fas fa-ticket-alt fa-3x text-secondary mb-3"></i>
+                <h5 class="text-secondary">Henüz bir bilet satın almadınız.</h5>
+                <a asp-controller="Home" asp-action="KullaniciEkrani" class="btn btn-danger mt-3">Film Seç ve Bilet Al</a>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var bilet in Model)
+            {
+                <div class="col">
+                    <div class="card bg-dark text-white border-secondary shadow-sm h-100">
+                        <div class="card-header border-secondary d-flex justify-content-between">
+                            <span class="text-danger fw-bold">@bilet.Seans.Film.Ad</span>
+                            <span class="badge bg-success align-self-center">Satın Alındı</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-1"><i class="fas fa-door-open me-2 text-secondary"></i><strong>Salon:</strong> @bilet.Seans.Salon.Ad</p>
+                            <p class="mb-1"><i class="fas fa-chair me-2 text-secondary"></i><strong>Koltuk:</strong> @bilet.Koltuk.Sira-@bilet.Koltuk.Numara</p>
+                            <p class="mb-1"><i class="fas fa-calendar me-2 text-secondary"></i><strong>Seans:</strong> @bilet.Seans.BaslamaZamani.ToString("dd.MM.yyyy HH:mm")</p>
+                            <p class="mb-0"><i class="fas fa-money-bill me-2 text-secondary"></i><strong>Fiyat:</strong> @bilet.Fiyat.ToString("C")</p>
+                        </div>
+                        <div class="card-footer border-secondary text-secondary">
+                            <small><i class="fas fa-clock me-1"></i>Satın Alınma: @bilet.SatisTarihi.ToString("dd.MM.yyyy HH:mm")</small>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

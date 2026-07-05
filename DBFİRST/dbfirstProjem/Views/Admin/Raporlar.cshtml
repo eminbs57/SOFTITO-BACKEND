@@ -1,0 +1,201 @@
+@model dbfirstProjem.Models.RaporViewModel
+@{
+    ViewData["Title"] = "Raporlar";
+    Layout = "_AdminLayout";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h3 class="text-light"><i class="fas fa-chart-bar me-2 text-danger"></i>Raporlar ve İstatistikler</h3>
+</div>
+
+<div class="card bg-dark border-secondary shadow-sm">
+    <div class="card-header border-secondary p-0">
+        <ul class="nav nav-tabs nav-fill border-0" id="reportTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active text-light bg-dark rounded-0 border-secondary border-bottom-0" id="film-tab" data-bs-toggle="tab" data-bs-target="#film" type="button" role="tab" aria-controls="film" aria-selected="true">
+                    <i class="fas fa-film me-1"></i> Film Satış
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-light bg-dark rounded-0 border-secondary border-bottom-0" id="seans-tab" data-bs-toggle="tab" data-bs-target="#seans" type="button" role="tab" aria-controls="seans" aria-selected="false">
+                    <i class="fas fa-clock me-1"></i> Seans Doluluk
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-light bg-dark rounded-0 border-secondary border-bottom-0" id="kullanici-tab" data-bs-toggle="tab" data-bs-target="#kullanici" type="button" role="tab" aria-controls="kullanici" aria-selected="false">
+                    <i class="fas fa-users me-1"></i> Müşteriler
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-light bg-dark rounded-0 border-secondary border-bottom-0" id="tur-tab" data-bs-toggle="tab" data-bs-target="#tur" type="button" role="tab" aria-controls="tur" aria-selected="false">
+                    <i class="fas fa-tags me-1"></i> Tür Hasılatı
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-light bg-dark rounded-0 border-secondary border-bottom-0" id="salon-tab" data-bs-toggle="tab" data-bs-target="#salon" type="button" role="tab" aria-controls="salon" aria-selected="false">
+                    <i class="fas fa-door-open me-1"></i> Salon Satış
+                </button>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="card-body p-0">
+        <div class="tab-content" id="reportTabsContent">
+            
+            <!-- 1. Film Satis -->
+            <div class="tab-pane fade show active p-3" id="film" role="tabpanel" aria-labelledby="film-tab">
+                <h5 class="text-danger mb-3">Film Bazlı Satış ve Hasılat Raporu</h5>
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Film Adı</th>
+                                <th>Satılan Bilet Sayısı</th>
+                                <th>Toplam Hasılat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.FilmSatisRaporlari.OrderByDescending(x => x.ToplamHasilat))
+                            {
+                                <tr>
+                                    <td>@item.FilmAdi</td>
+                                    <td>@item.SatilanBiletSayisi Adet</td>
+                                    <td class="text-success fw-bold">@item.ToplamHasilat.ToString("C")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 2. Seans Doluluk -->
+            <div class="tab-pane fade p-3" id="seans" role="tabpanel" aria-labelledby="seans-tab">
+                <h5 class="text-danger mb-3">Seans Bazlı Doluluk Raporu</h5>
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Tarih ve Saat</th>
+                                <th>Film Adı</th>
+                                <th>Salon Adı</th>
+                                <th>Kapasite</th>
+                                <th>Satılan</th>
+                                <th>Doluluk Oranı</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.SeansDolulukRaporlari.OrderBy(x => x.TarihSaat))
+                            {
+                                <tr>
+                                    <td>@item.TarihSaat.ToString("dd.MM.yyyy HH:mm")</td>
+                                    <td>@item.FilmAdi</td>
+                                    <td>@item.SalonAdi</td>
+                                    <td>@item.SalonKapasitesi</td>
+                                    <td>@item.SatilanKoltukSayisi</td>
+                                    <td>
+                                        <div class="progress bg-secondary" style="height: 20px;">
+                                            <div class="progress-bar @(item.DolulukOrani > 80 ? "bg-danger" : "bg-success")" role="progressbar" style="width: @item.DolulukOrani.ToString().Replace(",", ".")%;" aria-valuenow="@item.DolulukOrani.ToString().Replace(",", ".")" aria-valuemin="0" aria-valuemax="100">
+                                                %@item.DolulukOrani
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 3. Kullanıcı Harcama -->
+            <div class="tab-pane fade p-3" id="kullanici" role="tabpanel" aria-labelledby="kullanici-tab">
+                <h5 class="text-danger mb-3">Müşteri Harcama Raporu</h5>
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Kullanıcı Email</th>
+                                <th>Satın Aldığı Toplam Bilet</th>
+                                <th>Toplam Harcama</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.KullaniciHarcamaRaporlari.OrderByDescending(x => x.ToplamHarcama))
+                            {
+                                <tr>
+                                    <td>@item.KullaniciEmail</td>
+                                    <td>@item.ToplamBiletSayisi Adet</td>
+                                    <td class="text-success fw-bold">@item.ToplamHarcama.ToString("C")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 4. Tur Hasilatı -->
+            <div class="tab-pane fade p-3" id="tur" role="tabpanel" aria-labelledby="tur-tab">
+                <h5 class="text-danger mb-3">Türe Göre Hasılat Raporu</h5>
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Film Türü</th>
+                                <th>Toplam Hasılat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.TurHasilatRaporlari.OrderByDescending(x => x.ToplamHasilat))
+                            {
+                                <tr>
+                                    <td>@item.FilmTuru</td>
+                                    <td class="text-success fw-bold">@item.ToplamHasilat.ToString("C")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 5. Salon Satis -->
+            <div class="tab-pane fade p-3" id="salon" role="tabpanel" aria-labelledby="salon-tab">
+                <h5 class="text-danger mb-3">Salon Bazlı Satış ve Gelir Raporu</h5>
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Salon Adı</th>
+                                <th>Toplam Satılan Bilet</th>
+                                <th>Toplam Gelir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.SalonSatisRaporlari.OrderByDescending(x => x.ToplamGelir))
+                            {
+                                <tr>
+                                    <td>@item.SalonAdi</td>
+                                    <td>@item.ToplamSatilanBilet Adet</td>
+                                    <td class="text-success fw-bold">@item.ToplamGelir.ToString("C")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .nav-tabs .nav-link.active {
+        background-color: #dc3545 !important; /* Bootstrap danger red */
+        color: white !important;
+        border-color: #dc3545 !important;
+    }
+    .nav-tabs .nav-link {
+        color: #adb5bd !important;
+    }
+    .nav-tabs .nav-link:hover {
+        border-color: #6c757d;
+    }
+</style>

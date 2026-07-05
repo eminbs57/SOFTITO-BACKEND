@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Yönetici Girişi";
+    Layout = "_Layout";
+}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card bg-dark text-white border-secondary p-4">
+                <div class="card-body">
+                    <h3 class="card-title text-center mb-4">Yönetici Girişi</h3>
+                    
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger">@TempData["Error"]</div>
+                    }
+
+                    <form asp-controller="Account" asp-action="Login" method="post">
+                        <input type="hidden" name="expectedRole" value="Admin" />
+                        <div class="mb-3">
+                            <label class="form-label">Yönetici Adı</label>
+                            <input type="text" name="username" class="form-control bg-dark text-white" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Şifre</label>
+                            <input type="password" name="password" class="form-control bg-dark text-white" required />
+                        </div>
+                        <button type="submit" class="btn btn-outline-light w-100">Giriş Yap</button>
+                    </form>
+                    
+                    <div class="mt-3 text-center">
+                        <a asp-controller="Account" asp-action="Register" asp-route-role="Admin" class="text-secondary text-decoration-none">Yönetici olarak Kayıt Olun.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

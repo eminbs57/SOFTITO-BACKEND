@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - EMin-Ticaret</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 flex h-screen overflow-hidden text-gray-800 font-sans">
+    
+    @if (User.Identity.IsAuthenticated)
+    {
+        <!-- Sidebar -->
+        <aside class="w-64 bg-slate-900 text-white flex flex-col h-full shrink-0">
+            <!-- Logo Area -->
+            <div class="h-16 flex items-center px-6 bg-slate-950 font-bold text-xl tracking-wide shadow-md z-10">
+                <i class="fa-solid fa-store mr-3 text-indigo-400"></i>
+                EMin-Ticaret
+            </div>
+            
+            <!-- Navigation Links -->
+            <nav class="flex-1 overflow-y-auto py-4 space-y-1">
+                @{
+                    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+                }
+                
+                <a href="/" class="flex items-center px-6 py-3 text-sm font-medium @(currentController == "Home" || currentController == null ? "bg-slate-800 border-l-4 border-indigo-500 text-white" : "text-slate-300 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition-colors")">
+                    <i class="fa-solid fa-house w-6 text-center mr-3 text-lg"></i> Ana Sayfa
+                </a>
+                
+                <a href="/Product/Index" class="flex items-center px-6 py-3 text-sm font-medium @(currentController == "Product" ? "bg-slate-800 border-l-4 border-indigo-500 text-white" : "text-slate-300 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition-colors")">
+                    <i class="fa-solid fa-box w-6 text-center mr-3 text-lg"></i> Ürünler
+                </a>
+                
+                <a href="/Category/Index" class="flex items-center px-6 py-3 text-sm font-medium @(currentController == "Category" ? "bg-slate-800 border-l-4 border-indigo-500 text-white" : "text-slate-300 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition-colors")">
+                    <i class="fa-solid fa-tags w-6 text-center mr-3 text-lg"></i> Kategoriler
+                </a>
+                
+                <a href="/Customer/Index" class="flex items-center px-6 py-3 text-sm font-medium @(currentController == "Customer" ? "bg-slate-800 border-l-4 border-indigo-500 text-white" : "text-slate-300 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition-colors")">
+                    <i class="fa-solid fa-users w-6 text-center mr-3 text-lg"></i> Müşteriler
+                </a>
+                
+                <a href="/Order/Index" class="flex items-center px-6 py-3 text-sm font-medium @(currentController == "Order" ? "bg-slate-800 border-l-4 border-indigo-500 text-white" : "text-slate-300 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition-colors")">
+                    <i class="fa-solid fa-cart-shopping w-6 text-center mr-3 text-lg"></i> Siparişler
+                </a>
+                
+                <a href="/Report/Index" class="flex items-center px-6 py-3 text-sm font-medium @(currentController == "Report" ? "bg-slate-800 border-l-4 border-indigo-500 text-white" : "text-slate-300 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition-colors")">
+                    <i class="fa-solid fa-chart-pie w-6 text-center mr-3 text-lg"></i> Raporlar
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col h-full overflow-hidden bg-gray-50">
+            <!-- Header -->
+            <header class="h-16 bg-white shadow-sm flex items-center justify-between px-8 shrink-0 z-10">
+                <h1 class="text-2xl font-semibold text-gray-800">@ViewData["Title"]</h1>
+                
+                <div class="flex items-center space-x-6">
+                    <button class="text-gray-400 hover:text-indigo-600 transition-colors">
+                        <i class="fa-regular fa-bell text-xl relative">
+                            <span class="absolute -top-1 -right-1 flex h-3 w-3">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-3 w-3 bg-indigo-500"></span>
+                            </span>
+                        </i>
+                    </button>
+                    
+                    <div class="flex items-center space-x-3 border-l pl-6 border-gray-200">
+                        <div class="w-9 h-9 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold shadow-inner">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <span class="text-sm font-medium text-gray-700">@User.Identity.Name</span>
+                        <a href="/Account/Logout" class="text-gray-400 hover:text-red-500 ml-3 transition-colors" title="Çıkış Yap">
+                            <i class="fa-solid fa-right-from-bracket text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Body -->
+            <main class="flex-1 overflow-y-auto p-8">
+                @RenderBody()
+            </main>
+        </div>
+    }
+    else
+    {
+        <!-- Unauthenticated Layout -->
+        <div class="flex-1 flex flex-col h-full bg-gray-100 items-center justify-center px-4">
+            <header class="w-full text-center mb-8">
+                <h1 class="text-4xl font-bold text-indigo-600 flex justify-center items-center">
+                    <i class="fa-solid fa-store mr-3"></i>EMin-Ticaret
+                </h1>
+            </header>
+            <main class="w-full max-w-md bg-white rounded-xl shadow-lg p-8 border border-gray-200">
+                @RenderBody()
+            </main>
+        </div>
+    }
+    
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

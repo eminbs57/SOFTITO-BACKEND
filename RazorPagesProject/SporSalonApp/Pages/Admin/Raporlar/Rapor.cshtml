@@ -1,0 +1,31 @@
+@page
+@model SporSalonApp.Pages.Admin.Raporlar.RaporModel
+@{ }
+
+<div class="container mt-4">
+    <h4>RAPORLAMA</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center p-3 shadow-sm border-0 rounded-3">
+                <h5 class="text-muted">Toplam Üye</h5>
+                <h2 class="fw-bold">@Model.UyeSayisi</h2>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center p-3 shadow-sm border-0 rounded-3">
+                <h5 class="text-muted">Toplam Duyuru</h5>
+                <h2 class="fw-bold">@Model.DuyuruSayisi</h2>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center p-3 shadow-sm border-0 rounded-3">
+                <h5 class="text-muted">Toplam Ekipman</h5>
+                <h2 class="fw-bold">@Model.EkipmanSayisi</h2>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 text-end">
+        <a class="btn btn-secondary" href="/">Ana Sayfaya Dön</a>
+    </div>
+</div>

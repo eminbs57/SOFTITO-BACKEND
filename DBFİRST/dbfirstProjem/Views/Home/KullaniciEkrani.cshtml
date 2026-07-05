@@ -1,0 +1,32 @@
+@model IEnumerable<dbfirstProjem.Models.Filmler>
+@{
+    ViewData["Title"] = "Filmler";
+}
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    @foreach (var film in Model)
+    {
+        <div class="col">
+            <div class="card h-100 bg-dark text-white border-0 shadow">
+
+                @if (!string.IsNullOrEmpty(film.ResimUrl))
+                {
+                    <img src="@film.ResimUrl" class="card-img-top" style="height: 350px; object-fit: cover;" alt="@film.Ad">
+                }
+                else
+                {
+                    <img src="https://source.unsplash.com/400x500/?movie,@film.Ad" class="card-img-top"
+                         style="height: 350px; object-fit: cover;">
+                }
+
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">@film.Ad</h5>
+                    <p class="card-text text-secondary">@film.Tur</p>
+                </div>
+                <div class="card-footer border-0 bg-dark">
+                    <a asp-controller="Home" asp-action="SeansSec" asp-route-filmId="@film.FilmId"
+                       class="btn btn-outline-danger w-100">BİLET AL</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,41 @@
+@model dbfirstProjem.Models.Filmler
+
+@{
+    ViewData["Title"] = "Yeni Film Ekle";
+}
+
+<div class="card bg-dark text-white border-secondary mb-4 shadow-sm">
+    <div class="card-header border-secondary d-flex justify-content-between align-items-center">
+        <h5 class="mb-0 text-danger"><i class="fas fa-plus me-2"></i>Yeni Film Ekle</h5>
+        <a asp-action="Index" class="btn btn-sm btn-outline-secondary">Listeye Dön</a>
+    </div>
+    <div class="card-body">
+        <form asp-action="FilmEkle" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Ad" class="form-label">Film Adı</label>
+                    <input asp-for="Ad" class="form-control bg-dark text-white border-secondary" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Tur" class="form-label">Türü</label>
+                    <input asp-for="Tur" class="form-control bg-dark text-white border-secondary" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="SureDk" class="form-label">Süresi (Dakika)</label>
+                    <input asp-for="SureDk" type="number" class="form-control bg-dark text-white border-secondary" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Fiyat" class="form-label">Bilet Fiyatı (₺)</label>
+                    <input asp-for="Fiyat" type="number" step="0.01" class="form-control bg-dark text-white border-secondary" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Film Afişi (Opsiyonel)</label>
+                    <input type="file" name="file" class="form-control bg-dark text-white border-secondary" accept="image/*" />
+                </div>
+            </div>
+            <div class="text-end mt-3">
+                <button type="submit" class="btn btn-danger"><i class="fas fa-save me-2"></i>Kaydet</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Kütüphane Yönetim</title>
+
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <div id="wrapper">
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+                <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-book"></i></div>
+                <div class="sidebar-brand-text mx-3">Kütüphane</div>
+            </a>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+            </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">Yönetim</div>
+
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Category" asp-action="Index">Kategoriler</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Book" asp-action="Index">Kitaplar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="User" asp-action="Index">Kullanıcılar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Loan" asp-action="Index">Ödünç İşlemleri</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Report" asp-action="Index">Raporlar</a>
+            </li>
+
+           
+            
+            <hr class="sidebar-divider d-none d-md-block">
+        </ul>
+        }
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <ul class="navbar-nav ml-auto">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <span class="nav-link text-dark">Merhaba, @User.Identity.Name!</span>
+                            </li>
+                            <li class="nav-item">
+                                <form class="form-inline" asp-controller="Account" asp-action="Logout" method="post">
+                                    <button type="submit" class="nav-link btn btn-link text-dark">Çıkış Yap</button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Account" asp-action="Register">Admin Kayıt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Admin Giriş</a>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+
+                <div class="container-fluid">
+                    @RenderBody()
+                </div>
+            </div>
+
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>&copy; 2026 - Kütüphane Yönetim Sistemi</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/sb-admin-2.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

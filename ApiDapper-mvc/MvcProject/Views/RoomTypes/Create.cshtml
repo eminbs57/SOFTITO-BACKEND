@@ -1,0 +1,51 @@
+@model MvcProject.Models.RoomType
+
+@{
+    ViewData["Title"] = "Yeni Oda Tipi";
+}
+
+<div class="form-card-wrapper mt-4">
+    <div class="card premium-card">
+        <div class="card-body p-4 p-md-5">
+            <div class="text-center mb-4">
+                <h3 class="fw-bold" style="color: #0A192F;">Yeni Oda Tipi Ekle</h3>
+                <hr class="text-muted opacity-25" />
+            </div>
+
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                
+                <div class="form-group mb-4">
+                    <label asp-for="Name" class="control-label fw-medium text-secondary mb-1">Adı</label>
+                    <input asp-for="Name" class="form-control form-input-custom" />
+                    <span asp-validation-for="Name" class="text-danger small"></span>
+                </div>
+                
+                <div class="form-group mb-4">
+                    <label asp-for="Description" class="control-label fw-medium text-secondary mb-1">Açıklama</label>
+                    <input asp-for="Description" class="form-control form-input-custom" />
+                    <span asp-validation-for="Description" class="text-danger small"></span>
+                </div>
+                
+                <div class="form-group mb-5">
+                    <label asp-for="BasePrice" class="control-label fw-medium text-secondary mb-1">Taban Fiyat</label>
+                    <input asp-for="BasePrice" class="form-control form-input-custom" type="number" step="0.01" />
+                    <span asp-validation-for="BasePrice" class="text-danger small"></span>
+                </div>
+                
+                <div class="d-flex justify-content-between align-items-center">
+                    <a asp-action="Index" class="btn btn-outline-grey">
+                        <i class="bi bi-arrow-left me-1"></i>İptal
+                    </a>
+                    <button type="submit" class="btn btn-premium">
+                        <i class="bi bi-plus-lg me-1"></i>Oluştur
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

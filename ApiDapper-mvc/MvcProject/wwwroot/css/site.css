@@ -1,0 +1,217 @@
+/* Premium Navy Theme */
+.bg-premium-navy {
+    background-color: #0A192F !important;
+}
+
+.nav-link-custom {
+    color: #e2e8f0 !important;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Sidebar and Typography */
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    background-color: #0A192F;
+}
+
+.sidebar .nav-link {
+    color: #e2e8f0 !important;
+    padding: 0.8rem 1.25rem;
+    border-radius: 0;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+}
+
+.sidebar .nav-link:hover {
+    color: #D4AF37 !important;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar .nav-link.active-link {
+    color: #D4AF37 !important;
+    border-left-color: #D4AF37;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+}
+
+.main-content {
+    min-height: 100vh;
+    background-color: #f8fafc;
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif;
+    color: #0A192F;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.title-accent {
+    height: 3px;
+    width: 60px;
+    background-color: #D4AF37;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.nav-link-custom:hover {
+    color: #fff !important;
+}
+
+.nav-link-custom::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #D4AF37; /* Gold */
+    transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover::after {
+    width: 100%;
+}
+
+.premium-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.table-custom th {
+    border-bottom: 2px solid #f1f5f9 !important;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.table-custom td {
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+}
+
+body {
+    background-color: #f8fafc;
+}
+
+/* Premium Form Styles */
+.form-card-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-input-custom {
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: all 0.2s;
+}
+
+.form-input-custom:focus {
+    border-color: #0A192F;
+    box-shadow: 0 0 0 0.25rem rgba(10, 25, 47, 0.15);
+    outline: none;
+}
+
+.btn-premium {
+    background-color: #0A192F;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    border: none;
+}
+
+.btn-premium:hover {
+    background-color: #17325c;
+    color: #ffffff;
+}
+
+.btn-outline-grey {
+    background-color: transparent;
+    color: #4b5563;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-grey:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+/* Dashboard Premium Stat Cards */
+.stat-card {
+    border: none;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.04);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #D4AF37, #0A192F);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.stat-card:hover::before {
+    opacity: 1;
+}
+
+.stat-icon-box {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover .stat-icon-box {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.stat-value {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0A192F;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MvcProject</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MvcProject.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            min-height: 100vh;
+            background: #ffffff;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+        .sidebar .nav-link {
+            color: #495057;
+            padding: 12px 20px;
+            margin: 4px 15px;
+            border-radius: 8px;
+            transition: all 0.2s ease-in-out;
+            font-weight: 500;
+        }
+        .sidebar .nav-link:hover {
+            background-color: #e9ecef;
+            color: #0d6efd;
+            transform: translateX(5px);
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .topbar {
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <div class="d-flex">
+            <!-- Sidebar -->
+            <div class="sidebar flex-shrink-0" style="width: 280px;">
+                <div class="p-4 border-bottom">
+                    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                        <span class="fs-4 fw-bold text-primary">MvcProject</span>
+                    </a>
+                </div>
+                <ul class="nav flex-column mb-auto mt-3">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Vehicles" asp-action="Index">Araçlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Drivers" asp-action="Index">Şoförler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Depos" asp-action="Index">Depolar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Departments" asp-action="Index">Departmanlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Roles" asp-action="Index">Roller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Users" asp-action="Index">Kullanıcılar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Topbar -->
+                <div class="topbar mb-4">
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>@User.Identity.Name</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="dropdownUser">
+                            <li><a class="dropdown-item text-danger" asp-controller="Auth" asp-action="Logout">Çıkış Yap</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container-fluid px-4 flex-grow-1">
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
+                </div>
+
+                <footer class="footer text-muted text-center py-3 bg-white mt-auto border-top">
+                    <div class="container">
+                        &copy; 2026 - MvcProject
+                    </div>
+                </footer>
+            </div>
+        </div>
+    }
+    else
+    {
+        <!-- Plain Layout for Unauthenticated Users (Login/Register) -->
+        <div class="container">
+            <main role="main" class="py-5">
+                @RenderBody()
+            </main>
+        </div>
+        <footer class="footer text-muted text-center py-3 bg-light mt-auto fixed-bottom border-top">
+            <div class="container">
+                &copy; 2026 - MvcProject
+            </div>
+        </footer>
+    }
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

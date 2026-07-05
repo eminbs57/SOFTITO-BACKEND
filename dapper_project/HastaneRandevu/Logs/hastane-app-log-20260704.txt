@@ -1,0 +1,1357 @@
+2026-07-04 08:16:32.411 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-04 08:16:32.444 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-04 08:16:32.445 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-04 08:16:32.445 +03:00 [INF] Hosting environment: Development
+2026-07-04 08:16:32.445 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu
+2026-07-04 08:16:56.428 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-04 08:16:56.432 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-04 08:16:56.447 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:16:56.455 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:16:56.459 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:16:56.523 +03:00 [INF] Executed ViewResult - view Index executed in 63.7154ms.
+2026-07-04 08:16:56.524 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 68.7497ms
+2026-07-04 08:16:56.524 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:16:56.528 +03:00 [INF] HTTP GET / responded 200 in 82.8498 ms
+2026-07-04 08:16:56.529 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 102.2698ms
+2026-07-04 08:16:56.546 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-04 08:16:56.546 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-04 08:16:56.546 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-04 08:16:56.546 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-04 08:16:56.546 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/HastaneRandevu.styles.css?v=x8lTV-lbwQUautY4aCzNpedMi2TMjTqZ4rAh93OATfE - null null
+2026-07-04 08:16:56.546 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/lib/jquery/dist/jquery.min.js - null null
+2026-07-04 08:16:56.551 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/wwwroot/js/site.js'
+2026-07-04 08:16:56.551 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 5.0323ms
+2026-07-04 08:16:56.552 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/wwwroot/css/site.css'
+2026-07-04 08:16:56.552 +03:00 [INF] Sending file. Request path: '/HastaneRandevu.styles.css'. Physical path: '/Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/obj/Debug/net10.0/scopedcss/bundle/HastaneRandevu.styles.css'
+2026-07-04 08:16:56.552 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/HastaneRandevu.styles.css?v=x8lTV-lbwQUautY4aCzNpedMi2TMjTqZ4rAh93OATfE - 200 1060 text/css 6.2686ms
+2026-07-04 08:16:56.552 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 667 text/css 6.4925ms
+2026-07-04 08:16:56.554 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/wwwroot/lib/jquery/dist/jquery.min.js'
+2026-07-04 08:16:56.554 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2026-07-04 08:16:56.554 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/lib/jquery/dist/jquery.min.js - 200 87533 text/javascript 8.0135ms
+2026-07-04 08:16:56.554 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80721 text/javascript 8.4299ms
+2026-07-04 08:16:56.554 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2026-07-04 08:16:56.554 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/lib/bootstrap/dist/css/bootstrap.min.css - 200 232803 text/css 8.4137ms
+2026-07-04 08:16:58.242 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 08:16:58.245 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:16:58.246 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:16:58.246 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:16:58.249 +03:00 [INF] Executed ViewResult - view Index executed in 3.312ms.
+2026-07-04 08:16:58.250 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 3.9457ms
+2026-07-04 08:16:58.250 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:16:58.250 +03:00 [INF] HTTP GET /Home/Index responded 200 in 6.2746 ms
+2026-07-04 08:16:58.250 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 8.3593ms
+2026-07-04 08:16:58.950 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 08:16:58.957 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:16:58.959 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:16:58.959 +03:00 [INF] HTTP GET /Doktor/Index responded 302 in 7.8494 ms
+2026-07-04 08:16:58.960 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 302 0 null 9.8317ms
+2026-07-04 08:16:58.962 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FDoktor%2FIndex - null null
+2026-07-04 08:16:58.962 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:16:58.964 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:16:58.965 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:16:59.005 +03:00 [INF] Executed ViewResult - view Login executed in 41.0777ms.
+2026-07-04 08:16:59.006 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 41.6082ms
+2026-07-04 08:16:59.006 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:16:59.006 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 43.8078 ms
+2026-07-04 08:16:59.006 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FDoktor%2FIndex - 200 null text/html; charset=utf-8 44.065ms
+2026-07-04 08:17:00.813 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 08:17:00.815 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:17:00.815 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:17:00.815 +03:00 [INF] HTTP GET /Hasta/Index responded 302 in 1.9118 ms
+2026-07-04 08:17:00.815 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 302 0 null 2.2761ms
+2026-07-04 08:17:00.817 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FHasta%2FIndex - null null
+2026-07-04 08:17:00.818 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:17:00.818 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:17:00.818 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:17:00.819 +03:00 [INF] Executed ViewResult - view Login executed in 0.5773ms.
+2026-07-04 08:17:00.819 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.715ms
+2026-07-04 08:17:00.819 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:17:00.819 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 1.0699 ms
+2026-07-04 08:17:00.819 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FHasta%2FIndex - 200 null text/html; charset=utf-8 2.041ms
+2026-07-04 08:17:03.275 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 08:17:03.277 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:17:03.278 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:17:03.278 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:17:03.279 +03:00 [INF] Executed ViewResult - view Index executed in 0.8827ms.
+2026-07-04 08:17:03.279 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 1.1316ms
+2026-07-04 08:17:03.279 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:17:03.279 +03:00 [INF] HTTP GET /Home/Index responded 200 in 2.0538 ms
+2026-07-04 08:17:03.279 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 4.4115ms
+2026-07-04 08:17:05.875 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 08:17:05.877 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:17:05.878 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:17:05.878 +03:00 [INF] HTTP GET /Poliklinik/Index responded 302 in 2.5868 ms
+2026-07-04 08:17:05.878 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 302 0 null 3.3166ms
+2026-07-04 08:17:05.880 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FPoliklinik%2FIndex - null null
+2026-07-04 08:17:05.880 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:17:05.881 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:17:05.881 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:17:05.882 +03:00 [INF] Executed ViewResult - view Login executed in 0.76ms.
+2026-07-04 08:17:05.882 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.9468ms
+2026-07-04 08:17:05.882 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:17:05.882 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 1.3434 ms
+2026-07-04 08:17:05.882 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FPoliklinik%2FIndex - 200 null text/html; charset=utf-8 1.539ms
+2026-07-04 08:17:07.785 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-04 08:17:07.785 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:17:07.786 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:17:07.786 +03:00 [INF] HTTP GET /Randevu/Index responded 302 in 0.4980 ms
+2026-07-04 08:17:07.786 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 302 0 null 0.9245ms
+2026-07-04 08:17:07.788 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FRandevu%2FIndex - null null
+2026-07-04 08:17:07.789 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:17:07.789 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:17:07.789 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:17:07.790 +03:00 [INF] Executed ViewResult - view Login executed in 0.7107ms.
+2026-07-04 08:17:07.790 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.888ms
+2026-07-04 08:17:07.790 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:17:07.790 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 1.2730 ms
+2026-07-04 08:17:07.790 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FRandevu%2FIndex - 200 null text/html; charset=utf-8 1.4775ms
+2026-07-04 08:19:33.665 +03:00 [INF] Application is shutting down...
+2026-07-04 08:19:43.555 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-04 08:19:43.586 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-04 08:19:43.587 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-04 08:19:43.587 +03:00 [INF] Hosting environment: Development
+2026-07-04 08:19:43.587 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu
+2026-07-04 08:19:47.144 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-04 08:19:47.146 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-04 08:19:47.162 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:19:47.170 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:19:47.174 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:19:47.230 +03:00 [INF] Executed ViewResult - view Index executed in 55.7606ms.
+2026-07-04 08:19:47.235 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 64.3858ms
+2026-07-04 08:19:47.235 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:19:47.238 +03:00 [INF] HTTP GET / responded 200 in 79.6291 ms
+2026-07-04 08:19:47.246 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 102.6088ms
+2026-07-04 08:19:48.939 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 08:19:48.942 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:19:48.942 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:19:48.943 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:19:48.946 +03:00 [INF] Executed ViewResult - view Index executed in 3.0855ms.
+2026-07-04 08:19:48.946 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 3.5922ms
+2026-07-04 08:19:48.946 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:19:48.946 +03:00 [INF] HTTP GET /Home/Index responded 200 in 5.3945 ms
+2026-07-04 08:19:48.946 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 7.453ms
+2026-07-04 08:19:49.671 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 08:19:49.681 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:19:49.684 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:19:49.685 +03:00 [INF] HTTP GET /Hasta/Index responded 302 in 11.4372 ms
+2026-07-04 08:19:49.685 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 302 0 null 14.2508ms
+2026-07-04 08:19:49.687 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FHasta%2FIndex - null null
+2026-07-04 08:19:49.688 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:19:49.689 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:19:49.690 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:19:49.729 +03:00 [INF] Executed ViewResult - view Login executed in 38.7835ms.
+2026-07-04 08:19:49.729 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 39.2275ms
+2026-07-04 08:19:49.729 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:19:49.729 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 40.9877 ms
+2026-07-04 08:19:49.729 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FHasta%2FIndex - 200 null text/html; charset=utf-8 41.314ms
+2026-07-04 08:19:55.386 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Register - null null
+2026-07-04 08:19:55.388 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Register (HastaneRandevu)'
+2026-07-04 08:19:55.390 +03:00 [INF] Route matched with {action = "Register", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:19:55.391 +03:00 [INF] Executing ViewResult, running view Register.
+2026-07-04 08:19:55.406 +03:00 [INF] Executed ViewResult - view Register executed in 15.7104ms.
+2026-07-04 08:19:55.406 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Register (HastaneRandevu) in 16.145ms
+2026-07-04 08:19:55.406 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Register (HastaneRandevu)'
+2026-07-04 08:19:55.406 +03:00 [INF] HTTP GET /Admin/Register responded 200 in 18.4329 ms
+2026-07-04 08:19:55.406 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Register - 200 null text/html; charset=utf-8 20.0275ms
+2026-07-04 08:19:56.538 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login - null null
+2026-07-04 08:19:56.539 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:19:56.540 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:19:56.540 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:19:56.541 +03:00 [INF] Executed ViewResult - view Login executed in 0.7501ms.
+2026-07-04 08:19:56.541 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.9603ms
+2026-07-04 08:19:56.541 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:19:56.541 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 1.9254 ms
+2026-07-04 08:19:56.541 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login - 200 null text/html; charset=utf-8 2.7052ms
+2026-07-04 08:20:01.279 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 35
+2026-07-04 08:20:01.280 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:20:01.298 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:20:01.471 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 172.7495ms
+2026-07-04 08:20:01.471 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:20:01.471 +03:00 [ERR] HTTP POST /Admin/Login responded 500 in 191.4656 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AdminLogin'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean isRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& executeTask, Boolean& usedCache, Boolean asyncWrite, Boolean isRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1189
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1217
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 848
+   at HastaneRandevu.Models.Context.Listeleme[T](String procadi, DynamicParameters param) in /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/Models/Context.cs:line 27
+   at HastaneRandevu.Controllers.AdminController.Login(AdminModel model) in /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/Controllers/AdminController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:879bdc06-3b75-4f9f-b9fe-b84f86becc1c
+Hata Numarası: 2812,Durum: 62,Sınıf:16
+2026-07-04 08:20:01.478 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AdminLogin'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean isRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& executeTask, Boolean& usedCache, Boolean asyncWrite, Boolean isRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1189
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1217
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 848
+   at HastaneRandevu.Models.Context.Listeleme[T](String procadi, DynamicParameters param) in /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/Models/Context.cs:line 27
+   at HastaneRandevu.Controllers.AdminController.Login(AdminModel model) in /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/Controllers/AdminController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:879bdc06-3b75-4f9f-b9fe-b84f86becc1c
+Hata Numarası: 2812,Durum: 62,Sınıf:16
+2026-07-04 08:20:01.485 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 500 null text/html; charset=utf-8 205.6467ms
+2026-07-04 08:20:05.815 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 36
+2026-07-04 08:20:05.815 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:20:05.815 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:20:05.824 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 9.0693ms
+2026-07-04 08:20:05.825 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:20:05.825 +03:00 [ERR] HTTP POST /Admin/Login responded 500 in 10.3402 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AdminLogin'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean isRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& executeTask, Boolean& usedCache, Boolean asyncWrite, Boolean isRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1189
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1217
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 848
+   at HastaneRandevu.Models.Context.Listeleme[T](String procadi, DynamicParameters param) in /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/Models/Context.cs:line 27
+   at HastaneRandevu.Controllers.AdminController.Login(AdminModel model) in /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/Controllers/AdminController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:879bdc06-3b75-4f9f-b9fe-b84f86becc1c
+Hata Numarası: 2812,Durum: 62,Sınıf:16
+2026-07-04 08:20:05.828 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AdminLogin'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean isRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& executeTask, Boolean& usedCache, Boolean asyncWrite, Boolean isRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1189
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1217
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 848
+   at HastaneRandevu.Models.Context.Listeleme[T](String procadi, DynamicParameters param) in /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/Models/Context.cs:line 27
+   at HastaneRandevu.Controllers.AdminController.Login(AdminModel model) in /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/Controllers/AdminController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:879bdc06-3b75-4f9f-b9fe-b84f86becc1c
+Hata Numarası: 2812,Durum: 62,Sınıf:16
+2026-07-04 08:20:05.835 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 500 null text/html; charset=utf-8 20.2382ms
+2026-07-04 08:23:33.523 +03:00 [INF] Application is shutting down...
+2026-07-04 08:23:37.630 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-04 08:23:37.658 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-04 08:23:37.659 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-04 08:23:37.659 +03:00 [INF] Hosting environment: Development
+2026-07-04 08:23:37.659 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu
+2026-07-04 08:23:44.144 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-04 08:23:44.147 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-04 08:23:44.161 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:23:44.168 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:23:44.173 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:23:44.229 +03:00 [INF] Executed ViewResult - view Index executed in 57.2281ms.
+2026-07-04 08:23:44.230 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 61.5116ms
+2026-07-04 08:23:44.230 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:23:44.231 +03:00 [INF] HTTP GET / responded 200 in 74.4443 ms
+2026-07-04 08:23:44.234 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 90.7581ms
+2026-07-04 08:23:45.493 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 08:23:45.502 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:23:45.507 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:23:45.507 +03:00 [INF] HTTP GET /Hasta/Index responded 302 in 12.3584 ms
+2026-07-04 08:23:45.507 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 302 0 null 15.4637ms
+2026-07-04 08:23:45.517 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FHasta%2FIndex - null null
+2026-07-04 08:23:45.519 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:23:45.521 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:23:45.522 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:23:45.558 +03:00 [INF] Executed ViewResult - view Login executed in 36.4695ms.
+2026-07-04 08:23:45.558 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 37.0657ms
+2026-07-04 08:23:45.558 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:23:45.558 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 40.0112 ms
+2026-07-04 08:23:45.558 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FHasta%2FIndex - 200 null text/html; charset=utf-8 41.2643ms
+2026-07-04 08:23:47.784 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 08:23:47.787 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:23:47.788 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:23:47.788 +03:00 [INF] HTTP GET /Hasta/Index responded 302 in 2.3290 ms
+2026-07-04 08:23:47.788 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 302 0 null 3.9969ms
+2026-07-04 08:23:47.790 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FHasta%2FIndex - null null
+2026-07-04 08:23:47.791 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:23:47.791 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:23:47.792 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:23:47.792 +03:00 [INF] Executed ViewResult - view Login executed in 0.6437ms.
+2026-07-04 08:23:47.792 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.8248ms
+2026-07-04 08:23:47.792 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:23:47.792 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 1.2898 ms
+2026-07-04 08:23:47.792 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FHasta%2FIndex - 200 null text/html; charset=utf-8 2.4132ms
+2026-07-04 08:23:49.314 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 08:23:49.317 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:23:49.317 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:23:49.317 +03:00 [INF] HTTP GET /Doktor/Index responded 302 in 2.4100 ms
+2026-07-04 08:23:49.317 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 302 0 null 3.078ms
+2026-07-04 08:23:49.319 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FDoktor%2FIndex - null null
+2026-07-04 08:23:49.319 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:23:49.319 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:23:49.319 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:23:49.320 +03:00 [INF] Executed ViewResult - view Login executed in 0.3389ms.
+2026-07-04 08:23:49.320 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.4558ms
+2026-07-04 08:23:49.320 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:23:49.320 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 0.7557 ms
+2026-07-04 08:23:49.320 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FDoktor%2FIndex - 200 null text/html; charset=utf-8 0.9217ms
+2026-07-04 08:23:51.566 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 08:23:51.566 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:23:51.567 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:23:51.567 +03:00 [INF] HTTP GET /Poliklinik/Index responded 302 in 0.6745 ms
+2026-07-04 08:23:51.567 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 302 0 null 1.2722ms
+2026-07-04 08:23:51.570 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FPoliklinik%2FIndex - null null
+2026-07-04 08:23:51.570 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:23:51.570 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:23:51.570 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:23:51.570 +03:00 [INF] Executed ViewResult - view Login executed in 0.3494ms.
+2026-07-04 08:23:51.570 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.4734ms
+2026-07-04 08:23:51.570 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:23:51.570 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 0.7504 ms
+2026-07-04 08:23:51.570 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FPoliklinik%2FIndex - 200 null text/html; charset=utf-8 0.9297ms
+2026-07-04 08:23:56.048 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 35
+2026-07-04 08:23:56.048 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:23:56.065 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:23:56.209 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 143.6952ms
+2026-07-04 08:23:56.209 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:23:56.209 +03:00 [ERR] HTTP POST /Admin/Login responded 500 in 161.0358 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AdminLogin'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean isRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& executeTask, Boolean& usedCache, Boolean asyncWrite, Boolean isRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1189
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1217
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 848
+   at HastaneRandevu.Models.Context.Listeleme[T](String procadi, DynamicParameters param) in /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/Models/Context.cs:line 27
+   at HastaneRandevu.Controllers.AdminController.Login(AdminModel model) in /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/Controllers/AdminController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:d13c25b7-2c57-4a4a-81f9-35d01e018802
+Hata Numarası: 2812,Durum: 62,Sınıf:16
+2026-07-04 08:23:56.214 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AdminLogin'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean isRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& executeTask, Boolean& usedCache, Boolean asyncWrite, Boolean isRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1189
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1217
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 848
+   at HastaneRandevu.Models.Context.Listeleme[T](String procadi, DynamicParameters param) in /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/Models/Context.cs:line 27
+   at HastaneRandevu.Controllers.AdminController.Login(AdminModel model) in /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/Controllers/AdminController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:d13c25b7-2c57-4a4a-81f9-35d01e018802
+Hata Numarası: 2812,Durum: 62,Sınıf:16
+2026-07-04 08:23:56.220 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 500 null text/html; charset=utf-8 172.3564ms
+2026-07-04 08:26:28.774 +03:00 [INF] Application is shutting down...
+2026-07-04 08:26:34.525 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-04 08:26:34.548 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-04 08:26:34.548 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-04 08:26:34.549 +03:00 [INF] Hosting environment: Development
+2026-07-04 08:26:34.549 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu
+2026-07-04 08:26:36.172 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 35
+2026-07-04 08:26:36.175 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-04 08:26:36.192 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:26:36.206 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:26:36.276 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:26:36.295 +03:00 [INF] Executed ViewResult - view Login executed in 19.3576ms.
+2026-07-04 08:26:36.295 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 89.0683ms
+2026-07-04 08:26:36.295 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:26:36.296 +03:00 [INF] HTTP POST /Admin/Login responded 200 in 109.4895 ms
+2026-07-04 08:26:36.296 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 200 null text/html; charset=utf-8 125.6837ms
+2026-07-04 08:26:36.322 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/favicon.ico - null null
+2026-07-04 08:26:36.326 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu/wwwroot/favicon.ico'
+2026-07-04 08:26:36.326 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/favicon.ico - 200 5430 image/x-icon 3.7557ms
+2026-07-04 08:26:41.362 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 35
+2026-07-04 08:26:41.366 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:26:41.366 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:26:41.378 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:26:41.385 +03:00 [INF] Executed ViewResult - view Login executed in 7.4347ms.
+2026-07-04 08:26:41.385 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 18.5993ms
+2026-07-04 08:26:41.385 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:26:41.385 +03:00 [INF] HTTP POST /Admin/Login responded 200 in 21.0736 ms
+2026-07-04 08:26:41.386 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 200 null text/html; charset=utf-8 23.6667ms
+2026-07-04 08:26:45.662 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 36
+2026-07-04 08:26:45.666 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:26:45.667 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:26:45.673 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:26:45.674 +03:00 [INF] Executed ViewResult - view Login executed in 1.1662ms.
+2026-07-04 08:26:45.675 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 7.945ms
+2026-07-04 08:26:45.675 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:26:45.675 +03:00 [INF] HTTP POST /Admin/Login responded 200 in 12.3917 ms
+2026-07-04 08:26:45.675 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 200 null text/html; charset=utf-8 13.0331ms
+2026-07-04 08:26:54.382 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 40
+2026-07-04 08:26:54.382 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:26:54.383 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:26:54.387 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:26:54.388 +03:00 [INF] Executed ViewResult - view Login executed in 0.7552ms.
+2026-07-04 08:26:54.388 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 4.8877ms
+2026-07-04 08:26:54.388 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:26:54.388 +03:00 [INF] HTTP POST /Admin/Login responded 200 in 5.6620 ms
+2026-07-04 08:26:54.388 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 200 null text/html; charset=utf-8 6.2098ms
+2026-07-04 08:26:55.755 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Register - null null
+2026-07-04 08:26:55.755 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Register (HastaneRandevu)'
+2026-07-04 08:26:55.758 +03:00 [INF] Route matched with {action = "Register", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:26:55.759 +03:00 [INF] Executing ViewResult, running view Register.
+2026-07-04 08:26:55.773 +03:00 [INF] Executed ViewResult - view Register executed in 15.129ms.
+2026-07-04 08:26:55.774 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Register (HastaneRandevu) in 15.591ms
+2026-07-04 08:26:55.774 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Register (HastaneRandevu)'
+2026-07-04 08:26:55.774 +03:00 [INF] HTTP GET /Admin/Register responded 200 in 18.6151 ms
+2026-07-04 08:26:55.774 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Register - 200 null text/html; charset=utf-8 19.3285ms
+2026-07-04 08:26:59.324 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Register - application/x-www-form-urlencoded 36
+2026-07-04 08:26:59.324 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Register (HastaneRandevu)'
+2026-07-04 08:26:59.327 +03:00 [INF] Route matched with {action = "Register", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:26:59.369 +03:00 [INF] Executing RedirectResult, redirecting to /Admin/Login.
+2026-07-04 08:26:59.370 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Register (HastaneRandevu) in 42.4089ms
+2026-07-04 08:26:59.370 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Register (HastaneRandevu)'
+2026-07-04 08:26:59.370 +03:00 [INF] HTTP POST /Admin/Register responded 302 in 45.6022 ms
+2026-07-04 08:26:59.370 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Register - 302 0 null 46.2257ms
+2026-07-04 08:26:59.372 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login - null null
+2026-07-04 08:26:59.373 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:26:59.374 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:26:59.375 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:26:59.376 +03:00 [INF] Executed ViewResult - view Login executed in 1.0889ms.
+2026-07-04 08:26:59.376 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 1.7922ms
+2026-07-04 08:26:59.376 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:26:59.376 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 3.5331 ms
+2026-07-04 08:26:59.376 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login - 200 null text/html; charset=utf-8 3.7527ms
+2026-07-04 08:27:03.911 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 36
+2026-07-04 08:27:03.911 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:27:03.912 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:27:03.929 +03:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-07-04 08:27:03.930 +03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-07-04 08:27:03.930 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 18.1097ms
+2026-07-04 08:27:03.930 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:27:03.930 +03:00 [INF] HTTP POST /Admin/Login responded 302 in 18.6795 ms
+2026-07-04 08:27:03.930 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 302 0 null 19.0135ms
+2026-07-04 08:27:03.932 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-04 08:27:03.935 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:27:03.936 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:27:03.936 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:27:03.991 +03:00 [INF] Executed ViewResult - view Index executed in 54.7704ms.
+2026-07-04 08:27:03.991 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 55.0022ms
+2026-07-04 08:27:03.991 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:27:03.991 +03:00 [INF] HTTP GET / responded 200 in 58.2883 ms
+2026-07-04 08:27:03.991 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 58.4725ms
+2026-07-04 08:27:05.772 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 08:27:05.777 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 08:27:05.780 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-04 08:27:05.798 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-04 08:27:05.802 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:27:05.819 +03:00 [INF] Executed ViewResult - view Index executed in 16.947ms.
+2026-07-04 08:27:05.819 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 39.1036ms
+2026-07-04 08:27:05.819 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 08:27:05.819 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 46.4785 ms
+2026-07-04 08:27:05.819 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 46.8423ms
+2026-07-04 08:27:08.038 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 08:27:08.041 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 08:27:08.042 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-04 08:27:08.055 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-04 08:27:08.060 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:27:08.072 +03:00 [INF] Executed ViewResult - view Index executed in 13.787ms.
+2026-07-04 08:27:08.073 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 30.3152ms
+2026-07-04 08:27:08.073 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 08:27:08.073 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 34.3026 ms
+2026-07-04 08:27:08.073 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 34.7994ms
+2026-07-04 08:27:17.722 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 08:27:17.726 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:27:17.727 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-04 08:27:17.743 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-04 08:27:17.747 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:27:17.761 +03:00 [INF] Executed ViewResult - view Index executed in 14.6988ms.
+2026-07-04 08:27:17.761 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 33.853ms
+2026-07-04 08:27:17.761 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:27:17.761 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 37.9844 ms
+2026-07-04 08:27:17.761 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 39.3991ms
+2026-07-04 08:27:19.439 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/EY - null null
+2026-07-04 08:27:19.441 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-04 08:27:19.443 +03:00 [INF] Route matched with {action = "EY", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-04 08:27:19.444 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-04 08:27:19.452 +03:00 [INF] Executed ViewResult - view EY executed in 9.1056ms.
+2026-07-04 08:27:19.452 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu) in 9.8083ms
+2026-07-04 08:27:19.452 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-04 08:27:19.453 +03:00 [INF] HTTP GET /Poliklinik/EY responded 200 in 12.3940 ms
+2026-07-04 08:27:19.453 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/EY - 200 null text/html; charset=utf-8 13.9315ms
+2026-07-04 08:27:21.501 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 08:27:21.502 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:27:21.502 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-04 08:27:21.503 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-04 08:27:21.503 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:27:21.504 +03:00 [INF] Executed ViewResult - view Index executed in 1.3968ms.
+2026-07-04 08:27:21.504 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 1.8414ms
+2026-07-04 08:27:21.504 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:27:21.504 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 2.9677 ms
+2026-07-04 08:27:21.504 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 3.3012ms
+2026-07-04 08:27:22.249 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 08:27:22.252 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 08:27:22.252 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-04 08:27:22.252 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-04 08:27:22.252 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:27:22.253 +03:00 [INF] Executed ViewResult - view Index executed in 1.2735ms.
+2026-07-04 08:27:22.253 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 1.6534ms
+2026-07-04 08:27:22.253 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 08:27:22.253 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 2.6238 ms
+2026-07-04 08:27:22.254 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 4.5102ms
+2026-07-04 08:27:22.971 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/EY - null null
+2026-07-04 08:27:22.971 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-04 08:27:22.974 +03:00 [INF] Route matched with {action = "EY", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-04 08:27:22.983 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-04 08:27:23.003 +03:00 [INF] Executed ViewResult - view EY executed in 21.5379ms.
+2026-07-04 08:27:23.004 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu) in 29.96ms
+2026-07-04 08:27:23.004 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-04 08:27:23.004 +03:00 [INF] HTTP GET /Doktor/EY responded 200 in 32.8430 ms
+2026-07-04 08:27:23.004 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/EY - 200 null text/html; charset=utf-8 33.1733ms
+2026-07-04 08:27:31.030 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 08:27:31.031 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 08:27:31.031 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-04 08:27:31.031 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-04 08:27:31.032 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:27:31.033 +03:00 [INF] Executed ViewResult - view Index executed in 0.984ms.
+2026-07-04 08:27:31.033 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 1.429ms
+2026-07-04 08:27:31.033 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 08:27:31.033 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 2.1590 ms
+2026-07-04 08:27:31.033 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 3.1489ms
+2026-07-04 08:27:32.572 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/EY - null null
+2026-07-04 08:27:32.573 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-04 08:27:32.575 +03:00 [INF] Route matched with {action = "EY", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-04 08:27:32.576 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-04 08:27:32.585 +03:00 [INF] Executed ViewResult - view EY executed in 9.5004ms.
+2026-07-04 08:27:32.585 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu) in 10.1747ms
+2026-07-04 08:27:32.585 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-04 08:27:32.585 +03:00 [INF] HTTP GET /Hasta/EY responded 200 in 13.5585 ms
+2026-07-04 08:27:32.586 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/EY - 200 null text/html; charset=utf-8 13.9785ms
+2026-07-04 08:27:39.322 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-04 08:27:39.323 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 08:27:39.325 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-04 08:27:40.658 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-04 08:27:40.661 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 08:27:40.661 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-04 08:27:42.568 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-04 08:27:42.571 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:27:42.585 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-04 08:27:42.585 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:27:42.585 +03:00 [INF] Executed ViewResult - view Index executed in 15.0278ms.
+2026-07-04 08:27:42.586 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 3260.6634ms
+2026-07-04 08:27:42.586 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 08:27:42.586 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 3263.6683 ms
+2026-07-04 08:27:42.586 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 3263.9594ms
+2026-07-04 08:27:42.586 +03:00 [INF] Executed ViewResult - view Index executed in 0.6822ms.
+2026-07-04 08:27:42.586 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 1924.3655ms
+2026-07-04 08:27:42.586 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 08:27:42.586 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 1925.1735 ms
+2026-07-04 08:27:42.586 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 1927.4877ms
+2026-07-04 08:27:45.067 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/EY - null null
+2026-07-04 08:27:45.067 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-04 08:27:45.070 +03:00 [INF] Route matched with {action = "EY", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-04 08:27:45.086 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-04 08:27:45.116 +03:00 [INF] Executed ViewResult - view EY executed in 31.6375ms.
+2026-07-04 08:27:45.116 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu) in 46.5732ms
+2026-07-04 08:27:45.116 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-04 08:27:45.117 +03:00 [INF] HTTP GET /Randevu/EY responded 200 in 49.7404 ms
+2026-07-04 08:27:45.117 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/EY - 200 null text/html; charset=utf-8 50.0064ms
+2026-07-04 08:28:10.552 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Logout - null null
+2026-07-04 08:28:10.553 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Logout (HastaneRandevu)'
+2026-07-04 08:28:10.560 +03:00 [INF] Route matched with {action = "Logout", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:28:10.563 +03:00 [INF] AuthenticationScheme: Cookies signed out.
+2026-07-04 08:28:10.564 +03:00 [INF] Executing RedirectResult, redirecting to /Admin/Login.
+2026-07-04 08:28:10.564 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Logout (HastaneRandevu) in 3.404ms
+2026-07-04 08:28:10.564 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Logout (HastaneRandevu)'
+2026-07-04 08:28:10.564 +03:00 [INF] HTTP GET /Admin/Logout responded 302 in 11.5855 ms
+2026-07-04 08:28:10.564 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Logout - 302 0 null 11.9827ms
+2026-07-04 08:28:10.567 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login - null null
+2026-07-04 08:28:10.567 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:28:10.567 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:28:10.567 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:28:10.568 +03:00 [INF] Executed ViewResult - view Login executed in 0.5316ms.
+2026-07-04 08:28:10.568 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.7668ms
+2026-07-04 08:28:10.568 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:28:10.568 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 1.0659 ms
+2026-07-04 08:28:10.568 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login - 200 null text/html; charset=utf-8 1.2655ms
+2026-07-04 08:28:14.799 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-04 08:28:14.800 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:28:14.800 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:28:14.800 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:28:14.801 +03:00 [INF] Executed ViewResult - view Index executed in 0.7272ms.
+2026-07-04 08:28:14.801 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 0.9009ms
+2026-07-04 08:28:14.801 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:28:14.801 +03:00 [INF] HTTP GET / responded 200 in 1.3210 ms
+2026-07-04 08:28:14.801 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 1.604ms
+2026-07-04 08:28:16.314 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 08:28:16.314 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:28:16.314 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:28:16.314 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:28:16.315 +03:00 [INF] Executed ViewResult - view Index executed in 0.6377ms.
+2026-07-04 08:28:16.315 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 0.8004ms
+2026-07-04 08:28:16.315 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:28:16.315 +03:00 [INF] HTTP GET /Home/Index responded 200 in 1.2518 ms
+2026-07-04 08:28:16.315 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 1.5581ms
+2026-07-04 08:28:17.113 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 08:28:17.114 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:28:17.116 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:28:17.116 +03:00 [INF] HTTP GET /Hasta/Index responded 302 in 3.0968 ms
+2026-07-04 08:28:17.116 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 302 0 null 3.3615ms
+2026-07-04 08:28:17.117 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FHasta%2FIndex - null null
+2026-07-04 08:28:17.118 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:28:17.118 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:28:17.118 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:28:17.118 +03:00 [INF] Executed ViewResult - view Login executed in 0.2492ms.
+2026-07-04 08:28:17.118 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.356ms
+2026-07-04 08:28:17.118 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:28:17.118 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 0.5909 ms
+2026-07-04 08:28:17.118 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FHasta%2FIndex - 200 null text/html; charset=utf-8 0.7245ms
+2026-07-04 08:28:22.237 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 08:28:22.237 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:28:22.238 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:28:22.238 +03:00 [INF] HTTP GET /Doktor/Index responded 302 in 0.7300 ms
+2026-07-04 08:28:22.238 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 302 0 null 1.0632ms
+2026-07-04 08:28:22.241 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FDoktor%2FIndex - null null
+2026-07-04 08:28:22.241 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:28:22.241 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:28:22.242 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:28:22.242 +03:00 [INF] Executed ViewResult - view Login executed in 0.4665ms.
+2026-07-04 08:28:22.242 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.6433ms
+2026-07-04 08:28:22.242 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:28:22.242 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 1.0600 ms
+2026-07-04 08:28:22.242 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FDoktor%2FIndex - 200 null text/html; charset=utf-8 1.362ms
+2026-07-04 08:51:51.929 +03:00 [INF] Application is shutting down...
+2026-07-04 08:51:59.382 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-04 08:51:59.405 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-04 08:51:59.406 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-04 08:51:59.406 +03:00 [INF] Hosting environment: Development
+2026-07-04 08:51:59.406 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu
+2026-07-04 08:52:06.807 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FDoktor%2FIndex - null null
+2026-07-04 08:52:06.811 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-04 08:52:06.826 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:52:06.834 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:52:06.839 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:52:06.870 +03:00 [INF] Executed ViewResult - view Login executed in 31.4052ms.
+2026-07-04 08:52:06.870 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 35.5595ms
+2026-07-04 08:52:06.870 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:52:06.871 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 50.2753 ms
+2026-07-04 08:52:06.872 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2FDoktor%2FIndex - 200 null text/html; charset=utf-8 65.6039ms
+2026-07-04 08:52:10.662 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-04 08:52:10.666 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:52:10.671 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:52:10.671 +03:00 [INF] HTTP GET / responded 302 in 8.7136 ms
+2026-07-04 08:52:10.671 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 302 0 null 9.9458ms
+2026-07-04 08:52:10.673 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2F - null null
+2026-07-04 08:52:10.677 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:52:10.677 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:52:10.678 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:52:10.681 +03:00 [INF] Executed ViewResult - view Login executed in 3.2283ms.
+2026-07-04 08:52:10.681 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 3.5906ms
+2026-07-04 08:52:10.681 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:52:10.681 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 6.2670 ms
+2026-07-04 08:52:10.681 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 8.1917ms
+2026-07-04 08:52:40.372 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-04 08:52:40.375 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 08:52:40.376 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 08:52:40.376 +03:00 [INF] HTTP GET / responded 302 in 3.0774 ms
+2026-07-04 08:52:40.376 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 302 0 null 3.6118ms
+2026-07-04 08:52:40.379 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2F - null null
+2026-07-04 08:52:40.379 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:52:40.379 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:52:40.379 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:52:40.380 +03:00 [INF] Executed ViewResult - view Login executed in 0.3678ms.
+2026-07-04 08:52:40.380 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.4939ms
+2026-07-04 08:52:40.380 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:52:40.380 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 0.7981 ms
+2026-07-04 08:52:40.380 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 0.9692ms
+2026-07-04 08:52:47.124 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 35
+2026-07-04 08:52:47.125 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:52:47.144 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:52:47.207 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 08:52:47.209 +03:00 [INF] Executed ViewResult - view Login executed in 2.532ms.
+2026-07-04 08:52:47.209 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 65.2752ms
+2026-07-04 08:52:47.209 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:52:47.209 +03:00 [INF] HTTP POST /Admin/Login responded 200 in 84.4370 ms
+2026-07-04 08:52:47.209 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 200 null text/html; charset=utf-8 85.0662ms
+2026-07-04 08:52:51.830 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 36
+2026-07-04 08:52:51.831 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:52:51.831 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 08:52:51.852 +03:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-07-04 08:52:51.859 +03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-07-04 08:52:51.859 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 27.889ms
+2026-07-04 08:52:51.859 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 08:52:51.859 +03:00 [INF] HTTP POST /Admin/Login responded 302 in 28.4220 ms
+2026-07-04 08:52:51.859 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 302 0 null 28.8382ms
+2026-07-04 08:52:51.861 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-04 08:52:51.864 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:52:51.865 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:52:51.865 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:52:51.918 +03:00 [INF] Executed ViewResult - view Index executed in 52.6113ms.
+2026-07-04 08:52:51.918 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 52.8667ms
+2026-07-04 08:52:51.918 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:52:51.918 +03:00 [INF] HTTP GET / responded 200 in 56.2703 ms
+2026-07-04 08:52:51.918 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 56.4083ms
+2026-07-04 08:52:53.983 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 08:52:53.984 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 08:52:53.987 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-04 08:52:53.997 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-04 08:52:54.001 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:52:54.016 +03:00 [INF] Executed ViewResult - view Index executed in 16.1197ms.
+2026-07-04 08:52:54.017 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 29.5904ms
+2026-07-04 08:52:54.017 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 08:52:54.017 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 33.3754 ms
+2026-07-04 08:52:54.017 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 33.8842ms
+2026-07-04 08:52:54.857 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 08:52:54.858 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 08:52:54.860 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-04 08:52:54.867 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-04 08:52:54.873 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:52:54.886 +03:00 [INF] Executed ViewResult - view Index executed in 14.2311ms.
+2026-07-04 08:52:54.886 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 25.8296ms
+2026-07-04 08:52:54.886 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 08:52:54.886 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 29.1088 ms
+2026-07-04 08:52:54.887 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 29.454ms
+2026-07-04 08:52:55.724 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 08:52:55.725 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:52:55.728 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-04 08:52:55.733 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-04 08:52:55.735 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:52:55.747 +03:00 [INF] Executed ViewResult - view Index executed in 13.0672ms.
+2026-07-04 08:52:55.747 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 19.6837ms
+2026-07-04 08:52:55.747 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:52:55.747 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 23.0213 ms
+2026-07-04 08:52:55.748 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 23.4922ms
+2026-07-04 08:52:57.265 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-04 08:52:57.266 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 08:52:57.268 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-04 08:52:57.297 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-04 08:52:57.299 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:52:57.310 +03:00 [INF] Executed ViewResult - view Index executed in 12.2516ms.
+2026-07-04 08:52:57.310 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 42.2746ms
+2026-07-04 08:52:57.310 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 08:52:57.310 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 45.6757 ms
+2026-07-04 08:52:57.311 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 46.0118ms
+2026-07-04 08:52:58.315 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 08:52:58.316 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:52:58.316 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:52:58.316 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:52:58.317 +03:00 [INF] Executed ViewResult - view Index executed in 0.9541ms.
+2026-07-04 08:52:58.317 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 1.1219ms
+2026-07-04 08:52:58.317 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:52:58.317 +03:00 [INF] HTTP GET /Home/Index responded 200 in 1.8758 ms
+2026-07-04 08:52:58.317 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 2.2905ms
+2026-07-04 08:53:01.462 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 08:53:01.464 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:53:01.464 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:53:01.465 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:53:01.465 +03:00 [INF] Executed ViewResult - view Index executed in 0.6714ms.
+2026-07-04 08:53:01.465 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 0.84ms
+2026-07-04 08:53:01.465 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:53:01.465 +03:00 [INF] HTTP GET /Home/Index responded 200 in 1.6550 ms
+2026-07-04 08:53:01.465 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 3.4027ms
+2026-07-04 08:53:09.874 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 08:53:09.876 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 08:53:09.876 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-04 08:53:09.876 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-04 08:53:09.877 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:53:09.878 +03:00 [INF] Executed ViewResult - view Index executed in 1.69ms.
+2026-07-04 08:53:09.878 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 2.1311ms
+2026-07-04 08:53:09.878 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 08:53:09.878 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 2.9564 ms
+2026-07-04 08:53:09.878 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 4.8342ms
+2026-07-04 08:53:10.705 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 08:53:10.707 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 08:53:10.707 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-04 08:53:10.708 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-04 08:53:10.708 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:53:10.709 +03:00 [INF] Executed ViewResult - view Index executed in 0.9695ms.
+2026-07-04 08:53:10.709 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 1.3261ms
+2026-07-04 08:53:10.709 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 08:53:10.709 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 2.0447 ms
+2026-07-04 08:53:10.709 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 3.9348ms
+2026-07-04 08:53:11.375 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 08:53:11.378 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:53:11.378 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-04 08:53:11.378 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-04 08:53:11.378 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:53:11.379 +03:00 [INF] Executed ViewResult - view Index executed in 1.3033ms.
+2026-07-04 08:53:11.380 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 1.6483ms
+2026-07-04 08:53:11.380 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:53:11.380 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 2.3233 ms
+2026-07-04 08:53:11.380 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 4.3502ms
+2026-07-04 08:53:12.273 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 08:53:12.274 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 08:53:12.274 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-04 08:53:12.274 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-04 08:53:12.274 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:53:12.276 +03:00 [INF] Executed ViewResult - view Index executed in 1.4612ms.
+2026-07-04 08:53:12.276 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 1.8079ms
+2026-07-04 08:53:12.276 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 08:53:12.276 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 2.5932 ms
+2026-07-04 08:53:12.276 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 2.8582ms
+2026-07-04 08:53:13.547 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 08:53:13.549 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:53:13.549 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-04 08:53:13.549 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-04 08:53:13.549 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:53:13.551 +03:00 [INF] Executed ViewResult - view Index executed in 2.0706ms.
+2026-07-04 08:53:13.551 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 2.5759ms
+2026-07-04 08:53:13.551 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:53:13.551 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 3.5786 ms
+2026-07-04 08:53:13.552 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 4.1031ms
+2026-07-04 08:53:14.363 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 08:53:14.363 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 08:53:14.364 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-04 08:53:14.364 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-04 08:53:14.364 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:53:14.366 +03:00 [INF] Executed ViewResult - view Index executed in 1.6048ms.
+2026-07-04 08:53:14.366 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 2.1261ms
+2026-07-04 08:53:14.366 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 08:53:14.366 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 2.9096 ms
+2026-07-04 08:53:14.366 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 3.1827ms
+2026-07-04 08:53:15.147 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 08:53:15.148 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:53:15.148 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-04 08:53:15.148 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-04 08:53:15.148 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:53:15.149 +03:00 [INF] Executed ViewResult - view Index executed in 0.5338ms.
+2026-07-04 08:53:15.149 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 0.9555ms
+2026-07-04 08:53:15.149 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:53:15.149 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 1.7942 ms
+2026-07-04 08:53:15.149 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 2.1765ms
+2026-07-04 08:53:15.808 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-04 08:53:15.811 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 08:53:15.811 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-04 08:53:15.819 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-04 08:53:15.819 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:53:15.821 +03:00 [INF] Executed ViewResult - view Index executed in 2.1437ms.
+2026-07-04 08:53:15.821 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 10.6125ms
+2026-07-04 08:53:15.821 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 08:53:15.822 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 11.7223 ms
+2026-07-04 08:53:15.822 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 13.369ms
+2026-07-04 08:53:22.864 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 08:53:22.866 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:53:22.866 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 08:53:22.867 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:53:22.867 +03:00 [INF] Executed ViewResult - view Index executed in 0.8301ms.
+2026-07-04 08:53:22.868 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 1.0554ms
+2026-07-04 08:53:22.868 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 08:53:22.868 +03:00 [INF] HTTP GET /Home/Index responded 200 in 2.1034 ms
+2026-07-04 08:53:22.868 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 3.5389ms
+2026-07-04 08:53:56.470 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 08:53:56.471 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 08:53:56.471 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-04 08:53:56.471 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-04 08:53:56.471 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:53:56.472 +03:00 [INF] Executed ViewResult - view Index executed in 0.4756ms.
+2026-07-04 08:53:56.472 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 0.9131ms
+2026-07-04 08:53:56.472 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 08:53:56.472 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 1.4783 ms
+2026-07-04 08:53:56.472 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 2.446ms
+2026-07-04 08:54:07.223 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 08:54:07.224 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 08:54:07.224 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-04 08:54:07.224 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-04 08:54:07.224 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:54:07.225 +03:00 [INF] Executed ViewResult - view Index executed in 0.7423ms.
+2026-07-04 08:54:07.225 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 1.058ms
+2026-07-04 08:54:07.225 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 08:54:07.225 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 1.7949 ms
+2026-07-04 08:54:07.225 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 2.1755ms
+2026-07-04 08:54:18.989 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 08:54:18.990 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:54:18.990 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-04 08:54:18.990 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-04 08:54:18.990 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:54:18.991 +03:00 [INF] Executed ViewResult - view Index executed in 0.6043ms.
+2026-07-04 08:54:18.991 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 0.9278ms
+2026-07-04 08:54:18.991 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 08:54:18.991 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 1.6148 ms
+2026-07-04 08:54:18.991 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 2.5387ms
+2026-07-04 08:54:30.924 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-04 08:54:30.925 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 08:54:30.925 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-04 08:54:30.934 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-04 08:54:30.934 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 08:54:30.936 +03:00 [INF] Executed ViewResult - view Index executed in 1.8846ms.
+2026-07-04 08:54:30.936 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 10.2336ms
+2026-07-04 08:54:30.936 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 08:54:30.936 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 11.2308 ms
+2026-07-04 08:54:30.936 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 12.3539ms
+2026-07-04 09:11:24.123 +03:00 [INF] Application is shutting down...
+2026-07-04 09:11:30.077 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-04 09:11:30.100 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-04 09:11:30.100 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-04 09:11:30.101 +03:00 [INF] Hosting environment: Development
+2026-07-04 09:11:30.101 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/dapper_project/HastaneRandevu
+2026-07-04 09:11:35.608 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-04 09:11:35.610 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-04 09:11:35.628 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:11:35.636 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 09:11:35.704 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:11:35.763 +03:00 [INF] Executed ViewResult - view Index executed in 60.1257ms.
+2026-07-04 09:11:35.764 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 127.8467ms
+2026-07-04 09:11:35.764 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:11:35.765 +03:00 [INF] HTTP GET / responded 200 in 145.1768 ms
+2026-07-04 09:11:35.771 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 164.0222ms
+2026-07-04 09:11:40.412 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 09:11:40.419 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:11:40.419 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 09:11:40.429 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:11:40.433 +03:00 [INF] Executed ViewResult - view Index executed in 3.3138ms.
+2026-07-04 09:11:40.433 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 13.6747ms
+2026-07-04 09:11:40.433 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:11:40.433 +03:00 [INF] HTTP GET /Home/Index responded 200 in 18.4517 ms
+2026-07-04 09:11:40.433 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 21.3588ms
+2026-07-04 09:11:44.087 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Logout - null null
+2026-07-04 09:11:44.092 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Logout (HastaneRandevu)'
+2026-07-04 09:11:44.101 +03:00 [INF] Route matched with {action = "Logout", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 09:11:44.106 +03:00 [INF] AuthenticationScheme: Cookies signed out.
+2026-07-04 09:11:44.112 +03:00 [INF] Executing RedirectResult, redirecting to /Admin/Login.
+2026-07-04 09:11:44.113 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Logout (HastaneRandevu) in 11.3698ms
+2026-07-04 09:11:44.113 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Logout (HastaneRandevu)'
+2026-07-04 09:11:44.113 +03:00 [INF] HTTP GET /Admin/Logout responded 302 in 23.6252 ms
+2026-07-04 09:11:44.113 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Logout - 302 0 null 25.8838ms
+2026-07-04 09:11:44.117 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login - null null
+2026-07-04 09:11:44.118 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 09:11:44.119 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 09:11:44.120 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 09:11:44.132 +03:00 [INF] Executed ViewResult - view Login executed in 12.3873ms.
+2026-07-04 09:11:44.132 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 12.6608ms
+2026-07-04 09:11:44.132 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 09:11:44.132 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 13.7762 ms
+2026-07-04 09:11:44.132 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login - 200 null text/html; charset=utf-8 14.6572ms
+2026-07-04 09:11:48.112 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-04 09:11:48.115 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 09:11:48.117 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 09:11:48.118 +03:00 [INF] HTTP GET / responded 302 in 5.3443 ms
+2026-07-04 09:11:48.118 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 302 0 null 5.7571ms
+2026-07-04 09:11:48.119 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2F - null null
+2026-07-04 09:11:48.120 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 09:11:48.120 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 09:11:48.120 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 09:11:48.120 +03:00 [INF] Executed ViewResult - view Login executed in 0.5956ms.
+2026-07-04 09:11:48.121 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.73ms
+2026-07-04 09:11:48.121 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 09:11:48.121 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 1.1436 ms
+2026-07-04 09:11:48.121 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 1.374ms
+2026-07-04 09:11:58.934 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-04 09:11:58.934 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-04 09:11:58.935 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-04 09:11:58.935 +03:00 [INF] HTTP GET / responded 302 in 0.4989 ms
+2026-07-04 09:11:58.935 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 302 0 null 0.8172ms
+2026-07-04 09:11:58.937 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2F - null null
+2026-07-04 09:11:58.937 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 09:11:58.937 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 09:11:58.937 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 09:11:58.938 +03:00 [INF] Executed ViewResult - view Login executed in 0.4682ms.
+2026-07-04 09:11:58.938 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 0.6066ms
+2026-07-04 09:11:58.938 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 09:11:58.938 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 0.9077 ms
+2026-07-04 09:11:58.938 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 1.1092ms
+2026-07-04 09:12:05.075 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 35
+2026-07-04 09:12:05.076 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 09:12:05.092 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 09:12:05.145 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-04 09:12:05.146 +03:00 [INF] Executed ViewResult - view Login executed in 1.6606ms.
+2026-07-04 09:12:05.146 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 54.2062ms
+2026-07-04 09:12:05.146 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 09:12:05.146 +03:00 [INF] HTTP POST /Admin/Login responded 200 in 70.7770 ms
+2026-07-04 09:12:05.146 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 200 null text/html; charset=utf-8 71.5851ms
+2026-07-04 09:12:08.763 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 36
+2026-07-04 09:12:08.763 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 09:12:08.763 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-04 09:12:08.774 +03:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-07-04 09:12:08.776 +03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-07-04 09:12:08.776 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 12.8253ms
+2026-07-04 09:12:08.776 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-04 09:12:08.776 +03:00 [INF] HTTP POST /Admin/Login responded 302 in 13.4265 ms
+2026-07-04 09:12:08.777 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 302 0 null 13.9301ms
+2026-07-04 09:12:08.786 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-04 09:12:08.787 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:12:08.787 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 09:12:08.797 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:12:08.798 +03:00 [INF] Executed ViewResult - view Index executed in 1.621ms.
+2026-07-04 09:12:08.799 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 11.7733ms
+2026-07-04 09:12:08.799 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:12:08.799 +03:00 [INF] HTTP GET / responded 200 in 12.7407 ms
+2026-07-04 09:12:08.799 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 13.0822ms
+2026-07-04 09:12:11.121 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 09:12:11.123 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:12:11.123 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 09:12:11.136 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:12:11.137 +03:00 [INF] Executed ViewResult - view Index executed in 1.193ms.
+2026-07-04 09:12:11.137 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 13.7139ms
+2026-07-04 09:12:11.137 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:12:11.137 +03:00 [INF] HTTP GET /Home/Index responded 200 in 14.5993 ms
+2026-07-04 09:12:11.137 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 15.8253ms
+2026-07-04 09:12:12.002 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 09:12:12.003 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 09:12:12.006 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-04 09:12:12.015 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-04 09:12:12.019 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:12:12.034 +03:00 [INF] Executed ViewResult - view Index executed in 15.2826ms.
+2026-07-04 09:12:12.034 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 27.8572ms
+2026-07-04 09:12:12.034 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 09:12:12.034 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 31.3955 ms
+2026-07-04 09:12:12.034 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 31.7789ms
+2026-07-04 09:12:18.444 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 09:12:18.445 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 09:12:18.447 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-04 09:12:18.455 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-04 09:12:18.460 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:12:18.473 +03:00 [INF] Executed ViewResult - view Index executed in 14.2705ms.
+2026-07-04 09:12:18.473 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 25.8645ms
+2026-07-04 09:12:18.473 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 09:12:18.473 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 29.2178 ms
+2026-07-04 09:12:18.473 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 29.6251ms
+2026-07-04 09:12:20.759 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 09:12:20.760 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 09:12:20.762 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-04 09:12:20.770 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-04 09:12:20.774 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:12:20.789 +03:00 [INF] Executed ViewResult - view Index executed in 15.1333ms.
+2026-07-04 09:12:20.789 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 26.2791ms
+2026-07-04 09:12:20.789 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 09:12:20.789 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 29.7730 ms
+2026-07-04 09:12:20.789 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 30.1554ms
+2026-07-04 09:12:23.392 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-04 09:12:23.393 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 09:12:23.395 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-04 09:12:23.418 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-04 09:12:23.420 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:12:23.432 +03:00 [INF] Executed ViewResult - view Index executed in 12.8662ms.
+2026-07-04 09:12:23.432 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 37.7583ms
+2026-07-04 09:12:23.433 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 09:12:23.433 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 40.4110 ms
+2026-07-04 09:12:23.433 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 40.8843ms
+2026-07-04 09:12:26.109 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 09:12:26.110 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:12:26.110 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 09:12:26.122 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:12:26.123 +03:00 [INF] Executed ViewResult - view Index executed in 1.2577ms.
+2026-07-04 09:12:26.123 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 12.9681ms
+2026-07-04 09:12:26.123 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:12:26.123 +03:00 [INF] HTTP GET /Home/Index responded 200 in 13.9633 ms
+2026-07-04 09:12:26.123 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 14.3045ms
+2026-07-04 09:12:43.970 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 09:12:43.971 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:12:43.971 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 09:12:43.982 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:12:43.983 +03:00 [INF] Executed ViewResult - view Index executed in 1.4744ms.
+2026-07-04 09:12:43.983 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 11.9791ms
+2026-07-04 09:12:43.983 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:12:43.983 +03:00 [INF] HTTP GET /Home/Index responded 200 in 13.1162 ms
+2026-07-04 09:12:43.983 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 13.5871ms
+2026-07-04 09:12:44.626 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 09:12:44.628 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 09:12:44.628 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-04 09:12:44.628 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-04 09:12:44.628 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:12:44.630 +03:00 [INF] Executed ViewResult - view Index executed in 1.2602ms.
+2026-07-04 09:12:44.630 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 1.6966ms
+2026-07-04 09:12:44.630 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 09:12:44.630 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 2.6803 ms
+2026-07-04 09:12:44.630 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 4.3628ms
+2026-07-04 09:12:45.201 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 09:12:45.203 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 09:12:45.203 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-04 09:12:45.203 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-04 09:12:45.203 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:12:45.204 +03:00 [INF] Executed ViewResult - view Index executed in 0.9122ms.
+2026-07-04 09:12:45.204 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 1.2324ms
+2026-07-04 09:12:45.204 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 09:12:45.204 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 1.8518 ms
+2026-07-04 09:12:45.204 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 2.8784ms
+2026-07-04 09:12:45.837 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 09:12:45.839 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 09:12:45.839 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-04 09:12:45.840 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-04 09:12:45.840 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:12:45.841 +03:00 [INF] Executed ViewResult - view Index executed in 1.3347ms.
+2026-07-04 09:12:45.841 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 1.764ms
+2026-07-04 09:12:45.841 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 09:12:45.841 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 2.6160 ms
+2026-07-04 09:12:45.841 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 4.235ms
+2026-07-04 09:12:46.750 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-04 09:12:46.752 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 09:12:46.752 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-04 09:12:46.757 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-04 09:12:46.757 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:12:46.758 +03:00 [INF] Executed ViewResult - view Index executed in 1.2136ms.
+2026-07-04 09:12:46.759 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 6.6945ms
+2026-07-04 09:12:46.759 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 09:12:46.759 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 7.4577 ms
+2026-07-04 09:12:46.759 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 8.8136ms
+2026-07-04 09:13:12.326 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 09:13:12.327 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 09:13:12.327 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-04 09:13:12.328 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-04 09:13:12.328 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:13:12.329 +03:00 [INF] Executed ViewResult - view Index executed in 1.5402ms.
+2026-07-04 09:13:12.329 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 1.9874ms
+2026-07-04 09:13:12.329 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 09:13:12.330 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 2.8676 ms
+2026-07-04 09:13:12.330 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 3.2058ms
+2026-07-04 09:13:12.934 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-04 09:13:12.935 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 09:13:12.935 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-04 09:13:12.941 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-04 09:13:12.941 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:13:12.943 +03:00 [INF] Executed ViewResult - view Index executed in 1.678ms.
+2026-07-04 09:13:12.943 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 8.2933ms
+2026-07-04 09:13:12.943 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 09:13:12.943 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 8.8790 ms
+2026-07-04 09:13:12.943 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 9.1703ms
+2026-07-04 09:13:15.072 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/DownloadPdf - null null
+2026-07-04 09:13:15.073 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.DownloadPdf (HastaneRandevu)'
+2026-07-04 09:13:15.075 +03:00 [INF] Route matched with {action = "DownloadPdf", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DownloadPdf() on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-04 09:13:15.239 +03:00 [INF] Executing FileContentResult, sending file with download name 'Randevular.pdf' ...
+2026-07-04 09:13:15.240 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.DownloadPdf (HastaneRandevu) in 165.4952ms
+2026-07-04 09:13:15.240 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.DownloadPdf (HastaneRandevu)'
+2026-07-04 09:13:15.240 +03:00 [INF] HTTP GET /Randevu/DownloadPdf responded 200 in 168.5956 ms
+2026-07-04 09:13:15.241 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/DownloadPdf - 200 22408 application/pdf 168.8979ms
+2026-07-04 09:13:36.175 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 09:13:36.177 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 09:13:36.177 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-04 09:13:36.177 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-04 09:13:36.178 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:13:36.179 +03:00 [INF] Executed ViewResult - view Index executed in 1.4358ms.
+2026-07-04 09:13:36.179 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 1.8645ms
+2026-07-04 09:13:36.179 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 09:13:36.179 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 3.1330 ms
+2026-07-04 09:13:36.179 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 3.9837ms
+2026-07-04 09:13:39.058 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 09:13:39.059 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 09:13:39.059 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-04 09:13:39.060 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-04 09:13:39.060 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:13:39.061 +03:00 [INF] Executed ViewResult - view Index executed in 1.6296ms.
+2026-07-04 09:13:39.062 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 2.0252ms
+2026-07-04 09:13:39.062 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 09:13:39.062 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 3.1402 ms
+2026-07-04 09:13:39.062 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 3.4991ms
+2026-07-04 09:13:39.933 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 09:13:39.934 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:13:39.934 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 09:13:39.941 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:13:39.942 +03:00 [INF] Executed ViewResult - view Index executed in 0.4796ms.
+2026-07-04 09:13:39.942 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 8.082ms
+2026-07-04 09:13:39.942 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:13:39.942 +03:00 [INF] HTTP GET /Home/Index responded 200 in 8.6700 ms
+2026-07-04 09:13:39.942 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 8.8574ms
+2026-07-04 09:13:42.058 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-04 09:13:42.059 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 09:13:42.059 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-04 09:13:42.059 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-04 09:13:42.059 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:13:42.060 +03:00 [INF] Executed ViewResult - view Index executed in 0.9907ms.
+2026-07-04 09:13:42.060 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 1.3971ms
+2026-07-04 09:13:42.060 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-04 09:13:42.060 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 2.3828 ms
+2026-07-04 09:13:42.061 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 2.6638ms
+2026-07-04 09:13:42.652 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-04 09:13:42.653 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 09:13:42.653 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-04 09:13:42.653 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-04 09:13:42.654 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:13:42.654 +03:00 [INF] Executed ViewResult - view Index executed in 0.8414ms.
+2026-07-04 09:13:42.654 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 1.265ms
+2026-07-04 09:13:42.654 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-04 09:13:42.655 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 2.0483 ms
+2026-07-04 09:13:42.655 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 2.3544ms
+2026-07-04 09:13:43.242 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-04 09:13:43.243 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 09:13:43.244 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-04 09:13:43.244 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-04 09:13:43.244 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:13:43.245 +03:00 [INF] Executed ViewResult - view Index executed in 0.8971ms.
+2026-07-04 09:13:43.245 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 1.2787ms
+2026-07-04 09:13:43.245 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-04 09:13:43.245 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 2.3639 ms
+2026-07-04 09:13:43.245 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 2.6909ms
+2026-07-04 09:13:43.758 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-04 09:13:43.759 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 09:13:43.759 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-04 09:13:43.767 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-04 09:13:43.767 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:13:43.768 +03:00 [INF] Executed ViewResult - view Index executed in 1.2133ms.
+2026-07-04 09:13:43.769 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 9.5206ms
+2026-07-04 09:13:43.769 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-04 09:13:43.769 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 10.5528 ms
+2026-07-04 09:13:43.769 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 11.1414ms
+2026-07-04 09:13:45.535 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-04 09:13:45.536 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:13:45.536 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-04 09:13:45.543 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-04 09:13:45.544 +03:00 [INF] Executed ViewResult - view Index executed in 0.645ms.
+2026-07-04 09:13:45.544 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 8.1042ms
+2026-07-04 09:13:45.544 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-04 09:13:45.544 +03:00 [INF] HTTP GET /Home/Index responded 200 in 8.7221 ms
+2026-07-04 09:13:45.544 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 9.0973ms

@@ -1,0 +1,50 @@
+@model MvcProject.Models.Vehicle
+
+@{
+    ViewData["Title"] = "Araç Düzenle";
+}
+
+<h1>Araç Düzenle</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            
+            <div class="form-group mb-3">
+                <label asp-for="LicensePlate" class="control-label"></label>
+                <input asp-for="LicensePlate" class="form-control" />
+                <span asp-validation-for="LicensePlate" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Brand" class="control-label"></label>
+                <input asp-for="Brand" class="form-control" />
+                <span asp-validation-for="Brand" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Capacity" class="control-label"></label>
+                <input asp-for="Capacity" class="form-control" type="number" />
+                <span asp-validation-for="Capacity" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="VehicleType" class="control-label"></label>
+                <input asp-for="VehicleType" class="form-control" />
+                <span asp-validation-for="VehicleType" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Güncelle" class="btn btn-warning" />
+                <a asp-action="Index" class="btn btn-secondary">Listeye Dön</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

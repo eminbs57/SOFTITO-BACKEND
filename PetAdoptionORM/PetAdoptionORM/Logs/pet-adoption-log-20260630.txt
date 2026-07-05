@@ -1,0 +1,359 @@
+2026-06-30 22:31:36.426 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-06-30 22:31:36.471 +03:00 [INF] Now listening on: http://localhost:5056
+2026-06-30 22:31:36.472 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-30 22:31:36.472 +03:00 [INF] Hosting environment: Development
+2026-06-30 22:31:36.472 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/PetAdoptionORM/PetAdoptionORM
+2026-06-30 22:31:37.472 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/User/Home/Index - null null
+2026-06-30 22:31:37.475 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-06-30 22:31:37.554 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.User.Controllers.HomeController.Index (PetAdoptionORM)'
+2026-06-30 22:31:37.560 +03:00 [INF] Route matched with {area = "User", action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller PetAdoptionORM.Areas.User.Controllers.HomeController (PetAdoptionORM).
+2026-06-30 22:31:37.761 +03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Donation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-30 22:31:38.059 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[BreedId], [p].[HealthStatus], [p].[Name], [p].[Photo], [b].[Id], [b].[BreedName], [b].[SpeciesId], [s].[Id], [s].[SpeciesName]
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+INNER JOIN [Species] AS [s] ON [b].[SpeciesId] = [s].[Id]
+ORDER BY [p].[Id] DESC
+2026-06-30 22:31:38.097 +03:00 [INF] Kullanıcı anasayfasında 2 adet sahiplendirilmeyi bekleyen hayvan listelendi.
+2026-06-30 22:31:38.101 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:31:38.116 +03:00 [INF] Executed ViewResult - view Index executed in 15.5287ms.
+2026-06-30 22:31:38.117 +03:00 [INF] Executed action PetAdoptionORM.Areas.User.Controllers.HomeController.Index (PetAdoptionORM) in 556.4451ms
+2026-06-30 22:31:38.117 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.User.Controllers.HomeController.Index (PetAdoptionORM)'
+2026-06-30 22:31:38.118 +03:00 [INF] HTTP GET /User/Home/Index responded 200 in 643.6675 ms
+2026-06-30 22:31:38.121 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/User/Home/Index - 200 null text/html; charset=utf-8 650.4413ms
+2026-06-30 22:31:38.140 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp - null null
+2026-06-30 22:31:38.144 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg - null null
+2026-06-30 22:31:38.146 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:38.147 +03:00 [INF] The file img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp was not modified
+2026-06-30 22:31:38.148 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:38.148 +03:00 [INF] HTTP GET /img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp responded 304 in 7.5995 ms
+2026-06-30 22:31:38.148 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp - 304 null image/webp 8.023ms
+2026-06-30 22:31:38.154 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:38.154 +03:00 [INF] The file img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg was not modified
+2026-06-30 22:31:38.155 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:38.155 +03:00 [INF] HTTP GET /img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg responded 304 in 10.4253 ms
+2026-06-30 22:31:38.155 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg - 304 null image/jpeg 10.5499ms
+2026-06-30 22:31:38.159 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/favicon.ico - null null
+2026-06-30 22:31:38.160 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:38.163 +03:00 [INF] Sending file. Request path: 'favicon.ico'. Physical path: '/Users/muhammeteminbas/Desktop/PetAdoptionORM/PetAdoptionORM/obj/Debug/net10.0/compressed/lx9k3nm0e9-{0}-61n19gt1b8-61n19gt1b8.gz'
+2026-06-30 22:31:38.163 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:38.163 +03:00 [INF] HTTP GET /favicon.ico responded 200 in 3.9662 ms
+2026-06-30 22:31:38.163 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/favicon.ico - 200 5463 image/x-icon 4.1967ms
+2026-06-30 22:31:41.458 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/Admin/Home/Index - null null
+2026-06-30 22:31:41.465 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.Admin.Controllers.HomeController.Index (PetAdoptionORM)'
+2026-06-30 22:31:41.468 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PetAdoptionORM.Areas.Admin.Controllers.HomeController (PetAdoptionORM).
+2026-06-30 22:31:41.510 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Species] AS [s]
+2026-06-30 22:31:41.518 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Breeds] AS [b]
+2026-06-30 22:31:41.523 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Pets] AS [p]
+2026-06-30 22:31:41.530 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+2026-06-30 22:31:41.550 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SpeciesName], COUNT(*) AS [Count]
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+INNER JOIN [Species] AS [s] ON [b].[SpeciesId] = [s].[Id]
+GROUP BY [s].[SpeciesName]
+2026-06-30 22:31:41.575 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[Name] + N' (Hayvan)' AS [Title], [b].[BreedName] + N' ırkı sisteme eklendi.' AS [Description], N'bi-emoji-smile' AS [IconClass], N'text-primary' AS [IconColorClass], N'Yeni' AS [TimeAgo]
+FROM (
+    SELECT TOP(@p) [p].[Id], [p].[BreedId], [p].[Name]
+    FROM [Pets] AS [p]
+    ORDER BY [p].[Id] DESC
+) AS [p0]
+INNER JOIN [Breeds] AS [b] ON [p0].[BreedId] = [b].[Id]
+ORDER BY [p0].[Id] DESC
+2026-06-30 22:31:41.576 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:31:41.593 +03:00 [INF] Executed ViewResult - view Index executed in 16.8811ms.
+2026-06-30 22:31:41.593 +03:00 [INF] Executed action PetAdoptionORM.Areas.Admin.Controllers.HomeController.Index (PetAdoptionORM) in 124.1554ms
+2026-06-30 22:31:41.593 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.Admin.Controllers.HomeController.Index (PetAdoptionORM)'
+2026-06-30 22:31:41.593 +03:00 [INF] HTTP GET /Admin/Home/Index responded 200 in 134.2683 ms
+2026-06-30 22:31:41.593 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/Admin/Home/Index - 200 null text/html; charset=utf-8 134.901ms
+2026-06-30 22:31:44.275 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/Admin/Species/Index - null null
+2026-06-30 22:31:44.282 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.Admin.Controllers.SpeciesController.Index (PetAdoptionORM)'
+2026-06-30 22:31:44.284 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Species"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PetAdoptionORM.Areas.Admin.Controllers.SpeciesController (PetAdoptionORM).
+2026-06-30 22:31:44.340 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[SpeciesName]
+FROM [Species] AS [s]
+2026-06-30 22:31:44.340 +03:00 [INF] Toplam 2 adet TÜR veritabanından listelendi.
+2026-06-30 22:31:44.341 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:31:44.344 +03:00 [INF] Executed ViewResult - view Index executed in 3.7282ms.
+2026-06-30 22:31:44.344 +03:00 [INF] Executed action PetAdoptionORM.Areas.Admin.Controllers.SpeciesController.Index (PetAdoptionORM) in 60.5057ms
+2026-06-30 22:31:44.344 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.Admin.Controllers.SpeciesController.Index (PetAdoptionORM)'
+2026-06-30 22:31:44.344 +03:00 [INF] HTTP GET /Admin/Species/Index responded 200 in 68.8002 ms
+2026-06-30 22:31:44.345 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/Admin/Species/Index - 200 null text/html; charset=utf-8 69.9903ms
+2026-06-30 22:31:44.888 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/Admin/Breed/Index - null null
+2026-06-30 22:31:44.892 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.Admin.Controllers.BreedController.Index (PetAdoptionORM)'
+2026-06-30 22:31:44.893 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Breed"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PetAdoptionORM.Areas.Admin.Controllers.BreedController (PetAdoptionORM).
+2026-06-30 22:31:44.915 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BreedName], [b].[SpeciesId], [s].[Id], [s].[SpeciesName]
+FROM [Breeds] AS [b]
+INNER JOIN [Species] AS [s] ON [b].[SpeciesId] = [s].[Id]
+2026-06-30 22:31:44.917 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:31:44.923 +03:00 [INF] Executed ViewResult - view Index executed in 7.0838ms.
+2026-06-30 22:31:44.923 +03:00 [INF] Executed action PetAdoptionORM.Areas.Admin.Controllers.BreedController.Index (PetAdoptionORM) in 30.0026ms
+2026-06-30 22:31:44.923 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.Admin.Controllers.BreedController.Index (PetAdoptionORM)'
+2026-06-30 22:31:44.923 +03:00 [INF] HTTP GET /Admin/Breed/Index responded 200 in 35.0698 ms
+2026-06-30 22:31:44.924 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/Admin/Breed/Index - 200 null text/html; charset=utf-8 35.455ms
+2026-06-30 22:31:45.486 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/Admin/Pet/Index - null null
+2026-06-30 22:31:45.488 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.Admin.Controllers.PetController.Index (PetAdoptionORM)'
+2026-06-30 22:31:45.489 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Pet"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PetAdoptionORM.Areas.Admin.Controllers.PetController (PetAdoptionORM).
+2026-06-30 22:31:45.502 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[BreedId], [p].[HealthStatus], [p].[Name], [p].[Photo], [b].[Id], [b].[BreedName], [b].[SpeciesId]
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+2026-06-30 22:31:45.503 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:31:45.510 +03:00 [INF] Executed ViewResult - view Index executed in 7.3408ms.
+2026-06-30 22:31:45.510 +03:00 [INF] Executed action PetAdoptionORM.Areas.Admin.Controllers.PetController.Index (PetAdoptionORM) in 21.4097ms
+2026-06-30 22:31:45.510 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.Admin.Controllers.PetController.Index (PetAdoptionORM)'
+2026-06-30 22:31:45.510 +03:00 [INF] HTTP GET /Admin/Pet/Index responded 200 in 24.1906 ms
+2026-06-30 22:31:45.510 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/Admin/Pet/Index - 200 null text/html; charset=utf-8 24.8083ms
+2026-06-30 22:31:45.532 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg - null null
+2026-06-30 22:31:45.532 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp - null null
+2026-06-30 22:31:45.532 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:45.532 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:45.533 +03:00 [INF] The file img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg was not modified
+2026-06-30 22:31:45.533 +03:00 [INF] The file img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp was not modified
+2026-06-30 22:31:45.533 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:45.533 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:45.533 +03:00 [INF] HTTP GET /img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg responded 304 in 0.9462 ms
+2026-06-30 22:31:45.533 +03:00 [INF] HTTP GET /img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp responded 304 in 0.8946 ms
+2026-06-30 22:31:45.533 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp - 304 null image/webp 1.1398ms
+2026-06-30 22:31:45.533 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg - 304 null image/jpeg 1.156ms
+2026-06-30 22:31:47.042 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/Admin/Report/Index - null null
+2026-06-30 22:31:47.044 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.Admin.Controllers.ReportController.Index (PetAdoptionORM)'
+2026-06-30 22:31:47.046 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Report"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PetAdoptionORM.Areas.Admin.Controllers.ReportController (PetAdoptionORM).
+2026-06-30 22:31:47.063 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name] AS [PetName], [p].[Age], [p].[HealthStatus], [b].[BreedName], [s].[SpeciesName]
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+INNER JOIN [Species] AS [s] ON [b].[SpeciesId] = [s].[Id]
+2026-06-30 22:31:47.066 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:31:47.072 +03:00 [INF] Executed ViewResult - view Index executed in 7.4215ms.
+2026-06-30 22:31:47.072 +03:00 [INF] Executed action PetAdoptionORM.Areas.Admin.Controllers.ReportController.Index (PetAdoptionORM) in 26.3602ms
+2026-06-30 22:31:47.072 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.Admin.Controllers.ReportController.Index (PetAdoptionORM)'
+2026-06-30 22:31:47.073 +03:00 [INF] HTTP GET /Admin/Report/Index responded 200 in 30.6250 ms
+2026-06-30 22:31:47.073 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/Admin/Report/Index - 200 null text/html; charset=utf-8 30.9704ms
+2026-06-30 22:31:49.459 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/User/Home/Index - null null
+2026-06-30 22:31:49.461 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.User.Controllers.HomeController.Index (PetAdoptionORM)'
+2026-06-30 22:31:49.462 +03:00 [INF] Route matched with {area = "User", action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller PetAdoptionORM.Areas.User.Controllers.HomeController (PetAdoptionORM).
+2026-06-30 22:31:49.475 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[BreedId], [p].[HealthStatus], [p].[Name], [p].[Photo], [b].[Id], [b].[BreedName], [b].[SpeciesId], [s].[Id], [s].[SpeciesName]
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+INNER JOIN [Species] AS [s] ON [b].[SpeciesId] = [s].[Id]
+ORDER BY [p].[Id] DESC
+2026-06-30 22:31:49.476 +03:00 [INF] Kullanıcı anasayfasında 2 adet sahiplendirilmeyi bekleyen hayvan listelendi.
+2026-06-30 22:31:49.477 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:31:49.478 +03:00 [INF] Executed ViewResult - view Index executed in 1.6779ms.
+2026-06-30 22:31:49.478 +03:00 [INF] Executed action PetAdoptionORM.Areas.User.Controllers.HomeController.Index (PetAdoptionORM) in 16.7272ms
+2026-06-30 22:31:49.478 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.User.Controllers.HomeController.Index (PetAdoptionORM)'
+2026-06-30 22:31:49.479 +03:00 [INF] HTTP GET /User/Home/Index responded 200 in 19.6897 ms
+2026-06-30 22:31:49.479 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/User/Home/Index - 200 null text/html; charset=utf-8 19.9801ms
+2026-06-30 22:31:49.495 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp - null null
+2026-06-30 22:31:49.497 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:49.497 +03:00 [INF] The file img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp was not modified
+2026-06-30 22:31:49.497 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:49.497 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg - null null
+2026-06-30 22:31:49.497 +03:00 [INF] HTTP GET /img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp responded 304 in 1.5736 ms
+2026-06-30 22:31:49.497 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp - 304 null image/webp 1.8203ms
+2026-06-30 22:31:49.498 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:49.498 +03:00 [INF] The file img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg was not modified
+2026-06-30 22:31:49.498 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:31:49.498 +03:00 [INF] HTTP GET /img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg responded 304 in 1.1117 ms
+2026-06-30 22:31:49.498 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg - 304 null image/jpeg 1.238ms
+2026-06-30 22:32:10.593 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/Admin/Home/Index - null null
+2026-06-30 22:32:10.598 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.Admin.Controllers.HomeController.Index (PetAdoptionORM)'
+2026-06-30 22:32:10.598 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PetAdoptionORM.Areas.Admin.Controllers.HomeController (PetAdoptionORM).
+2026-06-30 22:32:10.604 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Species] AS [s]
+2026-06-30 22:32:10.608 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Breeds] AS [b]
+2026-06-30 22:32:10.611 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Pets] AS [p]
+2026-06-30 22:32:10.615 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+2026-06-30 22:32:10.621 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SpeciesName], COUNT(*) AS [Count]
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+INNER JOIN [Species] AS [s] ON [b].[SpeciesId] = [s].[Id]
+GROUP BY [s].[SpeciesName]
+2026-06-30 22:32:10.626 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[Name] + N' (Hayvan)' AS [Title], [b].[BreedName] + N' ırkı sisteme eklendi.' AS [Description], N'bi-emoji-smile' AS [IconClass], N'text-primary' AS [IconColorClass], N'Yeni' AS [TimeAgo]
+FROM (
+    SELECT TOP(@p) [p].[Id], [p].[BreedId], [p].[Name]
+    FROM [Pets] AS [p]
+    ORDER BY [p].[Id] DESC
+) AS [p0]
+INNER JOIN [Breeds] AS [b] ON [p0].[BreedId] = [b].[Id]
+ORDER BY [p0].[Id] DESC
+2026-06-30 22:32:10.627 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:32:10.628 +03:00 [INF] Executed ViewResult - view Index executed in 1.1879ms.
+2026-06-30 22:32:10.628 +03:00 [INF] Executed action PetAdoptionORM.Areas.Admin.Controllers.HomeController.Index (PetAdoptionORM) in 29.7442ms
+2026-06-30 22:32:10.628 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.Admin.Controllers.HomeController.Index (PetAdoptionORM)'
+2026-06-30 22:32:10.628 +03:00 [INF] HTTP GET /Admin/Home/Index responded 200 in 34.5534 ms
+2026-06-30 22:32:10.628 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/Admin/Home/Index - 200 null text/html; charset=utf-8 35.365ms
+2026-06-30 22:32:12.573 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/Admin/Report/Index - null null
+2026-06-30 22:32:12.575 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.Admin.Controllers.ReportController.Index (PetAdoptionORM)'
+2026-06-30 22:32:12.575 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Report"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PetAdoptionORM.Areas.Admin.Controllers.ReportController (PetAdoptionORM).
+2026-06-30 22:32:12.580 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name] AS [PetName], [p].[Age], [p].[HealthStatus], [b].[BreedName], [s].[SpeciesName]
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+INNER JOIN [Species] AS [s] ON [b].[SpeciesId] = [s].[Id]
+2026-06-30 22:32:12.581 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:32:12.583 +03:00 [INF] Executed ViewResult - view Index executed in 2.4726ms.
+2026-06-30 22:32:12.583 +03:00 [INF] Executed action PetAdoptionORM.Areas.Admin.Controllers.ReportController.Index (PetAdoptionORM) in 8.5388ms
+2026-06-30 22:32:12.583 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.Admin.Controllers.ReportController.Index (PetAdoptionORM)'
+2026-06-30 22:32:12.583 +03:00 [INF] HTTP GET /Admin/Report/Index responded 200 in 9.9730 ms
+2026-06-30 22:32:12.584 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/Admin/Report/Index - 200 null text/html; charset=utf-8 10.374ms
+2026-06-30 22:32:14.041 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/Admin/Pet/Index - null null
+2026-06-30 22:32:14.044 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.Admin.Controllers.PetController.Index (PetAdoptionORM)'
+2026-06-30 22:32:14.044 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Pet"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PetAdoptionORM.Areas.Admin.Controllers.PetController (PetAdoptionORM).
+2026-06-30 22:32:14.049 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[BreedId], [p].[HealthStatus], [p].[Name], [p].[Photo], [b].[Id], [b].[BreedName], [b].[SpeciesId]
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+2026-06-30 22:32:14.051 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:32:14.052 +03:00 [INF] Executed ViewResult - view Index executed in 1.3595ms.
+2026-06-30 22:32:14.052 +03:00 [INF] Executed action PetAdoptionORM.Areas.Admin.Controllers.PetController.Index (PetAdoptionORM) in 8.1185ms
+2026-06-30 22:32:14.052 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.Admin.Controllers.PetController.Index (PetAdoptionORM)'
+2026-06-30 22:32:14.052 +03:00 [INF] HTTP GET /Admin/Pet/Index responded 200 in 10.8420 ms
+2026-06-30 22:32:14.052 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/Admin/Pet/Index - 200 null text/html; charset=utf-8 11.1493ms
+2026-06-30 22:32:14.067 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg - null null
+2026-06-30 22:32:14.067 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp - null null
+2026-06-30 22:32:14.068 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:32:14.068 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:32:14.068 +03:00 [INF] The file img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp was not modified
+2026-06-30 22:32:14.068 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:32:14.068 +03:00 [INF] HTTP GET /img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp responded 304 in 0.8756 ms
+2026-06-30 22:32:14.068 +03:00 [INF] The file img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg was not modified
+2026-06-30 22:32:14.068 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:32:14.068 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp - 304 null image/webp 1.2052ms
+2026-06-30 22:32:14.068 +03:00 [INF] HTTP GET /img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg responded 304 in 1.0974 ms
+2026-06-30 22:32:14.068 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg - 304 null image/jpeg 1.407ms
+2026-06-30 22:32:14.885 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/Admin/Breed/Index - null null
+2026-06-30 22:32:14.887 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.Admin.Controllers.BreedController.Index (PetAdoptionORM)'
+2026-06-30 22:32:14.887 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Breed"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PetAdoptionORM.Areas.Admin.Controllers.BreedController (PetAdoptionORM).
+2026-06-30 22:32:14.892 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BreedName], [b].[SpeciesId], [s].[Id], [s].[SpeciesName]
+FROM [Breeds] AS [b]
+INNER JOIN [Species] AS [s] ON [b].[SpeciesId] = [s].[Id]
+2026-06-30 22:32:14.894 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:32:14.895 +03:00 [INF] Executed ViewResult - view Index executed in 1.5321ms.
+2026-06-30 22:32:14.895 +03:00 [INF] Executed action PetAdoptionORM.Areas.Admin.Controllers.BreedController.Index (PetAdoptionORM) in 7.726ms
+2026-06-30 22:32:14.895 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.Admin.Controllers.BreedController.Index (PetAdoptionORM)'
+2026-06-30 22:32:14.895 +03:00 [INF] HTTP GET /Admin/Breed/Index responded 200 in 10.3720 ms
+2026-06-30 22:32:14.896 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/Admin/Breed/Index - 200 null text/html; charset=utf-8 10.9667ms
+2026-06-30 22:32:16.039 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/Admin/Species/Index - null null
+2026-06-30 22:32:16.042 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.Admin.Controllers.SpeciesController.Index (PetAdoptionORM)'
+2026-06-30 22:32:16.042 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Species"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PetAdoptionORM.Areas.Admin.Controllers.SpeciesController (PetAdoptionORM).
+2026-06-30 22:32:16.048 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[SpeciesName]
+FROM [Species] AS [s]
+2026-06-30 22:32:16.049 +03:00 [INF] Toplam 2 adet TÜR veritabanından listelendi.
+2026-06-30 22:32:16.049 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:32:16.051 +03:00 [INF] Executed ViewResult - view Index executed in 2.0059ms.
+2026-06-30 22:32:16.052 +03:00 [INF] Executed action PetAdoptionORM.Areas.Admin.Controllers.SpeciesController.Index (PetAdoptionORM) in 9.2874ms
+2026-06-30 22:32:16.052 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.Admin.Controllers.SpeciesController.Index (PetAdoptionORM)'
+2026-06-30 22:32:16.052 +03:00 [INF] HTTP GET /Admin/Species/Index responded 200 in 12.4051 ms
+2026-06-30 22:32:16.052 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/Admin/Species/Index - 200 null text/html; charset=utf-8 12.8585ms
+2026-06-30 22:32:17.289 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/Admin/Home/Index - null null
+2026-06-30 22:32:17.290 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.Admin.Controllers.HomeController.Index (PetAdoptionORM)'
+2026-06-30 22:32:17.290 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller PetAdoptionORM.Areas.Admin.Controllers.HomeController (PetAdoptionORM).
+2026-06-30 22:32:17.295 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Species] AS [s]
+2026-06-30 22:32:17.297 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Breeds] AS [b]
+2026-06-30 22:32:17.300 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Pets] AS [p]
+2026-06-30 22:32:17.303 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+2026-06-30 22:32:17.307 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SpeciesName], COUNT(*) AS [Count]
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+INNER JOIN [Species] AS [s] ON [b].[SpeciesId] = [s].[Id]
+GROUP BY [s].[SpeciesName]
+2026-06-30 22:32:17.310 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p0].[Name] + N' (Hayvan)' AS [Title], [b].[BreedName] + N' ırkı sisteme eklendi.' AS [Description], N'bi-emoji-smile' AS [IconClass], N'text-primary' AS [IconColorClass], N'Yeni' AS [TimeAgo]
+FROM (
+    SELECT TOP(@p) [p].[Id], [p].[BreedId], [p].[Name]
+    FROM [Pets] AS [p]
+    ORDER BY [p].[Id] DESC
+) AS [p0]
+INNER JOIN [Breeds] AS [b] ON [p0].[BreedId] = [b].[Id]
+ORDER BY [p0].[Id] DESC
+2026-06-30 22:32:17.310 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:32:17.312 +03:00 [INF] Executed ViewResult - view Index executed in 1.3613ms.
+2026-06-30 22:32:17.312 +03:00 [INF] Executed action PetAdoptionORM.Areas.Admin.Controllers.HomeController.Index (PetAdoptionORM) in 21.7057ms
+2026-06-30 22:32:17.312 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.Admin.Controllers.HomeController.Index (PetAdoptionORM)'
+2026-06-30 22:32:17.312 +03:00 [INF] HTTP GET /Admin/Home/Index responded 200 in 23.0113 ms
+2026-06-30 22:32:17.312 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/Admin/Home/Index - 200 null text/html; charset=utf-8 23.2747ms
+2026-06-30 22:32:23.073 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/User/Home/Index - null null
+2026-06-30 22:32:23.074 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.User.Controllers.HomeController.Index (PetAdoptionORM)'
+2026-06-30 22:32:23.074 +03:00 [INF] Route matched with {area = "User", action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller PetAdoptionORM.Areas.User.Controllers.HomeController (PetAdoptionORM).
+2026-06-30 22:32:23.080 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Age], [p].[BreedId], [p].[HealthStatus], [p].[Name], [p].[Photo], [b].[Id], [b].[BreedName], [b].[SpeciesId], [s].[Id], [s].[SpeciesName]
+FROM [Pets] AS [p]
+INNER JOIN [Breeds] AS [b] ON [p].[BreedId] = [b].[Id]
+INNER JOIN [Species] AS [s] ON [b].[SpeciesId] = [s].[Id]
+ORDER BY [p].[Id] DESC
+2026-06-30 22:32:23.081 +03:00 [INF] Kullanıcı anasayfasında 2 adet sahiplendirilmeyi bekleyen hayvan listelendi.
+2026-06-30 22:32:23.081 +03:00 [INF] Executing ViewResult, running view Index.
+2026-06-30 22:32:23.082 +03:00 [INF] Executed ViewResult - view Index executed in 0.6206ms.
+2026-06-30 22:32:23.082 +03:00 [INF] Executed action PetAdoptionORM.Areas.User.Controllers.HomeController.Index (PetAdoptionORM) in 8.1483ms
+2026-06-30 22:32:23.082 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.User.Controllers.HomeController.Index (PetAdoptionORM)'
+2026-06-30 22:32:23.082 +03:00 [INF] HTTP GET /User/Home/Index responded 200 in 9.3670 ms
+2026-06-30 22:32:23.082 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/User/Home/Index - 200 null text/html; charset=utf-8 9.6822ms
+2026-06-30 22:32:23.096 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg - null null
+2026-06-30 22:32:23.096 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp - null null
+2026-06-30 22:32:23.097 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:32:23.097 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:32:23.097 +03:00 [INF] The file img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp was not modified
+2026-06-30 22:32:23.097 +03:00 [INF] The file img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg was not modified
+2026-06-30 22:32:23.097 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:32:23.097 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2026-06-30 22:32:23.097 +03:00 [INF] HTTP GET /img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp responded 304 in 0.7252 ms
+2026-06-30 22:32:23.097 +03:00 [INF] HTTP GET /img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg responded 304 in 0.9567 ms
+2026-06-30 22:32:23.097 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/img/pets/20b0ffdf-f4fe-49c3-97bb-493e6179d38d.webp - 304 null image/webp 1.1276ms
+2026-06-30 22:32:23.097 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/img/pets/07572156-282c-4b07-ad2e-63b4067b67d8.jpg - 304 null image/jpeg 1.1455ms
+2026-06-30 22:32:30.168 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/User/Account/Logout - null null
+2026-06-30 22:32:30.169 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.User.Controllers.AccountController.Logout (PetAdoptionORM)'
+2026-06-30 22:32:30.177 +03:00 [INF] Route matched with {area = "User", action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller PetAdoptionORM.Areas.User.Controllers.AccountController (PetAdoptionORM).
+2026-06-30 22:32:30.183 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2026-06-30 22:32:30.184 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2026-06-30 22:32:30.184 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2026-06-30 22:32:30.192 +03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-06-30 22:32:30.193 +03:00 [INF] Executed action PetAdoptionORM.Areas.User.Controllers.AccountController.Logout (PetAdoptionORM) in 15.4403ms
+2026-06-30 22:32:30.193 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.User.Controllers.AccountController.Logout (PetAdoptionORM)'
+2026-06-30 22:32:30.193 +03:00 [INF] HTTP GET /User/Account/Logout responded 302 in 24.7213 ms
+2026-06-30 22:32:30.193 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/User/Account/Logout - 302 0 null 25.0437ms
+2026-06-30 22:32:30.202 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5056/ - null null
+2026-06-30 22:32:30.202 +03:00 [INF] Executing endpoint 'PetAdoptionORM.Areas.User.Controllers.AccountController.Login (PetAdoptionORM)'
+2026-06-30 22:32:30.204 +03:00 [INF] Route matched with {area = "User", action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller PetAdoptionORM.Areas.User.Controllers.AccountController (PetAdoptionORM).
+2026-06-30 22:32:30.224 +03:00 [INF] Executing ViewResult, running view Login.
+2026-06-30 22:32:30.251 +03:00 [INF] Executed ViewResult - view Login executed in 27.5567ms.
+2026-06-30 22:32:30.251 +03:00 [INF] Executed action PetAdoptionORM.Areas.User.Controllers.AccountController.Login (PetAdoptionORM) in 47.4004ms
+2026-06-30 22:32:30.251 +03:00 [INF] Executed endpoint 'PetAdoptionORM.Areas.User.Controllers.AccountController.Login (PetAdoptionORM)'
+2026-06-30 22:32:30.251 +03:00 [INF] HTTP GET / responded 200 in 49.1375 ms
+2026-06-30 22:32:30.251 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5056/ - 200 null text/html; charset=utf-8 49.2821ms
+2026-06-30 22:32:33.498 +03:00 [INF] Application is shutting down...

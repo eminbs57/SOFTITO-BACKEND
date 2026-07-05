@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Hastane Yönetim Sistemi</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HastaneRandevu.styles.css" asp-append-version="true" />
+    
+    <style>
+        :root {
+            --primary-medical: #0056b3;
+            --sidebar-bg: #1a252f;
+            --bg-light: #f4f7f6;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            background-color: var(--bg-light);
+            color: #333;
+        }
+        /* Buttons */
+        .btn-primary {
+            background-color: var(--primary-medical);
+            border-color: var(--primary-medical);
+        }
+        .btn-primary:hover {
+            background-color: #004494;
+            border-color: #004494;
+        }
+        /* Sidebar */
+        #wrapper {
+            display: flex;
+            width: 100%;
+            align-items: stretch;
+        }
+        #sidebar-wrapper {
+            min-height: 100vh;
+            width: 260px;
+            transition: margin .25s ease-out;
+            background-color: var(--sidebar-bg);
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        #sidebar-wrapper .list-group-item {
+            border: none;
+            background-color: transparent;
+            color: #a0b2c6;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+        #sidebar-wrapper .list-group-item:hover, #sidebar-wrapper .list-group-item:focus {
+            color: #fff;
+            background-color: rgba(255,255,255,0.05);
+            padding-left: 1.75rem;
+            border-left: 4px solid var(--primary-medical);
+        }
+        #sidebar-wrapper .sidebar-heading {
+            padding: 1.5rem 1.25rem;
+            font-size: 1.25rem;
+            color: #fff;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            letter-spacing: 0.5px;
+        }
+        #wrapper.toggled #sidebar-wrapper {
+            margin-left: -260px;
+        }
+        #page-content-wrapper {
+            min-width: 0;
+            width: 100%;
+        }
+        .navbar {
+            box-shadow: 0 1px 3px rgba(0,0,0,.05);
+            background-color: #fff !important;
+        }
+        /* Card & Table styles */
+        .card-modern {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            border: none;
+        }
+        .table-modern {
+            margin-bottom: 0;
+        }
+        .table-modern thead th {
+            border-bottom: 2px solid #eef2f5;
+            color: #6c757d;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            padding: 1rem;
+        }
+        .table-modern tbody td {
+            vertical-align: middle;
+            border-bottom: 1px solid #eef2f5;
+            padding: 1rem;
+            color: #495057;
+        }
+        .table-modern tbody tr:hover {
+            background-color: #f8fafc;
+        }
+        /* Utilities */
+        .icon-btn {
+            padding: 0.25rem 0.5rem;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="sidebar-heading fw-bold d-flex align-items-center">
+                <i class="bi bi-hospital fs-4 text-primary me-2"></i> MedAdmin
+            </div>
+            <div class="list-group list-group-flush mt-3 h-100 d-flex flex-column">
+                <a href="/Home/Index" class="list-group-item list-group-item-action py-3 px-4"><i class="bi bi-grid-1x2 me-2"></i> Dashboard</a>
+                <a href="/Hasta/Index" class="list-group-item list-group-item-action py-3 px-4"><i class="bi bi-people me-2"></i> Hastalar</a>
+                <a href="/Doktor/Index" class="list-group-item list-group-item-action py-3 px-4"><i class="bi bi-heart-pulse me-2"></i> Doktorlar</a>
+                <a href="/Poliklinik/Index" class="list-group-item list-group-item-action py-3 px-4"><i class="bi bi-building me-2"></i> Poliklinikler</a>
+                <a href="/Randevu/Index" class="list-group-item list-group-item-action py-3 px-4"><i class="bi bi-calendar-check me-2"></i> Randevular</a>
+                
+                <div class="mt-auto mb-4">
+                    <hr class="border-secondary mx-3">
+                    <a href="/Rapor/Index" class="list-group-item list-group-item-action py-3 px-4 text-warning"><i class="bi bi-file-earmark-bar-graph me-2"></i> Gelişmiş Raporlar</a>
+                </div>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light py-3 px-4">
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-light text-muted border-0 shadow-sm" id="menu-toggle">
+                        <i class="bi bi-list fs-5"></i>
+                    </button>
+                </div>
+                <div class="ms-auto d-flex align-items-center">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="d-flex align-items-center border-start ps-3 ms-3">
+                            <i class="bi bi-person-circle fs-4 text-secondary me-2"></i>
+                            <div class="d-flex flex-column lh-1 me-3">
+                                <span class="fw-semibold" style="font-size:0.9rem;">@User.Identity.Name</span>
+                                <small class="text-muted" style="font-size:0.75rem;">Yönetici</small>
+                            </div>
+                            <a href="/Admin/Logout" class="btn btn-outline-danger btn-sm rounded-pill px-3"><i class="bi bi-box-arrow-right"></i> Çıkış</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <a href="/Admin/Login" class="btn btn-primary btn-sm rounded-pill px-4">Giriş Yap</a>
+                    }
+                </div>
+            </nav>
+
+            <div class="container-fluid p-4">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.getElementById("wrapper").classList.toggle("toggled");
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

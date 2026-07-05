@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="container text-center mt-5">
+    <h1 class="mb-5">Hoş Geldiniz</h1>
+    
+    <div class="row justify-content-center gap-4">
+        <div class="col-md-5">
+            <div class="card bg-dark text-white border-secondary p-4 h-100">
+                <div class="card-body d-flex flex-column justify-content-center">
+                    <h3 class="card-title mb-4">Kullanıcı İşlemleri</h3>
+                    <p class="card-text text-secondary mb-4">Filmleri görüntüleyin, seans seçin ve bilet satın alın.</p>
+                    <a asp-controller="Home" asp-action="Login" class="btn btn-danger btn-lg w-100 mt-auto">Kullanıcı Girişi</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-5">
+            <div class="card bg-dark text-white border-secondary p-4 h-100">
+                <div class="card-body d-flex flex-column justify-content-center">
+                    <h3 class="card-title mb-4">Yönetici İşlemleri</h3>
+                    <p class="card-text text-secondary mb-4">Sistemdeki filmleri yönetin, yeni filmler ekleyin.</p>
+                    <a asp-controller="Admin" asp-action="Login" class="btn btn-outline-light btn-lg w-100 mt-auto">Yönetici Girişi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+@model MvcProject.Models.LoginViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Otel Yönetimi - Giriş Yap</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        body {
+            background-color: #0A192F;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .auth-card {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .auth-logo {
+            color: #D4AF37;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-card">
+        <div class="auth-logo">
+            <i class="bi bi-bell-fill"></i>
+        </div>
+        <h3 class="text-center page-title mb-4">Resepsiyon Girişi</h3>
+        
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+        }
+
+        <form asp-action="Login" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            
+            <div class="mb-4">
+                <label asp-for="Email" class="form-label fw-bold">Email Adresi</label>
+                <input asp-for="Email" class="form-control form-input-custom" placeholder="ornek@otel.com" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-4">
+                <label asp-for="Password" class="form-label fw-bold">Şifre</label>
+                <input asp-for="Password" class="form-control form-input-custom" placeholder="••••••••" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            
+            <div class="d-grid mt-4">
+                <button type="submit" class="btn btn-premium btn-lg">Giriş Yap</button>
+            </div>
+        </form>
+        
+        <div class="text-center mt-4">
+            <p class="text-muted">Hesabınız yok mu? <a asp-action="Register" class="text-decoration-none" style="color: #D4AF37;">Kayıt Ol</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+@model IEnumerable<Kutuphane.Model.Loan>
+
+<h2>Ödünç Verilen Kitaplar</h2>
+
+<form method="get" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="searchString" placeholder="Kitap veya kullanıcı ara..." class="form-control" />
+        <button type="submit" class="btn btn-primary">Ara</button>
+    </div>
+</form>
+
+<div class="mb-3">
+    <a asp-action="Create" class="btn btn-success">Yeni İşlem Ekle</a>
+    <a asp-action="ExportToExcel" class="btn btn-info ml-2">Excel İndir</a>
+    <a asp-action="ExportToPdf" class="btn btn-danger ml-2">PDF İndir</a>
+</div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Kitap</th>
+            <th>Kullanıcı</th>
+            <th>Veriliş Tarihi</th>
+            <th>Kalan Stok</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Book?.Title</td>
+                <td>@item.User?.Name</td>
+                <td>@item.LoanDate.ToShortDateString()</td>
+                <td>@item.Book?.Stock</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Güncelle</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"
+                       onclick="return confirm('Silinsin mi?')">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

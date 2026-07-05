@@ -1,0 +1,90 @@
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="container-fluid py-2">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="fw-bold mb-1" style="color: #2c3e50;">Hastane Yönetim Paneli</h2>
+            <p class="text-muted">Sistemin genel durumunu ve özet istatistiklerini buradan takip edebilirsiniz.</p>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <!-- Bugünkü Randevular -->
+        <div class="col-xl-3 col-md-6">
+            <div class="card card-modern h-100 border-start border-4 border-primary">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="text-xs fw-bold text-primary text-uppercase mb-1">Bugünkü Randevular</div>
+                            <div class="h3 mb-0 fw-bold text-gray-800">@ViewBag.TodayRandevu</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="bi bi-calendar-day fs-1 text-primary opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toplam Hasta -->
+        <div class="col-xl-3 col-md-6">
+            <div class="card card-modern h-100 border-start border-4 border-success">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="text-xs fw-bold text-success text-uppercase mb-1">Kayıtlı Hastalar</div>
+                            <div class="h3 mb-0 fw-bold text-gray-800">@ViewBag.TotalHasta</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="bi bi-people fs-1 text-success opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toplam Doktor -->
+        <div class="col-xl-3 col-md-6">
+            <div class="card card-modern h-100 border-start border-4 border-info">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="text-xs fw-bold text-info text-uppercase mb-1">Aktif Doktorlar</div>
+                            <div class="h3 mb-0 fw-bold text-gray-800">@ViewBag.TotalDoktor</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="bi bi-heart-pulse fs-1 text-info opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toplam Poliklinik -->
+        <div class="col-xl-3 col-md-6">
+            <div class="card card-modern h-100 border-start border-4 border-warning">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div class="text-xs fw-bold text-warning text-uppercase mb-1">Poliklinikler</div>
+                            <div class="h3 mb-0 fw-bold text-gray-800">@ViewBag.TotalPoliklinik</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="bi bi-building fs-1 text-warning opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-5">
+        <div class="col-12 text-center text-muted">
+            <i class="bi bi-shield-check fs-1 mb-2 d-block text-secondary"></i>
+            <h5>Güvenli ve Modern Sağlık Altyapısı</h5>
+            <p>Hastalarınızın verileri uçtan uca şifrelemeyle korunmaktadır.</p>
+        </div>
+    </div>
+</div>

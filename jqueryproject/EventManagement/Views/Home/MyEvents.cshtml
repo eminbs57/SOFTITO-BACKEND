@@ -1,0 +1,121 @@
+@model IEnumerable<EventManagement.Models.Event>
+@{
+    ViewData["Title"] = "Etkinliklerim";
+}
+
+<style>
+    .digital-ticket {
+        display: flex;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        border: 1px solid #e2e8f0;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .ticket-left {
+        background-color: #f8fafc;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 2px dashed #cbd5e1;
+        padding: 20px;
+    }
+    .ticket-left .month {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #ef4444;
+        text-transform: uppercase;
+    }
+    .ticket-left .day {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: #0f172a;
+        line-height: 1;
+    }
+    .ticket-right {
+        padding: 20px 25px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ticket-cutout {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #f8fafc;
+        border-radius: 50%;
+        left: 105px;
+        box-shadow: inset -2px 0 3px rgba(0,0,0,0.02);
+    }
+    .cutout-top { top: -15px; }
+    .cutout-bottom { bottom: -15px; }
+    
+    .empty-state {
+        padding: 80px 20px;
+        text-align: center;
+        background: #fff;
+        border-radius: 16px;
+        border: 1px dashed #cbd5e1;
+    }
+    .empty-icon {
+        font-size: 4rem;
+        color: #cbd5e1;
+        margin-bottom: 20px;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="fw-bold text-dark m-0">Katıldığım Etkinlikler</h3>
+        <a href="/Home/UserScreen" class="btn btn-outline-primary rounded-pill px-4 shadow-sm">Tüm Etkinliklere Dön</a>
+    </div>
+
+    <div class="row">
+        @if(Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <div class="col-md-10 mx-auto">
+                    <div class="digital-ticket">
+                        <div class="ticket-cutout cutout-top"></div>
+                        <div class="ticket-cutout cutout-bottom"></div>
+                        
+                        <div class="ticket-left">
+                            <span class="month">@item.Date.ToString("MMM")</span>
+                            <span class="day">@item.Date.ToString("dd")</span>
+                        </div>
+                        
+                        <div class="ticket-right">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <div>
+                                    <span class="badge bg-primary mb-2">@item.CategoryName</span>
+                                    <h4 class="fw-bold text-dark mb-1">@item.Title</h4>
+                                </div>
+                                <span class="badge bg-success py-2 px-3 rounded-pill shadow-sm">
+                                    <i class="bi bi-check-circle-fill me-1"></i> Katıldınız
+                                </span>
+                            </div>
+                            <p class="text-muted mb-0">@item.Description</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-md-8 mx-auto">
+                <div class="empty-state shadow-sm">
+                    <i class="bi bi-ticket-perforated empty-icon d-block"></i>
+                    <h4 class="fw-bold text-dark mb-3">Henüz hiçbir etkinliğe katılmadınız</h4>
+                    <p class="text-muted mb-4">İlgi alanlarınıza uygun onlarca etkinlik arasından seçiminizi yapın ve eğlenceye katılın.</p>
+                    <a href="/Home/UserScreen" class="btn btn-primary btn-lg rounded-pill px-5 shadow-sm">Etkinlikleri Keşfet</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

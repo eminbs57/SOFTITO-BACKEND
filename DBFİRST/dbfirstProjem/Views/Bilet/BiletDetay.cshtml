@@ -1,0 +1,21 @@
+@model dbfirstProjem.Models.Biletler
+
+<div class="container mt-5">
+    <div class="card bg-dark text-white border-secondary shadow-lg" style="max-width: 500px; margin: auto;">
+        <div class="card-header bg-success text-white text-center border-0">
+            <h3 class="mb-0"><i class="fas fa-check-circle me-2"></i>Biletiniz Başarıyla Alındı!</h3>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title text-center text-danger mb-3">@Model.Seans.Film.Ad</h5>
+            <hr class="border-secondary">
+            <p><strong>Salon:</strong> @Model.Seans.Salon.Ad</p>
+            <p><strong>Koltuk:</strong> @Model.Koltuk.Sira-@Model.Koltuk.Numara</p>
+            <p><strong>Tarih:</strong> @Model.SatisTarihi.ToString("dd.MM.yyyy HH:mm")</p>
+            <p><strong>Fiyat:</strong> @Model.Fiyat.ToString("C")</p>
+        </div>
+        <div class="card-footer text-center border-secondary">
+            <a asp-controller="Home" asp-action="KullaniciEkrani" class="btn btn-danger me-2">Filmlere Dön</a>
+            <a asp-controller="Bilet" asp-action="Biletlerim" class="btn btn-outline-light">Biletlerim</a>
+        </div>
+    </div>
+</div>

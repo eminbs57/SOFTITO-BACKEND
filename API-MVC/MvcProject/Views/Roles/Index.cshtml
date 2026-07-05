@@ -1,0 +1,40 @@
+@model IEnumerable<MvcProject.Models.Role>
+
+@{
+    ViewData["Title"] = "Roller";
+}
+
+<h1>Rol Listesi</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Yeni Rol Ekle</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Department)
+            </th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Düzenle</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger" onclick="return confirm('Bu rolü silmek istediğinize emin misiniz?');">Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

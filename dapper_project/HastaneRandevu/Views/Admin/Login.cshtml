@@ -1,0 +1,35 @@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Girişi - HastaneRandevu</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="card shadow-sm p-4" style="width: 400px;">
+        <h3 class="text-center mb-4">Hastane Admin Paneli</h3>
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger">@ViewBag.Error</div>
+        }
+        <form method="post" action="/Admin/Login">
+            <div class="mb-3">
+                <label>Kullanıcı Adı</label>
+                <input type="text" name="Username" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label>Şifre</label>
+                <input type="password" name="PasswordHash" class="form-control" required />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
+        </form>
+        <div class="mt-3 text-center">
+            <a href="/Admin/Register">Yeni Admin Kaydı</a>
+        </div>
+    </div>
+</body>
+</html>

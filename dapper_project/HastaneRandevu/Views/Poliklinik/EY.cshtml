@@ -1,0 +1,20 @@
+@model HastaneRandevu.Models.PoliklinikModel
+@{
+    ViewData["Title"] = Model == null ? "Yeni Poliklinik" : "Poliklinik Düzenle";
+}
+
+<div class="container mt-4">
+    <h2>@(Model == null ? "Yeni Poliklinik Ekle" : "Poliklinik Düzenle")</h2>
+
+    <form method="post" action="/Poliklinik/EY">
+        <input type="hidden" name="PoliklinikNo" value="@(Model?.PoliklinikNo ?? 0)" />
+
+        <div class="mb-3">
+            <label class="form-label">Poliklinik Adı</label>
+            <input type="text" name="PoliklinikAdi" class="form-control" value="@Model?.PoliklinikAdi" required />
+        </div>
+
+        <button type="submit" class="btn btn-success">Kaydet</button>
+        <a href="/Poliklinik/Index" class="btn btn-secondary">İptal</a>
+    </form>
+</div>

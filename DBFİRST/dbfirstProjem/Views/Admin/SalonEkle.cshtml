@@ -1,0 +1,32 @@
+@model dbfirstProjem.Models.Salonlar
+
+@{
+    ViewData["Title"] = "Yeni Salon Ekle";
+}
+
+<div class="card bg-dark text-white border-secondary mb-4 shadow-sm">
+    <div class="card-header border-secondary d-flex justify-content-between align-items-center">
+        <h5 class="mb-0 text-danger"><i class="fas fa-plus-square me-2"></i>Yeni Salon Ekle</h5>
+        <a asp-action="Salonlar" class="btn btn-sm btn-outline-secondary">Listeye Dön</a>
+    </div>
+    <div class="card-body">
+        <div class="alert alert-info bg-dark border-info text-info">
+            <i class="fas fa-info-circle me-2"></i> Salon eklediğinizde belirttiğiniz kapasiteye uygun olarak Koltuk kayıtları otomatik oluşturulacaktır. (Her sırada en fazla 10 koltuk olacak şekilde harflendirme yapılır.)
+        </div>
+        <form asp-action="SalonEkle" method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Ad" class="form-label">Salon Adı</label>
+                    <input asp-for="Ad" class="form-control bg-dark text-white border-secondary" required placeholder="Örn: Salon 1" />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Kapasite" class="form-label">Kapasite</label>
+                    <input asp-for="Kapasite" type="number" min="1" max="500" class="form-control bg-dark text-white border-secondary" required placeholder="Örn: 50" />
+                </div>
+            </div>
+            <div class="text-end mt-3">
+                <button type="submit" class="btn btn-danger"><i class="fas fa-save me-2"></i>Kaydet ve Koltukları Oluştur</button>
+            </div>
+        </form>
+    </div>
+</div>

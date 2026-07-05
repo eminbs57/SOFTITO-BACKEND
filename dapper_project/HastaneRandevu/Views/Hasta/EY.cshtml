@@ -1,0 +1,32 @@
+@model HastaneRandevu.Models.HastaModel
+@{
+    ViewData["Title"] = Model == null ? "Yeni Hasta" : "Hasta Düzenle";
+}
+
+<div class="container mt-4">
+    <h2>@(Model == null ? "Yeni Hasta Ekle" : "Hasta Düzenle")</h2>
+
+    <form method="post" action="/Hasta/EY">
+        <input type="hidden" name="HastaNo" value="@(Model?.HastaNo ?? 0)" />
+
+        <div class="mb-3">
+            <label class="form-label">Ad Soyad</label>
+            <input type="text" name="AdSoyad" class="form-control" value="@Model?.AdSoyad" required />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Yaş</label>
+            <input type="number" name="Yas" class="form-control" value="@Model?.Yas" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Telefon</label>
+            <input type="text" name="Telefon" class="form-control" value="@Model?.Telefon" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Adres</label>
+            <input type="text" name="Adres" class="form-control" value="@Model?.Adres" />
+        </div>
+
+        <button type="submit" class="btn btn-success">Kaydet</button>
+        <a href="/Hasta/Index" class="btn btn-secondary">İptal</a>
+    </form>
+</div>

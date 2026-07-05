@@ -1,0 +1,974 @@
+2026-07-02 20:03:52.623 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-02 20:03:52.655 +03:00 [INF] Now listening on: http://localhost:5007
+2026-07-02 20:03:52.656 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-02 20:03:52.656 +03:00 [INF] Hosting environment: Development
+2026-07-02 20:03:52.656 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/DBFİRST/dbfirstProjem
+2026-07-02 20:04:11.774 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/ - null null
+2026-07-02 20:04:11.777 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-02 20:04:11.798 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2026-07-02 20:04:11.799 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.HomeController.Index (dbfirstProjem)'
+2026-07-02 20:04:11.807 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller dbfirstProjem.Controllers.HomeController (dbfirstProjem).
+2026-07-02 20:04:11.863 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:04:11.883 +03:00 [INF] Executed ViewResult - view Index executed in 20.3709ms.
+2026-07-02 20:04:11.884 +03:00 [INF] Executed action dbfirstProjem.Controllers.HomeController.Index (dbfirstProjem) in 76.2337ms
+2026-07-02 20:04:11.884 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.HomeController.Index (dbfirstProjem)'
+2026-07-02 20:04:11.885 +03:00 [INF] HTTP GET / responded 200 in 108.2212 ms
+2026-07-02 20:04:11.887 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/ - 200 null text/html; charset=utf-8 114.1953ms
+2026-07-02 20:04:13.805 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Home/Login - null null
+2026-07-02 20:04:13.807 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2026-07-02 20:04:13.808 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.HomeController.Login (dbfirstProjem)'
+2026-07-02 20:04:13.809 +03:00 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller dbfirstProjem.Controllers.HomeController (dbfirstProjem).
+2026-07-02 20:04:13.818 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-02 20:04:13.832 +03:00 [INF] Executed ViewResult - view Login executed in 15.2386ms.
+2026-07-02 20:04:13.832 +03:00 [INF] Executed action dbfirstProjem.Controllers.HomeController.Login (dbfirstProjem) in 22.6196ms
+2026-07-02 20:04:13.832 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.HomeController.Login (dbfirstProjem)'
+2026-07-02 20:04:13.832 +03:00 [INF] HTTP GET /Home/Login responded 200 in 27.3158 ms
+2026-07-02 20:04:13.832 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Home/Login - 200 null text/html; charset=utf-8 28.0012ms
+2026-07-02 20:04:23.588 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/ - null null
+2026-07-02 20:04:23.593 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2026-07-02 20:04:23.593 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.HomeController.Index (dbfirstProjem)'
+2026-07-02 20:04:23.593 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller dbfirstProjem.Controllers.HomeController (dbfirstProjem).
+2026-07-02 20:04:23.598 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:04:23.599 +03:00 [INF] Executed ViewResult - view Index executed in 1.0549ms.
+2026-07-02 20:04:23.599 +03:00 [INF] Executed action dbfirstProjem.Controllers.HomeController.Index (dbfirstProjem) in 5.9291ms
+2026-07-02 20:04:23.600 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.HomeController.Index (dbfirstProjem)'
+2026-07-02 20:04:23.600 +03:00 [INF] HTTP GET / responded 200 in 10.9240 ms
+2026-07-02 20:04:23.600 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/ - 200 null text/html; charset=utf-8 11.4722ms
+2026-07-02 20:04:25.781 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Login - null null
+2026-07-02 20:04:25.785 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2026-07-02 20:04:25.787 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Login (dbfirstProjem)'
+2026-07-02 20:04:25.789 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:25.791 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-02 20:04:25.807 +03:00 [INF] Executed ViewResult - view Login executed in 17.3151ms.
+2026-07-02 20:04:25.807 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Login (dbfirstProjem) in 18.5438ms
+2026-07-02 20:04:25.807 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Login (dbfirstProjem)'
+2026-07-02 20:04:25.807 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 25.6130 ms
+2026-07-02 20:04:25.807 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Login - 200 null text/html; charset=utf-8 26.278ms
+2026-07-02 20:04:30.235 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5007/Account/Login - application/x-www-form-urlencoded 234
+2026-07-02 20:04:30.237 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2026-07-02 20:04:30.237 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AccountController.Login (dbfirstProjem)'
+2026-07-02 20:04:30.254 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String, System.String) on controller dbfirstProjem.Controllers.AccountController (dbfirstProjem).
+2026-07-02 20:04:30.752 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-07-02 20:04:30.803 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-07-02 20:04:30.806 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-07-02 20:04:30.853 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@user_Id='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @user_Id
+2026-07-02 20:04:30.855 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-07-02 20:04:30.859 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-07-02 20:04:30.866 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@role_Id='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @role_Id
+2026-07-02 20:04:30.867 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-07-02 20:04:30.868 +03:00 [INF] Executing RedirectResult, redirecting to /Admin.
+2026-07-02 20:04:30.869 +03:00 [INF] Executed action dbfirstProjem.Controllers.AccountController.Login (dbfirstProjem) in 614.9473ms
+2026-07-02 20:04:30.869 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AccountController.Login (dbfirstProjem)'
+2026-07-02 20:04:30.869 +03:00 [INF] HTTP POST /Account/Login responded 302 in 633.2993 ms
+2026-07-02 20:04:30.871 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5007/Account/Login - 302 0 null 635.5647ms
+2026-07-02 20:04:30.873 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin - null null
+2026-07-02 20:04:30.875 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:04:30.876 +03:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:30.903 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+2026-07-02 20:04:30.910 +03:00 [INF] Toplam 3 adet film veri tabanından/cache'den listelendi.
+2026-07-02 20:04:30.910 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:04:30.919 +03:00 [INF] Executed ViewResult - view Index executed in 8.741ms.
+2026-07-02 20:04:30.919 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem) in 43.1895ms
+2026-07-02 20:04:30.919 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:04:30.919 +03:00 [INF] HTTP GET /Admin responded 200 in 45.8255 ms
+2026-07-02 20:04:30.919 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin - 200 null text/html; charset=utf-8 45.9065ms
+2026-07-02 20:04:30.937 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/img/movies/5dbb1a45-5131-44b7-881b-ab87b5cdfb0a.webp - null null
+2026-07-02 20:04:30.937 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/img/movies/0484b422-ba97-4790-9847-5497f0cf8107.png - null null
+2026-07-02 20:04:30.941 +03:00 [INF] The file /img/movies/0484b422-ba97-4790-9847-5497f0cf8107.png was not modified
+2026-07-02 20:04:30.941 +03:00 [INF] The file /img/movies/5dbb1a45-5131-44b7-881b-ab87b5cdfb0a.webp was not modified
+2026-07-02 20:04:30.942 +03:00 [INF] HTTP GET /img/movies/5dbb1a45-5131-44b7-881b-ab87b5cdfb0a.webp responded 304 in 4.6436 ms
+2026-07-02 20:04:30.942 +03:00 [INF] HTTP GET /img/movies/0484b422-ba97-4790-9847-5497f0cf8107.png responded 304 in 4.1360 ms
+2026-07-02 20:04:30.942 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/img/movies/5dbb1a45-5131-44b7-881b-ab87b5cdfb0a.webp - 304 null image/webp 4.9777ms
+2026-07-02 20:04:30.942 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/img/movies/0484b422-ba97-4790-9847-5497f0cf8107.png - 304 null image/png 4.5223ms
+2026-07-02 20:04:32.877 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/ExportToPdf_Filmler - null null
+2026-07-02 20:04:32.888 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.ExportToPdf_Filmler (dbfirstProjem)'
+2026-07-02 20:04:32.890 +03:00 [INF] Route matched with {action = "ExportToPdf_Filmler", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ExportToPdf_Filmler() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:32.910 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+2026-07-02 20:04:33.069 +03:00 [INF] Executing FileContentResult, sending file with download name 'Film_Listesi_20260702.pdf' ...
+2026-07-02 20:04:33.069 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.ExportToPdf_Filmler (dbfirstProjem) in 179.3461ms
+2026-07-02 20:04:33.070 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.ExportToPdf_Filmler (dbfirstProjem)'
+2026-07-02 20:04:33.070 +03:00 [INF] HTTP GET /Admin/ExportToPdf_Filmler responded 200 in 191.8213 ms
+2026-07-02 20:04:33.070 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/ExportToPdf_Filmler - 200 41949 application/pdf 192.2465ms
+2026-07-02 20:04:41.446 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Seanslar - null null
+2026-07-02 20:04:41.463 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:04:41.464 +03:00 [INF] Route matched with {action = "Seanslar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Seanslar() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:41.503 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SeansId], [s].[BaslamaZamani], [s].[FilmId], [s].[SalonId], [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur], [s0].[SalonId], [s0].[SalonAd], [s0].[Kapasite]
+FROM [Seanslar] AS [s]
+INNER JOIN [Filmler] AS [f] ON [s].[FilmId] = [f].[FilmId]
+INNER JOIN [Salonlar] AS [s0] ON [s].[SalonId] = [s0].[SalonId]
+2026-07-02 20:04:41.519 +03:00 [INF] Toplam 3 adet seans veri tabanından/cache'den listelendi.
+2026-07-02 20:04:41.519 +03:00 [INF] Executing ViewResult, running view Seanslar.
+2026-07-02 20:04:41.524 +03:00 [INF] Executed ViewResult - view Seanslar executed in 5.3045ms.
+2026-07-02 20:04:41.524 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem) in 60.2512ms
+2026-07-02 20:04:41.524 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:04:41.524 +03:00 [INF] HTTP GET /Admin/Seanslar responded 200 in 78.1498 ms
+2026-07-02 20:04:41.524 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Seanslar - 200 null text/html; charset=utf-8 78.6428ms
+2026-07-02 20:04:42.326 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/SeansEkle - null null
+2026-07-02 20:04:42.328 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem)'
+2026-07-02 20:04:42.330 +03:00 [INF] Route matched with {action = "SeansEkle", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SeansEkle() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:42.353 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+2026-07-02 20:04:42.372 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalonId], [s].[SalonAd], [s].[Kapasite]
+FROM [Salonlar] AS [s]
+2026-07-02 20:04:42.374 +03:00 [INF] Executing ViewResult, running view SeansEkle.
+2026-07-02 20:04:42.396 +03:00 [INF] Executed ViewResult - view SeansEkle executed in 22.3019ms.
+2026-07-02 20:04:42.396 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem) in 66.6282ms
+2026-07-02 20:04:42.396 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem)'
+2026-07-02 20:04:42.396 +03:00 [INF] HTTP GET /Admin/SeansEkle responded 200 in 70.3871 ms
+2026-07-02 20:04:42.396 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/SeansEkle - 200 null text/html; charset=utf-8 70.65ms
+2026-07-02 20:04:44.908 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/SalonEkle - null null
+2026-07-02 20:04:44.909 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.SalonEkle (dbfirstProjem)'
+2026-07-02 20:04:44.911 +03:00 [INF] Route matched with {action = "SalonEkle", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SalonEkle() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:44.912 +03:00 [INF] Executing ViewResult, running view SalonEkle.
+2026-07-02 20:04:44.930 +03:00 [INF] Executed ViewResult - view SalonEkle executed in 18.7167ms.
+2026-07-02 20:04:44.931 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.SalonEkle (dbfirstProjem) in 19.18ms
+2026-07-02 20:04:44.931 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.SalonEkle (dbfirstProjem)'
+2026-07-02 20:04:44.931 +03:00 [INF] HTTP GET /Admin/SalonEkle responded 200 in 22.8835 ms
+2026-07-02 20:04:44.931 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/SalonEkle - 200 null text/html; charset=utf-8 23.104ms
+2026-07-02 20:04:45.385 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Salonlar - null null
+2026-07-02 20:04:45.387 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:04:45.389 +03:00 [INF] Route matched with {action = "Salonlar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Salonlar() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:45.392 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalonId], [s].[SalonAd], [s].[Kapasite]
+FROM [Salonlar] AS [s]
+2026-07-02 20:04:45.393 +03:00 [INF] Toplam 3 adet salon veri tabanından/cache'den listelendi.
+2026-07-02 20:04:45.394 +03:00 [INF] Executing ViewResult, running view Salonlar.
+2026-07-02 20:04:45.406 +03:00 [INF] Executed ViewResult - view Salonlar executed in 12.497ms.
+2026-07-02 20:04:45.406 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem) in 17.0656ms
+2026-07-02 20:04:45.406 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:04:45.406 +03:00 [INF] HTTP GET /Admin/Salonlar responded 200 in 20.4844 ms
+2026-07-02 20:04:45.406 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Salonlar - 200 null text/html; charset=utf-8 20.7418ms
+2026-07-02 20:04:46.708 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Salonlar - null null
+2026-07-02 20:04:46.710 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:04:46.710 +03:00 [INF] Route matched with {action = "Salonlar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Salonlar() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:46.710 +03:00 [INF] Toplam 3 adet salon veri tabanından/cache'den listelendi.
+2026-07-02 20:04:46.710 +03:00 [INF] Executing ViewResult, running view Salonlar.
+2026-07-02 20:04:46.712 +03:00 [INF] Executed ViewResult - view Salonlar executed in 1.8002ms.
+2026-07-02 20:04:46.712 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem) in 2.0784ms
+2026-07-02 20:04:46.712 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:04:46.712 +03:00 [INF] HTTP GET /Admin/Salonlar responded 200 in 3.7469 ms
+2026-07-02 20:04:46.712 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Salonlar - 200 null text/html; charset=utf-8 3.9572ms
+2026-07-02 20:04:47.194 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/SalonEkle - null null
+2026-07-02 20:04:47.196 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.SalonEkle (dbfirstProjem)'
+2026-07-02 20:04:47.196 +03:00 [INF] Route matched with {action = "SalonEkle", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SalonEkle() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:47.196 +03:00 [INF] Executing ViewResult, running view SalonEkle.
+2026-07-02 20:04:47.199 +03:00 [INF] Executed ViewResult - view SalonEkle executed in 2.8183ms.
+2026-07-02 20:04:47.199 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.SalonEkle (dbfirstProjem) in 3.0494ms
+2026-07-02 20:04:47.199 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.SalonEkle (dbfirstProjem)'
+2026-07-02 20:04:47.199 +03:00 [INF] HTTP GET /Admin/SalonEkle responded 200 in 4.7388 ms
+2026-07-02 20:04:47.199 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/SalonEkle - 200 null text/html; charset=utf-8 4.9618ms
+2026-07-02 20:04:48.293 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/FilmEkle - null null
+2026-07-02 20:04:48.294 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.FilmEkle (dbfirstProjem)'
+2026-07-02 20:04:48.296 +03:00 [INF] Route matched with {action = "FilmEkle", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FilmEkle() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:48.297 +03:00 [INF] Executing ViewResult, running view FilmEkle.
+2026-07-02 20:04:48.319 +03:00 [INF] Executed ViewResult - view FilmEkle executed in 22.3953ms.
+2026-07-02 20:04:48.319 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.FilmEkle (dbfirstProjem) in 22.878ms
+2026-07-02 20:04:48.319 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.FilmEkle (dbfirstProjem)'
+2026-07-02 20:04:48.319 +03:00 [INF] HTTP GET /Admin/FilmEkle responded 200 in 26.1550 ms
+2026-07-02 20:04:48.319 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/FilmEkle - 200 null text/html; charset=utf-8 26.3968ms
+2026-07-02 20:04:49.175 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin - null null
+2026-07-02 20:04:49.177 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:04:49.177 +03:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:49.177 +03:00 [INF] Toplam 3 adet film veri tabanından/cache'den listelendi.
+2026-07-02 20:04:49.177 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:04:49.179 +03:00 [INF] Executed ViewResult - view Index executed in 2.0961ms.
+2026-07-02 20:04:49.179 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem) in 2.4738ms
+2026-07-02 20:04:49.180 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:04:49.180 +03:00 [INF] HTTP GET /Admin responded 200 in 4.1034 ms
+2026-07-02 20:04:49.180 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin - 200 null text/html; charset=utf-8 4.4425ms
+2026-07-02 20:04:52.390 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Seanslar - null null
+2026-07-02 20:04:52.392 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:04:52.392 +03:00 [INF] Route matched with {action = "Seanslar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Seanslar() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:52.392 +03:00 [INF] Toplam 3 adet seans veri tabanından/cache'den listelendi.
+2026-07-02 20:04:52.392 +03:00 [INF] Executing ViewResult, running view Seanslar.
+2026-07-02 20:04:52.394 +03:00 [INF] Executed ViewResult - view Seanslar executed in 1.8796ms.
+2026-07-02 20:04:52.394 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem) in 2.3084ms
+2026-07-02 20:04:52.394 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:04:52.394 +03:00 [INF] HTTP GET /Admin/Seanslar responded 200 in 3.8558 ms
+2026-07-02 20:04:52.394 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Seanslar - 200 null text/html; charset=utf-8 4.119ms
+2026-07-02 20:04:55.077 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/SeansEkle - null null
+2026-07-02 20:04:55.078 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem)'
+2026-07-02 20:04:55.078 +03:00 [INF] Route matched with {action = "SeansEkle", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SeansEkle() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:04:55.083 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+2026-07-02 20:04:55.087 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalonId], [s].[SalonAd], [s].[Kapasite]
+FROM [Salonlar] AS [s]
+2026-07-02 20:04:55.087 +03:00 [INF] Executing ViewResult, running view SeansEkle.
+2026-07-02 20:04:55.090 +03:00 [INF] Executed ViewResult - view SeansEkle executed in 2.9435ms.
+2026-07-02 20:04:55.091 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem) in 12.4503ms
+2026-07-02 20:04:55.091 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem)'
+2026-07-02 20:04:55.091 +03:00 [INF] HTTP GET /Admin/SeansEkle responded 200 in 13.9530 ms
+2026-07-02 20:04:55.091 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/SeansEkle - 200 null text/html; charset=utf-8 14.2915ms
+2026-07-02 20:07:05.163 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/ - null null
+2026-07-02 20:07:05.164 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.HomeController.Index (dbfirstProjem)'
+2026-07-02 20:07:05.164 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller dbfirstProjem.Controllers.HomeController (dbfirstProjem).
+2026-07-02 20:07:05.164 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:07:05.166 +03:00 [INF] Executed ViewResult - view Index executed in 1.8302ms.
+2026-07-02 20:07:05.166 +03:00 [INF] Executed action dbfirstProjem.Controllers.HomeController.Index (dbfirstProjem) in 1.9703ms
+2026-07-02 20:07:05.166 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.HomeController.Index (dbfirstProjem)'
+2026-07-02 20:07:05.166 +03:00 [INF] HTTP GET / responded 200 in 3.0880 ms
+2026-07-02 20:07:05.166 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/ - 200 null text/html; charset=utf-8 3.5227ms
+2026-07-02 20:07:06.401 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Login - null null
+2026-07-02 20:07:06.402 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Login (dbfirstProjem)'
+2026-07-02 20:07:06.403 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:07:06.403 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-02 20:07:06.404 +03:00 [INF] Executed ViewResult - view Login executed in 1.1733ms.
+2026-07-02 20:07:06.404 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Login (dbfirstProjem) in 1.347ms
+2026-07-02 20:07:06.404 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Login (dbfirstProjem)'
+2026-07-02 20:07:06.404 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 2.6131 ms
+2026-07-02 20:07:06.404 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Login - 200 null text/html; charset=utf-8 2.9219ms
+2026-07-02 20:07:10.865 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5007/Account/Login - application/x-www-form-urlencoded 277
+2026-07-02 20:07:10.868 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AccountController.Login (dbfirstProjem)'
+2026-07-02 20:07:10.869 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String, System.String) on controller dbfirstProjem.Controllers.AccountController (dbfirstProjem).
+2026-07-02 20:07:10.877 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-07-02 20:07:10.882 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-07-02 20:07:10.887 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-07-02 20:07:10.958 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@user_Id='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @user_Id
+2026-07-02 20:07:10.960 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-07-02 20:07:10.961 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-07-02 20:07:10.962 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@role_Id='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @role_Id
+2026-07-02 20:07:10.963 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-07-02 20:07:10.963 +03:00 [INF] Executing RedirectResult, redirecting to /Admin.
+2026-07-02 20:07:10.963 +03:00 [INF] Executed action dbfirstProjem.Controllers.AccountController.Login (dbfirstProjem) in 94.3446ms
+2026-07-02 20:07:10.963 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AccountController.Login (dbfirstProjem)'
+2026-07-02 20:07:10.963 +03:00 [INF] HTTP POST /Account/Login responded 302 in 97.7408 ms
+2026-07-02 20:07:10.963 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5007/Account/Login - 302 0 null 97.9932ms
+2026-07-02 20:07:10.968 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin - null null
+2026-07-02 20:07:10.968 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:07:10.968 +03:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:07:10.972 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+2026-07-02 20:07:10.972 +03:00 [INF] Toplam 3 adet film veri tabanından/cache'den listelendi.
+2026-07-02 20:07:10.972 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:07:10.973 +03:00 [INF] Executed ViewResult - view Index executed in 0.9849ms.
+2026-07-02 20:07:10.973 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem) in 4.9697ms
+2026-07-02 20:07:10.973 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:07:10.973 +03:00 [INF] HTTP GET /Admin responded 200 in 5.5255 ms
+2026-07-02 20:07:10.973 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin - 200 null text/html; charset=utf-8 5.6112ms
+2026-07-02 20:07:18.920 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin - null null
+2026-07-02 20:07:18.922 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:07:18.922 +03:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:07:18.922 +03:00 [INF] Toplam 3 adet film veri tabanından/cache'den listelendi.
+2026-07-02 20:07:18.922 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:07:18.923 +03:00 [INF] Executed ViewResult - view Index executed in 1.287ms.
+2026-07-02 20:07:18.923 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem) in 1.5847ms
+2026-07-02 20:07:18.923 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:07:18.923 +03:00 [INF] HTTP GET /Admin responded 200 in 2.9068 ms
+2026-07-02 20:07:18.924 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin - 200 null text/html; charset=utf-8 3.1811ms
+2026-07-02 20:07:19.586 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Seanslar - null null
+2026-07-02 20:07:19.588 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:07:19.588 +03:00 [INF] Route matched with {action = "Seanslar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Seanslar() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:07:19.594 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SeansId], [s].[BaslamaZamani], [s].[FilmId], [s].[SalonId], [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur], [s0].[SalonId], [s0].[SalonAd], [s0].[Kapasite]
+FROM [Seanslar] AS [s]
+INNER JOIN [Filmler] AS [f] ON [s].[FilmId] = [f].[FilmId]
+INNER JOIN [Salonlar] AS [s0] ON [s].[SalonId] = [s0].[SalonId]
+2026-07-02 20:07:19.595 +03:00 [INF] Toplam 3 adet seans veri tabanından/cache'den listelendi.
+2026-07-02 20:07:19.596 +03:00 [INF] Executing ViewResult, running view Seanslar.
+2026-07-02 20:07:19.598 +03:00 [INF] Executed ViewResult - view Seanslar executed in 2.6382ms.
+2026-07-02 20:07:19.598 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem) in 10.5681ms
+2026-07-02 20:07:19.599 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:07:19.599 +03:00 [INF] HTTP GET /Admin/Seanslar responded 200 in 11.8997 ms
+2026-07-02 20:07:19.599 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Seanslar - 200 null text/html; charset=utf-8 12.8244ms
+2026-07-02 20:07:20.793 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Salonlar - null null
+2026-07-02 20:07:20.794 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:07:20.794 +03:00 [INF] Route matched with {action = "Salonlar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Salonlar() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:07:20.800 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalonId], [s].[SalonAd], [s].[Kapasite]
+FROM [Salonlar] AS [s]
+2026-07-02 20:07:20.800 +03:00 [INF] Toplam 3 adet salon veri tabanından/cache'den listelendi.
+2026-07-02 20:07:20.801 +03:00 [INF] Executing ViewResult, running view Salonlar.
+2026-07-02 20:07:20.803 +03:00 [INF] Executed ViewResult - view Salonlar executed in 3.0478ms.
+2026-07-02 20:07:20.804 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem) in 9.2076ms
+2026-07-02 20:07:20.804 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:07:20.804 +03:00 [INF] HTTP GET /Admin/Salonlar responded 200 in 10.6522 ms
+2026-07-02 20:07:20.804 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Salonlar - 200 null text/html; charset=utf-8 10.9054ms
+2026-07-02 20:13:24.657 +03:00 [INF] Application is shutting down...
+2026-07-02 20:13:32.715 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-02 20:13:32.749 +03:00 [INF] Now listening on: http://localhost:5007
+2026-07-02 20:13:32.750 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-02 20:13:32.750 +03:00 [INF] Hosting environment: Development
+2026-07-02 20:13:32.750 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTİTOPROJECT/DBFİRST/dbfirstProjem
+2026-07-02 20:13:34.884 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Salonlar - null null
+2026-07-02 20:13:34.888 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-02 20:13:34.958 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:13:34.963 +03:00 [INF] Route matched with {action = "Salonlar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Salonlar(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:13:35.386 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalonId], [s].[SalonAd], [s].[Kapasite]
+FROM [Salonlar] AS [s]
+2026-07-02 20:13:35.407 +03:00 [INF] Toplam 3 adet salon listelendi.
+2026-07-02 20:13:35.411 +03:00 [INF] Executing ViewResult, running view Salonlar.
+2026-07-02 20:13:35.436 +03:00 [INF] Executed ViewResult - view Salonlar executed in 26.5158ms.
+2026-07-02 20:13:35.437 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem) in 473.4413ms
+2026-07-02 20:13:35.437 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:13:35.437 +03:00 [INF] HTTP GET /Admin/Salonlar responded 200 in 550.3347 ms
+2026-07-02 20:13:35.440 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Salonlar - 200 null text/html; charset=utf-8 556.9463ms
+2026-07-02 20:13:41.132 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Salonlar?searchString=salon5 - null null
+2026-07-02 20:13:41.144 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:13:41.144 +03:00 [INF] Route matched with {action = "Salonlar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Salonlar(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:13:41.149 +03:00 [INF] Toplam 0 adet salon listelendi.
+2026-07-02 20:13:41.149 +03:00 [INF] Executing ViewResult, running view Salonlar.
+2026-07-02 20:13:41.153 +03:00 [INF] Executed ViewResult - view Salonlar executed in 3.6967ms.
+2026-07-02 20:13:41.153 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem) in 8.5723ms
+2026-07-02 20:13:41.153 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:13:41.153 +03:00 [INF] HTTP GET /Admin/Salonlar responded 200 in 21.0461 ms
+2026-07-02 20:13:41.154 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Salonlar?searchString=salon5 - 200 null text/html; charset=utf-8 23.2024ms
+2026-07-02 20:13:44.041 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Salonlar?searchString=salon1 - null null
+2026-07-02 20:13:44.066 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:13:44.066 +03:00 [INF] Route matched with {action = "Salonlar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Salonlar(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:13:44.066 +03:00 [INF] Toplam 2 adet salon listelendi.
+2026-07-02 20:13:44.066 +03:00 [INF] Executing ViewResult, running view Salonlar.
+2026-07-02 20:13:44.068 +03:00 [INF] Executed ViewResult - view Salonlar executed in 1.9287ms.
+2026-07-02 20:13:44.068 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem) in 2.5418ms
+2026-07-02 20:13:44.068 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:13:44.068 +03:00 [INF] HTTP GET /Admin/Salonlar responded 200 in 26.8641 ms
+2026-07-02 20:13:44.069 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Salonlar?searchString=salon1 - 200 null text/html; charset=utf-8 27.406ms
+2026-07-02 20:13:50.209 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Salonlar?searchString=50 - null null
+2026-07-02 20:13:50.211 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:13:50.211 +03:00 [INF] Route matched with {action = "Salonlar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Salonlar(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:13:50.211 +03:00 [INF] Toplam 0 adet salon listelendi.
+2026-07-02 20:13:50.212 +03:00 [INF] Executing ViewResult, running view Salonlar.
+2026-07-02 20:13:50.214 +03:00 [INF] Executed ViewResult - view Salonlar executed in 2.644ms.
+2026-07-02 20:13:50.214 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem) in 3.2644ms
+2026-07-02 20:13:50.214 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:13:50.215 +03:00 [INF] HTTP GET /Admin/Salonlar responded 200 in 5.0905 ms
+2026-07-02 20:13:50.215 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Salonlar?searchString=50 - 200 null text/html; charset=utf-8 5.573ms
+2026-07-02 20:13:56.690 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Seanslar - null null
+2026-07-02 20:13:56.693 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:13:56.696 +03:00 [INF] Route matched with {action = "Seanslar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Seanslar(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:13:56.791 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SeansId], [s].[BaslamaZamani], [s].[FilmId], [s].[SalonId], [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur], [s0].[SalonId], [s0].[SalonAd], [s0].[Kapasite]
+FROM [Seanslar] AS [s]
+INNER JOIN [Filmler] AS [f] ON [s].[FilmId] = [f].[FilmId]
+INNER JOIN [Salonlar] AS [s0] ON [s].[SalonId] = [s0].[SalonId]
+2026-07-02 20:13:56.806 +03:00 [INF] Toplam 3 adet seans listelendi.
+2026-07-02 20:13:56.807 +03:00 [INF] Executing ViewResult, running view Seanslar.
+2026-07-02 20:13:56.811 +03:00 [INF] Executed ViewResult - view Seanslar executed in 4.6031ms.
+2026-07-02 20:13:56.811 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem) in 115.2565ms
+2026-07-02 20:13:56.811 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:13:56.811 +03:00 [INF] HTTP GET /Admin/Seanslar responded 200 in 121.1103 ms
+2026-07-02 20:13:56.811 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Seanslar - 200 null text/html; charset=utf-8 121.554ms
+2026-07-02 20:14:00.124 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/SeansEkle - null null
+2026-07-02 20:14:00.126 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem)'
+2026-07-02 20:14:00.128 +03:00 [INF] Route matched with {action = "SeansEkle", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SeansEkle() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:00.193 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+2026-07-02 20:14:00.201 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalonId], [s].[SalonAd], [s].[Kapasite]
+FROM [Salonlar] AS [s]
+2026-07-02 20:14:00.203 +03:00 [INF] Executing ViewResult, running view SeansEkle.
+2026-07-02 20:14:00.218 +03:00 [INF] Executed ViewResult - view SeansEkle executed in 15.5414ms.
+2026-07-02 20:14:00.218 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem) in 89.9685ms
+2026-07-02 20:14:00.218 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem)'
+2026-07-02 20:14:00.218 +03:00 [INF] HTTP GET /Admin/SeansEkle responded 200 in 93.4811 ms
+2026-07-02 20:14:00.218 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/SeansEkle - 200 null text/html; charset=utf-8 93.8584ms
+2026-07-02 20:14:00.886 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Seanslar - null null
+2026-07-02 20:14:00.887 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:14:00.888 +03:00 [INF] Route matched with {action = "Seanslar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Seanslar(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:00.888 +03:00 [INF] Toplam 3 adet seans listelendi.
+2026-07-02 20:14:00.888 +03:00 [INF] Executing ViewResult, running view Seanslar.
+2026-07-02 20:14:00.891 +03:00 [INF] Executed ViewResult - view Seanslar executed in 2.2252ms.
+2026-07-02 20:14:00.891 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem) in 2.7848ms
+2026-07-02 20:14:00.891 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:14:00.891 +03:00 [INF] HTTP GET /Admin/Seanslar responded 200 in 4.5945 ms
+2026-07-02 20:14:00.891 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Seanslar - 200 null text/html; charset=utf-8 4.8695ms
+2026-07-02 20:14:03.725 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Seanslar?searchString=aaa - null null
+2026-07-02 20:14:03.726 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:14:03.727 +03:00 [INF] Route matched with {action = "Seanslar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Seanslar(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:03.727 +03:00 [INF] Toplam 0 adet seans listelendi.
+2026-07-02 20:14:03.728 +03:00 [INF] Executing ViewResult, running view Seanslar.
+2026-07-02 20:14:03.730 +03:00 [INF] Executed ViewResult - view Seanslar executed in 2.1142ms.
+2026-07-02 20:14:03.730 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem) in 3.3125ms
+2026-07-02 20:14:03.730 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:14:03.730 +03:00 [INF] HTTP GET /Admin/Seanslar responded 200 in 4.6403 ms
+2026-07-02 20:14:03.730 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Seanslar?searchString=aaa - 200 null text/html; charset=utf-8 4.9538ms
+2026-07-02 20:14:06.324 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Seanslar?searchString=lucy - null null
+2026-07-02 20:14:06.325 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:14:06.326 +03:00 [INF] Route matched with {action = "Seanslar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Seanslar(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:06.326 +03:00 [INF] Toplam 1 adet seans listelendi.
+2026-07-02 20:14:06.326 +03:00 [INF] Executing ViewResult, running view Seanslar.
+2026-07-02 20:14:06.327 +03:00 [INF] Executed ViewResult - view Seanslar executed in 1.0968ms.
+2026-07-02 20:14:06.327 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem) in 1.6261ms
+2026-07-02 20:14:06.327 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:14:06.327 +03:00 [INF] HTTP GET /Admin/Seanslar responded 200 in 3.1998 ms
+2026-07-02 20:14:06.327 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Seanslar?searchString=lucy - 200 null text/html; charset=utf-8 3.5084ms
+2026-07-02 20:14:08.506 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin - null null
+2026-07-02 20:14:08.508 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:14:08.511 +03:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:08.513 +03:00 [WRN] >>> VERİLER VERİTABANINDAN ÇEKİLDİ VE CACHE'E EKLENDİ! <<<
+2026-07-02 20:14:08.519 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+2026-07-02 20:14:08.519 +03:00 [INF] Toplam 3 adet film listelendi.
+2026-07-02 20:14:08.521 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:14:08.537 +03:00 [INF] Executed ViewResult - view Index executed in 17.2475ms.
+2026-07-02 20:14:08.537 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem) in 26.0747ms
+2026-07-02 20:14:08.537 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:14:08.537 +03:00 [INF] HTTP GET /Admin responded 200 in 30.5916 ms
+2026-07-02 20:14:08.537 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin - 200 null text/html; charset=utf-8 30.8725ms
+2026-07-02 20:14:11.013 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin?searchString=annem - null null
+2026-07-02 20:14:11.015 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:14:11.015 +03:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:11.015 +03:00 [INF] >>> VERİLER CACHE'TEN (BELLEKTEN) GELDİ! (Hızlı Yükleme) <<<
+2026-07-02 20:14:11.016 +03:00 [INF] Toplam 0 adet film listelendi.
+2026-07-02 20:14:11.016 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:14:11.018 +03:00 [INF] Executed ViewResult - view Index executed in 1.9586ms.
+2026-07-02 20:14:11.018 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem) in 2.9487ms
+2026-07-02 20:14:11.018 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:14:11.018 +03:00 [INF] HTTP GET /Admin responded 200 in 4.6558 ms
+2026-07-02 20:14:11.018 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin?searchString=annem - 200 null text/html; charset=utf-8 4.9225ms
+2026-07-02 20:14:13.100 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin?searchString=babam - null null
+2026-07-02 20:14:13.101 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:14:13.101 +03:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:13.101 +03:00 [INF] >>> VERİLER CACHE'TEN (BELLEKTEN) GELDİ! (Hızlı Yükleme) <<<
+2026-07-02 20:14:13.101 +03:00 [INF] Toplam 1 adet film listelendi.
+2026-07-02 20:14:13.102 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:14:13.104 +03:00 [INF] Executed ViewResult - view Index executed in 2.0646ms.
+2026-07-02 20:14:13.104 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem) in 2.6588ms
+2026-07-02 20:14:13.104 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:14:13.104 +03:00 [INF] HTTP GET /Admin responded 200 in 3.9917 ms
+2026-07-02 20:14:13.104 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin?searchString=babam - 200 null text/html; charset=utf-8 4.2242ms
+2026-07-02 20:14:14.956 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Raporlar - null null
+2026-07-02 20:14:14.957 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Raporlar (dbfirstProjem)'
+2026-07-02 20:14:14.959 +03:00 [INF] Route matched with {action = "Raporlar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Raporlar() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:15.056 +03:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Ad] AS [FilmAdi], (
+    SELECT COUNT(*)
+    FROM [Biletler] AS [b]
+    INNER JOIN [Seanslar] AS [s] ON [b].[SeansId] = [s].[SeansId]
+    WHERE [s].[FilmId] = [f].[FilmId]) AS [SatilanBiletSayisi], COALESCE((
+    SELECT COALESCE(SUM([b0].[Fiyat]), 0.0)
+    FROM [Biletler] AS [b0]
+    INNER JOIN [Seanslar] AS [s0] ON [b0].[SeansId] = [s0].[SeansId]
+    WHERE [s0].[FilmId] = [f].[FilmId]), 0.0) AS [ToplamHasilat]
+FROM [Filmler] AS [f]
+2026-07-02 20:14:15.075 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[BaslamaZamani] AS [TarihSaat], [f].[Ad] AS [FilmAdi], [s0].[SalonAd] AS [SalonAdi], [s0].[Kapasite] AS [SalonKapasitesi], (
+    SELECT COUNT(*)
+    FROM [Biletler] AS [b]
+    WHERE [b].[SeansId] = [s].[SeansId]) AS [SatilanKoltukSayisi]
+FROM [Seanslar] AS [s]
+INNER JOIN [Filmler] AS [f] ON [s].[FilmId] = [f].[FilmId]
+INNER JOIN [Salonlar] AS [s0] ON [s].[SalonId] = [s0].[SalonId]
+2026-07-02 20:14:15.093 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id] AS [UserId], COALESCE([a].[Email], N'Bilinmiyor') AS [KullaniciEmail], (
+    SELECT COUNT(*)
+    FROM [Biletler] AS [b0]
+    WHERE [b0].[UserId] = [a].[Id]) AS [ToplamBiletSayisi], COALESCE((
+    SELECT COALESCE(SUM([b1].[Fiyat]), 0.0)
+    FROM [Biletler] AS [b1]
+    WHERE [b1].[UserId] = [a].[Id]), 0.0) AS [ToplamHarcama]
+FROM [AspNetUsers] AS [a]
+WHERE (
+    SELECT COUNT(*)
+    FROM [Biletler] AS [b]
+    WHERE [b].[UserId] = [a].[Id]) > 0
+2026-07-02 20:14:15.123 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COALESCE([f].[Tur], N'Bilinmiyor') AS [FilmTuru], COALESCE((
+    SELECT COALESCE(SUM([b].[Fiyat]), 0.0)
+    FROM [Biletler] AS [b]
+    INNER JOIN [Seanslar] AS [s] ON [b].[SeansId] = [s].[SeansId]
+    INNER JOIN [Filmler] AS [f0] ON [s].[FilmId] = [f0].[FilmId]
+    WHERE [f0].[Tur] = [f].[Tur] OR ([f0].[Tur] IS NULL AND [f].[Tur] IS NULL)), 0.0) AS [ToplamHasilat]
+FROM [Filmler] AS [f]
+WHERE [f].[Tur] IS NOT NULL
+GROUP BY [f].[Tur]
+2026-07-02 20:14:15.136 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalonAd] AS [SalonAdi], (
+    SELECT COUNT(*)
+    FROM [Biletler] AS [b]
+    INNER JOIN [Seanslar] AS [s0] ON [b].[SeansId] = [s0].[SeansId]
+    WHERE [s0].[SalonId] = [s].[SalonId]) AS [ToplamSatilanBilet], COALESCE((
+    SELECT COALESCE(SUM([b0].[Fiyat]), 0.0)
+    FROM [Biletler] AS [b0]
+    INNER JOIN [Seanslar] AS [s1] ON [b0].[SeansId] = [s1].[SeansId]
+    WHERE [s1].[SalonId] = [s].[SalonId]), 0.0) AS [ToplamGelir]
+FROM [Salonlar] AS [s]
+2026-07-02 20:14:15.136 +03:00 [INF] Executing ViewResult, running view Raporlar.
+2026-07-02 20:14:15.143 +03:00 [INF] Executed ViewResult - view Raporlar executed in 7.0753ms.
+2026-07-02 20:14:15.143 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Raporlar (dbfirstProjem) in 183.7325ms
+2026-07-02 20:14:15.143 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Raporlar (dbfirstProjem)'
+2026-07-02 20:14:15.143 +03:00 [INF] HTTP GET /Admin/Raporlar responded 200 in 187.4310 ms
+2026-07-02 20:14:15.143 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Raporlar - 200 null text/html; charset=utf-8 187.6169ms
+2026-07-02 20:14:50.174 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin - null null
+2026-07-02 20:14:50.177 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:14:50.177 +03:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:50.177 +03:00 [INF] >>> VERİLER CACHE'TEN (BELLEKTEN) GELDİ! (Hızlı Yükleme) <<<
+2026-07-02 20:14:50.177 +03:00 [INF] Toplam 3 adet film listelendi.
+2026-07-02 20:14:50.178 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:14:50.179 +03:00 [INF] Executed ViewResult - view Index executed in 1.1741ms.
+2026-07-02 20:14:50.179 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem) in 1.8149ms
+2026-07-02 20:14:50.179 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:14:50.179 +03:00 [INF] HTTP GET /Admin responded 200 in 3.3740 ms
+2026-07-02 20:14:50.179 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin - 200 null text/html; charset=utf-8 4.4617ms
+2026-07-02 20:14:52.989 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/FilmEkle - null null
+2026-07-02 20:14:52.991 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.FilmEkle (dbfirstProjem)'
+2026-07-02 20:14:52.993 +03:00 [INF] Route matched with {action = "FilmEkle", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FilmEkle() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:52.994 +03:00 [INF] Executing ViewResult, running view FilmEkle.
+2026-07-02 20:14:53.018 +03:00 [INF] Executed ViewResult - view FilmEkle executed in 24.812ms.
+2026-07-02 20:14:53.018 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.FilmEkle (dbfirstProjem) in 25.2617ms
+2026-07-02 20:14:53.018 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.FilmEkle (dbfirstProjem)'
+2026-07-02 20:14:53.018 +03:00 [INF] HTTP GET /Admin/FilmEkle responded 200 in 28.8154 ms
+2026-07-02 20:14:53.018 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/FilmEkle - 200 null text/html; charset=utf-8 29.0347ms
+2026-07-02 20:14:55.658 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Seanslar - null null
+2026-07-02 20:14:55.660 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:14:55.660 +03:00 [INF] Route matched with {action = "Seanslar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Seanslar(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:55.661 +03:00 [INF] Toplam 3 adet seans listelendi.
+2026-07-02 20:14:55.661 +03:00 [INF] Executing ViewResult, running view Seanslar.
+2026-07-02 20:14:55.663 +03:00 [INF] Executed ViewResult - view Seanslar executed in 1.8422ms.
+2026-07-02 20:14:55.663 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem) in 2.6714ms
+2026-07-02 20:14:55.663 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Seanslar (dbfirstProjem)'
+2026-07-02 20:14:55.663 +03:00 [INF] HTTP GET /Admin/Seanslar responded 200 in 4.8336 ms
+2026-07-02 20:14:55.663 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Seanslar - 200 null text/html; charset=utf-8 5.0872ms
+2026-07-02 20:14:57.741 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/SeansEkle - null null
+2026-07-02 20:14:57.743 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem)'
+2026-07-02 20:14:57.743 +03:00 [INF] Route matched with {action = "SeansEkle", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SeansEkle() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:57.749 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+2026-07-02 20:14:57.753 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalonId], [s].[SalonAd], [s].[Kapasite]
+FROM [Salonlar] AS [s]
+2026-07-02 20:14:57.754 +03:00 [INF] Executing ViewResult, running view SeansEkle.
+2026-07-02 20:14:57.757 +03:00 [INF] Executed ViewResult - view SeansEkle executed in 2.7407ms.
+2026-07-02 20:14:57.757 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem) in 13.9966ms
+2026-07-02 20:14:57.757 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem)'
+2026-07-02 20:14:57.757 +03:00 [INF] HTTP GET /Admin/SeansEkle responded 200 in 15.6696 ms
+2026-07-02 20:14:57.757 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/SeansEkle - 200 null text/html; charset=utf-8 16.0291ms
+2026-07-02 20:14:58.723 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Salonlar - null null
+2026-07-02 20:14:58.724 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:14:58.724 +03:00 [INF] Route matched with {action = "Salonlar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Salonlar(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:58.725 +03:00 [INF] Toplam 3 adet salon listelendi.
+2026-07-02 20:14:58.725 +03:00 [INF] Executing ViewResult, running view Salonlar.
+2026-07-02 20:14:58.726 +03:00 [INF] Executed ViewResult - view Salonlar executed in 1.3269ms.
+2026-07-02 20:14:58.726 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem) in 1.905ms
+2026-07-02 20:14:58.726 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:14:58.726 +03:00 [INF] HTTP GET /Admin/Salonlar responded 200 in 3.0443 ms
+2026-07-02 20:14:58.726 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Salonlar - 200 null text/html; charset=utf-8 3.3077ms
+2026-07-02 20:14:59.519 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/SeansEkle - null null
+2026-07-02 20:14:59.520 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem)'
+2026-07-02 20:14:59.520 +03:00 [INF] Route matched with {action = "SeansEkle", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SeansEkle() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:14:59.526 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+2026-07-02 20:14:59.530 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalonId], [s].[SalonAd], [s].[Kapasite]
+FROM [Salonlar] AS [s]
+2026-07-02 20:14:59.531 +03:00 [INF] Executing ViewResult, running view SeansEkle.
+2026-07-02 20:14:59.534 +03:00 [INF] Executed ViewResult - view SeansEkle executed in 2.6427ms.
+2026-07-02 20:14:59.534 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem) in 13.1307ms
+2026-07-02 20:14:59.534 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.SeansEkle (dbfirstProjem)'
+2026-07-02 20:14:59.534 +03:00 [INF] HTTP GET /Admin/SeansEkle responded 200 in 14.5539 ms
+2026-07-02 20:14:59.534 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/SeansEkle - 200 null text/html; charset=utf-8 15.0166ms
+2026-07-02 20:15:00.690 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Salonlar - null null
+2026-07-02 20:15:00.691 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:15:00.691 +03:00 [INF] Route matched with {action = "Salonlar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Salonlar(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:15:00.691 +03:00 [INF] Toplam 3 adet salon listelendi.
+2026-07-02 20:15:00.692 +03:00 [INF] Executing ViewResult, running view Salonlar.
+2026-07-02 20:15:00.693 +03:00 [INF] Executed ViewResult - view Salonlar executed in 1.3904ms.
+2026-07-02 20:15:00.693 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem) in 1.8072ms
+2026-07-02 20:15:00.693 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Salonlar (dbfirstProjem)'
+2026-07-02 20:15:00.693 +03:00 [INF] HTTP GET /Admin/Salonlar responded 200 in 3.1490 ms
+2026-07-02 20:15:00.693 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Salonlar - 200 null text/html; charset=utf-8 3.4167ms
+2026-07-02 20:15:01.907 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/SalonEkle - null null
+2026-07-02 20:15:01.908 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.SalonEkle (dbfirstProjem)'
+2026-07-02 20:15:01.910 +03:00 [INF] Route matched with {action = "SalonEkle", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SalonEkle() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:15:01.912 +03:00 [INF] Executing ViewResult, running view SalonEkle.
+2026-07-02 20:15:01.931 +03:00 [INF] Executed ViewResult - view SalonEkle executed in 20.5933ms.
+2026-07-02 20:15:01.931 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.SalonEkle (dbfirstProjem) in 21.0433ms
+2026-07-02 20:15:01.931 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.SalonEkle (dbfirstProjem)'
+2026-07-02 20:15:01.931 +03:00 [INF] HTTP GET /Admin/SalonEkle responded 200 in 24.0892 ms
+2026-07-02 20:15:01.931 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/SalonEkle - 200 null text/html; charset=utf-8 24.4829ms
+2026-07-02 20:15:02.908 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/Raporlar - null null
+2026-07-02 20:15:02.909 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Raporlar (dbfirstProjem)'
+2026-07-02 20:15:02.910 +03:00 [INF] Route matched with {action = "Raporlar", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Raporlar() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:15:02.921 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[Ad] AS [FilmAdi], (
+    SELECT COUNT(*)
+    FROM [Biletler] AS [b]
+    INNER JOIN [Seanslar] AS [s] ON [b].[SeansId] = [s].[SeansId]
+    WHERE [s].[FilmId] = [f].[FilmId]) AS [SatilanBiletSayisi], COALESCE((
+    SELECT COALESCE(SUM([b0].[Fiyat]), 0.0)
+    FROM [Biletler] AS [b0]
+    INNER JOIN [Seanslar] AS [s0] ON [b0].[SeansId] = [s0].[SeansId]
+    WHERE [s0].[FilmId] = [f].[FilmId]), 0.0) AS [ToplamHasilat]
+FROM [Filmler] AS [f]
+2026-07-02 20:15:02.926 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[BaslamaZamani] AS [TarihSaat], [f].[Ad] AS [FilmAdi], [s0].[SalonAd] AS [SalonAdi], [s0].[Kapasite] AS [SalonKapasitesi], (
+    SELECT COUNT(*)
+    FROM [Biletler] AS [b]
+    WHERE [b].[SeansId] = [s].[SeansId]) AS [SatilanKoltukSayisi]
+FROM [Seanslar] AS [s]
+INNER JOIN [Filmler] AS [f] ON [s].[FilmId] = [f].[FilmId]
+INNER JOIN [Salonlar] AS [s0] ON [s].[SalonId] = [s0].[SalonId]
+2026-07-02 20:15:02.929 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id] AS [UserId], COALESCE([a].[Email], N'Bilinmiyor') AS [KullaniciEmail], (
+    SELECT COUNT(*)
+    FROM [Biletler] AS [b0]
+    WHERE [b0].[UserId] = [a].[Id]) AS [ToplamBiletSayisi], COALESCE((
+    SELECT COALESCE(SUM([b1].[Fiyat]), 0.0)
+    FROM [Biletler] AS [b1]
+    WHERE [b1].[UserId] = [a].[Id]), 0.0) AS [ToplamHarcama]
+FROM [AspNetUsers] AS [a]
+WHERE (
+    SELECT COUNT(*)
+    FROM [Biletler] AS [b]
+    WHERE [b].[UserId] = [a].[Id]) > 0
+2026-07-02 20:15:02.935 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COALESCE([f].[Tur], N'Bilinmiyor') AS [FilmTuru], COALESCE((
+    SELECT COALESCE(SUM([b].[Fiyat]), 0.0)
+    FROM [Biletler] AS [b]
+    INNER JOIN [Seanslar] AS [s] ON [b].[SeansId] = [s].[SeansId]
+    INNER JOIN [Filmler] AS [f0] ON [s].[FilmId] = [f0].[FilmId]
+    WHERE [f0].[Tur] = [f].[Tur] OR ([f0].[Tur] IS NULL AND [f].[Tur] IS NULL)), 0.0) AS [ToplamHasilat]
+FROM [Filmler] AS [f]
+WHERE [f].[Tur] IS NOT NULL
+GROUP BY [f].[Tur]
+2026-07-02 20:15:02.940 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SalonAd] AS [SalonAdi], (
+    SELECT COUNT(*)
+    FROM [Biletler] AS [b]
+    INNER JOIN [Seanslar] AS [s0] ON [b].[SeansId] = [s0].[SeansId]
+    WHERE [s0].[SalonId] = [s].[SalonId]) AS [ToplamSatilanBilet], COALESCE((
+    SELECT COALESCE(SUM([b0].[Fiyat]), 0.0)
+    FROM [Biletler] AS [b0]
+    INNER JOIN [Seanslar] AS [s1] ON [b0].[SeansId] = [s1].[SeansId]
+    WHERE [s1].[SalonId] = [s].[SalonId]), 0.0) AS [ToplamGelir]
+FROM [Salonlar] AS [s]
+2026-07-02 20:15:02.940 +03:00 [INF] Executing ViewResult, running view Raporlar.
+2026-07-02 20:15:02.943 +03:00 [INF] Executed ViewResult - view Raporlar executed in 3.1195ms.
+2026-07-02 20:15:02.943 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Raporlar (dbfirstProjem) in 33.4273ms
+2026-07-02 20:15:02.943 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Raporlar (dbfirstProjem)'
+2026-07-02 20:15:02.943 +03:00 [INF] HTTP GET /Admin/Raporlar responded 200 in 34.8479 ms
+2026-07-02 20:15:02.943 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/Raporlar - 200 null text/html; charset=utf-8 35.1782ms
+2026-07-02 20:15:09.224 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin - null null
+2026-07-02 20:15:09.226 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:15:09.226 +03:00 [INF] Route matched with {action = "Index", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:15:09.226 +03:00 [INF] >>> VERİLER CACHE'TEN (BELLEKTEN) GELDİ! (Hızlı Yükleme) <<<
+2026-07-02 20:15:09.226 +03:00 [INF] Toplam 3 adet film listelendi.
+2026-07-02 20:15:09.227 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:15:09.227 +03:00 [INF] Executed ViewResult - view Index executed in 0.9808ms.
+2026-07-02 20:15:09.228 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem) in 1.7225ms
+2026-07-02 20:15:09.228 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.Index (dbfirstProjem)'
+2026-07-02 20:15:09.228 +03:00 [INF] HTTP GET /Admin responded 200 in 3.0180 ms
+2026-07-02 20:15:09.228 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin - 200 null text/html; charset=utf-8 3.354ms
+2026-07-02 20:15:13.053 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin/FilmEkle - null null
+2026-07-02 20:15:13.055 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AdminController.FilmEkle (dbfirstProjem)'
+2026-07-02 20:15:13.055 +03:00 [INF] Route matched with {action = "FilmEkle", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult FilmEkle() on controller dbfirstProjem.Controllers.AdminController (dbfirstProjem).
+2026-07-02 20:15:13.056 +03:00 [INF] Executing ViewResult, running view FilmEkle.
+2026-07-02 20:15:13.058 +03:00 [INF] Executed ViewResult - view FilmEkle executed in 2.454ms.
+2026-07-02 20:15:13.058 +03:00 [INF] Executed action dbfirstProjem.Controllers.AdminController.FilmEkle (dbfirstProjem) in 2.6977ms
+2026-07-02 20:15:13.058 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AdminController.FilmEkle (dbfirstProjem)'
+2026-07-02 20:15:13.058 +03:00 [INF] HTTP GET /Admin/FilmEkle responded 200 in 3.8555 ms
+2026-07-02 20:15:13.058 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin/FilmEkle - 200 null text/html; charset=utf-8 4.8667ms
+2026-07-02 20:15:16.617 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5007/Account/Logout - application/x-www-form-urlencoded 225
+2026-07-02 20:15:16.618 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AccountController.Logout (dbfirstProjem)'
+2026-07-02 20:15:16.627 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller dbfirstProjem.Controllers.AccountController (dbfirstProjem).
+2026-07-02 20:15:16.631 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2026-07-02 20:15:16.631 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2026-07-02 20:15:16.632 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2026-07-02 20:15:16.632 +03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-07-02 20:15:16.632 +03:00 [INF] Executed action dbfirstProjem.Controllers.AccountController.Logout (dbfirstProjem) in 5.4792ms
+2026-07-02 20:15:16.632 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AccountController.Logout (dbfirstProjem)'
+2026-07-02 20:15:16.632 +03:00 [INF] HTTP POST /Account/Logout responded 302 in 15.0595 ms
+2026-07-02 20:15:16.633 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5007/Account/Logout - 302 0 null 15.7513ms
+2026-07-02 20:15:16.635 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/ - null null
+2026-07-02 20:15:16.636 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.HomeController.Index (dbfirstProjem)'
+2026-07-02 20:15:16.637 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller dbfirstProjem.Controllers.HomeController (dbfirstProjem).
+2026-07-02 20:15:16.637 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-02 20:15:16.655 +03:00 [INF] Executed ViewResult - view Index executed in 17.8172ms.
+2026-07-02 20:15:16.655 +03:00 [INF] Executed action dbfirstProjem.Controllers.HomeController.Index (dbfirstProjem) in 18.3011ms
+2026-07-02 20:15:16.655 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.HomeController.Index (dbfirstProjem)'
+2026-07-02 20:15:16.655 +03:00 [INF] HTTP GET / responded 200 in 19.5573 ms
+2026-07-02 20:15:16.655 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/ - 200 null text/html; charset=utf-8 19.7122ms
+2026-07-02 20:15:17.621 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Home/Login - null null
+2026-07-02 20:15:17.622 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.HomeController.Login (dbfirstProjem)'
+2026-07-02 20:15:17.624 +03:00 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller dbfirstProjem.Controllers.HomeController (dbfirstProjem).
+2026-07-02 20:15:17.625 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-02 20:15:17.637 +03:00 [INF] Executed ViewResult - view Login executed in 12.8345ms.
+2026-07-02 20:15:17.637 +03:00 [INF] Executed action dbfirstProjem.Controllers.HomeController.Login (dbfirstProjem) in 13.6287ms
+2026-07-02 20:15:17.637 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.HomeController.Login (dbfirstProjem)'
+2026-07-02 20:15:17.638 +03:00 [INF] HTTP GET /Home/Login responded 200 in 15.8465 ms
+2026-07-02 20:15:17.638 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Home/Login - 200 null text/html; charset=utf-8 16.1205ms
+2026-07-02 20:15:26.520 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5007/Account/Login - application/x-www-form-urlencoded 230
+2026-07-02 20:15:26.522 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AccountController.Login (dbfirstProjem)'
+2026-07-02 20:15:26.530 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String, System.String) on controller dbfirstProjem.Controllers.AccountController (dbfirstProjem).
+2026-07-02 20:15:26.586 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-07-02 20:15:26.610 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-07-02 20:15:26.613 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-07-02 20:15:26.659 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@user_Id='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @user_Id
+2026-07-02 20:15:26.662 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-07-02 20:15:26.666 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-07-02 20:15:26.671 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@role_Id='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @role_Id
+2026-07-02 20:15:26.672 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-07-02 20:15:26.673 +03:00 [INF] Executing RedirectResult, redirecting to /Home/KullaniciEkrani.
+2026-07-02 20:15:26.674 +03:00 [INF] Executed action dbfirstProjem.Controllers.AccountController.Login (dbfirstProjem) in 143.1822ms
+2026-07-02 20:15:26.674 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AccountController.Login (dbfirstProjem)'
+2026-07-02 20:15:26.674 +03:00 [INF] HTTP POST /Account/Login responded 302 in 154.3203 ms
+2026-07-02 20:15:26.674 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5007/Account/Login - 302 0 null 154.5477ms
+2026-07-02 20:15:26.678 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Home/KullaniciEkrani - null null
+2026-07-02 20:15:26.679 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.HomeController.KullaniciEkrani (dbfirstProjem)'
+2026-07-02 20:15:26.679 +03:00 [INF] Route matched with {action = "KullaniciEkrani", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KullaniciEkrani() on controller dbfirstProjem.Controllers.HomeController (dbfirstProjem).
+2026-07-02 20:15:26.681 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+2026-07-02 20:15:26.682 +03:00 [INF] Executing ViewResult, running view KullaniciEkrani.
+2026-07-02 20:15:26.686 +03:00 [INF] Executed ViewResult - view KullaniciEkrani executed in 4.4019ms.
+2026-07-02 20:15:26.686 +03:00 [INF] Executed action dbfirstProjem.Controllers.HomeController.KullaniciEkrani (dbfirstProjem) in 7.0236ms
+2026-07-02 20:15:26.686 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.HomeController.KullaniciEkrani (dbfirstProjem)'
+2026-07-02 20:15:26.686 +03:00 [INF] HTTP GET /Home/KullaniciEkrani responded 200 in 7.8554 ms
+2026-07-02 20:15:26.686 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Home/KullaniciEkrani - 200 null text/html; charset=utf-8 7.9098ms
+2026-07-02 20:15:29.101 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Bilet/Biletlerim - null null
+2026-07-02 20:15:29.102 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.BiletController.Biletlerim (dbfirstProjem)'
+2026-07-02 20:15:29.104 +03:00 [INF] Route matched with {action = "Biletlerim", controller = "Bilet"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Biletlerim() on controller dbfirstProjem.Controllers.BiletController (dbfirstProjem).
+2026-07-02 20:15:29.137 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@userId='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BiletId], [b].[Fiyat], [b].[KoltukId], [b].[SatisTarihi], [b].[SeansId], [b].[UserId], [s].[SeansId], [s].[BaslamaZamani], [s].[FilmId], [s].[SalonId], [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur], [s0].[SalonId], [s0].[SalonAd], [s0].[Kapasite], [k].[KoltukId], [k].[DoluMu], [k].[Numara], [k].[SalonId], [k].[Sira]
+FROM [Biletler] AS [b]
+INNER JOIN [Seanslar] AS [s] ON [b].[SeansId] = [s].[SeansId]
+INNER JOIN [Filmler] AS [f] ON [s].[FilmId] = [f].[FilmId]
+INNER JOIN [Salonlar] AS [s0] ON [s].[SalonId] = [s0].[SalonId]
+INNER JOIN [Koltuklar] AS [k] ON [b].[KoltukId] = [k].[KoltukId]
+WHERE [b].[UserId] = @userId
+ORDER BY [b].[SatisTarihi] DESC
+2026-07-02 20:15:29.153 +03:00 [INF] Executing ViewResult, running view Biletlerim.
+2026-07-02 20:15:29.161 +03:00 [INF] Executed ViewResult - view Biletlerim executed in 7.9203ms.
+2026-07-02 20:15:29.161 +03:00 [INF] Executed action dbfirstProjem.Controllers.BiletController.Biletlerim (dbfirstProjem) in 56.6781ms
+2026-07-02 20:15:29.161 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.BiletController.Biletlerim (dbfirstProjem)'
+2026-07-02 20:15:29.161 +03:00 [INF] HTTP GET /Bilet/Biletlerim responded 200 in 59.5889 ms
+2026-07-02 20:15:29.161 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Bilet/Biletlerim - 200 null text/html; charset=utf-8 59.9104ms
+2026-07-02 20:15:33.507 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Home/Login - null null
+2026-07-02 20:15:33.508 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.HomeController.Login (dbfirstProjem)'
+2026-07-02 20:15:33.508 +03:00 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller dbfirstProjem.Controllers.HomeController (dbfirstProjem).
+2026-07-02 20:15:33.508 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-02 20:15:33.510 +03:00 [INF] Executed ViewResult - view Login executed in 1.6186ms.
+2026-07-02 20:15:33.510 +03:00 [INF] Executed action dbfirstProjem.Controllers.HomeController.Login (dbfirstProjem) in 1.9183ms
+2026-07-02 20:15:33.510 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.HomeController.Login (dbfirstProjem)'
+2026-07-02 20:15:33.510 +03:00 [INF] HTTP GET /Home/Login responded 200 in 3.3692 ms
+2026-07-02 20:15:33.510 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Home/Login - 200 null text/html; charset=utf-8 3.6774ms
+2026-07-02 20:15:42.782 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5007/Account/Login - application/x-www-form-urlencoded 274
+2026-07-02 20:15:42.783 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AccountController.Login (dbfirstProjem)'
+2026-07-02 20:15:42.783 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String, System.String, System.String) on controller dbfirstProjem.Controllers.AccountController (dbfirstProjem).
+2026-07-02 20:15:42.788 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-07-02 20:15:42.792 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-07-02 20:15:42.795 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-07-02 20:15:42.866 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@user_Id='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @user_Id
+2026-07-02 20:15:42.869 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-07-02 20:15:42.872 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-07-02 20:15:42.873 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@role_Id='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @role_Id
+2026-07-02 20:15:42.874 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2026-07-02 20:15:42.874 +03:00 [INF] Executing RedirectResult, redirecting to /Home/KullaniciEkrani.
+2026-07-02 20:15:42.874 +03:00 [INF] Executed action dbfirstProjem.Controllers.AccountController.Login (dbfirstProjem) in 91.2018ms
+2026-07-02 20:15:42.874 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AccountController.Login (dbfirstProjem)'
+2026-07-02 20:15:42.874 +03:00 [INF] HTTP POST /Account/Login responded 302 in 92.1220 ms
+2026-07-02 20:15:42.874 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5007/Account/Login - 302 0 null 92.394ms
+2026-07-02 20:15:42.878 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Home/KullaniciEkrani - null null
+2026-07-02 20:15:42.879 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.HomeController.KullaniciEkrani (dbfirstProjem)'
+2026-07-02 20:15:42.879 +03:00 [INF] Route matched with {action = "KullaniciEkrani", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KullaniciEkrani() on controller dbfirstProjem.Controllers.HomeController (dbfirstProjem).
+2026-07-02 20:15:42.883 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+2026-07-02 20:15:42.883 +03:00 [INF] Executing ViewResult, running view KullaniciEkrani.
+2026-07-02 20:15:42.884 +03:00 [INF] Executed ViewResult - view KullaniciEkrani executed in 0.8507ms.
+2026-07-02 20:15:42.884 +03:00 [INF] Executed action dbfirstProjem.Controllers.HomeController.KullaniciEkrani (dbfirstProjem) in 4.884ms
+2026-07-02 20:15:42.884 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.HomeController.KullaniciEkrani (dbfirstProjem)'
+2026-07-02 20:15:42.884 +03:00 [INF] HTTP GET /Home/KullaniciEkrani responded 200 in 5.4075 ms
+2026-07-02 20:15:42.884 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Home/KullaniciEkrani - 200 null text/html; charset=utf-8 5.4885ms
+2026-07-02 20:15:44.641 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Bilet/Biletlerim - null null
+2026-07-02 20:15:44.644 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.BiletController.Biletlerim (dbfirstProjem)'
+2026-07-02 20:15:44.644 +03:00 [INF] Route matched with {action = "Biletlerim", controller = "Bilet"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Biletlerim() on controller dbfirstProjem.Controllers.BiletController (dbfirstProjem).
+2026-07-02 20:15:44.652 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@userId='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BiletId], [b].[Fiyat], [b].[KoltukId], [b].[SatisTarihi], [b].[SeansId], [b].[UserId], [s].[SeansId], [s].[BaslamaZamani], [s].[FilmId], [s].[SalonId], [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur], [s0].[SalonId], [s0].[SalonAd], [s0].[Kapasite], [k].[KoltukId], [k].[DoluMu], [k].[Numara], [k].[SalonId], [k].[Sira]
+FROM [Biletler] AS [b]
+INNER JOIN [Seanslar] AS [s] ON [b].[SeansId] = [s].[SeansId]
+INNER JOIN [Filmler] AS [f] ON [s].[FilmId] = [f].[FilmId]
+INNER JOIN [Salonlar] AS [s0] ON [s].[SalonId] = [s0].[SalonId]
+INNER JOIN [Koltuklar] AS [k] ON [b].[KoltukId] = [k].[KoltukId]
+WHERE [b].[UserId] = @userId
+ORDER BY [b].[SatisTarihi] DESC
+2026-07-02 20:15:44.654 +03:00 [INF] Executing ViewResult, running view Biletlerim.
+2026-07-02 20:15:44.655 +03:00 [INF] Executed ViewResult - view Biletlerim executed in 1.6535ms.
+2026-07-02 20:15:44.655 +03:00 [INF] Executed action dbfirstProjem.Controllers.BiletController.Biletlerim (dbfirstProjem) in 10.9281ms
+2026-07-02 20:15:44.656 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.BiletController.Biletlerim (dbfirstProjem)'
+2026-07-02 20:15:44.656 +03:00 [INF] HTTP GET /Bilet/Biletlerim responded 200 in 14.8861 ms
+2026-07-02 20:15:44.656 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Bilet/Biletlerim - 200 null text/html; charset=utf-8 15.2054ms
+2026-07-02 20:15:50.005 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Home/SeansSec?filmId=1002 - null null
+2026-07-02 20:15:50.007 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.HomeController.SeansSec (dbfirstProjem)'
+2026-07-02 20:15:50.009 +03:00 [INF] Route matched with {action = "SeansSec", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SeansSec(Int32) on controller dbfirstProjem.Controllers.HomeController (dbfirstProjem).
+2026-07-02 20:15:50.025 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@filmId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+WHERE [f].[FilmId] = @filmId
+2026-07-02 20:15:50.044 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@filmId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SeansId], [s].[BaslamaZamani], [s].[FilmId], [s].[SalonId], [s0].[SalonId], [s0].[SalonAd], [s0].[Kapasite]
+FROM [Seanslar] AS [s]
+INNER JOIN [Salonlar] AS [s0] ON [s].[SalonId] = [s0].[SalonId]
+WHERE [s].[FilmId] = @filmId
+2026-07-02 20:15:50.045 +03:00 [INF] Executing ViewResult, running view SeansSec.
+2026-07-02 20:15:50.064 +03:00 [INF] Executed ViewResult - view SeansSec executed in 18.7177ms.
+2026-07-02 20:15:50.064 +03:00 [INF] Executed action dbfirstProjem.Controllers.HomeController.SeansSec (dbfirstProjem) in 54.8161ms
+2026-07-02 20:15:50.064 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.HomeController.SeansSec (dbfirstProjem)'
+2026-07-02 20:15:50.064 +03:00 [INF] HTTP GET /Home/SeansSec responded 200 in 58.4457 ms
+2026-07-02 20:15:50.064 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Home/SeansSec?filmId=1002 - 200 null text/html; charset=utf-8 58.6347ms
+2026-07-02 20:15:55.463 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Bilet/KoltukSec?seansId=1 - null null
+2026-07-02 20:15:55.464 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.BiletController.KoltukSec (dbfirstProjem)'
+2026-07-02 20:15:55.466 +03:00 [INF] Route matched with {action = "KoltukSec", controller = "Bilet"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KoltukSec(Int32) on controller dbfirstProjem.Controllers.BiletController (dbfirstProjem).
+2026-07-02 20:15:55.487 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@seansId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[SeansId], [s].[BaslamaZamani], [s].[FilmId], [s].[SalonId], [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur], [s0].[SalonId], [s0].[SalonAd], [s0].[Kapasite]
+FROM [Seanslar] AS [s]
+INNER JOIN [Filmler] AS [f] ON [s].[FilmId] = [f].[FilmId]
+INNER JOIN [Salonlar] AS [s0] ON [s].[SalonId] = [s0].[SalonId]
+WHERE [s].[SeansId] = @seansId
+2026-07-02 20:15:55.501 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@secilenSeans_SalonId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [k].[KoltukId], [k].[DoluMu], [k].[Numara], [k].[SalonId], [k].[Sira]
+FROM [Koltuklar] AS [k]
+WHERE [k].[SalonId] = @secilenSeans_SalonId
+2026-07-02 20:15:55.509 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@seansId='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[KoltukId]
+FROM [Biletler] AS [b]
+WHERE [b].[SeansId] = @seansId
+2026-07-02 20:15:55.511 +03:00 [INF] Executing ViewResult, running view KoltukSec.
+2026-07-02 20:15:55.522 +03:00 [INF] Executed ViewResult - view KoltukSec executed in 11.7198ms.
+2026-07-02 20:15:55.522 +03:00 [INF] Executed action dbfirstProjem.Controllers.BiletController.KoltukSec (dbfirstProjem) in 55.876ms
+2026-07-02 20:15:55.522 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.BiletController.KoltukSec (dbfirstProjem)'
+2026-07-02 20:15:55.522 +03:00 [INF] HTTP GET /Bilet/KoltukSec responded 200 in 59.3531 ms
+2026-07-02 20:15:55.523 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Bilet/KoltukSec?seansId=1 - 200 null text/html; charset=utf-8 59.9343ms
+2026-07-02 20:16:02.256 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Home/KullaniciEkrani - null null
+2026-07-02 20:16:02.257 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.HomeController.KullaniciEkrani (dbfirstProjem)'
+2026-07-02 20:16:02.257 +03:00 [INF] Route matched with {action = "KullaniciEkrani", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KullaniciEkrani() on controller dbfirstProjem.Controllers.HomeController (dbfirstProjem).
+2026-07-02 20:16:02.262 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [f].[FilmId], [f].[Ad], [f].[Fiyat], [f].[ResimUrl], [f].[SureDk], [f].[Tur]
+FROM [Filmler] AS [f]
+2026-07-02 20:16:02.262 +03:00 [INF] Executing ViewResult, running view KullaniciEkrani.
+2026-07-02 20:16:02.264 +03:00 [INF] Executed ViewResult - view KullaniciEkrani executed in 1.4633ms.
+2026-07-02 20:16:02.264 +03:00 [INF] Executed action dbfirstProjem.Controllers.HomeController.KullaniciEkrani (dbfirstProjem) in 6.6021ms
+2026-07-02 20:16:02.264 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.HomeController.KullaniciEkrani (dbfirstProjem)'
+2026-07-02 20:16:02.264 +03:00 [INF] HTTP GET /Home/KullaniciEkrani responded 200 in 7.9073 ms
+2026-07-02 20:16:02.264 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Home/KullaniciEkrani - 200 null text/html; charset=utf-8 8.1366ms
+2026-07-02 20:16:13.723 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Home/Login - null null
+2026-07-02 20:16:13.724 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.HomeController.Login (dbfirstProjem)'
+2026-07-02 20:16:13.725 +03:00 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller dbfirstProjem.Controllers.HomeController (dbfirstProjem).
+2026-07-02 20:16:13.725 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-02 20:16:13.726 +03:00 [INF] Executed ViewResult - view Login executed in 0.902ms.
+2026-07-02 20:16:13.726 +03:00 [INF] Executed action dbfirstProjem.Controllers.HomeController.Login (dbfirstProjem) in 1.0544ms
+2026-07-02 20:16:13.726 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.HomeController.Login (dbfirstProjem)'
+2026-07-02 20:16:13.726 +03:00 [INF] HTTP GET /Home/Login responded 200 in 2.5639 ms
+2026-07-02 20:16:13.726 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Home/Login - 200 null text/html; charset=utf-8 2.7865ms
+2026-07-02 20:16:15.070 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Admin - null null
+2026-07-02 20:16:15.072 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-07-02 20:16:15.076 +03:00 [INF] AuthenticationScheme: Identity.Application was forbidden.
+2026-07-02 20:16:15.076 +03:00 [INF] HTTP GET /Admin responded 302 in 5.8586 ms
+2026-07-02 20:16:15.076 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Admin - 302 0 null 6.1277ms
+2026-07-02 20:16:15.081 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5007/Account/AccessDenied?ReturnUrl=%2FAdmin - null null
+2026-07-02 20:16:15.082 +03:00 [INF] Executing endpoint 'dbfirstProjem.Controllers.AccountController.AccessDenied (dbfirstProjem)'
+2026-07-02 20:16:15.084 +03:00 [INF] Route matched with {action = "AccessDenied", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AccessDenied() on controller dbfirstProjem.Controllers.AccountController (dbfirstProjem).
+2026-07-02 20:16:15.085 +03:00 [INF] Executing ViewResult, running view AccessDenied.
+2026-07-02 20:16:15.095 +03:00 [INF] Executed ViewResult - view AccessDenied executed in 10.2322ms.
+2026-07-02 20:16:15.095 +03:00 [INF] Executed action dbfirstProjem.Controllers.AccountController.AccessDenied (dbfirstProjem) in 10.5806ms
+2026-07-02 20:16:15.095 +03:00 [INF] Executed endpoint 'dbfirstProjem.Controllers.AccountController.AccessDenied (dbfirstProjem)'
+2026-07-02 20:16:15.095 +03:00 [INF] HTTP GET /Account/AccessDenied responded 200 in 13.3505 ms
+2026-07-02 20:16:15.095 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5007/Account/AccessDenied?ReturnUrl=%2FAdmin - 200 null text/html; charset=utf-8 13.533ms
+2026-07-02 20:18:48.214 +03:00 [INF] Application is shutting down...

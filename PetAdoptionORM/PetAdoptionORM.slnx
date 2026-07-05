@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="PetAdoptionORM/PetAdoptionORM.csproj" />
+  <Project Path="PetAdoptionORM.Data/PetAdoptionORM.Data.csproj" />
+  <Project Path="PetAdoptionORM.Model/PetAdoptionORM.Model.csproj" />
+</Solution>

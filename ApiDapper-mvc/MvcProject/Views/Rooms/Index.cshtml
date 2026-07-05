@@ -1,0 +1,63 @@
+@model IEnumerable<MvcProject.Models.Room>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="page-title">Odalar</h2>
+        <div class="title-accent"></div>
+    </div>
+    <a asp-action="Create" class="btn btn-premium shadow-sm"><i class="bi bi-plus-lg me-1"></i>Yeni Ekle</a>
+</div>
+
+<form asp-action="Index" method="get" class="mb-4">
+    <div class="input-group w-50 shadow-sm rounded-3 overflow-hidden">
+        <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" class="form-control form-control-lg border-0" placeholder="İsme veya numaraya göre ara..." />
+        <button class="btn btn-premium px-4" type="submit"><i class="bi bi-search me-1"></i>Ara</button>
+        <a asp-action="Index" class="btn btn-outline-secondary px-4 d-flex align-items-center">Temizle</a>
+    </div>
+</form>
+
+<div class="card premium-card">
+    <div class="card-body p-0">
+        <div class="table-responsive">
+            <table class="table table-custom table-hover mb-0">
+                <thead class="bg-light">
+                    <tr>
+                        <th class="ps-4">Oda Numarası</th>
+                        <th>Oda Tipi</th>
+                        <th>Müsait mi?</th>
+                        <th class="text-end pe-4">İşlemler</th>
+                    </tr>
+                </thead>
+    <tbody>
+@foreach (var item in Model) {
+            <tr>
+                <td class="ps-4 fw-medium text-dark">@item.RoomNumber</td>
+                <td class="text-muted">@item.RoomTypeName</td>
+                <td>
+                    @if (item.IsAvailable)
+                    {
+                        <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-25 px-2 py-1">Evet</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25 px-2 py-1">Hayır</span>
+                    }
+                </td>
+                <td class="text-end pe-4">
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-light text-secondary me-1" title="Düzenle"><i class="bi bi-pencil"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-light text-danger" title="Sil" onclick="return confirm('Emin misiniz?');"><i class="bi bi-trash"></i></a>
+                </td>
+            </tr>
+}
+        </tbody>
+            </table>
+        </div>
+    </div>
+</div>

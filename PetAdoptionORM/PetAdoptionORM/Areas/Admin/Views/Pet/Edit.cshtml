@@ -1,0 +1,57 @@
+@model Pet
+
+@{
+    ViewData["Title"] = "Hayvan Düzenle";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="Photo" />
+    
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Hayvan Kaydını Düzenle</h2>
+            <hr />
+        </div>
+        
+        <div class="row">
+            <div class="col-md-9">
+                <div class="mb-3">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Age"></label>
+                    <input asp-for="Age" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="HealthStatus">Sağlık Durumu</label>
+                    <input asp-for="HealthStatus" class="form-control" />
+                </div>
+                
+                <div class="mb-3">
+                    <label asp-for="BreedId">Irk</label>
+                    <select asp-for="BreedId" asp-items="ViewBag.BreedList" class="form-select">
+                        <option disabled selected>-- Irk Seçiniz --</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label>Yeni Fotoğraf Yükle (Değiştirmek istemiyorsanız boş bırakın)</label>
+                    <input type="file" name="file" class="form-control" accept="image/*" />
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:150px">Güncelle</button>
+                <a href="/Admin/Pet/Index" class="btn btn-secondary" style="width:150px">Listeye Dön</a>
+            </div>
+            
+            <div class="col-md-3">
+                @if (!string.IsNullOrEmpty(Model.Photo))
+                {
+                    <img src="@Model.Photo" width="100%" style="border-radius:5px; border:1px solid #bbb" />
+                    <p class="text-center mt-2 text-muted">Mevcut Fotoğraf</p>
+                }
+            </div>
+        </div>
+    </div>
+</form>

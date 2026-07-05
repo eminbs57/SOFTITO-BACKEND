@@ -1,0 +1,109 @@
+@page
+@model SporSalonApp.Pages.Admin.Uyeler.IndexModel
+@{
+}
+
+<br />
+<h2>Üyeler Listesi</h2>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <a class="btn btn-primary" href="/Admin/Uyeler/Create">
+        <i class="bi bi-person-plus"></i> Üye Ekle
+    </a>
+    <div>
+        <button class="btn btn-danger me-2" onclick="exportToPDF()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-pdf" viewBox="0 0 16 16"><path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/><path d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.6 11.6 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8.2 8.2 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.207.09.09 0 0 0-.042-.05.1.1 0 0 0-.066 0c-.084.034-.147.186-.174.455-.023.226-.003.49.076.815z"/></svg> PDF İndir
+        </button>
+        <button class="btn btn-success" onclick="exportToExcel()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-spreadsheet" viewBox="0 0 16 16"><path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/><path d="M3 8.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4-4a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/></svg> Excel İndir
+        </button>
+    </div>
+</div>
+
+<form method="GET" class="mb-3">
+    <div class="input-group">
+        <input type="text" class="form-control" name="search" value="@Model.SearchTerm"
+               placeholder="Ad Soyad ile ara...">
+        <button type="submit" class="btn btn-primary">Ara</button>
+        <a href="/Admin/Uyeler/Index" class="btn btn-secondary">Temizle</a>
+    </div>
+</form>
+
+<div id="exportContent">
+    <table class="table mt-3" id="uyelerTable">
+        <thead class="table-light">
+            <tr>
+                <th>ID</th>
+                <th>Ad Soyad</th>
+                <th>Email</th>
+                <th>Telefon</th>
+                <th>Kayıt Tarihi</th>
+                <th class="no-export">İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Liste)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.AdSoyad</td>
+                    <td>@item.Email</td>
+                    <td>@item.Telefon</td>
+                    <td>@item.KayitTarihi</td>
+                    <td class="no-export">
+                        <a class="btn btn-primary btn-sm" href="/Admin/Uyeler/Edit?id=@item.ID">Edit</a>
+                        <a class="btn btn-danger btn-sm" href="/Admin/Uyeler/Delete?id=@item.ID"
+                           onclick="return confirm('Bu kaydı silmek istediğinize emin misiniz?');">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <!-- SheetJS for Excel -->
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <!-- html2pdf for PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+        function exportToExcel() {
+            // Tabloyu kopyala, "no-export" sınıfına sahip sütunları sil
+            var table = document.getElementById("uyelerTable").cloneNode(true);
+            var noExportCells = table.querySelectorAll('.no-export');
+            noExportCells.forEach(cell => cell.remove());
+
+            var wb = XLSX.utils.table_to_book(table, { sheet: "Uyeler" });
+            XLSX.writeFile(wb, 'UyelerListesi.xlsx');
+        }
+
+        function exportToPDF() {
+            var element = document.getElementById('exportContent').cloneNode(true);
+            // "no-export" sınıfına sahip sütunları sil
+            var noExportCells = element.querySelectorAll('.no-export');
+            noExportCells.forEach(cell => cell.remove());
+
+            var opt = {
+                margin:       1,
+                filename:     'UyelerListesi.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2 },
+                jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
+            };
+
+            // Geçici div oluşturup sayfaya ekliyoruz çünkü html2pdf görünmez (veya CSS'siz) elementlerde sorun çıkarabilir.
+            var tempDiv = document.createElement('div');
+            tempDiv.style.position = 'absolute';
+            tempDiv.style.left = '-9999px';
+            tempDiv.appendChild(element);
+            document.body.appendChild(tempDiv);
+
+            html2pdf().set(opt).from(element).save().then(() => {
+                document.body.removeChild(tempDiv);
+            });
+        }
+    </script>
+}

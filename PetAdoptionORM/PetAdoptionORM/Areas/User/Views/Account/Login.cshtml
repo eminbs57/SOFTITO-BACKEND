@@ -1,0 +1,90 @@
+@model PetAdoptionORM.Model.LoginViewModel
+
+@{
+    ViewData["Title"] = ViewBag.IsAdminLogin == true ? "Yönetici Girişi" : "Kullanıcı Girişi";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+                <div class="row g-0">
+                    <!-- Sol Taraf - Karşılama -->
+                    <div class="col-md-6 d-none d-md-flex flex-column justify-content-center p-5 text-white" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); position: relative;">
+                        <div class="position-absolute rounded-circle" style="width: 300px; height: 300px; background: rgba(0,198,255,0.1); top: -50px; right: -50px;"></div>
+                        <div class="position-absolute rounded-circle" style="width: 200px; height: 200px; background: rgba(255,255,255,0.05); bottom: -20px; left: -50px;"></div>
+                        
+                        <div style="z-index: 1;">
+                            <i class="bi bi-suit-heart-fill mb-4 d-block" style="font-size: 3rem; color: #00c6ff;"></i>
+                            <h2 class="fw-bold mb-3">Tekrar Hoş Geldiniz!</h2>
+                            <p class="lead" style="font-size: 1rem; opacity: 0.9;">
+                                Evcil hayvan sahiplendirme platformuna giriş yaparak dostlarımıza sıcak bir yuva bulma sürecine destek olabilirsiniz.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Sağ Taraf - Form -->
+                    <div class="col-md-6 p-5 bg-white">
+                        <div class="text-center mb-4">
+                            <h3 class="fw-bold" style="color: #1e3c72;">@(ViewBag.IsAdminLogin == true ? "Yönetici Girişi" : "Kullanıcı Girişi")</h3>
+                            <p class="text-muted">Lütfen hesap bilgilerinizi giriniz.</p>
+                        </div>
+
+                        @if (TempData["SuccessMessage"] != null)
+                        {
+                            <div class="alert alert-success border-0 bg-success text-white shadow-sm" style="border-radius: 10px;">
+                                <i class="bi bi-check-circle-fill me-2"></i> @TempData["SuccessMessage"]
+                            </div>
+                        }
+
+                        <form method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                            <div class="mb-4 position-relative">
+                                <label asp-for="Email" class="form-label fw-semibold text-muted small">E-Posta Adresi</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0" style="border-radius: 10px 0 0 10px;"><i class="bi bi-envelope text-muted"></i></span>
+                                    <input asp-for="Email" class="form-control border-start-0 bg-light" style="border-radius: 0 10px 10px 0; padding: 12px;" placeholder="ornek@mail.com" />
+                                </div>
+                                <span asp-validation-for="Email" class="text-danger small mt-1 d-block"></span>
+                            </div>
+
+                            <div class="mb-4 position-relative">
+                                <label asp-for="Password" class="form-label fw-semibold text-muted small">Şifre</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0" style="border-radius: 10px 0 0 10px;"><i class="bi bi-lock text-muted"></i></span>
+                                    <input asp-for="Password" class="form-control border-start-0 bg-light" style="border-radius: 0 10px 10px 0; padding: 12px;" type="password" placeholder="Şifreniz" />
+                                </div>
+                                <span asp-validation-for="Password" class="text-danger small mt-1 d-block"></span>
+                            </div>
+
+                            <div class="mb-4 form-check">
+                                <input asp-for="RememberMe" class="form-check-input" id="rememberMe" />
+                                <label class="form-check-label text-muted small" for="rememberMe">Beni Hatırla</label>
+                            </div>
+
+                            <div class="d-grid mb-4">
+                                <button type="submit" class="btn btn-lg fw-bold shadow-sm" style="background-color: #00c6ff; color: white; border-radius: 10px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#0099cc'" onmouseout="this.style.backgroundColor='#00c6ff'">
+                                    Giriş Yap <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <div class="text-center mt-4">
+                            @if (ViewBag.IsAdminLogin == true)
+                            {
+                                <p class="mb-2"><a href="/User/Account/Login" class="text-decoration-none fw-semibold" style="color: #1e3c72;">Kullanıcı mısınız? Normal Giriş Yapın</a></p>
+                                <p class="mb-0"><span class="text-muted">Kayıtlı değil misiniz?</span> <a href="/User/Account/Register?isAdmin=true" class="text-decoration-none fw-bold" style="color: #00c6ff;">Yönetici Olun</a></p>
+                            }
+                            else
+                            {
+                                <p class="mb-2"><span class="text-muted">Kayıtlı değil misiniz?</span> <a href="/User/Account/Register" class="text-decoration-none fw-bold" style="color: #00c6ff;">Hemen Kayıt Olun</a></p>
+                                <p class="mb-0"><a href="/User/Account/AdminLogin" class="text-decoration-none text-danger fw-semibold"><i class="bi bi-shield-lock me-1"></i> Yönetici Girişi</a></p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

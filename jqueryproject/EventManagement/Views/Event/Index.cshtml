@@ -1,0 +1,61 @@
+@{
+    Layout = "_AdminLayout";
+}
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="fw-bold text-dark mb-0">Etkinlikler</h3>
+        <button id="btnAddEvent" class="btn btn-primary rounded-pill px-4 shadow-sm"><i class="bi bi-plus-lg"></i> Yeni Etkinlik Ekle</button>
+    </div>
+    
+    <div class="row mb-3">
+        <div class="col-md-4">
+            <input type="text" id="searchInput" class="form-control" placeholder="Etkinlik veya kategori ara..." />
+        </div>
+    </div>
+    <div class="card shadow-sm border-0">
+        <div class="card-body p-0">
+            <table class="table table-hover mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th class="border-0">Başlık</th>
+                        <th class="border-0">Kategori</th>
+                        <th class="border-0">Tarih</th>
+                        <th class="border-0">Kontenjan</th>
+                        <th class="border-0 text-end pe-4">İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody id="table_data" class="border-top-0">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="EventModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="eventHeading">Etkinlik Ekle</h4>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="EventId" />
+                <input type="text" id="Title" placeholder="Başlık" class="form-control" />
+                <input type="text" id="CategoryName" placeholder="Kategori" class="form-control mb-2" />
+                <input type="date" id="Date" class="form-control mb-2" />
+                <input type="number" id="Kota" placeholder="Kontenjan" class="form-control mb-2" required />
+                <textarea id="Description" placeholder="Açıklama" class="form-control mb-2"></textarea>
+                <input type="file" id="ImageFile" class="form-control mb-2" accept="image/*" />
+            </div>
+            <div class="modal-footer">
+                <button id="AddEvent" class="btn btn-primary" onclick="AddEvent()">Kaydet</button>
+                <button id="btnUpdate" class="btn btn-primary" onclick="UpdateEvent()"
+                        style="display:none">Güncelle</button>
+                <button class="btn btn-default" onclick="HideModalPopUp()">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Event.js" asp-append-version="true"></script>
+}

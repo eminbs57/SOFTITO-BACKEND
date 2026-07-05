@@ -1,0 +1,61 @@
+@model MvcProject.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Kayıt Ol";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg border-0 rounded-4" style="max-width: 500px; width: 100%;">
+        <div class="card-body p-5">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold text-primary mb-2">Hesap Oluştur</h2>
+                <p class="text-muted">Aramıza katılmak için formu doldurun</p>
+            </div>
+
+            <form asp-action="Register" method="post">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger rounded-3" role="alert"></div>
+
+                <div class="form-floating mb-3">
+                    <input asp-for="Name" class="form-control rounded-3" id="floatingName" placeholder="Ad Soyad" />
+                    <label asp-for="Name" for="floatingName">Ad Soyad</label>
+                    <span asp-validation-for="Name" class="text-danger small"></span>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input asp-for="Email" class="form-control rounded-3" id="floatingEmail" placeholder="name@example.com" />
+                    <label asp-for="Email" for="floatingEmail">E-posta Adresi</label>
+                    <span asp-validation-for="Email" class="text-danger small"></span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-floating mb-3">
+                            <input asp-for="Password" class="form-control rounded-3" id="floatingPassword" placeholder="Parola" />
+                            <label asp-for="Password" for="floatingPassword">Parola</label>
+                            <span asp-validation-for="Password" class="text-danger small"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating mb-4">
+                            <input asp-for="ConfirmPassword" class="form-control rounded-3" id="floatingConfirmPassword" placeholder="Parola Tekrar" />
+                            <label asp-for="ConfirmPassword" for="floatingConfirmPassword">Parola Tekrar</label>
+                            <span asp-validation-for="ConfirmPassword" class="text-danger small"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg rounded-3 fw-semibold shadow-sm">Kayıt Ol</button>
+                </div>
+                
+                <div class="text-center mt-4 pt-3 border-top">
+                    <p class="text-muted small mb-2">Zaten bir hesabınız var mı?</p>
+                    <a asp-action="Login" class="btn btn-outline-secondary btn-sm rounded-3 px-4 py-2">Giriş Yap</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

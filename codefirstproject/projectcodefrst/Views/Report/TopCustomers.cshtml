@@ -1,0 +1,56 @@
+@{
+    ViewData["Title"] = "En Çok Sipariş Veren Müşteriler";
+    var report = ViewBag.Report as IEnumerable<dynamic>;
+}
+
+<div class="mb-6 flex justify-between items-end">
+    <div>
+        <h2 class="text-2xl font-bold text-gray-800">En Çok Sipariş Veren Müşteriler</h2>
+        <p class="text-gray-500 mt-1">Platformda en aktif olan ve en çok sipariş veren müşteriler.</p>
+    </div>
+    <a href="/Report/Index" class="inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors shadow-sm">
+        <i class="fa-solid fa-arrow-left mr-2"></i> Raporlara Dön
+    </a>
+</div>
+
+<div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+    <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-gray-200">
+            <thead class="bg-gray-50">
+                <tr>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Müşteri Adı</th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Sipariş Sayısı</th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Alınan Toplam Ürün Adedi</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+                @if (report != null && report.Any())
+                {
+                    foreach (var item in report)
+                    {
+                        <tr class="hover:bg-gray-50 transition-colors duration-150">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                <i class="fa-solid fa-user-check text-indigo-400 mr-2"></i>@item.CustomerName
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                                <span class="px-2 py-1 bg-indigo-50 text-indigo-700 rounded-md font-semibold">@item.TotalOrders İşlem</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-900">@item.TotalItemsBought Adet</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="3" class="px-6 py-10 text-center text-sm text-gray-500">
+                            <div class="flex flex-col items-center justify-center">
+                                <i class="fa-solid fa-users text-4xl text-gray-300 mb-3"></i>
+                                <p>Herhangi bir veri bulunamadı.</p>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

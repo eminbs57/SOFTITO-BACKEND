@@ -1,0 +1,60 @@
+@model dbfirstProjem.Models.Seanslar
+
+@{
+    ViewData["Title"] = "Seans Düzenle";
+    var filmler = ViewBag.Filmler as List<dbfirstProjem.Models.Filmler>;
+    var salonlar = ViewBag.Salonlar as List<dbfirstProjem.Models.Salonlar>;
+}
+
+<div class="card bg-dark text-white border-secondary mb-4 shadow-sm">
+    <div class="card-header border-secondary d-flex justify-content-between align-items-center">
+        <h5 class="mb-0 text-warning"><i class="fas fa-edit me-2"></i>Seans Düzenle</h5>
+        <a asp-action="Seanslar" class="btn btn-sm btn-outline-secondary">Listeye Dön</a>
+    </div>
+    <div class="card-body">
+        <form asp-action="SeansDuzenle" method="post">
+            <input type="hidden" asp-for="SeansId" />
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label asp-for="FilmId" class="form-label">Film Seçiniz</label>
+                    <select asp-for="FilmId" class="form-select bg-dark text-white border-secondary" required>
+                        @if (filmler != null)
+                        {
+                            foreach (var f in filmler)
+                            {
+                                if(f.FilmId == Model.FilmId) {
+                                    <option value="@f.FilmId" selected>@f.Ad</option>
+                                } else {
+                                    <option value="@f.FilmId">@f.Ad</option>
+                                }
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label asp-for="SalonId" class="form-label">Salon Seçiniz</label>
+                    <select asp-for="SalonId" class="form-select bg-dark text-white border-secondary" required>
+                        @if (salonlar != null)
+                        {
+                            foreach (var s in salonlar)
+                            {
+                                if(s.SalonId == Model.SalonId) {
+                                    <option value="@s.SalonId" selected>@s.Ad (Kapasite: @s.Kapasite)</option>
+                                } else {
+                                    <option value="@s.SalonId">@s.Ad (Kapasite: @s.Kapasite)</option>
+                                }
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label asp-for="BaslamaZamani" class="form-label">Tarih ve Saat</label>
+                    <input asp-for="BaslamaZamani" type="datetime-local" class="form-control bg-dark text-white border-secondary" required />
+                </div>
+            </div>
+            <div class="text-end mt-3">
+                <button type="submit" class="btn btn-warning"><i class="fas fa-save me-2"></i>Değişiklikleri Kaydet</button>
+            </div>
+        </form>
+    </div>
+</div>
