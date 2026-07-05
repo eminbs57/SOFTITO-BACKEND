@@ -1,14 +1,26 @@
-# B2B E-Ticaret Yönetim Paneli
+B2B E-Ticaret Yönetim Paneli
 
-İşletmelerin ürün stoklarını, siparişlerini, müşterilerini ve satış raporlarını tek bir merkezden yönetmelerini sağlayan, ASP.NET Core MVC mimarisi ile geliştirilmiş dinamik bir E-Ticaret Admin Dashboard projesidir. Sistem, ASP.NET Core Identity ile tamamen güvenli hale getirilmiş olup; yetkisiz erişimlere kapalı, oturum ve çerez (cookie) yönetimi barındıran profesyonel bir B2B altyapısı sunar.
+İşletmelerin ürün stoklarını, siparişlerini, müşterilerini ve satış raporlarını tek bir merkezden yönetmelerini sağlayan, ASP.NET Core MVC mimarisi ile geliştirilmiş dinamik bir E-Ticaret Admin Dashboard projesidir. Sistem; oturum ve çerez (cookie) yönetimi, yetkilendirme ve gelişmiş güvenlik katmanları ile profesyonel bir B2B altyapısı sunar.
 
-## 💻 Kullanılan Teknolojiler
-* C# .NET Core 8.0 (MVC)
-* Entity Framework Core (Code-First Approach)
-* MS SQL Server (Docker Container)
-* ASP.NET Core Identity (Güvenli oturum yönetimi, şifre hashleme, yetkilendirme)
+🚀 Temel Özellikler
 
----
+Güvenli Kimlik Yönetimi: ASP.NET Core Identity ile kapsamlı kullanıcı kaydı, giriş/çıkış işlemleri ve rol tabanlı yetkilendirme.
+
+Veri Yönetimi: PDF ve Excel formatında raporlama ve dışa aktarma (export) desteği.
+
+Performans ve Optimizasyon: Gelişmiş cacheleme mekanizmaları ile hızlı veri erişimi.
+
+İzlenebilirlik: Sistem üzerindeki kritik işlemlerin takibi için merkezi loglama altyapısı.
+
+💻 Kullanılan Teknolojiler
+
+Framework: C# .NET Core 8.0 (MVC)
+
+ORM: Entity Framework Core (Code-First Approach)
+
+Veritabanı: MS SQL Server (Docker Container üzerinden)
+
+Güvenlik: ASP.NET Core Identity (Şifre hashleme, oturum yönetimi)
 
 ## 📸 Ekran Görüntüleri 
 
