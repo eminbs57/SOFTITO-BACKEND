@@ -1,4 +1,4 @@
-# Softito Backend (API-MVC) Lojistik Yönetim Sistemi
+# (API-MVC) Lojistik Yönetim Sistemi
 
 Bu proje, bir lojistik/filo yönetim sisteminin temelini oluşturan; RESTful API servisi ve kapsamlı bir Web yönetim panelinden oluşan bütünleşik bir çözümdür.
 
