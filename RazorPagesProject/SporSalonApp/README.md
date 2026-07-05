@@ -1,9 +1,5 @@
 # Spor Salonu Yönetim Paneli (SporSalonApp)
 
-<div align="center">
-  <img src="screenshots/dashboard.png" alt="Spor Salonu Dashboard" width="800"/>
-</div>
-
 Bu proje, ASP.NET Core **Razor Pages** mimarisi ile geliştirilmiş, minimalist ve performans odaklı bir Spor Salonu Yönetim Paneli uygulamasıdır. Üye takibi, ekipman yönetimi ve duyuru sistemini, yüksek güvenlikli bağımsız bir Identity altyapısı ile birleştirir.
 
 ## 🚀 Temel Özellikler
@@ -33,18 +29,18 @@ Proje, bağımsız modüller üzerine kurulu olup temel olarak şu sınıfları 
 ## 📸 Ekran Görüntüleri
 
 <div align="center">
-  <img src="screenshots/dashboard.png" alt="Dashboard" width="800"/>
-  <br/><i>Admin Kontrol Paneli</i><br/><br/>
+  <img src="screenshots/login.png" alt="Login" width="800"/>
+  <br/><i>Login Ekranı </i><br/><br/>
 
-  <img src="screenshots/members.png" alt="Üye Takibi" width="800"/>
+  <img src="screenshots/report.png" alt="Rapor" width="800"/>
   <br/><i>Üye Yönetimi ve Export Modülü</i><br/><br/>
 
-  <img src="screenshots/equipment.png" alt="Ekipmanlar" width="800"/>
+  <img src="screenshots/uye.png" alt="Uyeler" width="800"/>
   <br/><i>Ekipman Takip Sistemi</i><br/><br/>
 
-  <img src="screenshots/announcements.png" alt="Duyurular" width="800"/>
-  <br/><i>Duyuru Yayınlama Paneli</i><br/><br/>
+  <img src="screenshots/ekipman.png" alt="Ekipman" width="800"/>
+  <br/><i>Ekipmanlar</i><br/><br/>
 
-  <img src="screenshots/login.png" alt="Giriş Ekranı" width="800"/>
-  <br/><i>Güvenli Yetkilendirme Sayfası</i>
+  <img src="screenshots/duyuru.png" alt="Duyurular" width="800"/>
+  <br/><i>Duyurular</i>
 </div>
