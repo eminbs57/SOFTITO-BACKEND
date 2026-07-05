@@ -34,18 +34,18 @@ Sistem **Admin** ve **User** olmak üzere iki ana yetki seviyesine sahiptir:
 ## 📸 Ekran Görüntüleri
 
 <div align="center">
-  <img src="screenshots/admin-dashboard.png" alt="Admin Panel" width="800"/>
+  
+  <img src="screenshots/dashboard.png" alt="Admin Panel" width="800"/>
   <br/><i>Admin Dashboard ve Raporlama</i><br/><br/>
 
   <img src="screenshots/etkinlikler.png" alt="Etkinlik Listesi" width="800"/>
-  <br/><i>Etkinlikler (crud) </i><br/><br/>
+  <br/><i>Etkinlikler (crud)</i><br/><br/>
 
-  <img src="screenshots/kategoriler" alt="Kategoriler" width="800"/>
-  <br/><i>Kategoriler(crud)</i><br/><br/>
+  <img src="screenshots/kategoriler.png" alt="Kategoriler" width="800"/>
+  <br/><i>Kategoriler (crud)</i><br/><br/>
 
   <img src="screenshots/user-etkinliklerim.png" alt="Etkinliklerim" width="800"/>
-  <br/><i>Kullanıcıya özel Katıldığı etkinliklerin görüntülemeleri </i><br/><br/>
-
+  <br/><i>Kullanıcıya özel katıldığı etkinlikler görüntülemeleri</i><br/><br/>
 </div>
 
 Diğer ekran görüntülerine screenshots adlı klasörden ulaşabilirsiniz.
