@@ -72,51 +72,51 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
 <div align="center">
 
-  <img src="screenshots/Dashboard.png" alt="Dashboard Görünümü" width="800"/>
+  <img src="screenshots/koltukSec.png" alt="Kullanıcı Koltuk Secimi" width="800"/>
 
   <br/>
 
-  <i>Modern Yönetici Paneli ve İstatistikler (Dashboard)</i>
+  <i>İlgili Filme Ait Kullanıcı Koltuk Secim Ekranı</i>
 
   <br/><br/>
 
 
 
-  <img src="screenshots/login.png" alt="Giriş Sayfası" width="800"/>
+  <img src="screenshots/adminFilm.png" alt="Admin Film Görüntüleme" width="800"/>
 
   <br/>
 
-  <i>Güvenli Kullanıcı Giriş Ekranı (Login)</i>
+  <i>Admin Film Listeleme Ekranı</i>
 
   <br/><br/>
 
 
 
-  <img src="screenshots/prdouct.png" alt="Ürün Yönetimi" width="800"/>
+  <img src="screenshots/user-anasayfa.png" alt="Kuulanıcı AnaSayfa" width="800"/>
 
   <br/>
 
-  <i>Katalog ve Ürün Yönetim Modülü</i>
+  <i>Kullanıcı Ana Sayfa Ekranı</i>
 
   <br/><br/>
 
 
 
-  <img src="screenshots/order.png" alt="Siparişler" width="800"/>
+  <img src="screenshots/biletlerim.png" alt="Biletler" width="800"/>
 
   <br/>
 
-  <i>Sipariş Takip ve Yönetim Ekranı</i>
+  <i>Kullanıcının Kendine Ait Bilet Görüntüleme Ekranı</i>
 
   <br/><br/>
 
 
 
-  <img src="screenshots/report.png" alt="Raporlama" width="800"/>
+  <img src="screenshots/report1.png" alt="Raporlama" width="800"/>
 
   <br/>
 
-  <i>Gelişmiş Satış ve Stok Raporları</i>
+  <i>Örnek Rapor sayfası (Toplam Hasılat)</i>
 
 </div>
 
