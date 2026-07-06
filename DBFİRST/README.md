@@ -72,7 +72,7 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
 <div align="center">
 
-  <img src="screenshots/koltukSec.png" alt="Kullanıcı Koltuk Secimi" width="800"/>
+  <img src="SinemaDbFirst/screenshots/koltukSec.png" alt="Kullanıcı Koltuk Secimi" width="800"/>
 
   <br/>
 
@@ -82,7 +82,7 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
 
 
-  <img src="screenshots/adminFilm.png" alt="Admin Film Görüntüleme" width="800"/>
+  <img src="SinemaDbFirst/screenshots/adminFilm.png" alt="Admin Film Görüntüleme" width="800"/>
 
   <br/>
 
@@ -92,7 +92,7 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
 
 
-  <img src="screenshots/biletlerim2.png" alt="Biletler" width="800"/>
+  <img src="SinemaDbFirst/screenshots/biletlerim2.png" alt="Biletler" width="800"/>
 
   <br/>
 
@@ -102,7 +102,7 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
 
 
-  <img src="screenshots/biletlerim.png" alt="Biletler" width="800"/>
+  <img src="SinemaDbFirst/screenshots/biletlerim.png" alt="Biletler" width="800"/>
 
   <br/>
 
@@ -112,7 +112,7 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
 
 
-  <img src="screenshots/report1.png" alt="Raporlama" width="800"/>
+  <img src="SinemaDbFirst/screenshots/report1.png" alt="Raporlama" width="800"/>
 
   <br/>
 
