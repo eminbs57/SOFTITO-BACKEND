@@ -1,7 +1,7 @@
 # Event Management System (Etkinlik Yönetim Sistemi)
 
 <div align="center">
-  <img src="screenshots/user-etkinlikleriKesfet.png" alt="Etkinlik Yönetim Sistemi" width="800"/>
+  <img src="EventManagement/screenshots/user-etkinlikleriKesfet.png" alt="Etkinlik Yönetim Sistemi" width="800"/>
 </div>
 
 Modern, dinamik ve kullanıcı dostu bir arayüze sahip olan bu proje; **ASP.NET Core MVC**, **Entity Framework Core**, **ASP.NET Core Identity** ve **jQuery/AJAX** teknolojileri kullanılarak geliştirilmiş kapsamlı bir Etkinlik Yönetim Sistemidir.
@@ -35,16 +35,16 @@ Sistem **Admin** ve **User** olmak üzere iki ana yetki seviyesine sahiptir:
 
 <div align="center">
   
-  <img src="screenshots/dashboard.png" alt="Admin Panel" width="800"/>
+  <img src="EventManagement/screenshots/dashboard.png" alt="Admin Panel" width="800"/>
   <br/><i>Admin Dashboard ve Raporlama</i><br/><br/>
 
-  <img src="screenshots/etkinlikler.png" alt="Etkinlik Listesi" width="800"/>
+  <img src="EventManagement/screenshots/etkinlikler.png" alt="Etkinlik Listesi" width="800"/>
   <br/><i>Etkinlikler (crud)</i><br/><br/>
 
-  <img src="screenshots/kategoriler.png" alt="Kategoriler" width="800"/>
+  <img src="EventManagement/screenshots/kategoriler.png" alt="Kategoriler" width="800"/>
   <br/><i>Kategoriler (crud)</i><br/><br/>
 
-  <img src="screenshots/user-etkinliklerim.png" alt="Etkinliklerim" width="800"/>
+  <img src="EventManagement/screenshots/user-etkinliklerim.png" alt="Etkinliklerim" width="800"/>
   <br/><i>Kullanıcıya özel katıldığı etkinlikler görüntülemeleri</i><br/><br/>
 </div>
 
