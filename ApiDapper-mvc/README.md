@@ -62,6 +62,8 @@ _(Ekran görüntülerini `screenshots/` klasörüne ekleyip aşağıda referansl
   <br/><i>Ciro Görüntüleme - Raporlama</i><br/><br/>
 </div>
 
+**Projenin diğer ekran görüntüleri için screenshots klasörünü inceleyebilirsiniz**
+
 ## 🛠 Kurulum
 
 1. **Bağlantı:** Her iki projenin `appsettings.json` dosyalarındaki veritabanı bağlantı dizelerini güncelleyin.
