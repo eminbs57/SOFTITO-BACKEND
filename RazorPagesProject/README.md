@@ -45,8 +45,25 @@ Proje, bağımsız modüller üzerine kurulu olup temel olarak şu sınıfları 
   <br/><i>Duyurular</i>
 </div>
 
-## 🚀 Nasıl Çalıştırılır?
-Ana depo kök dizininde (SOFTITO-BACKEND) bir terminal açın ve projeyi başlatmak için aşağıdaki komutu çalıştırın:
-```bash
-dotnet run --project RazorPagesProject/SporSalonApp/SporSalonApp.csproj
-```
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje **ASP.NET Core Razor Pages** mimarisiyle ve veritabanı olarak **SQLite** kullanılarak geliştirilmiştir. Projeyi sorunsuz çalıştırmak için aşağıdaki adımları sırasıyla izleyin:
+
+1. **Terminali Açma:**
+   - Ana depo kök dizininde (`SOFTITO-BACKEND` klasörü içinde) bir terminal veya komut satırı açın.
+
+2. **Veritabanı ve Migration İşlemleri:**
+   - Proje SQLite kullandığı için genellikle bağlantı dizesi ayarı (SQL Server'daki gibi) gerektirmez. Ancak veritabanı dosyasının (örn: `identity.db`) ve tabloların oluşması için migration'ları uygulamanız gerekebilir:
+   ```bash
+   dotnet ef database update --project RazorPagesProject/SporSalonApp/SporSalonApp.csproj
+   ```
+   *(Eğer hazır bir db dosyanız varsa veya Entity Framework başlangıçta otomatik oluşturuyorsa bu adımı atlayabilirsiniz.)*
+
+3. **Projeyi Başlatma:**
+   - Aşağıdaki komutu çalıştırarak projeyi ayağa kaldırın:
+   ```bash
+   dotnet run --project RazorPagesProject/SporSalonApp/SporSalonApp.csproj
+   ```
+
+4. **Kullanım:**
+   - Proje derlendikten sonra terminalde belirtilen `http://localhost:<port>` adresi üzerinden tarayıcınızda uygulamayı açabilirsiniz. Güvenlik gereği çoğu sayfaya erişim için yetkili (Admin) bir hesapla giriş yapmanız istenecektir.
