@@ -29,19 +29,19 @@ Proje, bağımsız modüller üzerine kurulu olup temel olarak şu sınıfları 
 ## 📸 Ekran Görüntüleri
 
 <div align="center">
-  <img src="screenshots/login.png" alt="Login" width="800"/>
+  <img src="SporSalonApp/screenshots/login.png" alt="Login" width="800"/>
   <br/><i>Login Ekranı </i><br/><br/>
 
-  <img src="screenshots/report.png" alt="Rapor" width="800"/>
+  <img src="SporSalonApp/screenshots/screenshots/report.png" alt="Rapor" width="800"/>
   <br/><i>Üye Yönetimi ve Export Modülü</i><br/><br/>
 
-  <img src="screenshots/uye.png" alt="Uyeler" width="800"/>
+  <img src="SporSalonApp/screenshots/screenshots/uye.png" alt="Uyeler" width="800"/>
   <br/><i>Ekipman Takip Sistemi</i><br/><br/>
 
-  <img src="screenshots/ekipman.png" alt="Ekipman" width="800"/>
+  <img src="SporSalonApp/screenshots/screenshots/ekipman.png" alt="Ekipman" width="800"/>
   <br/><i>Ekipmanlar</i><br/><br/>
 
-  <img src="screenshots/duyuru.png" alt="Duyurular" width="800"/>
+  <img src="SporSalonApp/screenshots/screenshots/duyuru.png" alt="Duyurular" width="800"/>
   <br/><i>Duyurular</i>
 </div>
 
