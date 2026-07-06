@@ -40,18 +40,27 @@ Proje, temiz kod (Clean Code) ve yüksek sürdürülebilirlik ilkeleriyle üç a
 <b>Kullanıcı Kayıt Ekranı</b><br/>
 
 </div>
-Diğer fotoğraflara screenshots klasöründen erieşebilirsiniz.
 
-## 🚀 Kurulum ve Çalıştırma
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
 
-1. **Bağlantı Ayarları:** `PetAdoptionORM` projesindeki `appsettings.json` içerisinden `Default` connection string'ini kendi SQL Server bilginize göre güncelleyin.
-2. **Migration:** Veritabanı tablolarını otomatik oluşturun:
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje Entity Framework Core kullanılarak Code-First yaklaşımı ile geliştirilmiş bir Evcil Hayvan Sahiplenme platformudur.
+
+1. **Veritabanı Bağlantısını Ayarlama:**
+   - Proje içerisindeki `PetAdoptionORM/PetAdoptionORM/appsettings.json` dosyasını açın.
+   - SQL Server veritabanı bağlantı dizesini kontrol edip kendinize göre güncelleyin.
+
+2. **Migration ve Veritabanı Oluşturma:**
+   - Ana depo kök dizininde (`SOFTITO-BACKEND`) terminali açın.
+   - Code-First yapılandırmasını veritabanına yansıtın:
    ```bash
-   dotnet ef database update --project PetAdoptionORM.Data --startup-project PetAdoptionORM
+   dotnet ef database update --project PetAdoptionORM/PetAdoptionORM.Data/PetAdoptionORM.Data.csproj --startup-project PetAdoptionORM/PetAdoptionORM/PetAdoptionORM.csproj
    ```
-3. **Başlatma:**
-   cd PetAdoptionORM
-   dotnet run
+   *(Not: Proje yapısına göre `--project` parametresi değişkenlik gösterebilir, Data katmanını veya ana projeyi hedef almalısınız).*
 
-   **Not**
-   Proje, geliştirme aşamasında Identity şifre kurallarını minimumda (min. 3 karakter) tutacak şekilde yapılandırılmıştır. Production ortamına geçişte Program.cs üzerinden güvenlik politikalarının güncellenmesi önerilir.
+3. **Projeyi Başlatma:**
+   - Aşağıdaki komutu çalıştırın:
+   ```bash
+   dotnet run --project PetAdoptionORM/PetAdoptionORM/PetAdoptionORM.csproj
+   ```

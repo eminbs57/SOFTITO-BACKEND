@@ -50,20 +50,27 @@ Proje, bağımlılıkları en aza indirmek ve sürdürülebilirliği artırmak i
   <br/><i>Güvenli Giriş Paneli</i>
 </div>
 
-## 🚀 Kurulum ve Çalıştırma
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
 
-1. **Veritabanı Ayarları:**
-   `KutuphaneUI` içerisindeki `appsettings.json` dosyasında bulunan `DefaultConnection` bağlantı dizesini (Connection String) kendi SQL Server yapılandırmanıza göre düzenleyin.
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje Entity Framework Core ve N-Katmanlı mimari kullanılarak geliştirilmiştir. Projeyi sorunsuz çalıştırmak için aşağıdaki adımları sırasıyla izleyin:
+
+1. **Veritabanı Bağlantısını Ayarlama:**
+   - Proje içerisindeki `KatmanlıProje/KutuphaneUI/appsettings.json` dosyasını açın.
+   - `DefaultConnection` bağlantı dizesini (Connection String) kendi lokal SQL Server sunucunuza göre düzenleyin.
 
 2. **Migration ve Veritabanı Oluşturma:**
-   Package Manager Console veya Terminal üzerinden aşağıdaki komutu çalıştırarak veritabanını ve tabloları oluşturun:
+   - Terminali (veya Komut Satırını) açın ve ana depo kök dizinine (`SOFTITO-BACKEND` klasörü) geçin.
+   - Aşağıdaki komutu çalıştırarak veritabanını ve gerekli tabloları oluşturun:
    ```bash
-   dotnet ef database update -p Kutuphane.Data/Kutuphane.Data.csproj -s KutuphaneUI/KutuphaneUI.csproj
+   dotnet ef database update -p KatmanlıProje/Kutuphane.Data/Kutuphane.Data.csproj -s KatmanlıProje/KutuphaneUI/KutuphaneUI.csproj
    ```
 
 3. **Projeyi Başlatma:**
+   - Veritabanı başarıyla oluşturulduktan sonra, aynı terminalde aşağıdaki komutla projeyi ayağa kaldırın:
    ```bash
-   dotnet run --project KutuphaneUI/KutuphaneUI.csproj
+   dotnet run --project KatmanlıProje/KutuphaneUI/KutuphaneUI.csproj
    ```
 
 4. **Kullanım:**

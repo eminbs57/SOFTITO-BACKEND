@@ -1,62 +1,50 @@
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using MvcProject.Data;
 using MvcProject.Models;
-using MvcProject.ViewModels;
 using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace MvcProject.Controllers
 {
-    [Authorize]
     public class ReportsController : Controller
     {
-        private readonly MvcDbContext _context;
-        private readonly HttpClient _httpClient;
+        private readonly string apiUrl = "http://localhost:5234/api/Reports";
 
-        public ReportsController(MvcDbContext context)
-        {
-            _context = context;
-            _httpClient = new HttpClient();
-        }
-
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var viewModel = new ReportViewModel();
-
-            // Local DB Stats (Users, Departments)
-            viewModel.TotalUsers = await _context.Users.CountAsync();
-            viewModel.TotalDepartments = await _context.Departments.CountAsync();
-
-            // API Stats (Vehicles, Drivers, Depos)
-            try
+            
+            using (HttpClient client = new HttpClient())
             {
-                var vehicleResponse = await _httpClient.GetAsync("http://localhost:5234/api/Vehicles/GetVehicle");
-                if (vehicleResponse.IsSuccessStatusCode)
+                var responseTrips = await client.GetAsync(apiUrl + "/GetTripReport");
+                if (responseTrips.IsSuccessStatusCode)
                 {
-                    var vehicles = JsonConvert.DeserializeObject<List<Vehicle>>(await vehicleResponse.Content.ReadAsStringAsync()) ?? new List<Vehicle>();
-                    viewModel.TotalVehicles = vehicles.Count;
-                    viewModel.TotalVehicleCapacity = vehicles.Sum(v => v.Capacity);
+                    var content = await responseTrips.Content.ReadAsStringAsync();
+                    viewModel.Trips = JsonConvert.DeserializeObject<List<TripReportDto>>(content) ?? new List<TripReportDto>();
                 }
 
-                var driverResponse = await _httpClient.GetAsync("http://localhost:5234/api/Drivers/GetDriver");
-                if (driverResponse.IsSuccessStatusCode)
+                var responseDrivers = await client.GetAsync(apiUrl + "/GetDriverStats");
+                if (responseDrivers.IsSuccessStatusCode)
                 {
-                    var drivers = JsonConvert.DeserializeObject<List<Driver>>(await driverResponse.Content.ReadAsStringAsync()) ?? new List<Driver>();
-                    viewModel.TotalDrivers = drivers.Count;
+                    var content = await responseDrivers.Content.ReadAsStringAsync();
+                    viewModel.DriverStats = JsonConvert.DeserializeObject<List<DriverStatDto>>(content) ?? new List<DriverStatDto>();
                 }
 
-                var depoResponse = await _httpClient.GetAsync("http://localhost:5234/api/Depos/GetDepo");
-                if (depoResponse.IsSuccessStatusCode)
+                var responseRoutes = await client.GetAsync(apiUrl + "/GetRouteStats");
+                if (responseRoutes.IsSuccessStatusCode)
                 {
-                    var depos = JsonConvert.DeserializeObject<List<Depo>>(await depoResponse.Content.ReadAsStringAsync()) ?? new List<Depo>();
-                    viewModel.TotalDepos = depos.Count;
-                    viewModel.TotalDepoVolume = depos.Sum(d => d.Volume);
+                    var content = await responseRoutes.Content.ReadAsStringAsync();
+                    viewModel.RouteStats = JsonConvert.DeserializeObject<List<RouteStatDto>>(content) ?? new List<RouteStatDto>();
                 }
-            }
-            catch (Exception)
-            {
-                // In case the API is offline, we'll just have zeros for API stats
+
+                var responseVehicles = await client.GetAsync(apiUrl + "/GetVehicleStats");
+                if (responseVehicles.IsSuccessStatusCode)
+                {
+                    var content = await responseVehicles.Content.ReadAsStringAsync();
+                    viewModel.VehicleStats = JsonConvert.DeserializeObject<List<VehicleStatDto>>(content) ?? new List<VehicleStatDto>();
+                }
             }
 
             return View(viewModel);

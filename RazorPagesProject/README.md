@@ -29,18 +29,43 @@ Proje, bağımsız modüller üzerine kurulu olup temel olarak şu sınıfları 
 ## 📸 Ekran Görüntüleri
 
 <div align="center">
-  <img src="screenshots/login.png" alt="Login" width="800"/>
+  <img src="SporSalonApp/screenshots/login.png" alt="Login" width="800"/>
   <br/><i>Login Ekranı </i><br/><br/>
 
-  <img src="screenshots/report.png" alt="Rapor" width="800"/>
+  <img src="SporSalonApp/screenshots/report.png" alt="Rapor" width="800"/>
   <br/><i>Üye Yönetimi ve Export Modülü</i><br/><br/>
 
-  <img src="screenshots/uye.png" alt="Uyeler" width="800"/>
+  <img src="SporSalonApp/screenshots/uye.png" alt="Uyeler" width="800"/>
   <br/><i>Ekipman Takip Sistemi</i><br/><br/>
 
-  <img src="screenshots/ekipman.png" alt="Ekipman" width="800"/>
+  <img src="SporSalonApp/screenshots/ekipman.png" alt="Ekipman" width="800"/>
   <br/><i>Ekipmanlar</i><br/><br/>
 
-  <img src="screenshots/duyuru.png" alt="Duyurular" width="800"/>
+  <img src="SporSalonApp/screenshots/duyuru.png" alt="Duyurular" width="800"/>
   <br/><i>Duyurular</i>
 </div>
+
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje **ASP.NET Core Razor Pages** mimarisiyle ve veritabanı olarak **SQLite** kullanılarak geliştirilmiştir. Projeyi sorunsuz çalıştırmak için aşağıdaki adımları sırasıyla izleyin:
+
+1. **Terminali Açma:**
+   - Ana depo kök dizininde (`SOFTITO-BACKEND` klasörü içinde) bir terminal veya komut satırı açın.
+
+2. **Veritabanı ve Migration İşlemleri:**
+   - Proje SQLite kullandığı için genellikle bağlantı dizesi ayarı (SQL Server'daki gibi) gerektirmez. Ancak veritabanı dosyasının (örn: `identity.db`) ve tabloların oluşması için migration'ları uygulamanız gerekebilir:
+   ```bash
+   dotnet ef database update --project RazorPagesProject/SporSalonApp/SporSalonApp.csproj
+   ```
+   *(Eğer hazır bir db dosyanız varsa veya Entity Framework başlangıçta otomatik oluşturuyorsa bu adımı atlayabilirsiniz.)*
+
+3. **Projeyi Başlatma:**
+   - Aşağıdaki komutu çalıştırarak projeyi ayağa kaldırın:
+   ```bash
+   dotnet run --project RazorPagesProject/SporSalonApp/SporSalonApp.csproj
+   ```
+
+4. **Kullanım:**
+   - Proje derlendikten sonra terminalde belirtilen `http://localhost:<port>` adresi üzerinden tarayıcınızda uygulamayı açabilirsiniz. Güvenlik gereği çoğu sayfaya erişim için yetkili (Admin) bir hesapla giriş yapmanız istenecektir.

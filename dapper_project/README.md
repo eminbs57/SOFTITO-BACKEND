@@ -37,13 +37,24 @@ Bu proje, **ASP.NET Core MVC** ve **Dapper** mikro-ORM teknolojileri kullanılar
   <img src="screenshots/login.png" alt="Giriş Ekranı" width="800"/>
   <br/><i>Güvenli Yönetici Girişi</i>
 </div>
-Diğer ekran görüntülerine screenshots klasöründen erişebilirsiniz.
-## 🛠 Kurulum ve Çalıştırma
 
-1. **Bağlantı Ayarları:** `HastaneRandevu/Models/Context.cs` dosyasındaki `connectionstring` değerini kendi SQL Server bilgilerinizle güncelleyin.
-2. **Derleme:**
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje Entity Framework yerine hızlı ve hafif bir mikro-ORM olan **Dapper** ile geliştirilmiştir.
+
+1. **Veritabanı Hazırlığı:**
+   - Dapper Code-First migration desteklemediği için, veritabanının ve tabloların SQL Server'da önceden oluşturulmuş olması gereklidir (Gerekli SQL script'leri projede varsa onları çalıştırın).
+
+2. **Bağlantı Ayarları:**
+   - `dapper_project/HastaneRandevu/appsettings.json` dosyasını açıp bağlantı cümlenizi güncelleyin.
+
+3. **Projeyi Başlatma:**
+   - Ana depo kök dizininde (`SOFTITO-BACKEND`) bir terminal açın:
    ```bash
-   dotnet build
+   dotnet run --project dapper_project/HastaneRandevu/HastaneRandevu.csproj
    ```
-3. **Çalıştırma:**
-   dotnet run
+
+4. **Kullanım:**
+   - Tarayıcıda açılan port üzerinden Hastane Randevu sistemini deneyimleyebilirsiniz.

@@ -1,7 +1,7 @@
 # Event Management System (Etkinlik Yönetim Sistemi)
 
 <div align="center">
-  <img src="screenshots/user-etkinlikleriKesfet.png" alt="Etkinlik Yönetim Sistemi" width="800"/>
+  <img src="EventManagement/screenshots/user-etkinlikleriKesfet.png" alt="Etkinlik Yönetim Sistemi" width="800"/>
 </div>
 
 Modern, dinamik ve kullanıcı dostu bir arayüze sahip olan bu proje; **ASP.NET Core MVC**, **Entity Framework Core**, **ASP.NET Core Identity** ve **jQuery/AJAX** teknolojileri kullanılarak geliştirilmiş kapsamlı bir Etkinlik Yönetim Sistemidir.
@@ -35,17 +35,34 @@ Sistem **Admin** ve **User** olmak üzere iki ana yetki seviyesine sahiptir:
 
 <div align="center">
   
-  <img src="screenshots/dashboard.png" alt="Admin Panel" width="800"/>
+  <img src="EventManagement/screenshots/dashboard.png" alt="Admin Panel" width="800"/>
   <br/><i>Admin Dashboard ve Raporlama</i><br/><br/>
 
-  <img src="screenshots/etkinlikler.png" alt="Etkinlik Listesi" width="800"/>
+  <img src="EventManagement/screenshots/etkinlikler.png" alt="Etkinlik Listesi" width="800"/>
   <br/><i>Etkinlikler (crud)</i><br/><br/>
 
-  <img src="screenshots/kategoriler.png" alt="Kategoriler" width="800"/>
+  <img src="EventManagement/screenshots/kategoriler.png" alt="Kategoriler" width="800"/>
   <br/><i>Kategoriler (crud)</i><br/><br/>
 
-  <img src="screenshots/user-etkinliklerim.png" alt="Etkinliklerim" width="800"/>
+  <img src="EventManagement/screenshots/user-etkinliklerim.png" alt="Etkinliklerim" width="800"/>
   <br/><i>Kullanıcıya özel katıldığı etkinlikler görüntülemeleri</i><br/><br/>
 </div>
 
-Diğer ekran görüntülerine screenshots adlı klasörden ulaşabilirsiniz.
+
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje, istemci tarafı AJAX işlemleri için **jQuery** kullanılarak geliştirilmiştir.
+
+1. **Veritabanı Ayarları (Eğer varsa):**
+   - Proje veritabanı bağlantısı gerektiriyorsa `jqueryproject/EventManagement/appsettings.json` dosyasını güncelleyin ve gerekiyorsa migration adımlarını tamamlayın.
+
+2. **Projeyi Başlatma:**
+   - Ana depo kök dizininde (`SOFTITO-BACKEND`) bir terminal açın:
+   ```bash
+   dotnet run --project jqueryproject/EventManagement/EventManagement.csproj
+   ```
+
+3. **Kullanım:**
+   - Proje ayağa kalktıktan sonra tarayıcı üzerinden jQuery AJAX isteklerinin arka uç (.NET) ile nasıl etkileşime girdiğini test edebilirsiniz.

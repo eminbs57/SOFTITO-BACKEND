@@ -57,5 +57,34 @@ Diğer ekran görüntülerine screenshots adlı klasörden ulaşabilirsiniz.
    cd ../MvcProject && dotnet ef database update
    ```
 
-4. **Çalıştırma:**
+4.
+    ```bash
+   # Çalıştırma:
    dotnet run
+   ```
+
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje, arka uç (API) ve ön uç (MVC) olmak üzere iki ayrı uygulamadan oluşmaktadır. Doğru çalışması için sırasıyla ikisinin de çalıştırılması gerekir:
+
+1. **Veritabanı Ayarları (API Projesi için):**
+   - Eğer projede bir veritabanı bağlantısı varsa, `API-MVC/ApiProject/appsettings.json` içerisindeki bağlantı dizesini kontrol edin ve güncelleyin.
+   - *(Gerekliyse `dotnet ef database update --project API-MVC/ApiProject/ApiProject.csproj` komutu ile veritabanını oluşturun.)*
+
+2. **Önce API Projesini Başlatma:**
+   - Ana depo kök dizininden (`SOFTITO-BACKEND`) bir terminal açın ve API'yi ayağa kaldırın:
+   ```bash
+   dotnet run --project API-MVC/ApiProject/ApiProject.csproj
+   ```
+
+3. **MVC (İstemci) Projesini Başlatma:**
+   - **Yeni bir terminal sekmesi** açın (önceki terminal çalışmaya devam etmeli).
+   - Ana dizinden MVC uygulamasını başlatın:
+   ```bash
+   dotnet run --project API-MVC/MvcProject/MvcProject.csproj
+   ```
+
+4. **Kullanım:**
+   - MVC projesinin terminalde verdiği URL üzerinden tarayıcınızda uygulamaya giriş yapabilirsiniz. Uygulama, verileri arka planda çalışan API projesinden çekecektir.

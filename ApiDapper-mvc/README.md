@@ -34,7 +34,7 @@ Yönetim ve kullanıcı etkileşim katmanıdır.
 
 ## 📸 Ekran Görüntüleri
 
-_(Ekran görüntülerini `screenshots/` klasörüne ekleyip aşağıda referanslarını güncelleyebilirsin)_
+
 
 <div align="center">
   <img src="screenshots/dashboard.png" alt="Dashboard" width="800"/>
@@ -62,25 +62,29 @@ _(Ekran görüntülerini `screenshots/` klasörüne ekleyip aşağıda referansl
   <br/><i>Ciro Görüntüleme - Raporlama</i><br/><br/>
 </div>
 
-**Projenin diğer ekran görüntüleri için screenshots klasörünü inceleyebilirsiniz**
 
-## 🛠 Kurulum
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
 
-1. **Bağlantı:** Her iki projenin `appsettings.json` dosyalarındaki veritabanı bağlantı dizelerini güncelleyin.
-2. **Derleme:**
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje **Dapper** kullanılarak geliştirilmiş bir API arka ucu ve bu API'yi tüketen bir MVC ön yüzünden oluşmaktadır.
+
+1. **Veritabanı Ayarları:**
+   - Dapper kullanıldığı için, veritabanınızın ve ilgili tabloların (SQL Server üzerinde) hazır olması beklenir. 
+   - `ApiDapper-mvc/ApiProject/appsettings.json` içerisindeki Connection String'i kendi veritabanınıza göre güncelleyin.
+
+2. **Önce API Projesini Başlatma:**
+   - Ana depo kök dizininden (`SOFTITO-BACKEND`) bir terminal açın ve API'yi ayağa kaldırın:
    ```bash
-   dotnet build
+   dotnet run --project ApiDapper-mvc/ApiProject/ApiProject.csproj
    ```
-3. **Projeleri Çalıştırın**
-   API ve MVC projelerini aynı anda çalıştırmak için iki ayrı terminal kullanın:
-   - **API Projesi için:**
 
-     ```bash
-     cd ApiProject && dotnet run
-     ```
+3. **MVC (İstemci) Projesini Başlatma:**
+   - **Yeni bir terminal penceresi** açın (API arka planda çalışmaya devam etmelidir).
+   - MVC uygulamasını başlatın:
+   ```bash
+   dotnet run --project ApiDapper-mvc/MvcProject/MvcProject.csproj
+   ```
 
-   - **MVC Projesi için:**
-     ```bash
-     cd MvcProject && dotnet run
-     ```
-     _(Eğer Visual Studio kullanıyorsanız "Multiple Startup Projects" özelliğini aktif ederek tek seferde başlatabilirsiniz.)_
+4. **Kullanım:**
+   - MVC projesinin başlattığı URL'e giderek Dapper ile güçlendirilmiş mimariyi test edebilirsiniz.

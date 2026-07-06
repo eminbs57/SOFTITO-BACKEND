@@ -1,18 +1,10 @@
 # CINEWAM - Sinema Bilet Otomasyon Sistemi (Database-First)
 
-
-
-<img src="screenshots/user-anasayfa.png" alt="CINEWAM Anasayfa" width="800"/>
-
-
+<img src="SinemaDbFirst/screenshots/user-anasayfa.png" alt="CINEWAM Anasayfa" width="800"/>
 
 CINEWAM, mevcut bir veritabanı yapısı üzerinden **Database-First** yaklaşımıyla geliştirilmiş, sinema bilet satış ve yönetim süreçlerini optimize eden kapsamlı bir otomasyondur. ASP.NET Core MVC mimarisi ile inşa edilen sistem, hem admin hem de kullanıcı taraflı dinamik özellikler sunar.
 
-
-
 ## 🚀 Teknolojiler ve Kütüphaneler
-
-
 
 *   **Platform:** .NET 8.0/10.0
 
@@ -34,11 +26,7 @@ CINEWAM, mevcut bir veritabanı yapısı üzerinden **Database-First** yaklaşı
 
 *   **Arayüz:** Bootstrap 5
 
-
-
 ## 🌟 Temel Özellikler
-
-
 
 ### Yönetim Paneli (Admin)
 
@@ -50,29 +38,21 @@ CINEWAM, mevcut bir veritabanı yapısı üzerinden **Database-First** yaklaşı
 
 *   **Performans İzleme:** `IMemoryCache` ile veritabanı üzerindeki okuma yükünü minimize eden hızlı arama altyapısı.
 
-
-
 ### Kullanıcı Deneyimi
 
 *   **Güvenli Erişim:** Identity mimarisiyle yönetilen üyelik sistemi.
 
 *   **Biletleme:** Görselleştirilmiş koltuk seçimi ve kullanıcıya özel bilet geçmişi sayfası.
 
-
-
 ## 📄 Loglama ve İzlenebilirlik
 
 Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı operasyonel loglar tutmaktadır.
 
-
-
 ## 📸 Ekran Görüntüleri 
-
-
 
 <div align="center">
 
-  <img src="screenshots/koltukSec.png" alt="Kullanıcı Koltuk Secimi" width="800"/>
+  <img src="SinemaDbFirst/screenshots/koltukSec.png" alt="Kullanıcı Koltuk Secimi" width="800"/>
 
   <br/>
 
@@ -80,9 +60,7 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
   <br/><br/>
 
-
-
-  <img src="screenshots/adminFilm.png" alt="Admin Film Görüntüleme" width="800"/>
+  <img src="SinemaDbFirst/screenshots/adminFilm.png" alt="Admin Film Görüntüleme" width="800"/>
 
   <br/>
 
@@ -90,9 +68,7 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
   <br/><br/>
 
-
-
-  <img src="screenshots/biletlerim2.png" alt="Biletler" width="800"/>
+  <img src="SinemaDbFirst/screenshots/biletlerim2.png" alt="Biletler" width="800"/>
 
   <br/>
 
@@ -100,9 +76,7 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
   <br/><br/>
 
-
-
-  <img src="screenshots/biletlerim.png" alt="Biletler" width="800"/>
+  <img src="SinemaDbFirst/screenshots/biletlerim.png" alt="Biletler" width="800"/>
 
   <br/>
 
@@ -110,9 +84,7 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
   <br/><br/>
 
-
-
-  <img src="screenshots/report1.png" alt="Raporlama" width="800"/>
+  <img src="SinemaDbFirst/screenshots/report1.png" alt="Raporlama" width="800"/>
 
   <br/>
 
@@ -120,6 +92,25 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
 </div>
 
-
-
 > 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje **Database-First** (Önce Veritabanı) yaklaşımı ile geliştirildiği için, projeyi çalıştırmadan önce veritabanı bağlantılarınızı ayarlamanız gerekmektedir. Aşağıdaki adımları sırasıyla izleyin:
+
+1. **Veritabanı Bağlantısını Ayarlama:**
+   - Proje içerisindeki `DBFİRST/SinemaDbFirst/appsettings.json` dosyasını açın.
+   - `ConnectionStrings` altındaki bağlantı cümlesini (Connection String) kendi lokal SQL Server sunucunuza uygun şekilde güncelleyin.
+   *(Eğer projenin çalışması için gereken hazır bir SQL script dosyası varsa öncelikle onu SQL Server'da çalıştırarak veritabanını oluşturun.)*
+
+2. **Terminali Açma:**
+   - Ana depo kök dizininde (`SOFTITO-BACKEND` klasörü içinde) bir terminal veya komut satırı açın.
+
+3. **Projeyi Başlatma:**
+   - Aşağıdaki komutu çalıştırarak projeyi ayağa kaldırın:
+   ```bash
+   dotnet run --project DBFİRST/SinemaDbFirst/dbfirstProjem.csproj
+   ```
+
+4. **Kullanım:**
+   - Proje başarıyla derlendikten sonra, terminalde belirtilen `http://localhost:<port>` adresi üzerinden tarayıcınızda uygulamayı görüntüleyebilirsiniz.
