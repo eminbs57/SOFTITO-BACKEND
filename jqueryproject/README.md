@@ -50,8 +50,18 @@ Sistem **Admin** ve **User** olmak üzere iki ana yetki seviyesine sahiptir:
 
 Diğer ekran görüntülerine screenshots adlı klasörden ulaşabilirsiniz.
 
-## 🚀 Nasıl Çalıştırılır?
-Ana depo kök dizininde (SOFTITO-BACKEND) bir terminal açın ve projeyi başlatmak için aşağıdaki komutu çalıştırın:
-```bash
-dotnet run --project jqueryproject/EventManagement/EventManagement.csproj
-```
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje, istemci tarafı AJAX işlemleri için **jQuery** kullanılarak geliştirilmiştir.
+
+1. **Veritabanı Ayarları (Eğer varsa):**
+   - Proje veritabanı bağlantısı gerektiriyorsa `jqueryproject/EventManagement/appsettings.json` dosyasını güncelleyin ve gerekiyorsa migration adımlarını tamamlayın.
+
+2. **Projeyi Başlatma:**
+   - Ana depo kök dizininde (`SOFTITO-BACKEND`) bir terminal açın:
+   ```bash
+   dotnet run --project jqueryproject/EventManagement/EventManagement.csproj
+   ```
+
+3. **Kullanım:**
+   - Proje ayağa kalktıktan sonra tarayıcı üzerinden jQuery AJAX isteklerinin arka uç (.NET) ile nasıl etkileşime girdiğini test edebilirsiniz.

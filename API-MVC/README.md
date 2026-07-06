@@ -63,14 +63,26 @@ Diğer ekran görüntülerine screenshots adlı klasörden ulaşabilirsiniz.
    dotnet run
    ```
 
-## 🚀 Nasıl Çalıştırılır?
-Bu proje iki ayrı bileşenden oluştuğu için önce API'yi, ardından MVC uygulamasını çalıştırmalısınız. Ana depo kök dizininden (SOFTITO-BACKEND) terminalde şu adımları izleyin:
+## 🚀 Adım Adım Nasıl Çalıştırılır?
 
-1. **Önce API projesini başlatın:**
-```bash
-dotnet run --project API-MVC/ApiProject/ApiProject.csproj
-```
-2. **Yeni bir terminal penceresi açın ve MVC projesini başlatın:**
-```bash
-dotnet run --project API-MVC/MvcProject/MvcProject.csproj
-```
+Bu proje, arka uç (API) ve ön uç (MVC) olmak üzere iki ayrı uygulamadan oluşmaktadır. Doğru çalışması için sırasıyla ikisinin de çalıştırılması gerekir:
+
+1. **Veritabanı Ayarları (API Projesi için):**
+   - Eğer projede bir veritabanı bağlantısı varsa, `API-MVC/ApiProject/appsettings.json` içerisindeki bağlantı dizesini kontrol edin ve güncelleyin.
+   - *(Gerekliyse `dotnet ef database update --project API-MVC/ApiProject/ApiProject.csproj` komutu ile veritabanını oluşturun.)*
+
+2. **Önce API Projesini Başlatma:**
+   - Ana depo kök dizininden (`SOFTITO-BACKEND`) bir terminal açın ve API'yi ayağa kaldırın:
+   ```bash
+   dotnet run --project API-MVC/ApiProject/ApiProject.csproj
+   ```
+
+3. **MVC (İstemci) Projesini Başlatma:**
+   - **Yeni bir terminal sekmesi** açın (önceki terminal çalışmaya devam etmeli).
+   - Ana dizinden MVC uygulamasını başlatın:
+   ```bash
+   dotnet run --project API-MVC/MvcProject/MvcProject.csproj
+   ```
+
+4. **Kullanım:**
+   - MVC projesinin terminalde verdiği URL üzerinden tarayıcınızda uygulamaya giriş yapabilirsiniz. Uygulama, verileri arka planda çalışan API projesinden çekecektir.

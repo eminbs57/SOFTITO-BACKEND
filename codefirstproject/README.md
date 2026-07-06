@@ -53,8 +53,26 @@ Güvenlik: ASP.NET Core Identity (Şifre hashleme, oturum yönetimi)
 </div>
 
 > 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
-## 🚀 Nasıl Çalıştırılır?
-Ana depo kök dizininde (SOFTITO-BACKEND) bir terminal açın ve projeyi başlatmak için aşağıdaki komutu çalıştırın:
-```bash
-dotnet run --project codefirstproject/projectcodefrst/projectcodefrst.csproj
-```
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje **Code-First** (Önce Kod) yaklaşımı ile geliştirilmiştir. Projeyi sorunsuz çalıştırmak için aşağıdaki adımları sırasıyla izleyin:
+
+1. **Veritabanı Bağlantısını Ayarlama:**
+   - Proje içerisindeki `codefirstproject/projectcodefrst/appsettings.json` dosyasını açın.
+   - `ConnectionStrings` altındaki bağlantı dizesini kendi lokal SQL Server'ınıza uyacak şekilde düzenleyin.
+
+2. **Migration ve Veritabanı Oluşturma:**
+   - Ana depo kök dizininde (`SOFTITO-BACKEND` klasörü içinde) bir terminal açın.
+   - Veritabanını koddan türetmek için migration'ları uygulayın:
+   ```bash
+   dotnet ef database update --project codefirstproject/projectcodefrst/projectcodefrst.csproj
+   ```
+
+3. **Projeyi Başlatma:**
+   - Veritabanı oluştuktan sonra uygulamayı çalıştırın:
+   ```bash
+   dotnet run --project codefirstproject/projectcodefrst/projectcodefrst.csproj
+   ```
+
+4. **Kullanım:**
+   - Tarayıcınızda açılan adres üzerinden uygulamayı test edebilirsiniz.

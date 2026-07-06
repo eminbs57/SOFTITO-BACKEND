@@ -85,14 +85,26 @@ _(Ekran görüntülerini `screenshots/` klasörüne ekleyip aşağıda referansl
      ```
      _(Eğer Visual Studio kullanıyorsanız "Multiple Startup Projects" özelliğini aktif ederek tek seferde başlatabilirsiniz.)_
 
-## 🚀 Nasıl Çalıştırılır?
-Bu proje iki ayrı bileşenden (API ve MVC) oluşur. Ana depo kök dizininden (SOFTITO-BACKEND) terminalde şu adımları izleyin:
+## 🚀 Adım Adım Nasıl Çalıştırılır?
 
-1. **Önce API projesini başlatın:**
-```bash
-dotnet run --project ApiDapper-mvc/ApiProject/ApiProject.csproj
-```
-2. **Yeni bir terminal penceresi açın ve MVC projesini başlatın:**
-```bash
-dotnet run --project ApiDapper-mvc/MvcProject/MvcProject.csproj
-```
+Bu proje **Dapper** kullanılarak geliştirilmiş bir API arka ucu ve bu API'yi tüketen bir MVC ön yüzünden oluşmaktadır.
+
+1. **Veritabanı Ayarları:**
+   - Dapper kullanıldığı için, veritabanınızın ve ilgili tabloların (SQL Server üzerinde) hazır olması beklenir. 
+   - `ApiDapper-mvc/ApiProject/appsettings.json` içerisindeki Connection String'i kendi veritabanınıza göre güncelleyin.
+
+2. **Önce API Projesini Başlatma:**
+   - Ana depo kök dizininden (`SOFTITO-BACKEND`) bir terminal açın ve API'yi ayağa kaldırın:
+   ```bash
+   dotnet run --project ApiDapper-mvc/ApiProject/ApiProject.csproj
+   ```
+
+3. **MVC (İstemci) Projesini Başlatma:**
+   - **Yeni bir terminal penceresi** açın (API arka planda çalışmaya devam etmelidir).
+   - MVC uygulamasını başlatın:
+   ```bash
+   dotnet run --project ApiDapper-mvc/MvcProject/MvcProject.csproj
+   ```
+
+4. **Kullanım:**
+   - MVC projesinin başlattığı URL'e giderek Dapper ile güçlendirilmiş mimariyi test edebilirsiniz.

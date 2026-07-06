@@ -48,8 +48,21 @@ Diğer ekran görüntülerine screenshots klasöründen erişebilirsiniz.
 3. **Çalıştırma:**
    dotnet run
 
-## 🚀 Nasıl Çalıştırılır?
-Ana depo kök dizininde (SOFTITO-BACKEND) bir terminal açın ve projeyi başlatmak için aşağıdaki komutu çalıştırın:
-```bash
-dotnet run --project dapper_project/HastaneRandevu/HastaneRandevu.csproj
-```
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje Entity Framework yerine hızlı ve hafif bir mikro-ORM olan **Dapper** ile geliştirilmiştir.
+
+1. **Veritabanı Hazırlığı:**
+   - Dapper Code-First migration desteklemediği için, veritabanının ve tabloların SQL Server'da önceden oluşturulmuş olması gereklidir (Gerekli SQL script'leri projede varsa onları çalıştırın).
+
+2. **Bağlantı Ayarları:**
+   - `dapper_project/HastaneRandevu/appsettings.json` dosyasını açıp bağlantı cümlenizi güncelleyin.
+
+3. **Projeyi Başlatma:**
+   - Ana depo kök dizininde (`SOFTITO-BACKEND`) bir terminal açın:
+   ```bash
+   dotnet run --project dapper_project/HastaneRandevu/HastaneRandevu.csproj
+   ```
+
+4. **Kullanım:**
+   - Tarayıcıda açılan port üzerinden Hastane Randevu sistemini deneyimleyebilirsiniz.
