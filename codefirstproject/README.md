@@ -53,6 +53,7 @@ Güvenlik: ASP.NET Core Identity (Şifre hashleme, oturum yönetimi)
 </div>
 
 > 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
 ## 🚀 Adım Adım Nasıl Çalıştırılır?
 
 Bu proje **Code-First** (Önce Kod) yaklaşımı ile geliştirilmiştir. Projeyi sorunsuz çalıştırmak için aşağıdaki adımları sırasıyla izleyin:
