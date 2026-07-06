@@ -35,7 +35,8 @@ Proje, temiz kod (Clean Code) ve yüksek sürdürülebilirlik ilkeleriyle üç a
 
   <img src="screenshots/userLogin.png" alt="Kullanıcı Login Ekranı" width="800"/>
   <br/><i>Kullanıcı Login Ekranı</i>
-    <img src="screenshots/userRegister.png" alt="Kullanıcı Kayıt Ekranı" width="800"/>
+
+<img src="screenshots/userRegister.png" alt="Kullanıcı Kayıt Ekranı" width="800"/>
   <br/><i>Kullanıcı Kayıt Ekranı</i>
 </div>
 Diğer fotoğraflara screenshots klasöründen erieşebilirsiniz.
