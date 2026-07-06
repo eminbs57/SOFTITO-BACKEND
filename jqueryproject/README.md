@@ -48,7 +48,6 @@ Sistem **Admin** ve **User** olmak üzere iki ana yetki seviyesine sahiptir:
   <br/><i>Kullanıcıya özel katıldığı etkinlikler görüntülemeleri</i><br/><br/>
 </div>
 
-Diğer ekran görüntülerine screenshots adlı klasörden ulaşabilirsiniz.
 
 > 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
 
