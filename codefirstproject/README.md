@@ -32,22 +32,22 @@ Güvenlik: ASP.NET Core Identity (Şifre hashleme, oturum yönetimi)
   <i>Modern Yönetici Paneli ve İstatistikler (Dashboard)</i>
   <br/><br/>
 
-  <img src="screenshots/login.png" alt="Giriş Sayfası" width="800"/>
+  <img src="projectcodefrst/screenshots/login.png" alt="Giriş Sayfası" width="800"/>
   <br/>
   <i>Güvenli Kullanıcı Giriş Ekranı (Login)</i>
   <br/><br/>
 
-  <img src="screenshots/prdouct.png" alt="Ürün Yönetimi" width="800"/>
+  <img src="projectcodefrst/screenshots/prdouct.png" alt="Ürün Yönetimi" width="800"/>
   <br/>
   <i>Katalog ve Ürün Yönetim Modülü</i>
   <br/><br/>
 
-  <img src="screenshots/order.png" alt="Siparişler" width="800"/>
+  <img src="projectcodefrst/screenshots/order.png" alt="Siparişler" width="800"/>
   <br/>
   <i>Sipariş Takip ve Yönetim Ekranı</i>
   <br/><br/>
 
-  <img src="screenshots/report.png" alt="Raporlama" width="800"/>
+  <img src="projectcodefrst/screenshots/report.png" alt="Raporlama" width="800"/>
   <br/>
   <i>Gelişmiş Satış ve Stok Raporları</i>
 </div>
