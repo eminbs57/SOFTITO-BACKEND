@@ -1,6 +1,6 @@
 # CINEWAM - Sinema Bilet Otomasyon Sistemi (Database-First)
 
-<img src="screenshots/user-anasayfa.png" alt="CINEWAM Anasayfa" width="800"/>
+<img src="SinemaDbFirst/screenshots/user-anasayfa.png" alt="CINEWAM Anasayfa" width="800"/>
 
 CINEWAM, mevcut bir veritabanı yapısı üzerinden **Database-First** yaklaşımıyla geliştirilmiş, sinema bilet satış ve yönetim süreçlerini optimize eden kapsamlı bir otomasyondur. ASP.NET Core MVC mimarisi ile inşa edilen sistem, hem admin hem de kullanıcı taraflı dinamik özellikler sunar.
 
