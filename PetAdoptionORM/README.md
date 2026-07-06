@@ -21,23 +21,24 @@ Proje, temiz kod (Clean Code) ve yüksek sürdürülebilirlik ilkeleriyle üç a
 ## 📸 Ekran Görüntüleri
 
 <div align="center">
-  <img src="screenshots/dashboard.png" alt="Dashboard" width="800"/>
-  <br/><i>Dashboard</i><br/><br/>
+  <img src="screenshots/dashboard.png" alt="Dashboard" width="800"/><br/>
+  <b>Dashboard</b><br/><br/>
 
-  <img src="screenshots/hayvanlar.png" alt="Hayvanlar" width="800"/>
-  <br/><i>Hayvanlar(crud)</i><br/><br/>
+<img src="screenshots/hayvanlar.png" alt="Hayvanlar" width="800"/><br/>
+<b>Hayvanlar (CRUD)</b><br/><br/>
 
-  <img src="screenshots/rapor3.png" alt="Örnek Raporlama" width="800"/>
-  <br/><i>Örnek Raporlama Ekranı</i><br/><br/>
+<img src="screenshots/rapor3.png" alt="Raporlama" width="800"/><br/>
+<b>Örnek Raporlama Ekranı</b><br/><br/>
 
-  <img src="screenshots/user-home2.png" alt="Kullanıcı Ekranı" width="800"/>
-  <br/><i>Hayvan Sahiplenme ekranı(user)</i>
+<img src="screenshots/user-home2.png" alt="Kullanıcı Ekranı" width="800"/><br/>
+<b>Hayvan Sahiplenme Ekranı (User)</b><br/><br/>
 
-  <img src="screenshots/userLogin.png" alt="Kullanıcı Login Ekranı" width="800"/>
-  <br/><i>Kullanıcı Login Ekranı</i>
+<img src="screenshots/userLogin.png" alt="Login" width="800"/><br/>
+<b>Kullanıcı Login Ekranı</b><br/><br/>
 
-<img src="screenshots/userRegister.png" alt="Kullanıcı Kayıt Ekranı" width="800"/>
-  <br/><i>Kullanıcı Kayıt Ekranı</i>
+<img src="screenshots/userRegister.png" alt="Kayıt" width="800"/><br/>
+<b>Kullanıcı Kayıt Ekranı</b><br/>
+
 </div>
 Diğer fotoğraflara screenshots klasöründen erieşebilirsiniz.
 
