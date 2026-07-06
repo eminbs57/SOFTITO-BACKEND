@@ -37,16 +37,6 @@ Bu proje, **ASP.NET Core MVC** ve **Dapper** mikro-ORM teknolojileri kullanılar
   <img src="screenshots/login.png" alt="Giriş Ekranı" width="800"/>
   <br/><i>Güvenli Yönetici Girişi</i>
 </div>
-Diğer ekran görüntülerine screenshots klasöründen erişebilirsiniz.
-## 🛠 Kurulum ve Çalıştırma
-
-1. **Bağlantı Ayarları:** `HastaneRandevu/Models/Context.cs` dosyasındaki `connectionstring` değerini kendi SQL Server bilgilerinizle güncelleyin.
-2. **Derleme:**
-   ```bash
-   dotnet build
-   ```
-3. **Çalıştırma:**
-   dotnet run
 
 > 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
 
