@@ -123,8 +123,23 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
 
 > 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
-## 🚀 Nasıl Çalıştırılır?
-Ana depo kök dizininde (SOFTITO-BACKEND) bir terminal açın ve projeyi başlatmak için aşağıdaki komutu çalıştırın:
-```bash
-dotnet run --project DBFİRST/SinemaDbFirst/dbfirstProjem.csproj
-```
+## 🚀 Adım Adım Nasıl Çalıştırılır?
+
+Bu proje **Database-First** (Önce Veritabanı) yaklaşımı ile geliştirildiği için, projeyi çalıştırmadan önce veritabanı bağlantılarınızı ayarlamanız gerekmektedir. Aşağıdaki adımları sırasıyla izleyin:
+
+1. **Veritabanı Bağlantısını Ayarlama:**
+   - Proje içerisindeki `DBFİRST/SinemaDbFirst/appsettings.json` dosyasını açın.
+   - `ConnectionStrings` altındaki bağlantı cümlesini (Connection String) kendi lokal SQL Server sunucunuza uygun şekilde güncelleyin.
+   *(Eğer projenin çalışması için gereken hazır bir SQL script dosyası varsa öncelikle onu SQL Server'da çalıştırarak veritabanını oluşturun.)*
+
+2. **Terminali Açma:**
+   - Ana depo kök dizininde (`SOFTITO-BACKEND` klasörü içinde) bir terminal veya komut satırı açın.
+
+3. **Projeyi Başlatma:**
+   - Aşağıdaki komutu çalıştırarak projeyi ayağa kaldırın:
+   ```bash
+   dotnet run --project DBFİRST/SinemaDbFirst/dbfirstProjem.csproj
+   ```
+
+4. **Kullanım:**
+   - Proje başarıyla derlendikten sonra, terminalde belirtilen `http://localhost:<port>` adresi üzerinden tarayıcınızda uygulamayı görüntüleyebilirsiniz.
