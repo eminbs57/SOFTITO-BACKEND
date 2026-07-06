@@ -57,5 +57,8 @@ Diğer ekran görüntülerine screenshots adlı klasörden ulaşabilirsiniz.
    cd ../MvcProject && dotnet ef database update
    ```
 
-4. **Çalıştırma:**
+4.
+    ```bash
+   # Çalıştırma:
    dotnet run
+   ```
