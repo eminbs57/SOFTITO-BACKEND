@@ -35,7 +35,13 @@ namespace HastaneRandevu.Models
 
                     // 2. Admin Register Procedure
                     db.Execute(@"
-                        CREATE OR ALTER PROCEDURE AdminRegister
+                        IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'AdminRegister')
+                        BEGIN
+                            EXEC('CREATE PROCEDURE AdminRegister AS BEGIN SET NOCOUNT ON; END')
+                        END
+                    ");
+                    db.Execute(@"
+                        ALTER PROCEDURE AdminRegister
                             @Username NVARCHAR(50),
                             @PasswordHash NVARCHAR(256)
                         AS
@@ -47,7 +53,13 @@ namespace HastaneRandevu.Models
 
                     // 3. Admin Login Procedure
                     db.Execute(@"
-                        CREATE OR ALTER PROCEDURE AdminLogin
+                        IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'AdminLogin')
+                        BEGIN
+                            EXEC('CREATE PROCEDURE AdminLogin AS BEGIN SET NOCOUNT ON; END')
+                        END
+                    ");
+                    db.Execute(@"
+                        ALTER PROCEDURE AdminLogin
                             @Username NVARCHAR(50),
                             @PasswordHash NVARCHAR(256)
                         AS
@@ -58,26 +70,88 @@ namespace HastaneRandevu.Models
                         END
                     ");
 
-                    // 4. Rapor Procedure
+                    // 4. Rapor 1: Poliklinik Dağılımı
                     db.Execute(@"
-                        CREATE OR ALTER PROCEDURE RandevuRapor
-                        AS
+                        IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'SP_RaporPoliklinik')
+                            EXEC('CREATE PROCEDURE SP_RaporPoliklinik AS BEGIN SET NOCOUNT ON; END')
+                    ");
+                    db.Execute(@"
+                        ALTER PROCEDURE SP_RaporPoliklinik AS
                         BEGIN
-                            SELECT 
-                                R.RandevuNo,
-                                R.RandevuTarihi,
-                                R.Durum,
-                                H.TCKimlikNo,
-                                H.Ad + ' ' + H.Soyad AS HastaAdSoyad,
-                                H.Cinsiyet,
-                                H.DogumTarihi,
-                                D.Ad + ' ' + D.Soyad AS DoktorAdSoyad,
-                                P.PoliklinikAdi
-                            FROM Randevu R
-                            INNER JOIN Hasta H ON R.HastaNo = H.HastaNo
-                            INNER JOIN Doktor D ON R.DoktorNo = D.DoktorNo
+                            SELECT P.PoliklinikAdi, COUNT(R.RandevuNo) AS ToplamRandevu
+                            FROM Poliklinik P
+                            LEFT JOIN Doktor D ON P.PoliklinikNo = D.PoliklinikNo
+                            LEFT JOIN Randevu R ON D.DoktorNo = R.DoktorNo
+                            GROUP BY P.PoliklinikNo, P.PoliklinikAdi
+                            ORDER BY ToplamRandevu DESC
+                        END
+                    ");
+
+                    // 5. Rapor 2: Doktor İstatistikleri
+                    db.Execute(@"
+                        IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'SP_RaporDoktor')
+                            EXEC('CREATE PROCEDURE SP_RaporDoktor AS BEGIN SET NOCOUNT ON; END')
+                    ");
+                    db.Execute(@"
+                        ALTER PROCEDURE SP_RaporDoktor AS
+                        BEGIN
+                            SELECT D.AdSoyad AS DoktorAdSoyad, P.PoliklinikAdi,
+                                COUNT(R.RandevuNo) AS ToplamRandevu,
+                                SUM(CASE WHEN R.Durum = 'Aktif' THEN 1 ELSE 0 END) AS AktifRandevu,
+                                SUM(CASE WHEN R.Durum = 'Tamamlandı' THEN 1 ELSE 0 END) AS TamamlananRandevu,
+                                SUM(CASE WHEN R.Durum = 'İptal' THEN 1 ELSE 0 END) AS IptalRandevu
+                            FROM Doktor D
                             INNER JOIN Poliklinik P ON D.PoliklinikNo = P.PoliklinikNo
-                            ORDER BY R.RandevuTarihi DESC
+                            LEFT JOIN Randevu R ON D.DoktorNo = R.DoktorNo
+                            GROUP BY D.DoktorNo, D.AdSoyad, P.PoliklinikAdi
+                            ORDER BY ToplamRandevu DESC
+                        END
+                    ");
+
+                    // 6. Rapor 3: En Aktif Hastalar
+                    db.Execute(@"
+                        IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'SP_RaporAktifHasta')
+                            EXEC('CREATE PROCEDURE SP_RaporAktifHasta AS BEGIN SET NOCOUNT ON; END')
+                    ");
+                    db.Execute(@"
+                        ALTER PROCEDURE SP_RaporAktifHasta AS
+                        BEGIN
+                            SELECT TOP 5 H.AdSoyad AS HastaAdSoyad, H.Yas, COUNT(R.RandevuNo) AS ToplamRandevu
+                            FROM Hasta H
+                            LEFT JOIN Randevu R ON H.HastaNo = R.HastaNo
+                            GROUP BY H.HastaNo, H.AdSoyad, H.Yas
+                            ORDER BY ToplamRandevu DESC
+                        END
+                    ");
+
+                    // 7. Rapor 4: Randevu Durum Özeti
+                    db.Execute(@"
+                        IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'SP_RaporDurum')
+                            EXEC('CREATE PROCEDURE SP_RaporDurum AS BEGIN SET NOCOUNT ON; END')
+                    ");
+                    db.Execute(@"
+                        ALTER PROCEDURE SP_RaporDurum AS
+                        BEGIN
+                            SELECT Durum, COUNT(RandevuNo) AS ToplamSayi
+                            FROM Randevu
+                            GROUP BY Durum
+                            ORDER BY ToplamSayi DESC
+                        END
+                    ");
+
+                    // 8. Rapor 5: En Popüler Doktorlar
+                    db.Execute(@"
+                        IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'SP_RaporPopulerDoktor')
+                            EXEC('CREATE PROCEDURE SP_RaporPopulerDoktor AS BEGIN SET NOCOUNT ON; END')
+                    ");
+                    db.Execute(@"
+                        ALTER PROCEDURE SP_RaporPopulerDoktor AS
+                        BEGIN
+                            SELECT TOP 5 D.AdSoyad AS DoktorAdSoyad, COUNT(R.RandevuNo) AS ToplamRandevu
+                            FROM Doktor D
+                            LEFT JOIN Randevu R ON D.DoktorNo = R.DoktorNo
+                            GROUP BY D.DoktorNo, D.AdSoyad
+                            ORDER BY ToplamRandevu DESC
                         END
                     ");
                 }

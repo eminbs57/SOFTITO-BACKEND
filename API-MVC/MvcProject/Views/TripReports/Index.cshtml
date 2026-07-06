@@ -1,0 +1,188 @@
+@model MvcProject.Models.TripReportViewModel
+@{
+    ViewData["Title"] = "Sefer Raporları ve Analizler";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Sefer Raporları ve Analizler</h2>
+    </div>
+
+    <!-- Nav Tabs -->
+    <ul class="nav nav-tabs mb-4" id="reportTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="all-trips-tab" data-bs-toggle="tab" data-bs-target="#all-trips" type="button" role="tab" aria-controls="all-trips" aria-selected="true">Tüm Seferler (5-Join)</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="driver-stats-tab" data-bs-toggle="tab" data-bs-target="#driver-stats" type="button" role="tab" aria-controls="driver-stats" aria-selected="false">En Aktif Şoförler</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="route-stats-tab" data-bs-toggle="tab" data-bs-target="#route-stats" type="button" role="tab" aria-controls="route-stats" aria-selected="false">En Çok Kullanılan Rotalar</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="vehicle-stats-tab" data-bs-toggle="tab" data-bs-target="#vehicle-stats" type="button" role="tab" aria-controls="vehicle-stats" aria-selected="false">En Çok Tercih Edilen Araçlar</button>
+        </li>
+    </ul>
+
+    <!-- Tab Contents -->
+    <div class="tab-content" id="reportTabsContent">
+        
+        <!-- Tüm Seferler Sekmesi -->
+        <div class="tab-pane fade show active" id="all-trips" role="tabpanel" aria-labelledby="all-trips-tab">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-bordered" id="reportTable">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Sefer No</th>
+                                    <th>Tarih</th>
+                                    <th>Şoför</th>
+                                    <th>Araç Plakası</th>
+                                    <th>Rota</th>
+                                    <th>Çıkış Deposu</th>
+                                    <th>Varış Deposu</th>
+                                    <th>Mesafe (km)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.Trips != null && Model.Trips.Any())
+                                {
+                                    foreach (var item in Model.Trips)
+                                    {
+                                        <tr>
+                                            <td>@item.TripId</td>
+                                            <td>@item.TripDate.ToString("dd.MM.yyyy HH:mm")</td>
+                                            <td>@item.DriverFullName</td>
+                                            <td>@item.LicensePlate</td>
+                                            <td>@item.RouteName</td>
+                                            <td>@item.StartDepoName</td>
+                                            <td>@item.EndDepoName</td>
+                                            <td>@item.Distance</td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="8" class="text-center text-muted py-3">Henüz kaydedilmiş sefer raporu bulunmuyor.</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Şoför İstatistikleri Sekmesi -->
+        <div class="tab-pane fade" id="driver-stats" role="tabpanel" aria-labelledby="driver-stats-tab">
+            <div class="card shadow-sm border-0 border-top border-primary border-4">
+                <div class="card-body">
+                    <h5 class="card-title text-primary mb-3"><i class="bi bi-person-fill me-2"></i>En Aktif Şoförler Listesi</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Şoför Adı Soyadı</th>
+                                    <th class="text-end">Toplam Çıktığı Sefer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.DriverStats != null && Model.DriverStats.Any())
+                                {
+                                    foreach (var item in Model.DriverStats)
+                                    {
+                                        <tr>
+                                            <td class="fw-bold">@item.DriverFullName</td>
+                                            <td class="text-end"><span class="badge bg-primary rounded-pill">@item.TotalTrips</span></td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr><td colspan="2" class="text-center text-muted">Veri bulunamadı.</td></tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rota İstatistikleri Sekmesi -->
+        <div class="tab-pane fade" id="route-stats" role="tabpanel" aria-labelledby="route-stats-tab">
+            <div class="card shadow-sm border-0 border-top border-success border-4">
+                <div class="card-body">
+                    <h5 class="card-title text-success mb-3"><i class="bi bi-geo-alt-fill me-2"></i>En Çok Kullanılan Rotalar</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Rota Adı</th>
+                                    <th class="text-end">Toplam Sefer</th>
+                                    <th class="text-end">O Rotada Edilen Toplam Mesafe (km)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.RouteStats != null && Model.RouteStats.Any())
+                                {
+                                    foreach (var item in Model.RouteStats)
+                                    {
+                                        <tr>
+                                            <td class="fw-bold">@item.RouteName</td>
+                                            <td class="text-end"><span class="badge bg-success rounded-pill">@item.TotalTrips</span></td>
+                                            <td class="text-end">@item.TotalDistance</td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr><td colspan="3" class="text-center text-muted">Veri bulunamadı.</td></tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Araç İstatistikleri Sekmesi -->
+        <div class="tab-pane fade" id="vehicle-stats" role="tabpanel" aria-labelledby="vehicle-stats-tab">
+            <div class="card shadow-sm border-0 border-top border-warning border-4">
+                <div class="card-body">
+                    <h5 class="card-title text-warning mb-3"><i class="bi bi-truck me-2"></i>En Çok Tercih Edilen Araçlar</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Plaka</th>
+                                    <th>Marka</th>
+                                    <th class="text-end">Toplam Sefer Sayısı</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.VehicleStats != null && Model.VehicleStats.Any())
+                                {
+                                    foreach (var item in Model.VehicleStats)
+                                    {
+                                        <tr>
+                                            <td class="fw-bold">@item.LicensePlate</td>
+                                            <td>@item.Brand</td>
+                                            <td class="text-end"><span class="badge bg-warning text-dark rounded-pill">@item.TotalTrips</span></td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr><td colspan="3" class="text-center text-muted">Veri bulunamadı.</td></tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

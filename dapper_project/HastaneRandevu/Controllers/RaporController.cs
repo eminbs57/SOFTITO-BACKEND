@@ -17,12 +17,16 @@ namespace HastaneRandevu.Controllers
 
         public IActionResult Index()
         {
-            // Veritabanındaki RandevuRapor Stored Procedure'ünü çalıştır
-            var raporListesi = Context.Listeleme<RandevuRaporModel>("RandevuRapor").ToList();
+            // 5 Farklı Raporu Stored Procedure'lerden Çekme
+            ViewBag.RaporPoliklinik = Context.Listeleme<RaporPoliklinikModel>("SP_RaporPoliklinik").ToList();
+            ViewBag.RaporDoktor = Context.Listeleme<RaporDoktorModel>("SP_RaporDoktor").ToList();
+            ViewBag.RaporAktifHasta = Context.Listeleme<RaporAktifHastaModel>("SP_RaporAktifHasta").ToList();
+            ViewBag.RaporDurum = Context.Listeleme<RaporDurumModel>("SP_RaporDurum").ToList();
+            ViewBag.RaporPopulerDoktor = Context.Listeleme<RaporPopulerDoktorModel>("SP_RaporPopulerDoktor").ToList();
             
-            _logger.LogInformation("Rapor sayfası görüntülendi. Toplam {Count} kayıt getirildi.", raporListesi.Count);
+            _logger.LogInformation("Gelişmiş 5'li Rapor sayfası görüntülendi.");
 
-            return View(raporListesi);
+            return View();
         }
     }
 }

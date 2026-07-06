@@ -43,6 +43,7 @@ namespace HastaneRandevu.Controllers
             }
 
             ViewBag.SearchTerm = searchTerm;
+            ViewBag.Poliklinikler = Context.Listeleme<PoliklinikModel>("PoliklinikViewAll");
             return View(doktorlar);
         }
 

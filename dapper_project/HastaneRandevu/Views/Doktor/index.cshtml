@@ -1,6 +1,7 @@
 @model IEnumerable<HastaneRandevu.Models.DoktorModel>
 @{
     ViewData["Title"] = "Doktorlar";
+    var poliklinikler = ViewBag.Poliklinikler as IEnumerable<HastaneRandevu.Models.PoliklinikModel> ?? new List<HastaneRandevu.Models.PoliklinikModel>();
 }
 
 <div class="container-fluid py-3">
@@ -29,7 +30,7 @@
                     <tr>
                         <th>Ad Soyad</th>
                         <th>Unvan</th>
-                        <th>Poliklinik No</th>
+                        <th>Poliklinik Adı</th>
                         <th class="text-end">İşlemler</th>
                     </tr>
                 </thead>
@@ -39,7 +40,7 @@
                         <tr>
                             <td class="fw-semibold">@item.AdSoyad</td>
                             <td><span class="badge bg-light text-dark border">@item.Unvan</span></td>
-                            <td>@item.PoliklinikNo</td>
+                            <td>@(poliklinikler.FirstOrDefault(p => p.PoliklinikNo == item.PoliklinikNo)?.PoliklinikAdi ?? item.PoliklinikNo.ToString())</td>
                             <td class="text-end">
                                 <a href="/Doktor/EY/@item.DoktorNo" class="btn btn-outline-secondary icon-btn shadow-sm" title="Düzenle">
                                     <i class="bi bi-pencil"></i>

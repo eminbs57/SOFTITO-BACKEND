@@ -1,0 +1,1261 @@
+2026-07-05 23:06:26.781 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-05 23:06:26.805 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-05 23:06:26.806 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-05 23:06:26.806 +03:00 [INF] Hosting environment: Development
+2026-07-05 23:06:26.806 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu
+2026-07-05 23:07:18.565 +03:00 [INF] Application is shutting down...
+2026-07-05 23:07:22.014 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-05 23:07:22.036 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-05 23:07:22.037 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-05 23:07:22.037 +03:00 [INF] Hosting environment: Development
+2026-07-05 23:07:22.037 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu
+2026-07-05 23:09:27.707 +03:00 [INF] Application is shutting down...
+2026-07-05 23:09:38.445 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-05 23:09:38.472 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-05 23:09:38.473 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-05 23:09:38.473 +03:00 [INF] Hosting environment: Development
+2026-07-05 23:09:38.473 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu
+2026-07-05 23:09:55.208 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-05 23:09:55.211 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-05 23:09:55.228 +03:00 [INF] Cookies was not authenticated. Failure message: Unprotect ticket failed
+2026-07-05 23:09:55.230 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-05 23:09:55.231 +03:00 [INF] AuthenticationScheme: Cookies was challenged.
+2026-07-05 23:09:55.232 +03:00 [INF] HTTP GET / responded 302 in 11.2192 ms
+2026-07-05 23:09:55.233 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 302 0 null 26.4424ms
+2026-07-05 23:09:55.236 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2F - null null
+2026-07-05 23:09:55.238 +03:00 [INF] Cookies was not authenticated. Failure message: Unprotect ticket failed
+2026-07-05 23:09:55.239 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-05 23:09:55.250 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-05 23:09:55.254 +03:00 [INF] Executing ViewResult, running view Login.
+2026-07-05 23:09:55.316 +03:00 [INF] Executed ViewResult - view Login executed in 61.6527ms.
+2026-07-05 23:09:55.316 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 66.3954ms
+2026-07-05 23:09:55.317 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-05 23:09:55.317 +03:00 [INF] HTTP GET /Admin/Login responded 200 in 80.2403 ms
+2026-07-05 23:09:55.318 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Admin/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 82.5043ms
+2026-07-05 23:09:55.319 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-07-05 23:09:55.326 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2026-07-05 23:09:55.326 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/lib/bootstrap/dist/css/bootstrap.min.css - 200 232803 text/css 6.7927ms
+2026-07-05 23:10:00.214 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 36
+2026-07-05 23:10:00.218 +03:00 [INF] Cookies was not authenticated. Failure message: Unprotect ticket failed
+2026-07-05 23:10:00.218 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-05 23:10:00.240 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-05 23:10:00.312 +03:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-07-05 23:10:00.316 +03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-07-05 23:10:00.316 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 76.031ms
+2026-07-05 23:10:00.316 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-05 23:10:00.316 +03:00 [INF] HTTP POST /Admin/Login responded 302 in 99.7767 ms
+2026-07-05 23:10:00.316 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 302 0 null 102.5082ms
+2026-07-05 23:10:00.319 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-05 23:10:00.321 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:10:00.321 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:10:00.342 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:10:00.396 +03:00 [INF] Executed ViewResult - view Index executed in 55.4027ms.
+2026-07-05 23:10:00.397 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 75.3183ms
+2026-07-05 23:10:00.397 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:10:00.397 +03:00 [INF] HTTP GET / responded 200 in 77.0895 ms
+2026-07-05 23:10:00.397 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 77.3483ms
+2026-07-05 23:10:00.423 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/HastaneRandevu.styles.css?v=x8lTV-lbwQUautY4aCzNpedMi2TMjTqZ4rAh93OATfE - null null
+2026-07-05 23:10:00.424 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-07-05 23:10:00.424 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-07-05 23:10:00.424 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+2026-07-05 23:10:00.423 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/lib/jquery/dist/jquery.min.js - null null
+2026-07-05 23:10:00.425 +03:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2026-07-05 23:10:00.425 +03:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2026-07-05 23:10:00.425 +03:00 [INF] The file /js/site.js was not modified
+2026-07-05 23:10:00.425 +03:00 [INF] The file /HastaneRandevu.styles.css was not modified
+2026-07-05 23:10:00.425 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 304 null text/javascript 1.4733ms
+2026-07-05 23:10:00.425 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 1.4708ms
+2026-07-05 23:10:00.425 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/lib/jquery/dist/jquery.min.js - 304 null text/javascript 1.8027ms
+2026-07-05 23:10:00.425 +03:00 [INF] The file /css/site.css was not modified
+2026-07-05 23:10:00.425 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/HastaneRandevu.styles.css?v=x8lTV-lbwQUautY4aCzNpedMi2TMjTqZ4rAh93OATfE - 304 null text/css 2.0478ms
+2026-07-05 23:10:00.426 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 304 null text/css 2.6536ms
+2026-07-05 23:10:57.187 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Admin/Login - application/x-www-form-urlencoded 36
+2026-07-05 23:10:57.189 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-05 23:10:57.190 +03:00 [INF] Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(HastaneRandevu.Models.AdminModel) on controller HastaneRandevu.Controllers.AdminController (HastaneRandevu).
+2026-07-05 23:10:57.204 +03:00 [INF] AuthenticationScheme: Cookies signed in.
+2026-07-05 23:10:57.205 +03:00 [INF] Executing RedirectResult, redirecting to /.
+2026-07-05 23:10:57.206 +03:00 [INF] Executed action HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu) in 15.9715ms
+2026-07-05 23:10:57.206 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.AdminController.Login (HastaneRandevu)'
+2026-07-05 23:10:57.206 +03:00 [INF] HTTP POST /Admin/Login responded 302 in 18.0595 ms
+2026-07-05 23:10:57.206 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Admin/Login - 302 0 null 19.3271ms
+2026-07-05 23:10:57.209 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-05 23:10:57.212 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:10:57.213 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:10:57.223 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:10:57.224 +03:00 [INF] Executed ViewResult - view Index executed in 1.562ms.
+2026-07-05 23:10:57.224 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 11.6044ms
+2026-07-05 23:10:57.224 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:10:57.225 +03:00 [INF] HTTP GET / responded 200 in 15.1971 ms
+2026-07-05 23:10:57.225 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 15.8114ms
+2026-07-05 23:11:08.729 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-05 23:11:08.730 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:11:08.730 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:11:08.747 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:11:08.748 +03:00 [INF] Executed ViewResult - view Index executed in 1.146ms.
+2026-07-05 23:11:08.748 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 17.8542ms
+2026-07-05 23:11:08.749 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:11:08.749 +03:00 [INF] HTTP GET /Home/Index responded 200 in 19.1933 ms
+2026-07-05 23:11:08.749 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 20.371ms
+2026-07-05 23:11:12.425 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-05 23:11:12.428 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:11:12.428 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:11:12.442 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:11:12.444 +03:00 [INF] Executed ViewResult - view Index executed in 1.8707ms.
+2026-07-05 23:11:12.444 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 15.9946ms
+2026-07-05 23:11:12.445 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:11:12.445 +03:00 [INF] HTTP GET /Home/Index responded 200 in 17.4525 ms
+2026-07-05 23:11:12.445 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 20.1459ms
+2026-07-05 23:11:23.576 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-05 23:11:23.577 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:11:23.580 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:11:23.599 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-05 23:11:23.603 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:11:23.615 +03:00 [INF] Executed ViewResult - view Index executed in 12.8414ms.
+2026-07-05 23:11:23.615 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 35.396ms
+2026-07-05 23:11:23.615 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:11:23.615 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 39.2374 ms
+2026-07-05 23:11:23.616 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 39.9835ms
+2026-07-05 23:11:25.030 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-05 23:11:25.032 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:11:25.034 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:11:25.048 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-05 23:11:25.050 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:11:25.062 +03:00 [INF] Executed ViewResult - view Index executed in 12.1761ms.
+2026-07-05 23:11:25.062 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 27.8568ms
+2026-07-05 23:11:25.062 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:11:25.062 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 31.2868 ms
+2026-07-05 23:11:25.063 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 32.1175ms
+2026-07-05 23:11:25.661 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-05 23:11:25.664 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:11:25.664 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:11:25.665 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-05 23:11:25.665 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:11:25.668 +03:00 [INF] Executed ViewResult - view Index executed in 3.0159ms.
+2026-07-05 23:11:25.668 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 3.9102ms
+2026-07-05 23:11:25.668 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:11:25.669 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 5.3782 ms
+2026-07-05 23:11:25.669 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 7.946ms
+2026-07-05 23:11:26.071 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-05 23:11:26.072 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:11:26.075 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:11:26.089 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-05 23:11:26.092 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:11:26.102 +03:00 [INF] Executed ViewResult - view Index executed in 10.8449ms.
+2026-07-05 23:11:26.102 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 26.8685ms
+2026-07-05 23:11:26.102 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:11:26.102 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 30.4874 ms
+2026-07-05 23:11:26.102 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 31.4275ms
+2026-07-05 23:11:26.507 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-05 23:11:26.508 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:11:26.509 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:11:26.541 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:11:26.542 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:11:26.550 +03:00 [INF] Executed ViewResult - view Index executed in 8.205ms.
+2026-07-05 23:11:26.550 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 41.4695ms
+2026-07-05 23:11:26.550 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:11:26.550 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 43.0542 ms
+2026-07-05 23:11:26.551 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 43.4537ms
+2026-07-05 23:11:28.262 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-05 23:11:28.263 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:11:28.264 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:11:28.264 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-05 23:11:28.264 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:11:28.266 +03:00 [INF] Executed ViewResult - view Index executed in 1.5332ms.
+2026-07-05 23:11:28.266 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 2.1277ms
+2026-07-05 23:11:28.266 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:11:28.266 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 3.2148 ms
+2026-07-05 23:11:28.266 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 4.7317ms
+2026-07-05 23:11:28.726 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-05 23:11:28.727 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:11:28.727 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:11:28.743 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:11:28.744 +03:00 [INF] Executed ViewResult - view Index executed in 1.607ms.
+2026-07-05 23:11:28.745 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 16.8465ms
+2026-07-05 23:11:28.745 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:11:28.745 +03:00 [INF] HTTP GET /Home/Index responded 200 in 18.6098 ms
+2026-07-05 23:11:28.745 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 19.3453ms
+2026-07-05 23:12:30.784 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-05 23:12:30.786 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:12:30.786 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:12:30.800 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:12:30.802 +03:00 [INF] Executed ViewResult - view Index executed in 1.7747ms.
+2026-07-05 23:12:30.802 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 15.385ms
+2026-07-05 23:12:30.802 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:12:30.802 +03:00 [INF] HTTP GET /Home/Index responded 200 in 17.0665 ms
+2026-07-05 23:12:30.803 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 18.9471ms
+2026-07-05 23:12:39.017 +03:00 [INF] Application is shutting down...
+2026-07-05 23:12:44.033 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-05 23:12:44.060 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-05 23:12:44.061 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-05 23:12:44.061 +03:00 [INF] Hosting environment: Development
+2026-07-05 23:12:44.061 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu
+2026-07-05 23:12:48.308 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-05 23:12:48.310 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-05 23:12:48.329 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:12:48.337 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:12:48.381 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:12:48.446 +03:00 [INF] Executed ViewResult - view Index executed in 65.7824ms.
+2026-07-05 23:12:48.447 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 110.387ms
+2026-07-05 23:12:48.447 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:12:48.449 +03:00 [INF] HTTP GET / responded 200 in 126.9964 ms
+2026-07-05 23:12:48.457 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 149.4544ms
+2026-07-05 23:12:53.667 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-05 23:12:53.671 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:12:53.671 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:12:53.682 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:12:53.685 +03:00 [INF] Executed ViewResult - view Index executed in 2.4251ms.
+2026-07-05 23:12:53.685 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 13.2284ms
+2026-07-05 23:12:53.685 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:12:53.685 +03:00 [INF] HTTP GET / responded 200 in 17.3242 ms
+2026-07-05 23:12:53.685 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 19.1839ms
+2026-07-05 23:18:46.393 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-05 23:18:46.404 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:18:46.405 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:18:46.418 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:18:46.420 +03:00 [INF] Executed ViewResult - view Index executed in 1.8532ms.
+2026-07-05 23:18:46.420 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 15.1462ms
+2026-07-05 23:18:46.420 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:18:46.421 +03:00 [INF] HTTP GET / responded 200 in 25.3605 ms
+2026-07-05 23:18:46.421 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 28.0401ms
+2026-07-05 23:18:46.468 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/favicon.ico - null null
+2026-07-05 23:18:46.475 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu/wwwroot/favicon.ico'
+2026-07-05 23:18:46.475 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/favicon.ico - 200 5430 image/x-icon 7.47ms
+2026-07-05 23:18:47.707 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-05 23:18:47.709 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:18:47.709 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:18:47.722 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:18:47.724 +03:00 [INF] Executed ViewResult - view Index executed in 1.8117ms.
+2026-07-05 23:18:47.724 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 14.8176ms
+2026-07-05 23:18:47.724 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:18:47.724 +03:00 [INF] HTTP GET / responded 200 in 16.5762 ms
+2026-07-05 23:18:47.725 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 17.6271ms
+2026-07-05 23:18:48.342 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-05 23:18:48.343 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:18:48.344 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:18:48.356 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:18:48.358 +03:00 [INF] Executed ViewResult - view Index executed in 2.0777ms.
+2026-07-05 23:18:48.358 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 14.0661ms
+2026-07-05 23:18:48.358 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:18:48.359 +03:00 [INF] HTTP GET / responded 200 in 16.1199 ms
+2026-07-05 23:18:48.359 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 17.0934ms
+2026-07-05 23:18:53.654 +03:00 [INF] Application is shutting down...
+2026-07-05 23:18:59.344 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-05 23:18:59.373 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-05 23:18:59.374 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-05 23:18:59.374 +03:00 [INF] Hosting environment: Development
+2026-07-05 23:18:59.374 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu
+2026-07-05 23:19:17.009 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/ - null null
+2026-07-05 23:19:17.012 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-05 23:19:17.032 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:19:17.040 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:19:17.080 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:19:17.149 +03:00 [INF] Executed ViewResult - view Index executed in 69.2146ms.
+2026-07-05 23:19:17.150 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 109.4652ms
+2026-07-05 23:19:17.150 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:19:17.152 +03:00 [INF] HTTP GET / responded 200 in 128.9159 ms
+2026-07-05 23:19:17.156 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/ - 200 null text/html; charset=utf-8 148.6799ms
+2026-07-05 23:19:18.263 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Rapor/Index - null null
+2026-07-05 23:19:18.269 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:19:18.273 +03:00 [INF] Route matched with {action = "Index", controller = "Rapor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.RaporController (HastaneRandevu).
+2026-07-05 23:19:18.293 +03:00 [INF] Executed action HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu) in 20.3206ms
+2026-07-05 23:19:18.294 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:19:18.294 +03:00 [ERR] HTTP GET /Rapor/Index responded 500 in 28.7330 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'RandevuRapor'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean isRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& executeTask, Boolean& usedCache, Boolean asyncWrite, Boolean isRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1189
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1217
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 848
+   at HastaneRandevu.Models.Context.Listeleme[T](String procadi, DynamicParameters param) in /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu/Models/Context.cs:line 105
+   at HastaneRandevu.Controllers.RaporController.Index() in /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu/Controllers/RaporController.cs:line 21
+   at lambda_method26(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:0ef51905-056a-42f0-82c5-ba4bd5b8dc73
+Hata Numarası: 2812,Durum: 62,Sınıf:16
+2026-07-05 23:19:18.310 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'RandevuRapor'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.Connection.SqlConnectionInternal.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean isRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& executeTask, Boolean& usedCache, Boolean asyncWrite, Boolean isRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1189
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1217
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in /_/Dapper/SqlMapper.cs:line 848
+   at HastaneRandevu.Models.Context.Listeleme[T](String procadi, DynamicParameters param) in /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu/Models/Context.cs:line 105
+   at HastaneRandevu.Controllers.RaporController.Index() in /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu/Controllers/RaporController.cs:line 21
+   at lambda_method26(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:0ef51905-056a-42f0-82c5-ba4bd5b8dc73
+Hata Numarası: 2812,Durum: 62,Sınıf:16
+2026-07-05 23:19:18.324 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Rapor/Index - 500 null text/html; charset=utf-8 61.3673ms
+2026-07-05 23:20:35.907 +03:00 [INF] Application is shutting down...
+2026-07-05 23:20:41.196 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-05 23:20:41.225 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-05 23:20:41.226 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-05 23:20:41.226 +03:00 [INF] Hosting environment: Development
+2026-07-05 23:20:41.226 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu
+2026-07-05 23:20:41.420 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Rapor/Index - null null
+2026-07-05 23:20:41.423 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-05 23:20:41.438 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:20:41.445 +03:00 [INF] Route matched with {action = "Index", controller = "Rapor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.RaporController (HastaneRandevu).
+2026-07-05 23:20:41.455 +03:00 [INF] Rapor sayfası görüntülendi. Toplam 0 kayıt getirildi.
+2026-07-05 23:20:41.459 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:20:41.513 +03:00 [INF] Executed ViewResult - view Index executed in 54.4404ms.
+2026-07-05 23:20:41.514 +03:00 [INF] Executed action HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu) in 68.731ms
+2026-07-05 23:20:41.514 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:20:41.515 +03:00 [INF] HTTP GET /Rapor/Index responded 200 in 84.9208 ms
+2026-07-05 23:20:41.516 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Rapor/Index - 200 null text/html; charset=utf-8 96.7455ms
+2026-07-05 23:20:51.179 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-05 23:20:51.185 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:20:51.194 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:20:51.255 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:20:51.258 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:20:51.273 +03:00 [INF] Executed ViewResult - view Index executed in 14.9701ms.
+2026-07-05 23:20:51.273 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 78.4961ms
+2026-07-05 23:20:51.273 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:20:51.273 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 91.9864 ms
+2026-07-05 23:20:51.274 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 95.606ms
+2026-07-05 23:20:53.531 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-05 23:20:53.537 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:20:53.544 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:20:53.552 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-05 23:20:53.555 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:20:53.560 +03:00 [INF] Executed ViewResult - view Index executed in 5.7453ms.
+2026-07-05 23:20:53.560 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 16.0301ms
+2026-07-05 23:20:53.560 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:20:53.561 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 27.8546 ms
+2026-07-05 23:20:53.561 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 29.696ms
+2026-07-05 23:20:54.185 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Rapor/Index - null null
+2026-07-05 23:20:54.187 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:20:54.187 +03:00 [INF] Route matched with {action = "Index", controller = "Rapor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.RaporController (HastaneRandevu).
+2026-07-05 23:20:54.190 +03:00 [INF] Rapor sayfası görüntülendi. Toplam 0 kayıt getirildi.
+2026-07-05 23:20:54.190 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:20:54.192 +03:00 [INF] Executed ViewResult - view Index executed in 1.7493ms.
+2026-07-05 23:20:54.192 +03:00 [INF] Executed action HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu) in 5.1118ms
+2026-07-05 23:20:54.193 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:20:54.193 +03:00 [INF] HTTP GET /Rapor/Index responded 200 in 6.5621 ms
+2026-07-05 23:20:54.193 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Rapor/Index - 200 null text/html; charset=utf-8 7.998ms
+2026-07-05 23:22:00.220 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-05 23:22:00.222 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:22:00.223 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:00.223 +03:00 [INF] Toplam 1 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-05 23:22:00.224 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:22:00.225 +03:00 [INF] Executed ViewResult - view Index executed in 1.8097ms.
+2026-07-05 23:22:00.226 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 3.1322ms
+2026-07-05 23:22:00.227 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:22:00.227 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 5.1974 ms
+2026-07-05 23:22:00.227 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 7.195ms
+2026-07-05 23:22:02.853 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/EY - null null
+2026-07-05 23:22:02.855 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:02.857 +03:00 [INF] Route matched with {action = "EY", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:02.858 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:22:02.871 +03:00 [INF] Executed ViewResult - view EY executed in 13.217ms.
+2026-07-05 23:22:02.871 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu) in 14.5394ms
+2026-07-05 23:22:02.872 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:02.872 +03:00 [INF] HTTP GET /Poliklinik/EY responded 200 in 18.0265 ms
+2026-07-05 23:22:02.872 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/EY - 200 null text/html; charset=utf-8 19.3863ms
+2026-07-05 23:22:10.396 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Poliklinik/EY - application/x-www-form-urlencoded 79
+2026-07-05 23:22:10.397 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:10.399 +03:00 [INF] Route matched with {action = "EY", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.PoliklinikModel) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:10.460 +03:00 [INF] Executing RedirectResult, redirecting to /Poliklinik.
+2026-07-05 23:22:10.460 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu) in 60.7478ms
+2026-07-05 23:22:10.460 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:10.461 +03:00 [INF] HTTP POST /Poliklinik/EY responded 302 in 64.3087 ms
+2026-07-05 23:22:10.461 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Poliklinik/EY - 302 0 null 65.2966ms
+2026-07-05 23:22:10.463 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik - null null
+2026-07-05 23:22:10.463 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:22:10.464 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:10.466 +03:00 [INF] Toplam 2 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-05 23:22:10.466 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:22:10.467 +03:00 [INF] Executed ViewResult - view Index executed in 1.2305ms.
+2026-07-05 23:22:10.468 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 3.8778ms
+2026-07-05 23:22:10.468 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:22:10.468 +03:00 [INF] HTTP GET /Poliklinik responded 200 in 4.6220 ms
+2026-07-05 23:22:10.468 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik - 200 null text/html; charset=utf-8 5.2163ms
+2026-07-05 23:22:13.602 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/EY - null null
+2026-07-05 23:22:13.604 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:13.604 +03:00 [INF] Route matched with {action = "EY", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:13.604 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:22:13.605 +03:00 [INF] Executed ViewResult - view EY executed in 1.2395ms.
+2026-07-05 23:22:13.606 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu) in 1.7515ms
+2026-07-05 23:22:13.606 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:13.606 +03:00 [INF] HTTP GET /Poliklinik/EY responded 200 in 3.0503 ms
+2026-07-05 23:22:13.606 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/EY - 200 null text/html; charset=utf-8 4.6143ms
+2026-07-05 23:22:18.789 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Poliklinik/EY - application/x-www-form-urlencoded 40
+2026-07-05 23:22:18.790 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:18.791 +03:00 [INF] Route matched with {action = "EY", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.PoliklinikModel) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:18.804 +03:00 [INF] Executing RedirectResult, redirecting to /Poliklinik.
+2026-07-05 23:22:18.804 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu) in 13.1003ms
+2026-07-05 23:22:18.804 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:18.805 +03:00 [INF] HTTP POST /Poliklinik/EY responded 302 in 15.0525 ms
+2026-07-05 23:22:18.805 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Poliklinik/EY - 302 0 null 16.1954ms
+2026-07-05 23:22:18.808 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik - null null
+2026-07-05 23:22:18.808 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:22:18.809 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:18.812 +03:00 [INF] Toplam 3 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-05 23:22:18.813 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:22:18.813 +03:00 [INF] Executed ViewResult - view Index executed in 0.4903ms.
+2026-07-05 23:22:18.813 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 4.4789ms
+2026-07-05 23:22:18.813 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:22:18.813 +03:00 [INF] HTTP GET /Poliklinik responded 200 in 5.3343 ms
+2026-07-05 23:22:18.814 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik - 200 null text/html; charset=utf-8 5.9706ms
+2026-07-05 23:22:25.072 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/EY - null null
+2026-07-05 23:22:25.073 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:25.074 +03:00 [INF] Route matched with {action = "EY", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:25.074 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:22:25.076 +03:00 [INF] Executed ViewResult - view EY executed in 1.7482ms.
+2026-07-05 23:22:25.076 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu) in 2.2925ms
+2026-07-05 23:22:25.076 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:25.076 +03:00 [INF] HTTP GET /Poliklinik/EY responded 200 in 3.8014 ms
+2026-07-05 23:22:25.077 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/EY - 200 null text/html; charset=utf-8 5.2537ms
+2026-07-05 23:22:27.606 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Poliklinik/EY - application/x-www-form-urlencoded 60
+2026-07-05 23:22:27.606 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:27.606 +03:00 [INF] Route matched with {action = "EY", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.PoliklinikModel) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:27.616 +03:00 [INF] Executing RedirectResult, redirecting to /Poliklinik.
+2026-07-05 23:22:27.616 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu) in 9.7481ms
+2026-07-05 23:22:27.617 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:27.617 +03:00 [INF] HTTP POST /Poliklinik/EY responded 302 in 10.8244 ms
+2026-07-05 23:22:27.617 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Poliklinik/EY - 302 0 null 11.3202ms
+2026-07-05 23:22:27.620 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik - null null
+2026-07-05 23:22:27.621 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:22:27.621 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:27.623 +03:00 [INF] Toplam 4 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-05 23:22:27.623 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:22:27.623 +03:00 [INF] Executed ViewResult - view Index executed in 0.3076ms.
+2026-07-05 23:22:27.623 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 2.6174ms
+2026-07-05 23:22:27.624 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:22:27.624 +03:00 [INF] HTTP GET /Poliklinik responded 200 in 3.5339 ms
+2026-07-05 23:22:27.624 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik - 200 null text/html; charset=utf-8 4.1758ms
+2026-07-05 23:22:33.633 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/EY - null null
+2026-07-05 23:22:33.635 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:33.635 +03:00 [INF] Route matched with {action = "EY", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:33.636 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:22:33.637 +03:00 [INF] Executed ViewResult - view EY executed in 0.755ms.
+2026-07-05 23:22:33.637 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu) in 1.1695ms
+2026-07-05 23:22:33.637 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:33.637 +03:00 [INF] HTTP GET /Poliklinik/EY responded 200 in 2.4716 ms
+2026-07-05 23:22:33.637 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/EY - 200 null text/html; charset=utf-8 4.0097ms
+2026-07-05 23:22:35.277 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Poliklinik/EY - application/x-www-form-urlencoded 53
+2026-07-05 23:22:35.279 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:35.279 +03:00 [INF] Route matched with {action = "EY", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.PoliklinikModel) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:35.291 +03:00 [INF] Executing RedirectResult, redirecting to /Poliklinik.
+2026-07-05 23:22:35.292 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu) in 12.4564ms
+2026-07-05 23:22:35.292 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:35.292 +03:00 [INF] HTTP POST /Poliklinik/EY responded 302 in 13.7575 ms
+2026-07-05 23:22:35.292 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Poliklinik/EY - 302 0 null 15.0724ms
+2026-07-05 23:22:35.300 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik - null null
+2026-07-05 23:22:35.300 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:22:35.301 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:35.304 +03:00 [INF] Toplam 5 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-05 23:22:35.305 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:22:35.305 +03:00 [INF] Executed ViewResult - view Index executed in 0.5948ms.
+2026-07-05 23:22:35.305 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 4.5548ms
+2026-07-05 23:22:35.306 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:22:35.306 +03:00 [INF] HTTP GET /Poliklinik responded 200 in 5.4280 ms
+2026-07-05 23:22:35.306 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik - 200 null text/html; charset=utf-8 6.2743ms
+2026-07-05 23:22:40.787 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/EY - null null
+2026-07-05 23:22:40.788 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:40.788 +03:00 [INF] Route matched with {action = "EY", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:40.789 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:22:40.789 +03:00 [INF] Executed ViewResult - view EY executed in 0.6572ms.
+2026-07-05 23:22:40.790 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu) in 1.0645ms
+2026-07-05 23:22:40.790 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:40.790 +03:00 [INF] HTTP GET /Poliklinik/EY responded 200 in 2.4666 ms
+2026-07-05 23:22:40.790 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/EY - 200 null text/html; charset=utf-8 3.3358ms
+2026-07-05 23:22:47.183 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Poliklinik/EY - application/x-www-form-urlencoded 51
+2026-07-05 23:22:47.184 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:47.184 +03:00 [INF] Route matched with {action = "EY", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.PoliklinikModel) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:47.192 +03:00 [INF] Executing RedirectResult, redirecting to /Poliklinik.
+2026-07-05 23:22:47.193 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu) in 8.8313ms
+2026-07-05 23:22:47.196 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.EY (HastaneRandevu)'
+2026-07-05 23:22:47.196 +03:00 [INF] HTTP POST /Poliklinik/EY responded 302 in 12.7900 ms
+2026-07-05 23:22:47.197 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Poliklinik/EY - 302 0 null 13.8214ms
+2026-07-05 23:22:47.204 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik - null null
+2026-07-05 23:22:47.205 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:22:47.205 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:22:47.209 +03:00 [INF] Toplam 6 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-05 23:22:47.209 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:22:47.209 +03:00 [INF] Executed ViewResult - view Index executed in 0.7346ms.
+2026-07-05 23:22:47.210 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 4.268ms
+2026-07-05 23:22:47.210 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:22:47.210 +03:00 [INF] HTTP GET /Poliklinik responded 200 in 5.3885 ms
+2026-07-05 23:22:47.210 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik - 200 null text/html; charset=utf-8 6.159ms
+2026-07-05 23:22:52.802 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-05 23:22:52.803 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:22:52.805 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:22:52.810 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-05 23:22:52.816 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:22:52.827 +03:00 [INF] Executed ViewResult - view Index executed in 12.6113ms.
+2026-07-05 23:22:52.827 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 22.2019ms
+2026-07-05 23:22:52.827 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:22:52.828 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 25.1254 ms
+2026-07-05 23:22:52.828 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 26.1641ms
+2026-07-05 23:23:02.101 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/EY/2 - null null
+2026-07-05 23:23:02.103 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:23:02.105 +03:00 [INF] Route matched with {action = "EY", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:23:02.129 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:23:02.150 +03:00 [INF] Executed ViewResult - view EY executed in 21.606ms.
+2026-07-05 23:23:02.150 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu) in 45.2124ms
+2026-07-05 23:23:02.150 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:23:02.150 +03:00 [INF] HTTP GET /Doktor/EY/2 responded 200 in 47.4572 ms
+2026-07-05 23:23:02.150 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/EY/2 - 200 null text/html; charset=utf-8 49.2808ms
+2026-07-05 23:23:08.576 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Doktor/EY - application/x-www-form-urlencoded 73
+2026-07-05 23:23:08.577 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:23:08.581 +03:00 [INF] Route matched with {action = "EY", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.DoktorModel) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:23:08.600 +03:00 [INF] Executing RedirectResult, redirecting to /Doktor.
+2026-07-05 23:23:08.600 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu) in 18.5825ms
+2026-07-05 23:23:08.600 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:23:08.600 +03:00 [INF] HTTP POST /Doktor/EY responded 302 in 23.9780 ms
+2026-07-05 23:23:08.600 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Doktor/EY - 302 0 null 24.5857ms
+2026-07-05 23:23:08.602 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor - null null
+2026-07-05 23:23:08.603 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:23:08.603 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:23:08.605 +03:00 [INF] Toplam 2 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-05 23:23:08.605 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:23:08.607 +03:00 [INF] Executed ViewResult - view Index executed in 1.6021ms.
+2026-07-05 23:23:08.607 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 3.6661ms
+2026-07-05 23:23:08.607 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:23:08.607 +03:00 [INF] HTTP GET /Doktor responded 200 in 4.5239 ms
+2026-07-05 23:23:08.608 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor - 200 null text/html; charset=utf-8 5.1379ms
+2026-07-05 23:23:14.590 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/EY - null null
+2026-07-05 23:23:14.592 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:23:14.592 +03:00 [INF] Route matched with {action = "EY", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:23:14.598 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:23:14.600 +03:00 [INF] Executed ViewResult - view EY executed in 2.1275ms.
+2026-07-05 23:23:14.600 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu) in 7.0112ms
+2026-07-05 23:23:14.601 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:23:14.601 +03:00 [INF] HTTP GET /Doktor/EY responded 200 in 9.5447 ms
+2026-07-05 23:23:14.602 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/EY - 200 null text/html; charset=utf-8 11.328ms
+2026-07-05 23:23:30.359 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Doktor/EY - application/x-www-form-urlencoded 67
+2026-07-05 23:23:30.362 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:23:30.362 +03:00 [INF] Route matched with {action = "EY", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.DoktorModel) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:23:30.375 +03:00 [INF] Executing RedirectResult, redirecting to /Doktor.
+2026-07-05 23:23:30.375 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu) in 12.9331ms
+2026-07-05 23:23:30.375 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:23:30.375 +03:00 [INF] HTTP POST /Doktor/EY responded 302 in 14.6353 ms
+2026-07-05 23:23:30.376 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Doktor/EY - 302 0 null 16.2904ms
+2026-07-05 23:23:30.384 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor - null null
+2026-07-05 23:23:30.384 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:23:30.384 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:23:30.387 +03:00 [INF] Toplam 3 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-05 23:23:30.387 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:23:30.389 +03:00 [INF] Executed ViewResult - view Index executed in 1.4433ms.
+2026-07-05 23:23:30.389 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 4.4213ms
+2026-07-05 23:23:30.389 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:23:30.390 +03:00 [INF] HTTP GET /Doktor responded 200 in 5.4562 ms
+2026-07-05 23:23:30.390 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor - 200 null text/html; charset=utf-8 5.838ms
+2026-07-05 23:23:33.599 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/EY - null null
+2026-07-05 23:23:33.599 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:23:33.600 +03:00 [INF] Route matched with {action = "EY", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:23:33.603 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:23:33.604 +03:00 [INF] Executed ViewResult - view EY executed in 1.4606ms.
+2026-07-05 23:23:33.604 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu) in 4.677ms
+2026-07-05 23:23:33.605 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:23:33.605 +03:00 [INF] HTTP GET /Doktor/EY responded 200 in 6.3163 ms
+2026-07-05 23:23:33.605 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/EY - 200 null text/html; charset=utf-8 6.8102ms
+2026-07-05 23:23:48.592 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Doktor/EY - application/x-www-form-urlencoded 82
+2026-07-05 23:23:48.593 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:23:48.593 +03:00 [INF] Route matched with {action = "EY", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.DoktorModel) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:23:48.600 +03:00 [INF] Executing RedirectResult, redirecting to /Doktor.
+2026-07-05 23:23:48.600 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu) in 6.5816ms
+2026-07-05 23:23:48.600 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:23:48.600 +03:00 [INF] HTTP POST /Doktor/EY responded 302 in 7.9282 ms
+2026-07-05 23:23:48.601 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Doktor/EY - 302 0 null 9.0546ms
+2026-07-05 23:23:48.602 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor - null null
+2026-07-05 23:23:48.603 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:23:48.603 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:23:48.606 +03:00 [INF] Toplam 4 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-05 23:23:48.607 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:23:48.607 +03:00 [INF] Executed ViewResult - view Index executed in 0.5228ms.
+2026-07-05 23:23:48.607 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 3.7864ms
+2026-07-05 23:23:48.607 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:23:48.608 +03:00 [INF] HTTP GET /Doktor responded 200 in 4.9325 ms
+2026-07-05 23:23:48.608 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor - 200 null text/html; charset=utf-8 5.7536ms
+2026-07-05 23:24:02.372 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/EY - null null
+2026-07-05 23:24:02.374 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:24:02.374 +03:00 [INF] Route matched with {action = "EY", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:24:02.379 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:24:02.380 +03:00 [INF] Executed ViewResult - view EY executed in 1.0255ms.
+2026-07-05 23:24:02.381 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu) in 5.9724ms
+2026-07-05 23:24:02.381 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:24:02.381 +03:00 [INF] HTTP GET /Doktor/EY responded 200 in 7.9848 ms
+2026-07-05 23:24:02.382 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/EY - 200 null text/html; charset=utf-8 9.2851ms
+2026-07-05 23:24:19.060 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Doktor/EY - application/x-www-form-urlencoded 71
+2026-07-05 23:24:19.062 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:24:19.062 +03:00 [INF] Route matched with {action = "EY", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.DoktorModel) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:24:19.072 +03:00 [INF] Executing RedirectResult, redirecting to /Doktor.
+2026-07-05 23:24:19.072 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu) in 9.6907ms
+2026-07-05 23:24:19.072 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.EY (HastaneRandevu)'
+2026-07-05 23:24:19.073 +03:00 [INF] HTTP POST /Doktor/EY responded 302 in 11.6712 ms
+2026-07-05 23:24:19.073 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Doktor/EY - 302 0 null 13.1726ms
+2026-07-05 23:24:19.075 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor - null null
+2026-07-05 23:24:19.076 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:24:19.076 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:24:19.080 +03:00 [INF] Toplam 5 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-05 23:24:19.081 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:24:19.081 +03:00 [INF] Executed ViewResult - view Index executed in 0.6365ms.
+2026-07-05 23:24:19.081 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 5.3366ms
+2026-07-05 23:24:19.081 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:24:19.082 +03:00 [INF] HTTP GET /Doktor responded 200 in 6.1854 ms
+2026-07-05 23:24:19.082 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor - 200 null text/html; charset=utf-8 7.0211ms
+2026-07-05 23:25:06.408 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-05 23:25:06.409 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:25:06.409 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:25:06.414 +03:00 [INF] Toplam 6 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-05 23:25:06.415 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:25:06.416 +03:00 [INF] Executed ViewResult - view Index executed in 1.1987ms.
+2026-07-05 23:25:06.416 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 6.7834ms
+2026-07-05 23:25:06.416 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:25:06.417 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 8.2705 ms
+2026-07-05 23:25:06.417 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 9.3105ms
+2026-07-05 23:25:07.199 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-05 23:25:07.202 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:25:07.202 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:25:07.209 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:25:07.210 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:25:07.211 +03:00 [INF] Executed ViewResult - view Index executed in 1.6409ms.
+2026-07-05 23:25:07.211 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 9.0415ms
+2026-07-05 23:25:07.211 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:25:07.212 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 9.9145 ms
+2026-07-05 23:25:07.212 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 12.8538ms
+2026-07-05 23:25:09.873 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/EY - null null
+2026-07-05 23:25:09.874 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:25:09.877 +03:00 [INF] Route matched with {action = "EY", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:25:09.895 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:25:09.919 +03:00 [INF] Executed ViewResult - view EY executed in 24.8102ms.
+2026-07-05 23:25:09.919 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu) in 42.1629ms
+2026-07-05 23:25:09.920 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:25:09.920 +03:00 [INF] HTTP GET /Randevu/EY responded 200 in 46.1671 ms
+2026-07-05 23:25:09.920 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/EY - 200 null text/html; charset=utf-8 46.6533ms
+2026-07-05 23:25:13.764 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-05 23:25:13.765 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:25:13.766 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:25:13.770 +03:00 [INF] Toplam 1 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-05 23:25:13.773 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:25:13.790 +03:00 [INF] Executed ViewResult - view Index executed in 17.0441ms.
+2026-07-05 23:25:13.790 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 23.519ms
+2026-07-05 23:25:13.790 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:25:13.790 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 25.5403 ms
+2026-07-05 23:25:13.790 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 26.4581ms
+2026-07-05 23:25:15.233 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/EY - null null
+2026-07-05 23:25:15.236 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:25:15.237 +03:00 [INF] Route matched with {action = "EY", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:25:15.238 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:25:15.253 +03:00 [INF] Executed ViewResult - view EY executed in 15.0078ms.
+2026-07-05 23:25:15.253 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu) in 15.5218ms
+2026-07-05 23:25:15.253 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:25:15.253 +03:00 [INF] HTTP GET /Hasta/EY responded 200 in 17.9201 ms
+2026-07-05 23:25:15.253 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/EY - 200 null text/html; charset=utf-8 19.8839ms
+2026-07-05 23:25:39.893 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Hasta/EY - application/x-www-form-urlencoded 153
+2026-07-05 23:25:39.895 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:25:39.899 +03:00 [INF] Route matched with {action = "EY", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.HastaModel) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:25:39.923 +03:00 [INF] Executing RedirectResult, redirecting to /Hasta.
+2026-07-05 23:25:39.923 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu) in 23.7839ms
+2026-07-05 23:25:39.923 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:25:39.923 +03:00 [INF] HTTP POST /Hasta/EY responded 302 in 28.1388 ms
+2026-07-05 23:25:39.923 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Hasta/EY - 302 0 null 30.0424ms
+2026-07-05 23:25:39.925 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta - null null
+2026-07-05 23:25:39.925 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:25:39.925 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:25:39.927 +03:00 [INF] Toplam 2 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-05 23:25:39.927 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:25:39.928 +03:00 [INF] Executed ViewResult - view Index executed in 0.8506ms.
+2026-07-05 23:25:39.928 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 2.4384ms
+2026-07-05 23:25:39.928 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:25:39.928 +03:00 [INF] HTTP GET /Hasta responded 200 in 3.0428 ms
+2026-07-05 23:25:39.929 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta - 200 null text/html; charset=utf-8 3.5399ms
+2026-07-05 23:25:41.502 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/EY - null null
+2026-07-05 23:25:41.503 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:25:41.503 +03:00 [INF] Route matched with {action = "EY", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:25:41.504 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:25:41.505 +03:00 [INF] Executed ViewResult - view EY executed in 1.4302ms.
+2026-07-05 23:25:41.505 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu) in 1.893ms
+2026-07-05 23:25:41.505 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:25:41.506 +03:00 [INF] HTTP GET /Hasta/EY responded 200 in 3.0765 ms
+2026-07-05 23:25:41.506 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/EY - 200 null text/html; charset=utf-8 3.5805ms
+2026-07-05 23:26:11.074 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Hasta/EY - application/x-www-form-urlencoded 125
+2026-07-05 23:26:11.077 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:11.077 +03:00 [INF] Route matched with {action = "EY", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.HastaModel) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:26:11.087 +03:00 [INF] Executing RedirectResult, redirecting to /Hasta.
+2026-07-05 23:26:11.087 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu) in 9.4677ms
+2026-07-05 23:26:11.087 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:11.087 +03:00 [INF] HTTP POST /Hasta/EY responded 302 in 10.5572 ms
+2026-07-05 23:26:11.087 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Hasta/EY - 302 0 null 12.984ms
+2026-07-05 23:26:11.089 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta - null null
+2026-07-05 23:26:11.089 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:26:11.089 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:26:11.092 +03:00 [INF] Toplam 3 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-05 23:26:11.092 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:26:11.093 +03:00 [INF] Executed ViewResult - view Index executed in 1.1743ms.
+2026-07-05 23:26:11.093 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 3.5302ms
+2026-07-05 23:26:11.093 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:26:11.093 +03:00 [INF] HTTP GET /Hasta responded 200 in 3.9730 ms
+2026-07-05 23:26:11.093 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta - 200 null text/html; charset=utf-8 4.3169ms
+2026-07-05 23:26:13.729 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/EY/2 - null null
+2026-07-05 23:26:13.729 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:13.730 +03:00 [INF] Route matched with {action = "EY", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:26:13.744 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:26:13.746 +03:00 [INF] Executed ViewResult - view EY executed in 1.9318ms.
+2026-07-05 23:26:13.746 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu) in 16.0783ms
+2026-07-05 23:26:13.746 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:13.746 +03:00 [INF] HTTP GET /Hasta/EY/2 responded 200 in 17.1493 ms
+2026-07-05 23:26:13.746 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/EY/2 - 200 null text/html; charset=utf-8 17.6795ms
+2026-07-05 23:26:17.026 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Hasta/EY - application/x-www-form-urlencoded 117
+2026-07-05 23:26:17.027 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:17.027 +03:00 [INF] Route matched with {action = "EY", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.HastaModel) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:26:17.038 +03:00 [INF] Executing RedirectResult, redirecting to /Hasta.
+2026-07-05 23:26:17.039 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu) in 11.6723ms
+2026-07-05 23:26:17.039 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:17.039 +03:00 [INF] HTTP POST /Hasta/EY responded 302 in 12.7351 ms
+2026-07-05 23:26:17.039 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Hasta/EY - 302 0 null 13.4695ms
+2026-07-05 23:26:17.041 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta - null null
+2026-07-05 23:26:17.042 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:26:17.042 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:26:17.045 +03:00 [INF] Toplam 3 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-05 23:26:17.045 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:26:17.046 +03:00 [INF] Executed ViewResult - view Index executed in 0.4743ms.
+2026-07-05 23:26:17.046 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 4.1459ms
+2026-07-05 23:26:17.046 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:26:17.046 +03:00 [INF] HTTP GET /Hasta responded 200 in 4.8792 ms
+2026-07-05 23:26:17.046 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta - 200 null text/html; charset=utf-8 5.314ms
+2026-07-05 23:26:18.491 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/EY/1 - null null
+2026-07-05 23:26:18.492 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:18.493 +03:00 [INF] Route matched with {action = "EY", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:26:18.497 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:26:18.497 +03:00 [INF] Executed ViewResult - view EY executed in 0.9258ms.
+2026-07-05 23:26:18.498 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu) in 5.0511ms
+2026-07-05 23:26:18.498 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:18.499 +03:00 [INF] HTTP GET /Hasta/EY/1 responded 200 in 6.7337 ms
+2026-07-05 23:26:18.499 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/EY/1 - 200 null text/html; charset=utf-8 7.5665ms
+2026-07-05 23:26:21.321 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Hasta/EY - application/x-www-form-urlencoded 121
+2026-07-05 23:26:21.321 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:21.322 +03:00 [INF] Route matched with {action = "EY", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.HastaModel) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:26:21.329 +03:00 [INF] Executing RedirectResult, redirecting to /Hasta.
+2026-07-05 23:26:21.329 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu) in 7.0215ms
+2026-07-05 23:26:21.329 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:21.329 +03:00 [INF] HTTP POST /Hasta/EY responded 302 in 8.1467 ms
+2026-07-05 23:26:21.330 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Hasta/EY - 302 0 null 8.7922ms
+2026-07-05 23:26:21.333 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta - null null
+2026-07-05 23:26:21.334 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:26:21.334 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:26:21.338 +03:00 [INF] Toplam 3 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-05 23:26:21.338 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:26:21.339 +03:00 [INF] Executed ViewResult - view Index executed in 0.5138ms.
+2026-07-05 23:26:21.339 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 4.9556ms
+2026-07-05 23:26:21.339 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:26:21.339 +03:00 [INF] HTTP GET /Hasta responded 200 in 6.1365 ms
+2026-07-05 23:26:21.340 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta - 200 null text/html; charset=utf-8 7.0121ms
+2026-07-05 23:26:23.083 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/EY - null null
+2026-07-05 23:26:23.084 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:23.084 +03:00 [INF] Route matched with {action = "EY", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:26:23.085 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:26:23.085 +03:00 [INF] Executed ViewResult - view EY executed in 0.5262ms.
+2026-07-05 23:26:23.085 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu) in 0.8064ms
+2026-07-05 23:26:23.085 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:23.085 +03:00 [INF] HTTP GET /Hasta/EY responded 200 in 1.6439 ms
+2026-07-05 23:26:23.086 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/EY - 200 null text/html; charset=utf-8 2.177ms
+2026-07-05 23:26:39.775 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Hasta/EY - application/x-www-form-urlencoded 114
+2026-07-05 23:26:39.776 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:39.776 +03:00 [INF] Route matched with {action = "EY", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.HastaModel) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:26:39.784 +03:00 [INF] Executing RedirectResult, redirecting to /Hasta.
+2026-07-05 23:26:39.784 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu) in 7.7971ms
+2026-07-05 23:26:39.784 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.EY (HastaneRandevu)'
+2026-07-05 23:26:39.785 +03:00 [INF] HTTP POST /Hasta/EY responded 302 in 9.4566 ms
+2026-07-05 23:26:39.785 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Hasta/EY - 302 0 null 10.3184ms
+2026-07-05 23:26:39.787 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta - null null
+2026-07-05 23:26:39.787 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:26:39.787 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:26:39.791 +03:00 [INF] Toplam 4 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-05 23:26:39.791 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:26:39.792 +03:00 [INF] Executed ViewResult - view Index executed in 0.6256ms.
+2026-07-05 23:26:39.792 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 4.1913ms
+2026-07-05 23:26:39.792 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:26:39.792 +03:00 [INF] HTTP GET /Hasta responded 200 in 4.9651 ms
+2026-07-05 23:26:39.792 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta - 200 null text/html; charset=utf-8 5.3983ms
+2026-07-05 23:26:44.391 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-05 23:26:44.392 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:26:44.392 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:26:44.404 +03:00 [INF] Toplam 4 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:26:44.404 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:26:44.407 +03:00 [INF] Executed ViewResult - view Index executed in 2.5782ms.
+2026-07-05 23:26:44.407 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 13.7576ms
+2026-07-05 23:26:44.407 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:26:44.407 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 15.5963 ms
+2026-07-05 23:26:44.407 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 16.3822ms
+2026-07-05 23:26:46.469 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/EY - null null
+2026-07-05 23:26:46.470 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:26:46.470 +03:00 [INF] Route matched with {action = "EY", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:26:46.478 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:26:46.480 +03:00 [INF] Executed ViewResult - view EY executed in 1.6995ms.
+2026-07-05 23:26:46.480 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu) in 9.3032ms
+2026-07-05 23:26:46.480 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:26:46.480 +03:00 [INF] HTTP GET /Randevu/EY responded 200 in 10.5538 ms
+2026-07-05 23:26:46.481 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/EY - 200 null text/html; charset=utf-8 11.0469ms
+2026-07-05 23:26:50.906 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1004 - null null
+2026-07-05 23:26:50.907 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:26:50.908 +03:00 [INF] Route matched with {action = "PoliklinikDoktorlariniGetir", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PoliklinikDoktorlariniGetir(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:26:50.915 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[HastaneRandevu.Models.DoktorModel, HastaneRandevu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-05 23:26:50.928 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu) in 19.9272ms
+2026-07-05 23:26:50.928 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:26:50.928 +03:00 [INF] HTTP GET /Randevu/PoliklinikDoktorlariniGetir responded 200 in 21.8755 ms
+2026-07-05 23:26:50.928 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1004 - 200 null application/json; charset=utf-8 22.3159ms
+2026-07-05 23:27:24.417 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Randevu/EY - application/x-www-form-urlencoded 80
+2026-07-05 23:27:24.420 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:27:24.425 +03:00 [INF] Route matched with {action = "EY", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.RandevuModel) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:27:24.477 +03:00 [INF] Executing RedirectResult, redirecting to /Randevu.
+2026-07-05 23:27:24.479 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu) in 53.8761ms
+2026-07-05 23:27:24.480 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:27:24.480 +03:00 [INF] HTTP POST /Randevu/EY responded 302 in 61.0764 ms
+2026-07-05 23:27:24.480 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Randevu/EY - 302 0 null 62.6372ms
+2026-07-05 23:27:24.482 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu - null null
+2026-07-05 23:27:24.482 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:27:24.483 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:27:24.489 +03:00 [INF] Toplam 5 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:27:24.489 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:27:24.490 +03:00 [INF] Executed ViewResult - view Index executed in 0.5008ms.
+2026-07-05 23:27:24.490 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 7.2468ms
+2026-07-05 23:27:24.490 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:27:24.490 +03:00 [INF] HTTP GET /Randevu responded 200 in 8.1931 ms
+2026-07-05 23:27:24.491 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu - 200 null text/html; charset=utf-8 8.6203ms
+2026-07-05 23:27:25.399 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/EY - null null
+2026-07-05 23:27:25.399 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:27:25.400 +03:00 [INF] Route matched with {action = "EY", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:27:25.408 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:27:25.409 +03:00 [INF] Executed ViewResult - view EY executed in 1.4548ms.
+2026-07-05 23:27:25.410 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu) in 9.7774ms
+2026-07-05 23:27:25.410 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:27:25.410 +03:00 [INF] HTTP GET /Randevu/EY responded 200 in 10.9413 ms
+2026-07-05 23:27:25.410 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/EY - 200 null text/html; charset=utf-8 11.4802ms
+2026-07-05 23:27:30.625 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1002 - null null
+2026-07-05 23:27:30.626 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:27:30.626 +03:00 [INF] Route matched with {action = "PoliklinikDoktorlariniGetir", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PoliklinikDoktorlariniGetir(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:27:30.634 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[HastaneRandevu.Models.DoktorModel, HastaneRandevu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-05 23:27:30.636 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu) in 6.8895ms
+2026-07-05 23:27:30.636 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:27:30.636 +03:00 [INF] HTTP GET /Randevu/PoliklinikDoktorlariniGetir responded 200 in 11.1480 ms
+2026-07-05 23:27:30.637 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1002 - 200 null application/json; charset=utf-8 11.9411ms
+2026-07-05 23:27:35.005 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1003 - null null
+2026-07-05 23:27:35.006 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:27:35.006 +03:00 [INF] Route matched with {action = "PoliklinikDoktorlariniGetir", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PoliklinikDoktorlariniGetir(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:27:35.010 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[HastaneRandevu.Models.DoktorModel, HastaneRandevu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-05 23:27:35.013 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu) in 6.9515ms
+2026-07-05 23:27:35.013 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:27:35.014 +03:00 [INF] HTTP GET /Randevu/PoliklinikDoktorlariniGetir responded 200 in 8.1316 ms
+2026-07-05 23:27:35.014 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1003 - 200 null application/json; charset=utf-8 8.5387ms
+2026-07-05 23:27:42.346 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Randevu/EY - application/x-www-form-urlencoded 80
+2026-07-05 23:27:42.347 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:27:42.347 +03:00 [INF] Route matched with {action = "EY", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.RandevuModel) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:27:42.359 +03:00 [INF] Executing RedirectResult, redirecting to /Randevu.
+2026-07-05 23:27:42.359 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu) in 11.2988ms
+2026-07-05 23:27:42.359 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:27:42.359 +03:00 [INF] HTTP POST /Randevu/EY responded 302 in 12.7730 ms
+2026-07-05 23:27:42.360 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Randevu/EY - 302 0 null 13.5257ms
+2026-07-05 23:27:42.365 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu - null null
+2026-07-05 23:27:42.366 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:27:42.366 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:27:42.372 +03:00 [INF] Toplam 6 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:27:42.372 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:27:42.373 +03:00 [INF] Executed ViewResult - view Index executed in 0.736ms.
+2026-07-05 23:27:42.373 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 7.093ms
+2026-07-05 23:27:42.373 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:27:42.373 +03:00 [INF] HTTP GET /Randevu responded 200 in 7.7628 ms
+2026-07-05 23:27:42.374 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu - 200 null text/html; charset=utf-8 8.4209ms
+2026-07-05 23:27:44.250 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/EY - null null
+2026-07-05 23:27:44.251 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:27:44.251 +03:00 [INF] Route matched with {action = "EY", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:27:44.266 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:27:44.267 +03:00 [INF] Executed ViewResult - view EY executed in 1.024ms.
+2026-07-05 23:27:44.268 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu) in 16.289ms
+2026-07-05 23:27:44.268 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:27:44.268 +03:00 [INF] HTTP GET /Randevu/EY responded 200 in 17.5453 ms
+2026-07-05 23:27:44.269 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/EY - 200 null text/html; charset=utf-8 18.016ms
+2026-07-05 23:27:47.840 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=2 - null null
+2026-07-05 23:27:47.841 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:27:47.841 +03:00 [INF] Route matched with {action = "PoliklinikDoktorlariniGetir", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PoliklinikDoktorlariniGetir(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:27:47.845 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[HastaneRandevu.Models.DoktorModel, HastaneRandevu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-05 23:27:47.846 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu) in 4.852ms
+2026-07-05 23:27:47.846 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:27:47.846 +03:00 [INF] HTTP GET /Randevu/PoliklinikDoktorlariniGetir responded 200 in 5.7013 ms
+2026-07-05 23:27:47.847 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=2 - 200 null application/json; charset=utf-8 7.0007ms
+2026-07-05 23:27:56.100 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Randevu/EY - application/x-www-form-urlencoded 77
+2026-07-05 23:27:56.101 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:27:56.101 +03:00 [INF] Route matched with {action = "EY", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.RandevuModel) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:27:56.108 +03:00 [INF] Executing RedirectResult, redirecting to /Randevu.
+2026-07-05 23:27:56.109 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu) in 7.618ms
+2026-07-05 23:27:56.109 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:27:56.109 +03:00 [INF] HTTP POST /Randevu/EY responded 302 in 8.4163 ms
+2026-07-05 23:27:56.109 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Randevu/EY - 302 0 null 9.4949ms
+2026-07-05 23:27:56.115 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu - null null
+2026-07-05 23:27:56.115 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:27:56.115 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:27:56.121 +03:00 [INF] Toplam 7 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:27:56.121 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:27:56.121 +03:00 [INF] Executed ViewResult - view Index executed in 0.3493ms.
+2026-07-05 23:27:56.121 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 5.7924ms
+2026-07-05 23:27:56.121 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:27:56.121 +03:00 [INF] HTTP GET /Randevu responded 200 in 6.4423 ms
+2026-07-05 23:27:56.122 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu - 200 null text/html; charset=utf-8 7.0416ms
+2026-07-05 23:27:58.185 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/EY - null null
+2026-07-05 23:27:58.186 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:27:58.186 +03:00 [INF] Route matched with {action = "EY", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:27:58.195 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:27:58.195 +03:00 [INF] Executed ViewResult - view EY executed in 0.6441ms.
+2026-07-05 23:27:58.195 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu) in 8.9213ms
+2026-07-05 23:27:58.195 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:27:58.196 +03:00 [INF] HTTP GET /Randevu/EY responded 200 in 10.2475 ms
+2026-07-05 23:27:58.197 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/EY - 200 null text/html; charset=utf-8 11.9371ms
+2026-07-05 23:28:02.806 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1003 - null null
+2026-07-05 23:28:02.806 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:28:02.806 +03:00 [INF] Route matched with {action = "PoliklinikDoktorlariniGetir", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PoliklinikDoktorlariniGetir(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:28:02.809 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[HastaneRandevu.Models.DoktorModel, HastaneRandevu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-05 23:28:02.810 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu) in 3.2618ms
+2026-07-05 23:28:02.810 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:28:02.810 +03:00 [INF] HTTP GET /Randevu/PoliklinikDoktorlariniGetir responded 200 in 3.9430 ms
+2026-07-05 23:28:02.810 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1003 - 200 null application/json; charset=utf-8 4.3293ms
+2026-07-05 23:28:10.619 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Randevu/EY - application/x-www-form-urlencoded 80
+2026-07-05 23:28:10.620 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:28:10.620 +03:00 [INF] Route matched with {action = "EY", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.RandevuModel) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:28:10.634 +03:00 [INF] Executing RedirectResult, redirecting to /Randevu.
+2026-07-05 23:28:10.634 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu) in 13.6798ms
+2026-07-05 23:28:10.634 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:28:10.634 +03:00 [INF] HTTP POST /Randevu/EY responded 302 in 14.4697 ms
+2026-07-05 23:28:10.634 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Randevu/EY - 302 0 null 15.1723ms
+2026-07-05 23:28:10.636 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu - null null
+2026-07-05 23:28:10.637 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:28:10.637 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:28:10.644 +03:00 [INF] Toplam 8 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:28:10.644 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:28:10.644 +03:00 [INF] Executed ViewResult - view Index executed in 0.4715ms.
+2026-07-05 23:28:10.644 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 7.557ms
+2026-07-05 23:28:10.645 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:28:10.645 +03:00 [INF] HTTP GET /Randevu responded 200 in 8.3453 ms
+2026-07-05 23:28:10.645 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu - 200 null text/html; charset=utf-8 8.7141ms
+2026-07-05 23:28:12.295 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/EY - null null
+2026-07-05 23:28:12.296 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:28:12.297 +03:00 [INF] Route matched with {action = "EY", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:28:12.303 +03:00 [INF] Executing ViewResult, running view EY.
+2026-07-05 23:28:12.304 +03:00 [INF] Executed ViewResult - view EY executed in 0.7505ms.
+2026-07-05 23:28:12.304 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu) in 7.0792ms
+2026-07-05 23:28:12.304 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:28:12.304 +03:00 [INF] HTTP GET /Randevu/EY responded 200 in 7.7038 ms
+2026-07-05 23:28:12.306 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/EY - 200 null text/html; charset=utf-8 10.3493ms
+2026-07-05 23:28:19.473 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1002 - null null
+2026-07-05 23:28:19.474 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:28:19.474 +03:00 [INF] Route matched with {action = "PoliklinikDoktorlariniGetir", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PoliklinikDoktorlariniGetir(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:28:19.478 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[HastaneRandevu.Models.DoktorModel, HastaneRandevu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-05 23:28:19.478 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu) in 3.7717ms
+2026-07-05 23:28:19.479 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:28:19.479 +03:00 [INF] HTTP GET /Randevu/PoliklinikDoktorlariniGetir responded 200 in 5.0529 ms
+2026-07-05 23:28:19.479 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1002 - 200 null application/json; charset=utf-8 6.0583ms
+2026-07-05 23:28:22.523 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1005 - null null
+2026-07-05 23:28:22.523 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:28:22.524 +03:00 [INF] Route matched with {action = "PoliklinikDoktorlariniGetir", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PoliklinikDoktorlariniGetir(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:28:22.529 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[HastaneRandevu.Models.DoktorModel, HastaneRandevu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-05 23:28:22.529 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu) in 5.477ms
+2026-07-05 23:28:22.529 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:28:22.529 +03:00 [INF] HTTP GET /Randevu/PoliklinikDoktorlariniGetir responded 200 in 6.1973 ms
+2026-07-05 23:28:22.533 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1005 - 200 null application/json; charset=utf-8 9.6208ms
+2026-07-05 23:28:25.923 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1006 - null null
+2026-07-05 23:28:25.923 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:28:25.924 +03:00 [INF] Route matched with {action = "PoliklinikDoktorlariniGetir", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PoliklinikDoktorlariniGetir(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:28:25.928 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[HastaneRandevu.Models.DoktorModel, HastaneRandevu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-05 23:28:25.928 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu) in 4.3558ms
+2026-07-05 23:28:25.928 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:28:25.929 +03:00 [INF] HTTP GET /Randevu/PoliklinikDoktorlariniGetir responded 200 in 5.4301 ms
+2026-07-05 23:28:25.929 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=1006 - 200 null application/json; charset=utf-8 5.9773ms
+2026-07-05 23:28:29.231 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=2 - null null
+2026-07-05 23:28:29.231 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:28:29.231 +03:00 [INF] Route matched with {action = "PoliklinikDoktorlariniGetir", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult PoliklinikDoktorlariniGetir(Int32) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:28:29.234 +03:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[HastaneRandevu.Models.DoktorModel, HastaneRandevu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-05 23:28:29.235 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu) in 3.2667ms
+2026-07-05 23:28:29.235 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.PoliklinikDoktorlariniGetir (HastaneRandevu)'
+2026-07-05 23:28:29.235 +03:00 [INF] HTTP GET /Randevu/PoliklinikDoktorlariniGetir responded 200 in 4.0203 ms
+2026-07-05 23:28:29.235 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/PoliklinikDoktorlariniGetir?poliklinikNo=2 - 200 null application/json; charset=utf-8 4.5046ms
+2026-07-05 23:28:37.780 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5068/Randevu/EY - application/x-www-form-urlencoded 77
+2026-07-05 23:28:37.781 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:28:37.781 +03:00 [INF] Route matched with {action = "EY", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EY(HastaneRandevu.Models.RandevuModel) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:28:37.790 +03:00 [INF] Executing RedirectResult, redirecting to /Randevu.
+2026-07-05 23:28:37.790 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu) in 8.8087ms
+2026-07-05 23:28:37.790 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.EY (HastaneRandevu)'
+2026-07-05 23:28:37.790 +03:00 [INF] HTTP POST /Randevu/EY responded 302 in 9.8655 ms
+2026-07-05 23:28:37.790 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5068/Randevu/EY - 302 0 null 10.4115ms
+2026-07-05 23:28:37.800 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu - null null
+2026-07-05 23:28:37.800 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:28:37.800 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:28:37.805 +03:00 [INF] Toplam 9 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:28:37.806 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:28:37.806 +03:00 [INF] Executed ViewResult - view Index executed in 0.5287ms.
+2026-07-05 23:28:37.806 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 5.8859ms
+2026-07-05 23:28:37.807 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:28:37.807 +03:00 [INF] HTTP GET /Randevu responded 200 in 7.1166 ms
+2026-07-05 23:28:37.807 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu - 200 null text/html; charset=utf-8 7.5587ms
+2026-07-05 23:29:05.748 +03:00 [INF] Application is shutting down...
+2026-07-05 23:29:11.355 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-05 23:29:11.381 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-05 23:29:11.382 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-05 23:29:11.382 +03:00 [INF] Hosting environment: Development
+2026-07-05 23:29:11.382 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu
+2026-07-05 23:29:17.441 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu - null null
+2026-07-05 23:29:17.445 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-05 23:29:17.464 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:29:17.475 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:29:17.523 +03:00 [INF] Toplam 9 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:29:17.528 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:29:17.592 +03:00 [INF] Executed ViewResult - view Index executed in 63.8886ms.
+2026-07-05 23:29:17.592 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 116.9297ms
+2026-07-05 23:29:17.592 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:29:17.593 +03:00 [INF] HTTP GET /Randevu responded 200 in 137.2631 ms
+2026-07-05 23:29:17.594 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu - 200 null text/html; charset=utf-8 154.0754ms
+2026-07-05 23:29:18.791 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-05 23:29:18.798 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:29:18.802 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:29:18.810 +03:00 [INF] Toplam 4 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-05 23:29:18.813 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:29:18.829 +03:00 [INF] Executed ViewResult - view Index executed in 16.3891ms.
+2026-07-05 23:29:18.829 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 26.8805ms
+2026-07-05 23:29:18.829 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:29:18.830 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 36.6733 ms
+2026-07-05 23:29:18.830 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 40.0487ms
+2026-07-05 23:29:19.906 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-05 23:29:19.914 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:29:19.917 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:29:19.925 +03:00 [INF] Toplam 5 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-05 23:29:19.934 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:29:19.945 +03:00 [INF] Executed ViewResult - view Index executed in 12.469ms.
+2026-07-05 23:29:19.946 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 28.3309ms
+2026-07-05 23:29:19.946 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:29:19.946 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 38.9409 ms
+2026-07-05 23:29:19.946 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 40.1365ms
+2026-07-05 23:29:22.367 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-05 23:29:22.369 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:29:22.370 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:29:22.370 +03:00 [INF] Toplam 5 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-05 23:29:22.374 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:29:22.376 +03:00 [INF] Executed ViewResult - view Index executed in 1.9993ms.
+2026-07-05 23:29:22.378 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 8.5852ms
+2026-07-05 23:29:22.379 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:29:22.379 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 10.3095 ms
+2026-07-05 23:29:22.380 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 12.6591ms
+2026-07-05 23:29:22.988 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Home/Index - null null
+2026-07-05 23:29:22.989 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:29:22.991 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.HomeController (HastaneRandevu).
+2026-07-05 23:29:23.018 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:29:23.029 +03:00 [INF] Executed ViewResult - view Index executed in 11.3053ms.
+2026-07-05 23:29:23.029 +03:00 [INF] Executed action HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu) in 37.7863ms
+2026-07-05 23:29:23.030 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HomeController.Index (HastaneRandevu)'
+2026-07-05 23:29:23.030 +03:00 [INF] HTTP GET /Home/Index responded 200 in 41.1317 ms
+2026-07-05 23:29:23.030 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Home/Index - 200 null text/html; charset=utf-8 41.9422ms
+2026-07-05 23:29:33.274 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Hasta/Index - null null
+2026-07-05 23:29:33.277 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:29:33.277 +03:00 [INF] Route matched with {action = "Index", controller = "Hasta"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.HastaController (HastaneRandevu).
+2026-07-05 23:29:33.278 +03:00 [INF] Toplam 4 adet hasta veri tabanından/cache'ten listelendi.
+2026-07-05 23:29:33.278 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:29:33.281 +03:00 [INF] Executed ViewResult - view Index executed in 2.6925ms.
+2026-07-05 23:29:33.281 +03:00 [INF] Executed action HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu) in 3.7684ms
+2026-07-05 23:29:33.281 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.HastaController.Index (HastaneRandevu)'
+2026-07-05 23:29:33.282 +03:00 [INF] HTTP GET /Hasta/Index responded 200 in 5.7278 ms
+2026-07-05 23:29:33.282 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Hasta/Index - 200 null text/html; charset=utf-8 8.4884ms
+2026-07-05 23:29:41.790 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Doktor/Index - null null
+2026-07-05 23:29:41.792 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:29:41.792 +03:00 [INF] Route matched with {action = "Index", controller = "Doktor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.DoktorController (HastaneRandevu).
+2026-07-05 23:29:41.793 +03:00 [INF] Toplam 5 adet doktor veri tabanından/cache'ten listelendi.
+2026-07-05 23:29:41.803 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:29:41.804 +03:00 [INF] Executed ViewResult - view Index executed in 1.57ms.
+2026-07-05 23:29:41.805 +03:00 [INF] Executed action HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu) in 12.0644ms
+2026-07-05 23:29:41.805 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.DoktorController.Index (HastaneRandevu)'
+2026-07-05 23:29:41.805 +03:00 [INF] HTTP GET /Doktor/Index responded 200 in 13.6162 ms
+2026-07-05 23:29:41.805 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Doktor/Index - 200 null text/html; charset=utf-8 14.7167ms
+2026-07-05 23:29:59.291 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - null null
+2026-07-05 23:29:59.292 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:29:59.294 +03:00 [INF] Route matched with {action = "Index", controller = "Poliklinik"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.PoliklinikController (HastaneRandevu).
+2026-07-05 23:29:59.301 +03:00 [INF] Toplam 6 adet poliklinik veri tabanından/cache'ten listelendi.
+2026-07-05 23:29:59.305 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:29:59.318 +03:00 [INF] Executed ViewResult - view Index executed in 13.6774ms.
+2026-07-05 23:29:59.318 +03:00 [INF] Executed action HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu) in 23.8678ms
+2026-07-05 23:29:59.318 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.PoliklinikController.Index (HastaneRandevu)'
+2026-07-05 23:29:59.319 +03:00 [INF] HTTP GET /Poliklinik/Index responded 200 in 27.3191 ms
+2026-07-05 23:29:59.319 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Poliklinik/Index - 200 null text/html; charset=utf-8 28.534ms
+2026-07-05 23:30:07.333 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-05 23:30:07.335 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:30:07.335 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:30:07.347 +03:00 [INF] Toplam 9 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:30:07.347 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:30:07.348 +03:00 [INF] Executed ViewResult - view Index executed in 1.0631ms.
+2026-07-05 23:30:07.348 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 13.4363ms
+2026-07-05 23:30:07.349 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:30:07.349 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 14.7588 ms
+2026-07-05 23:30:07.349 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 16.2568ms
+2026-07-05 23:30:09.166 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Rapor/Index - null null
+2026-07-05 23:30:09.167 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:30:09.169 +03:00 [INF] Route matched with {action = "Index", controller = "Rapor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.RaporController (HastaneRandevu).
+2026-07-05 23:30:09.174 +03:00 [INF] Rapor sayfası görüntülendi. Toplam 0 kayıt getirildi.
+2026-07-05 23:30:09.178 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:30:09.187 +03:00 [INF] Executed ViewResult - view Index executed in 11.2955ms.
+2026-07-05 23:30:09.187 +03:00 [INF] Executed action HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu) in 17.5285ms
+2026-07-05 23:30:09.187 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:30:09.187 +03:00 [INF] HTTP GET /Rapor/Index responded 200 in 20.3248 ms
+2026-07-05 23:30:09.188 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Rapor/Index - 200 null text/html; charset=utf-8 21.3671ms
+2026-07-05 23:30:13.822 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Rapor/Index - null null
+2026-07-05 23:30:13.823 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:30:13.823 +03:00 [INF] Route matched with {action = "Index", controller = "Rapor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.RaporController (HastaneRandevu).
+2026-07-05 23:30:13.829 +03:00 [INF] Rapor sayfası görüntülendi. Toplam 0 kayıt getirildi.
+2026-07-05 23:30:13.829 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:30:13.831 +03:00 [INF] Executed ViewResult - view Index executed in 1.8861ms.
+2026-07-05 23:30:13.831 +03:00 [INF] Executed action HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu) in 7.8674ms
+2026-07-05 23:30:13.832 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:30:13.832 +03:00 [INF] HTTP GET /Rapor/Index responded 200 in 9.5887 ms
+2026-07-05 23:30:13.833 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Rapor/Index - 200 null text/html; charset=utf-8 11.4906ms
+2026-07-05 23:30:14.517 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Rapor/Index - null null
+2026-07-05 23:30:14.518 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:30:14.518 +03:00 [INF] Route matched with {action = "Index", controller = "Rapor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.RaporController (HastaneRandevu).
+2026-07-05 23:30:14.523 +03:00 [INF] Rapor sayfası görüntülendi. Toplam 0 kayıt getirildi.
+2026-07-05 23:30:14.524 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:30:14.526 +03:00 [INF] Executed ViewResult - view Index executed in 1.9975ms.
+2026-07-05 23:30:14.526 +03:00 [INF] Executed action HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu) in 7.8791ms
+2026-07-05 23:30:14.526 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:30:14.526 +03:00 [INF] HTTP GET /Rapor/Index responded 200 in 9.0866 ms
+2026-07-05 23:30:14.526 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Rapor/Index - 200 null text/html; charset=utf-8 9.8662ms
+2026-07-05 23:34:26.553 +03:00 [INF] Application is shutting down...
+2026-07-05 23:34:30.485 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-05 23:34:30.515 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-05 23:34:30.516 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-05 23:34:30.516 +03:00 [INF] Hosting environment: Development
+2026-07-05 23:34:30.516 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu
+2026-07-05 23:34:39.575 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Rapor/Index - null null
+2026-07-05 23:34:39.579 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-05 23:34:39.600 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:34:39.608 +03:00 [INF] Route matched with {action = "Index", controller = "Rapor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.RaporController (HastaneRandevu).
+2026-07-05 23:34:39.663 +03:00 [INF] Rapor sayfası görüntülendi. Toplam 5 kayıt getirildi.
+2026-07-05 23:34:39.669 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:34:39.734 +03:00 [INF] Executed ViewResult - view Index executed in 66.2627ms.
+2026-07-05 23:34:39.735 +03:00 [INF] Executed action HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu) in 126.0719ms
+2026-07-05 23:34:39.735 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:34:39.735 +03:00 [INF] HTTP GET /Rapor/Index responded 200 in 144.4323 ms
+2026-07-05 23:34:39.736 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Rapor/Index - 200 null text/html; charset=utf-8 162.3002ms
+2026-07-05 23:34:41.334 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Rapor/Index - null null
+2026-07-05 23:34:41.338 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:34:41.339 +03:00 [INF] Route matched with {action = "Index", controller = "Rapor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.RaporController (HastaneRandevu).
+2026-07-05 23:34:41.346 +03:00 [INF] Rapor sayfası görüntülendi. Toplam 5 kayıt getirildi.
+2026-07-05 23:34:41.348 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:34:41.352 +03:00 [INF] Executed ViewResult - view Index executed in 4.6261ms.
+2026-07-05 23:34:41.352 +03:00 [INF] Executed action HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu) in 12.9797ms
+2026-07-05 23:34:41.352 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:34:41.353 +03:00 [INF] HTTP GET /Rapor/Index responded 200 in 17.1442 ms
+2026-07-05 23:34:41.353 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Rapor/Index - 200 null text/html; charset=utf-8 20.1023ms
+2026-07-05 23:41:03.306 +03:00 [INF] Application is shutting down...
+2026-07-05 23:41:11.957 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-05 23:41:11.991 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-05 23:41:11.992 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-05 23:41:11.992 +03:00 [INF] Hosting environment: Development
+2026-07-05 23:41:11.992 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu
+2026-07-05 23:41:12.388 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Rapor/Index - null null
+2026-07-05 23:41:12.391 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-05 23:41:12.411 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:41:12.419 +03:00 [INF] Route matched with {action = "Index", controller = "Rapor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.RaporController (HastaneRandevu).
+2026-07-05 23:41:12.512 +03:00 [INF] Gelişmiş 5'li Rapor sayfası görüntülendi.
+2026-07-05 23:41:12.517 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:41:12.582 +03:00 [INF] Executed ViewResult - view Index executed in 65.3427ms.
+2026-07-05 23:41:12.582 +03:00 [INF] Executed action HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu) in 163.1172ms
+2026-07-05 23:41:12.582 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:41:12.583 +03:00 [INF] HTTP GET /Rapor/Index responded 200 in 180.8158 ms
+2026-07-05 23:41:12.584 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Rapor/Index - 200 null text/html; charset=utf-8 197.919ms
+2026-07-05 23:41:37.867 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-05 23:41:37.872 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:41:37.881 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:41:37.908 +03:00 [INF] Toplam 9 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:41:37.915 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:41:37.933 +03:00 [INF] Executed ViewResult - view Index executed in 18.5372ms.
+2026-07-05 23:41:37.933 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 51.9021ms
+2026-07-05 23:41:37.934 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:41:37.934 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 64.7868 ms
+2026-07-05 23:41:37.934 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 67.6962ms
+2026-07-05 23:41:48.562 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Rapor/Index - null null
+2026-07-05 23:41:48.568 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:41:48.568 +03:00 [INF] Route matched with {action = "Index", controller = "Rapor"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller HastaneRandevu.Controllers.RaporController (HastaneRandevu).
+2026-07-05 23:41:48.585 +03:00 [INF] Gelişmiş 5'li Rapor sayfası görüntülendi.
+2026-07-05 23:41:48.585 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:41:48.586 +03:00 [INF] Executed ViewResult - view Index executed in 1.3432ms.
+2026-07-05 23:41:48.587 +03:00 [INF] Executed action HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu) in 18.098ms
+2026-07-05 23:41:48.587 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RaporController.Index (HastaneRandevu)'
+2026-07-05 23:41:48.587 +03:00 [INF] HTTP GET /Rapor/Index responded 200 in 24.2656 ms
+2026-07-05 23:41:48.587 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Rapor/Index - 200 null text/html; charset=utf-8 25.6812ms
+2026-07-05 23:50:24.859 +03:00 [INF] Application is shutting down...
+2026-07-05 23:52:26.563 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-05 23:52:26.593 +03:00 [INF] Now listening on: http://localhost:5068
+2026-07-05 23:52:26.593 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-05 23:52:26.594 +03:00 [INF] Hosting environment: Development
+2026-07-05 23:52:26.594 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/SOFTITO-BACKEND/dapper_project/HastaneRandevu
+2026-07-05 23:52:28.626 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5068/Randevu/Index - null null
+2026-07-05 23:52:28.629 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-05 23:52:28.650 +03:00 [INF] Executing endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:52:28.661 +03:00 [INF] Route matched with {action = "Index", controller = "Randevu"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(System.String) on controller HastaneRandevu.Controllers.RandevuController (HastaneRandevu).
+2026-07-05 23:52:28.711 +03:00 [INF] Toplam 9 adet randevu veri tabanından/cache'ten listelendi.
+2026-07-05 23:52:28.716 +03:00 [INF] Executing ViewResult, running view Index.
+2026-07-05 23:52:28.785 +03:00 [INF] Executed ViewResult - view Index executed in 68.2464ms.
+2026-07-05 23:52:28.785 +03:00 [INF] Executed action HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu) in 123.6842ms
+2026-07-05 23:52:28.785 +03:00 [INF] Executed endpoint 'HastaneRandevu.Controllers.RandevuController.Index (HastaneRandevu)'
+2026-07-05 23:52:28.786 +03:00 [INF] HTTP GET /Randevu/Index responded 200 in 145.2300 ms
+2026-07-05 23:52:28.787 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5068/Randevu/Index - 200 null text/html; charset=utf-8 162.3431ms
+2026-07-05 23:52:56.082 +03:00 [INF] Application is shutting down...

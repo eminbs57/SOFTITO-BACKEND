@@ -1,71 +1,234 @@
-@model IEnumerable<HastaneRandevu.Models.RandevuRaporModel>
 @{
-    ViewData["Title"] = "Detaylı Randevu Raporu";
+    ViewData["Title"] = "Gelişmiş Raporlar";
+    
+    // ViewBag verilerini alıyoruz
+    var poliklinikRaporu = ViewBag.RaporPoliklinik as IEnumerable<HastaneRandevu.Models.RaporPoliklinikModel>;
+    var doktorRaporu = ViewBag.RaporDoktor as IEnumerable<HastaneRandevu.Models.RaporDoktorModel>;
+    var aktifHastaRaporu = ViewBag.RaporAktifHasta as IEnumerable<HastaneRandevu.Models.RaporAktifHastaModel>;
+    var durumRaporu = ViewBag.RaporDurum as IEnumerable<HastaneRandevu.Models.RaporDurumModel>;
+    var populerDoktorRaporu = ViewBag.RaporPopulerDoktor as IEnumerable<HastaneRandevu.Models.RaporPopulerDoktorModel>;
 }
 
 <div class="container-fluid py-3">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
-            <h3 class="fw-bold text-dark mb-1">Gelişmiş Raporlar</h3>
-            <p class="text-muted mb-0">Hasta, Doktor ve Poliklinik bilgilerinin konsolide görünümü</p>
+            <h3 class="fw-bold text-dark mb-1">Hastane Yönetim Paneli - Raporlar</h3>
+            <p class="text-muted mb-0">Tüm istatistiksel verilerin konsolide görünümü</p>
         </div>
         <button class="btn btn-outline-secondary shadow-sm" onclick="window.print();">
             <i class="bi bi-printer me-1"></i> Yazdır
         </button>
     </div>
 
-    <div class="card card-modern">
-        <div class="table-responsive">
-            <table class="table table-modern table-hover align-middle mb-0">
-                <thead>
-                    <tr>
-                        <th>Tarih</th>
-                        <th>Durum</th>
-                        <th>Hasta Adı Soyadı</th>
-                        <th>Hasta TC No</th>
-                        <th>Doktor Adı Soyadı</th>
-                        <th>Poliklinik</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>
-                                <i class="bi bi-calendar-event text-muted me-1"></i> @item.RandevuTarihi.ToString("dd.MM.yyyy") <br/>
-                                <small class="text-muted"><i class="bi bi-clock me-1"></i> @item.RandevuTarihi.ToString("HH:mm")</small>
-                            </td>
-                            <td>
-                                @if(item.Durum == "İptal")
-                                {
-                                    <span class="badge bg-danger">@item.Durum</span>
+    <div class="accordion accordion-modern shadow-sm" id="raporlarAccordion">
+        
+        <!-- RAPOR 1: Poliklinik Bazlı Randevu Dağılımı -->
+        <div class="accordion-item border-0 mb-2 rounded bg-white">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed fw-semibold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Poliklinik Bazlı Randevu Dağılımı
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#raporlarAccordion">
+                <div class="accordion-body p-0">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="ps-4">Poliklinik Adı</th>
+                                <th class="text-center">Toplam Randevu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(poliklinikRaporu != null && poliklinikRaporu.Any()) {
+                                @foreach (var item in poliklinikRaporu) {
+                                    <tr>
+                                        <td class="ps-4">@item.PoliklinikAdi</td>
+                                        <td class="text-center"><span class="badge bg-primary fs-6">@item.ToplamRandevu</span></td>
+                                    </tr>
                                 }
-                                else if(item.Durum == "Tamamlandı")
-                                {
-                                    <span class="badge bg-success">@item.Durum</span>
-                                }
-                                else if(item.Durum == "Aktif")
-                                {
-                                    <span class="badge bg-primary">@item.Durum</span>
-                                }
-                                else
-                                {
-                                    <span class="badge bg-secondary border">@item.Durum</span>
-                                }
-                            </td>
-                            <td class="fw-semibold">@item.HastaAdSoyad</td>
-                            <td><span class="text-muted">@item.TCKimlikNo</span></td>
-                            <td>@item.DoktorAdSoyad</td>
-                            <td><span class="badge bg-light text-dark border">@item.PoliklinikAdi</span></td>
-                        </tr>
-                    }
-                    @if(!Model.Any()) {
-                        <tr>
-                            <td colspan="6" class="text-center py-4 text-muted">Kayıt bulunamadı.</td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
+                            } else {
+                                <tr><td colspan="2" class="text-center py-3 text-muted">Kayıt bulunamadı.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+
+        <!-- RAPOR 2: Doktor Performans İstatistikleri -->
+        <div class="accordion-item border-0 mb-2 rounded bg-white">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fw-semibold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Doktor Performans İstatistikleri
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#raporlarAccordion">
+                <div class="accordion-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th class="ps-4">Doktor Adı Soyadı</th>
+                                    <th>Poliklinik</th>
+                                    <th class="text-center">Toplam Randevu</th>
+                                    <th class="text-center">Aktif</th>
+                                    <th class="text-center">Tamamlanan</th>
+                                    <th class="text-center">İptal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if(doktorRaporu != null && doktorRaporu.Any()) {
+                                    @foreach (var item in doktorRaporu) {
+                                        <tr>
+                                            <td class="ps-4 fw-semibold">
+                                                <i class="bi bi-person-circle text-muted me-2"></i>@item.DoktorAdSoyad
+                                            </td>
+                                            <td><span class="badge bg-light text-dark border">@item.PoliklinikAdi</span></td>
+                                            <td class="text-center"><span class="badge bg-secondary fs-6">@item.ToplamRandevu</span></td>
+                                            <td class="text-center">@(item.AktifRandevu > 0 ? Html.Raw($"<span class='badge bg-primary fs-6'>{item.AktifRandevu}</span>") : Html.Raw("<span class='text-muted'>-</span>"))</td>
+                                            <td class="text-center">@(item.TamamlananRandevu > 0 ? Html.Raw($"<span class='badge bg-success fs-6'>{item.TamamlananRandevu}</span>") : Html.Raw("<span class='text-muted'>-</span>"))</td>
+                                            <td class="text-center">@(item.IptalRandevu > 0 ? Html.Raw($"<span class='badge bg-danger fs-6'>{item.IptalRandevu}</span>") : Html.Raw("<span class='text-muted'>-</span>"))</td>
+                                        </tr>
+                                    }
+                                } else {
+                                    <tr><td colspan="6" class="text-center py-3 text-muted">Kayıt bulunamadı.</td></tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RAPOR 3: En Aktif 5 Hasta -->
+        <div class="accordion-item border-0 mb-2 rounded bg-white">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fw-semibold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    En Aktif 5 Hasta
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#raporlarAccordion">
+                <div class="accordion-body p-0">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="ps-4">Hasta Adı Soyadı</th>
+                                <th>Yaş</th>
+                                <th class="text-center">Toplam Randevu Sayısı</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(aktifHastaRaporu != null && aktifHastaRaporu.Any()) {
+                                @foreach (var item in aktifHastaRaporu) {
+                                    <tr>
+                                        <td class="ps-4"><i class="bi bi-person text-secondary me-2"></i>@item.HastaAdSoyad</td>
+                                        <td>@item.Yas</td>
+                                        <td class="text-center"><span class="badge bg-info text-dark fs-6">@item.ToplamRandevu</span></td>
+                                    </tr>
+                                }
+                            } else {
+                                <tr><td colspan="3" class="text-center py-3 text-muted">Kayıt bulunamadı.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- RAPOR 4: Randevu Durum Özeti -->
+        <div class="accordion-item border-0 mb-2 rounded bg-white">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed fw-semibold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Randevu Durum Özeti
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#raporlarAccordion">
+                <div class="accordion-body p-0">
+                    <table class="table table-hover align-middle mb-0" style="max-width: 600px; margin: 0 auto;">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="ps-4">Durum</th>
+                                <th class="text-end pe-4">Toplam Sayı</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(durumRaporu != null && durumRaporu.Any()) {
+                                @foreach (var item in durumRaporu) {
+                                    <tr>
+                                        <td class="ps-4 fw-semibold">
+                                            @if(item.Durum == "Aktif") { <span class="badge bg-primary">Aktif</span> }
+                                            else if(item.Durum == "Tamamlandı") { <span class="badge bg-success">Tamamlandı</span> }
+                                            else if(item.Durum == "İptal") { <span class="badge bg-danger">İptal</span> }
+                                            else { <span class="badge bg-secondary">@item.Durum</span> }
+                                        </td>
+                                        <td class="text-end pe-4 fs-5 fw-bold">@item.ToplamSayi</td>
+                                    </tr>
+                                }
+                            } else {
+                                <tr><td colspan="2" class="text-center py-3 text-muted">Kayıt bulunamadı.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- RAPOR 5: En Popüler 5 Doktor -->
+        <div class="accordion-item border-0 mb-2 rounded bg-white">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed fw-semibold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    En Popüler 5 Doktor
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#raporlarAccordion">
+                <div class="accordion-body p-0">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="ps-4">Doktor Adı Soyadı</th>
+                                <th class="text-center">Baktığı Toplam Randevu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(populerDoktorRaporu != null && populerDoktorRaporu.Any()) {
+                                @foreach (var item in populerDoktorRaporu) {
+                                    <tr>
+                                        <td class="ps-4"><i class="bi bi-star-fill text-warning me-2"></i><span class="fw-semibold">@item.DoktorAdSoyad</span></td>
+                                        <td class="text-center"><span class="badge bg-success fs-6">@item.ToplamRandevu</span></td>
+                                    </tr>
+                                }
+                            } else {
+                                <tr><td colspan="2" class="text-center py-3 text-muted">Kayıt bulunamadı.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
+
+<style>
+    /* Accordion Custom Styling */
+    .accordion-modern .accordion-item {
+        box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        overflow: hidden;
+    }
+    .accordion-modern .accordion-button {
+        background-color: #f8f9fa;
+        color: #0d6efd;
+        padding: 1.25rem 1.5rem;
+    }
+    .accordion-modern .accordion-button:not(.collapsed) {
+        background-color: #e9ecef;
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+    }
+    .accordion-modern .accordion-button:focus {
+        border-color: rgba(13, 110, 253, 0.25);
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1);
+    }
+    .accordion-modern .table {
+        border-color: transparent;
+    }
+</style>

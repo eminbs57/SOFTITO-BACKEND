@@ -56,6 +56,7 @@ namespace MvcProject.Controllers
         public async Task<IActionResult> Create(RoomType entity)
         {
             await _apiService.CreateAsync(entity);
+            _cache.Remove("roomTypesList");
             return RedirectToAction(nameof(Index));
         }
 
@@ -70,6 +71,7 @@ namespace MvcProject.Controllers
         public async Task<IActionResult> Edit(int id, RoomType entity)
         {
             await _apiService.UpdateAsync(id, entity);
+            _cache.Remove("roomTypesList");
             return RedirectToAction(nameof(Index));
         }
 
@@ -78,6 +80,7 @@ namespace MvcProject.Controllers
             try
             {
                 await _apiService.DeleteAsync(id);
+                _cache.Remove("roomTypesList");
             }
             catch (System.Exception)
             {
