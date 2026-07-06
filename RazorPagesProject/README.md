@@ -45,6 +45,8 @@ Proje, bağımsız modüller üzerine kurulu olup temel olarak şu sınıfları 
   <br/><i>Duyurular</i>
 </div>
 
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
 ## 🚀 Adım Adım Nasıl Çalıştırılır?
 
 Bu proje **ASP.NET Core Razor Pages** mimarisiyle ve veritabanı olarak **SQLite** kullanılarak geliştirilmiştir. Projeyi sorunsuz çalıştırmak için aşağıdaki adımları sırasıyla izleyin:

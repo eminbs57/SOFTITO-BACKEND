@@ -63,6 +63,8 @@ Diğer ekran görüntülerine screenshots adlı klasörden ulaşabilirsiniz.
    dotnet run
    ```
 
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
 ## 🚀 Adım Adım Nasıl Çalıştırılır?
 
 Bu proje, arka uç (API) ve ön uç (MVC) olmak üzere iki ayrı uygulamadan oluşmaktadır. Doğru çalışması için sırasıyla ikisinin de çalıştırılması gerekir:

@@ -51,6 +51,8 @@ Proje, bağımlılıkları en aza indirmek ve sürdürülebilirliği artırmak i
 </div>
 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
 
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
 ## 🚀 Adım Adım Nasıl Çalıştırılır?
 
 Bu proje Entity Framework Core ve N-Katmanlı mimari kullanılarak geliştirilmiştir. Projeyi sorunsuz çalıştırmak için aşağıdaki adımları sırasıyla izleyin:

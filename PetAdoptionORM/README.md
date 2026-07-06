@@ -56,6 +56,8 @@ Diğer fotoğraflara screenshots klasöründen erieşebilirsiniz.
    **Not**
    Proje, geliştirme aşamasında Identity şifre kurallarını minimumda (min. 3 karakter) tutacak şekilde yapılandırılmıştır. Production ortamına geçişte Program.cs üzerinden güvenlik politikalarının güncellenmesi önerilir.
 
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
 ## 🚀 Adım Adım Nasıl Çalıştırılır?
 
 Bu proje Entity Framework Core kullanılarak Code-First yaklaşımı ile geliştirilmiş bir Evcil Hayvan Sahiplenme platformudur.

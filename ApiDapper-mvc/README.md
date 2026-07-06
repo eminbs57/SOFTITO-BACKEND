@@ -85,6 +85,8 @@ _(Ekran görüntülerini `screenshots/` klasörüne ekleyip aşağıda referansl
      ```
      _(Eğer Visual Studio kullanıyorsanız "Multiple Startup Projects" özelliğini aktif ederek tek seferde başlatabilirsiniz.)_
 
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
 ## 🚀 Adım Adım Nasıl Çalıştırılır?
 
 Bu proje **Dapper** kullanılarak geliştirilmiş bir API arka ucu ve bu API'yi tüketen bir MVC ön yüzünden oluşmaktadır.

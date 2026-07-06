@@ -48,6 +48,8 @@ Diğer ekran görüntülerine screenshots klasöründen erişebilirsiniz.
 3. **Çalıştırma:**
    dotnet run
 
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
 ## 🚀 Adım Adım Nasıl Çalıştırılır?
 
 Bu proje Entity Framework yerine hızlı ve hafif bir mikro-ORM olan **Dapper** ile geliştirilmiştir.
