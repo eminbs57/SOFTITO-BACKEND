@@ -69,8 +69,16 @@ _(Ekran görüntülerini `screenshots/` klasörüne ekleyip aşağıda referansl
    ```bash
    dotnet build
    ```
-3. **Önce API projesini, ardından MVC projesini çalıştırın**
-   **cd ApiProject**
-   **dotnet run**
-   **cd MvcProject**
-   **dotnet run**
+3. **Projeleri Çalıştırın**
+   API ve MVC projelerini aynı anda çalıştırmak için iki ayrı terminal kullanın:
+   - **API Projesi için:**
+
+     ```bash
+     cd ApiProject && dotnet run
+     ```
+
+   - **MVC Projesi için:**
+     ```bash
+     cd MvcProject && dotnet run
+     ```
+     _(Eğer Visual Studio kullanıyorsanız "Multiple Startup Projects" özelliğini aktif ederek tek seferde başlatabilirsiniz.)_
