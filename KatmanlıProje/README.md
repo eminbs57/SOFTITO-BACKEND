@@ -50,30 +50,28 @@ Proje, bağımlılıkları en aza indirmek ve sürdürülebilirliği artırmak i
   <br/><i>Güvenli Giriş Paneli</i>
 </div>
 
-## 🚀 Kurulum ve Çalıştırma
+## 🚀 Adım Adım Nasıl Çalıştırılır?
 
-1. **Veritabanı Ayarları:**
-   `KutuphaneUI` içerisindeki `appsettings.json` dosyasında bulunan `DefaultConnection` bağlantı dizesini (Connection String) kendi SQL Server yapılandırmanıza göre düzenleyin.
+Bu proje Entity Framework Core ve N-Katmanlı mimari kullanılarak geliştirilmiştir. Projeyi sorunsuz çalıştırmak için aşağıdaki adımları sırasıyla izleyin:
+
+1. **Veritabanı Bağlantısını Ayarlama:**
+   - Proje içerisindeki `KatmanlıProje/KutuphaneUI/appsettings.json` dosyasını açın.
+   - `DefaultConnection` bağlantı dizesini (Connection String) kendi lokal SQL Server sunucunuza göre düzenleyin.
 
 2. **Migration ve Veritabanı Oluşturma:**
-   Package Manager Console veya Terminal üzerinden aşağıdaki komutu çalıştırarak veritabanını ve tabloları oluşturun:
+   - Terminali (veya Komut Satırını) açın ve ana depo kök dizinine (`SOFTITO-BACKEND` klasörü) geçin.
+   - Aşağıdaki komutu çalıştırarak veritabanını ve gerekli tabloları oluşturun:
    ```bash
-   dotnet ef database update -p Kutuphane.Data/Kutuphane.Data.csproj -s KutuphaneUI/KutuphaneUI.csproj
+   dotnet ef database update -p KatmanlıProje/Kutuphane.Data/Kutuphane.Data.csproj -s KatmanlıProje/KutuphaneUI/KutuphaneUI.csproj
    ```
 
 3. **Projeyi Başlatma:**
+   - Veritabanı başarıyla oluşturulduktan sonra, aynı terminalde aşağıdaki komutla projeyi ayağa kaldırın:
    ```bash
-   dotnet run --project KutuphaneUI/KutuphaneUI.csproj
+   dotnet run --project KatmanlıProje/KutuphaneUI/KutuphaneUI.csproj
    ```
 
 4. **Kullanım:**
    - Proje başlatıldığında sistem sizi otomatik olarak `/Account/Login` sayfasına yönlendirecektir.
    - İlk kullanımda **"Admin Kayıt"** linkine tıklayarak kendinize yeni bir yönetici hesabı oluşturun.
    - Oluşturduğunuz hesapla giriş yaptıktan sonra kütüphane paneline tam erişim sağlayabilirsiniz.
-
----
-### ⚡ Hızlı Başlangıç (Nasıl Çalıştırılır?)
-Eğer `appsettings.json` veritabanı bağlantınızı ayarladıysanız, ana depo kök dizininden (SOFTITO-BACKEND) projeyi şu komutla hızlıca başlatabilirsiniz:
-```bash
-dotnet run --project KatmanlıProje/KutuphaneUI/KutuphaneUI.csproj
-```
