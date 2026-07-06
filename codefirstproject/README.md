@@ -27,7 +27,7 @@ Güvenlik: ASP.NET Core Identity (Şifre hashleme, oturum yönetimi)
 ## 📸 Ekran Görüntüleri 
 
 <div align="center">
-  <img src="screenshots/Dashboard.png" alt="Dashboard Görünümü" width="800"/>
+  <img src="projectcodefrst/screenshots/Dashboard.png" alt="Dashboard Görünümü" width="800"/>
   <br/>
   <i>Modern Yönetici Paneli ve İstatistikler (Dashboard)</i>
   <br/><br/>
