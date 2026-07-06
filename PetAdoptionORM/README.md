@@ -40,21 +40,6 @@ Proje, temiz kod (Clean Code) ve yüksek sürdürülebilirlik ilkeleriyle üç a
 <b>Kullanıcı Kayıt Ekranı</b><br/>
 
 </div>
-Diğer fotoğraflara screenshots klasöründen erieşebilirsiniz.
-
-## 🚀 Kurulum ve Çalıştırma
-
-1. **Bağlantı Ayarları:** `PetAdoptionORM` projesindeki `appsettings.json` içerisinden `Default` connection string'ini kendi SQL Server bilginize göre güncelleyin.
-2. **Migration:** Veritabanı tablolarını otomatik oluşturun:
-   ```bash
-   dotnet ef database update --project PetAdoptionORM.Data --startup-project PetAdoptionORM
-   ```
-3. **Başlatma:**
-   cd PetAdoptionORM
-   dotnet run
-
-   **Not**
-   Proje, geliştirme aşamasında Identity şifre kurallarını minimumda (min. 3 karakter) tutacak şekilde yapılandırılmıştır. Production ortamına geçişte Program.cs üzerinden güvenlik politikalarının güncellenmesi önerilir.
 
 > 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
 
