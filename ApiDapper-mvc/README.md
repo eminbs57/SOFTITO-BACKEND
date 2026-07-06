@@ -34,7 +34,7 @@ Yönetim ve kullanıcı etkileşim katmanıdır.
 
 ## 📸 Ekran Görüntüleri
 
-_(Ekran görüntülerini `screenshots/` klasörüne ekleyip aşağıda referanslarını güncelleyebilirsin)_
+
 
 <div align="center">
   <img src="screenshots/dashboard.png" alt="Dashboard" width="800"/>
@@ -62,28 +62,6 @@ _(Ekran görüntülerini `screenshots/` klasörüne ekleyip aşağıda referansl
   <br/><i>Ciro Görüntüleme - Raporlama</i><br/><br/>
 </div>
 
-**Projenin diğer ekran görüntüleri için screenshots klasörünü inceleyebilirsiniz**
-
-## 🛠 Kurulum
-
-1. **Bağlantı:** Her iki projenin `appsettings.json` dosyalarındaki veritabanı bağlantı dizelerini güncelleyin.
-2. **Derleme:**
-   ```bash
-   dotnet build
-   ```
-3. **Projeleri Çalıştırın**
-   API ve MVC projelerini aynı anda çalıştırmak için iki ayrı terminal kullanın:
-   - **API Projesi için:**
-
-     ```bash
-     cd ApiProject && dotnet run
-     ```
-
-   - **MVC Projesi için:**
-     ```bash
-     cd MvcProject && dotnet run
-     ```
-     _(Eğer Visual Studio kullanıyorsanız "Multiple Startup Projects" özelliğini aktif ederek tek seferde başlatabilirsiniz.)_
 
 > 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
 
