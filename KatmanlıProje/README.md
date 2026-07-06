@@ -49,6 +49,7 @@ Proje, bağımlılıkları en aza indirmek ve sürdürülebilirliği artırmak i
   <img src="screenshots/login.png" alt="Giriş Ekranı" width="800"/>
   <br/><i>Güvenli Giriş Paneli</i>
 </div>
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
 
 ## 🚀 Adım Adım Nasıl Çalıştırılır?
 
