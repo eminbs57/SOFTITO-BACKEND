@@ -44,3 +44,9 @@ Proje, bağımsız modüller üzerine kurulu olup temel olarak şu sınıfları 
   <img src="screenshots/duyuru.png" alt="Duyurular" width="800"/>
   <br/><i>Duyurular</i>
 </div>
+
+## 🚀 Nasıl Çalıştırılır?
+Ana depo kök dizininde (SOFTITO-BACKEND) bir terminal açın ve projeyi başlatmak için aşağıdaki komutu çalıştırın:
+```bash
+dotnet run --project RazorPagesProject/SporSalonApp/SporSalonApp.csproj
+```

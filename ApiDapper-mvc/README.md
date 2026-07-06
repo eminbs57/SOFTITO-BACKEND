@@ -84,3 +84,15 @@ _(Ekran görüntülerini `screenshots/` klasörüne ekleyip aşağıda referansl
      cd MvcProject && dotnet run
      ```
      _(Eğer Visual Studio kullanıyorsanız "Multiple Startup Projects" özelliğini aktif ederek tek seferde başlatabilirsiniz.)_
+
+## 🚀 Nasıl Çalıştırılır?
+Bu proje iki ayrı bileşenden (API ve MVC) oluşur. Ana depo kök dizininden (SOFTITO-BACKEND) terminalde şu adımları izleyin:
+
+1. **Önce API projesini başlatın:**
+```bash
+dotnet run --project ApiDapper-mvc/ApiProject/ApiProject.csproj
+```
+2. **Yeni bir terminal penceresi açın ve MVC projesini başlatın:**
+```bash
+dotnet run --project ApiDapper-mvc/MvcProject/MvcProject.csproj
+```

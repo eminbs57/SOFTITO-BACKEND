@@ -55,3 +55,9 @@ Diğer fotoğraflara screenshots klasöründen erieşebilirsiniz.
 
    **Not**
    Proje, geliştirme aşamasında Identity şifre kurallarını minimumda (min. 3 karakter) tutacak şekilde yapılandırılmıştır. Production ortamına geçişte Program.cs üzerinden güvenlik politikalarının güncellenmesi önerilir.
+
+## 🚀 Nasıl Çalıştırılır?
+Ana depo kök dizininde (SOFTITO-BACKEND) bir terminal açın ve projeyi başlatmak için aşağıdaki komutu çalıştırın:
+```bash
+dotnet run --project PetAdoptionORM/PetAdoptionORM/PetAdoptionORM.csproj
+```

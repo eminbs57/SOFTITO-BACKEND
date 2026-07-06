@@ -47,3 +47,9 @@ Diğer ekran görüntülerine screenshots klasöründen erişebilirsiniz.
    ```
 3. **Çalıştırma:**
    dotnet run
+
+## 🚀 Nasıl Çalıştırılır?
+Ana depo kök dizininde (SOFTITO-BACKEND) bir terminal açın ve projeyi başlatmak için aşağıdaki komutu çalıştırın:
+```bash
+dotnet run --project dapper_project/HastaneRandevu/HastaneRandevu.csproj
+```

@@ -70,3 +70,10 @@ Proje, bağımlılıkları en aza indirmek ve sürdürülebilirliği artırmak i
    - Proje başlatıldığında sistem sizi otomatik olarak `/Account/Login` sayfasına yönlendirecektir.
    - İlk kullanımda **"Admin Kayıt"** linkine tıklayarak kendinize yeni bir yönetici hesabı oluşturun.
    - Oluşturduğunuz hesapla giriş yaptıktan sonra kütüphane paneline tam erişim sağlayabilirsiniz.
+
+---
+### ⚡ Hızlı Başlangıç (Nasıl Çalıştırılır?)
+Eğer `appsettings.json` veritabanı bağlantınızı ayarladıysanız, ana depo kök dizininden (SOFTITO-BACKEND) projeyi şu komutla hızlıca başlatabilirsiniz:
+```bash
+dotnet run --project KatmanlıProje/KutuphaneUI/KutuphaneUI.csproj
+```

@@ -49,3 +49,9 @@ Sistem **Admin** ve **User** olmak üzere iki ana yetki seviyesine sahiptir:
 </div>
 
 Diğer ekran görüntülerine screenshots adlı klasörden ulaşabilirsiniz.
+
+## 🚀 Nasıl Çalıştırılır?
+Ana depo kök dizininde (SOFTITO-BACKEND) bir terminal açın ve projeyi başlatmak için aşağıdaki komutu çalıştırın:
+```bash
+dotnet run --project jqueryproject/EventManagement/EventManagement.csproj
+```

@@ -123,3 +123,8 @@ Proje, `Logs` klasörü altında günlük olarak `txt` formatında detaylı oper
 
 
 > 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+## 🚀 Nasıl Çalıştırılır?
+Ana depo kök dizininde (SOFTITO-BACKEND) bir terminal açın ve projeyi başlatmak için aşağıdaki komutu çalıştırın:
+```bash
+dotnet run --project DBFİRST/SinemaDbFirst/dbfirstProjem.csproj
+```
