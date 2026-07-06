@@ -44,22 +44,22 @@ _(Ekran görüntülerini `screenshots/` klasörüne ekleyip aşağıda referansl
   <br/><i>Rezervasyon Takip Ekranı</i><br/><br/>
 
   <img src="screenshots/login.png" alt="Login" width="800"/>
-  <br/><i>Login Ekranı</i>
+  <br/><i>Login Ekranı</i><br/><br/>
 
   <img src="screenshots/rooms.png" alt="Rooms" width="800"/>
-  <br/><i>Odalar</i>
+  <br/><i>Odalar</i><br/><br/>
 
   <img src="screenshots/roomstype.png" alt="Rooms Type" width="800"/>
-  <br/><i>Oda tipleri</i>
+  <br/><i>Oda tipleri</i><br/><br/>
 
   <img src="screenshots/customer.png" alt="Customer" width="800"/>
-  <br/><i>Müşteriler</i>
+  <br/><i>Müşteriler</i><br/><br/>
 
   <img src="screenshots/report3.png" alt="Raporlama" width="800"/>
-  <br/><i>Doluluk Oranları - Raporlama</i>
+  <br/><i>Doluluk Oranları - Raporlama</i><br/><br/>
 
   <img src="screenshots/report5.png" alt="Raporlama2" width="800"/>
-  <br/><i>Ciro Görüntüleme - Raporlama</i>
+  <br/><i>Ciro Görüntüleme - Raporlama</i><br/><br/>
 </div>
 
 ## 🛠 Kurulum
