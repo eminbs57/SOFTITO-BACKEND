@@ -38,6 +38,55 @@ Sistem, yapay zeka destekli bir **NLP Akıllı Asistan (Chatbot)** barındırara
 
 ## 🏗 Mimari Yapı (Clean Architecture)
 
+Aşağıdaki şema, sistemin arka planında çalışan modüler, genişletilebilir ve güvenlik odaklı kurumsal mimariyi özetlemektedir:
+
+```mermaid
+graph TD
+    %% Katmanlar
+    subgraph ClientLayer [Client Layer]
+        UI[ObiletApp.Web<br/>MVC UI & Dark Theme]
+    end
+
+    subgraph APILayer [API Layer]
+        API[ObiletApp.API<br/>RESTful API & JWT Auth]
+    end
+
+    subgraph InfrastructureLayer [Infrastructure Layer]
+        EF[ObiletApp.Infrastructure<br/>EF Core - Write Operations]
+        DAP[Dapper Repositories<br/>Fast Read & Reports]
+        Chatbot[AI & Shared Services<br/>NLP Chatbot]
+    end
+
+    subgraph ApplicationCore [Application Core Layer]
+        APP[ObiletApp.Application<br/>Interfaces, DTOs, CQRS Services]
+        DOM[ObiletApp.Core<br/>Domain Entities, Enums]
+    end
+
+    DB[(Microsoft SQL Server 2022)]
+
+    %% İlişkiler
+    UI -- "HTTP Requests / JSON" --> API
+    UI -- "Direct Service Call (Optional)" --> APP
+    API -- "Uses Services" --> APP
+    
+    EF -- "Implements" --> APP
+    DAP -- "Implements" --> APP
+    Chatbot -- "Implements" --> APP
+    
+    APP -- "Depends On" --> DOM
+    
+    EF -- "Write (Insert/Update/Delete)" --> DB
+    DAP -- "Fast Read (Complex JOINs)" --> DB
+    
+    %% Stillendirme
+    classDef layerStyle fill:#212529,stroke:#6c757d,stroke-width:2px,color:#fff;
+    classDef dbStyle fill:#198754,stroke:#146c43,stroke-width:2px,color:#fff;
+    classDef default fill:#343a40,stroke:#6c757d,color:#f8f9fa;
+    
+    class UI,API,EF,DAP,Chatbot,APP,DOM layerStyle;
+    class DB dbStyle;
+```
+
 Proje sürdürülebilirliği artırmak, bağımlılıkları (coupling) azaltmak ve test edilebilirliği en üst düzeye çıkarmak için **Onion/Clean Architecture** tasarım deseni kullanılarak 4 ana katmana ayrılmıştır:
 
 1. **ObiletApp.Core (Domain Layer):** 
