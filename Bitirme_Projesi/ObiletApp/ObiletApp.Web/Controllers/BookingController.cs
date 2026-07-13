@@ -4,16 +4,19 @@ using System.Threading.Tasks;
 using System;
 using System.Text.Json;
 using System.Collections.Generic;
+using ObiletApp.Core.Interfaces;
 
 namespace ObiletApp.Web.Controllers
 {
     public class BookingController : Controller
     {
         private readonly HttpClient _httpClient;
+        private readonly IQrCodeService _qrCodeService;
 
-        public BookingController(IHttpClientFactory httpClientFactory)
+        public BookingController(IHttpClientFactory httpClientFactory, IQrCodeService qrCodeService)
         {
             _httpClient = httpClientFactory.CreateClient();
+            _qrCodeService = qrCodeService;
         }
 
         [HttpPost]
@@ -82,6 +85,11 @@ namespace ObiletApp.Web.Controllers
             ViewBag.PNR = pnr;
             ViewBag.PassengerName = name;
             ViewBag.SeatNumber = seat;
+            
+            // Bilet bilgilerini içeren karekodu (QR) üret
+            string qrText = $"PNR: {pnr} | Yolcu: {name} | Koltuk: {seat}";
+            ViewBag.QrCodeImage = _qrCodeService.GenerateQrCodeBase64(qrText);
+            
             return View();
         }
 

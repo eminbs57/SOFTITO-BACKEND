@@ -39,6 +39,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 // Dependency Injection for UoW and Generic Repositories (For Dynamic Admin)
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IQrCodeService, QrCodeService>();
 
 // Configure HttpClient to talk to the ObiletApp.API (EF API for Writes)
 builder.Services.AddHttpClient("EfApi", client =>

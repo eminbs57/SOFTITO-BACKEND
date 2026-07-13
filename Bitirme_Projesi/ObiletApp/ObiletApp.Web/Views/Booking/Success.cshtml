@@ -39,11 +39,10 @@
 
                     <div class="d-flex flex-column align-items-center mt-5">
                         <div class="p-3 border rounded-3 bg-white shadow-sm mb-3">
-                            @{
-                                var qrText = $"OBİLETAPP BİLET\nPNR: {ViewBag.PNR}\nYolcu: {ViewBag.PassengerName}\nKoltuk: {ViewBag.SeatNumber}";
-                                var encodedQrText = Uri.EscapeDataString(qrText);
+                            @if (ViewBag.QrCodeImage != null)
+                            {
+                                <img src="data:image/png;base64,@ViewBag.QrCodeImage" alt="QR Code" width="180" height="180" />
                             }
-                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=@encodedQrText" alt="QR Code" width="180" height="180" />
                         </div>
                         <p class="text-muted small text-center mb-0">
                             <i class="fa-solid fa-qrcode me-1"></i> Araca binerken bu QR kodu görevliye okutunuz.
