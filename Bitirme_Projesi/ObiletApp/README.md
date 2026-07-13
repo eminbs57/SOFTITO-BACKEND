@@ -281,7 +281,7 @@ Projede yüksek trafiği kaldırabilecek, bekleme sürelerini minimize eden müh
 ### Admin Yönetim Paneli
 | Dashboard ve Analitik | Gelişmiş Raporlar (Dapper) |
 | :---: | :---: |
-| ![Dashboard](screenshots/dashboard.png) | ![Rapor](screenshots/rapor1.png) |
+| ![Dashboard](screenshots/dashboard.png) | ![Rapor](screenshots/rapor8.png) |
 
 | Firma Yönetimi | Dinamik Arama (Search) |
 | :---: | :---: |
