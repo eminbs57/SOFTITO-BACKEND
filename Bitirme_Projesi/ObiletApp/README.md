@@ -124,11 +124,15 @@ ObiletApp/
 │   ├── Repositories/                # EF Core (Generic) ve Dapper için Repository pattern uygulamaları
 │   └── Migrations/                  # Veritabanı versiyon kontrolü
 │
-├── ObiletApp.API/                   # [Presentation - 1] RESTful Servisler
+├── ObiletApp.API/                   # [Presentation - 1] RESTful Servisler (EF Core)
 │   ├── Controllers/                 # Swagger ile test edilebilen, JWT korumalı endpointler
 │   └── Program.cs                   # API ayağa kalkış ayarları ve DI Container
 │
-└── ObiletApp.Web/                   # [Presentation - 2] MVC Kullanıcı Arayüzü
+├── ObiletApp.API.Dapper/            # [Presentation - 2] Dapper Odaklı Mikro API
+│   ├── Controllers/                 # Performans odaklı, saf okuma (Read) işlemlerinin sunulduğu API uçları
+│   └── Program.cs                   # Dapper bağlantılarının ve DI Container'ın ayarlandığı yapı
+│
+└── ObiletApp.Web/                   # [Presentation - 3] MVC Kullanıcı Arayüzü
     ├── Controllers/                 # Admin ve Müşteri sayfalarının yönlendiricileri
     ├── Views/                       # HTML/CSS/JS/Razor dosyaları (UI)
     └── wwwroot/                     # Statik dosyalar, Bootstrap, JS scriptleri
