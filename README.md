@@ -35,7 +35,7 @@ Aşağıda depoda bulunan projelerin kısa açıklamalarını bulabilirsiniz:
    - Evcil hayvan sahiplenme domain'i (alanı) üzerine odaklanmış, Code First ORM (Nesne-İlişkisel Eşleme) yaklaşımını kullanan uygulamalı bir proje.
 
 10. **[Bitirme_Projesi (ObiletApp)](./Bitirme_Projesi/)**
-    - Otobüs bileti rezervasyon ve yönetim sistemi. Clean Architecture, Repository Pattern ve CQRS yaklaşımları harmanlanmış; okuma işlemleri için Dapper, yazma işlemleri için EF Core kullanılmış kapsamlı B2B/B2C bitirme projesi. Yapay Zeka destekli Chatbot içerir.
+    - Otobüs/Uçak bileti rezervasyon ve yönetim sistemi. Clean Architecture, Repository Pattern ve CQRS yaklaşımları harmanlanmış; okuma işlemleri için Dapper, yazma işlemleri için EF Core kullanılmış kapsamlı B2B/B2C bitirme projesi. Yapay Zeka destekli Chatbot içerir.
 
 
 ## 🚀 Temel Teknolojiler ve Araçlar
