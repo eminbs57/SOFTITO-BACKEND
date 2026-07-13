@@ -1,6 +1,6 @@
 # Softito Backend Projeleri
 
-Bu depo, Softito eğitimi kapsamında geliştirilen 9 farklı .NET Backend projesini içermektedir. Projeler, C# ve .NET ekosistemindeki farklı mimari yaklaşımları, ORM araçlarını ve web teknolojilerini öğrenmek ve uygulamak amacıyla geliştirilmiştir.
+Bu depo, Softito eğitimi kapsamında geliştirilen 10 farklı .NET Backend projesini içermektedir. Projeler, C# ve .NET ekosistemindeki farklı mimari yaklaşımları, ORM araçlarını ve web teknolojilerini öğrenmek ve uygulamak amacıyla geliştirilmiştir.
 
 ## 📂 Projeler
 
@@ -33,6 +33,10 @@ Aşağıda depoda bulunan projelerin kısa açıklamalarını bulabilirsiniz:
 
 9. **[PetAdoptionORM](./PetAdoptionORM/)**
    - Evcil hayvan sahiplenme domain'i (alanı) üzerine odaklanmış, Code First ORM (Nesne-İlişkisel Eşleme) yaklaşımını kullanan uygulamalı bir proje.
+
+10. **[Bitirme_Projesi (ObiletApp)](./Bitirme_Projesi/)**
+    - Otobüs bileti rezervasyon ve yönetim sistemi. Clean Architecture, Repository Pattern ve CQRS yaklaşımları harmanlanmış; okuma işlemleri için Dapper, yazma işlemleri için EF Core kullanılmış kapsamlı B2B/B2C bitirme projesi. Yapay Zeka destekli Chatbot içerir.
+
 
 ## 🚀 Temel Teknolojiler ve Araçlar
 

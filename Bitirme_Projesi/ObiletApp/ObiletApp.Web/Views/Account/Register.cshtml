@@ -1,0 +1,45 @@
+@model ObiletApp.Web.Controllers.RegisterViewModel
+@{
+    ViewData["Title"] = "Kayıt Ol";
+}
+
+<div class="container mt-5 pt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card bg-dark text-light p-4 rounded-4 shadow-lg border-secondary">
+                <h3 class="text-center mb-4"><i class="fa-solid fa-user-plus me-2"></i>Kayıt Ol</h3>
+                <form asp-action="Register" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label class="form-label">Ad</label>
+                            <input asp-for="FirstName" class="form-control bg-secondary text-white border-0" required />
+                        </div>
+                        <div class="col">
+                            <label class="form-label">Soyad</label>
+                            <input asp-for="LastName" class="form-control bg-secondary text-white border-0" required />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">E-Posta</label>
+                        <input asp-for="Email" type="email" class="form-control bg-secondary text-white border-0" required />
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">Şifre</label>
+                        <input asp-for="Password" type="password" class="form-control bg-secondary text-white border-0" required />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 rounded-pill py-2 fw-bold">Üye Ol</button>
+
+                    <div class="text-center mt-3">
+                        <span class="text-muted">Zaten hesabınız var mı?</span>
+                        <a href="/Account/Login" class="text-decoration-none text-info">Giriş Yap</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

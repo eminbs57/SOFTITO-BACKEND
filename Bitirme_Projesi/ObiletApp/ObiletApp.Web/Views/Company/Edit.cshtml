@@ -1,0 +1,74 @@
+@model ObiletApp.Core.Entities.Company
+
+@{
+    ViewData["Title"] = "Firma Düzenle";
+}
+
+<div class="container-fluid py-4 max-w-700">
+    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="card-header bg-warning bg-gradient text-dark p-4 border-0">
+            <div class="d-flex align-items-center">
+                <div class="bg-white text-warning rounded-circle d-flex align-items-center justify-content-center me-3 shadow-sm" style="width: 48px; height: 48px;">
+                    <i class="bi bi-pencil-square fs-4"></i>
+                </div>
+                <div>
+                    <h3 class="mb-0 fw-bold">Firma Düzenle</h3>
+                    <p class="mb-0 text-dark opacity-75 small mt-1">#@Model.Id numaralı firmayı güncelliyorsunuz</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body p-5" style="background-color: var(--dark-surface);">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="CreatedDate" />
+
+                <div asp-validation-summary="All" class="text-danger mb-4 p-3 bg-danger bg-opacity-25 rounded-3"></div>
+
+                <div class="form-floating mb-4">
+                    <input asp-for="Name" class="form-control form-control-lg border-secondary shadow-sm" placeholder="Firma Adı" required />
+                    <label asp-for="Name" class="text-muted"><i class="bi bi-building me-1"></i> Firma Adı</label>
+                    <span asp-validation-for="Name" class="text-danger small mt-1 d-block"></span>
+                </div>
+
+                <div class="form-floating mb-4">
+                    <input asp-for="ContactInfo" class="form-control form-control-lg border-secondary shadow-sm" placeholder="İletişim Bilgisi" />
+                    <label asp-for="ContactInfo" class="text-muted"><i class="bi bi-telephone me-1"></i> İletişim Bilgisi</label>
+                    <span asp-validation-for="ContactInfo" class="text-danger small mt-1 d-block"></span>
+                </div>
+
+                <div class="form-floating mb-4">
+                    <input asp-for="LogoUrl" class="form-control form-control-lg border-secondary shadow-sm" placeholder="Logo URL" />
+                    <label asp-for="LogoUrl" class="text-muted"><i class="bi bi-link-45deg me-1"></i> Logo Linki</label>
+                    <span asp-validation-for="LogoUrl" class="text-danger small mt-1 d-block"></span>
+                </div>
+
+                <div class="form-floating mb-4">
+                    <select asp-for="Type" class="form-select form-select-lg border-secondary shadow-sm">
+                        <option value="1">Otobüs</option>
+                        <option value="2">Uçak</option>
+                    </select>
+                    <label asp-for="Type" class="text-muted"><i class="bi bi-tags me-1"></i> Firma Tipi</label>
+                    <span asp-validation-for="Type" class="text-danger small mt-1 d-block"></span>
+                </div>
+
+                <div class="form-check form-switch mb-5 ms-1">
+                    <input class="form-check-input fs-4" type="checkbox" role="switch" asp-for="IsActive" id="flexSwitchCheckChecked">
+                    <label class="form-check-label fs-5 ms-2 mt-1 text-secondary" for="flexSwitchCheckChecked">Firma Aktif Mi?</label>
+                </div>
+
+                <div class="d-flex gap-3 mt-4">
+                    <a asp-action="Index" class="btn btn-light btn-lg flex-fill rounded-pill text-secondary fw-semibold shadow-sm">
+                        <i class="bi bi-arrow-left me-1"></i> İptal
+                    </a>
+                    <button type="submit" class="btn btn-warning btn-lg flex-fill rounded-pill fw-bold text-dark shadow">
+                        <i class="bi bi-check2-all me-1"></i> Değişiklikleri Kaydet
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

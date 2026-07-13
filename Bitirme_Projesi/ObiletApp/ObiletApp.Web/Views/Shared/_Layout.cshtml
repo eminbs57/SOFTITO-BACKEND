@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ObiletApp</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ObiletApp.Web.styles.css" asp-append-version="true" />
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark text-light">
+
+    @if (User.Identity != null && User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+    {
+
+        <div class="d-flex" style="min-height: 100vh;">
+
+            <nav class="sidebar d-flex flex-column" style="width: 260px; background: var(--dark-surface); border-right: 1px solid var(--border-color); position: fixed; top: 0; left: 0; bottom: 0; z-index: 1000; overflow-y: auto;">
+
+                <div class="p-4 border-bottom" style="border-color: var(--border-color) !important;">
+                    <a href="/" class="text-decoration-none d-flex align-items-center">
+                        <i class="fa-solid fa-bus-simple text-primary fs-4 me-2"></i>
+                        <span class="fw-bold fs-5 text-white">ObiletApp</span>
+                    </a>
+                    <p class="text-muted small mb-0 mt-1">Yönetim Paneli</p>
+                </div>
+
+                <div class="p-3 border-bottom" style="border-color: var(--border-color) !important;">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center me-2" style="width: 36px; height: 36px;">
+                            <i class="bi bi-person-fill text-white"></i>
+                        </div>
+                        <div>
+                            <span class="text-white small fw-semibold d-block" style="max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">@User.Identity.Name</span>
+                            <span class="badge bg-primary bg-opacity-25 text-primary" style="font-size: 0.65rem;">Admin</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-3 flex-grow-1">
+                    <p class="text-uppercase small fw-bold mb-2 px-2" style="font-size: 0.7rem; letter-spacing: 1px; color: #94a3b8;">Genel</p>
+                    <ul class="nav flex-column gap-1 mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-link rounded-3 px-3 py-2 d-flex align-items-center" asp-controller="Admin" asp-action="Index">
+                                <i class="bi bi-speedometer2 fs-5 me-3"></i> Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-link rounded-3 px-3 py-2 d-flex align-items-center" asp-controller="Home" asp-action="Index" target="_blank">
+                                <i class="bi bi-box-arrow-up-right fs-5 me-3"></i> Siteye Git
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="text-uppercase small fw-bold mb-2 px-2" style="font-size: 0.7rem; letter-spacing: 1px; color: #94a3b8;">Yönetim</p>
+                    <ul class="nav flex-column gap-1 mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-link rounded-3 px-3 py-2 d-flex align-items-center" asp-controller="Company" asp-action="Index">
+                                <i class="bi bi-building fs-5 me-3"></i> Firmalar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-link rounded-3 px-3 py-2 d-flex align-items-center" asp-controller="Vehicle" asp-action="Index">
+                                <i class="bi bi-bus-front fs-5 me-3"></i> Araçlar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-link rounded-3 px-3 py-2 d-flex align-items-center" asp-controller="Route" asp-action="Index">
+                                <i class="bi bi-signpost-split fs-5 me-3"></i> Güzergahlar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-link rounded-3 px-3 py-2 d-flex align-items-center" asp-controller="Location" asp-action="Index">
+                                <i class="bi bi-geo-alt fs-5 me-3"></i> Lokasyonlar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-link rounded-3 px-3 py-2 d-flex align-items-center" asp-controller="Trip" asp-action="Index">
+                                <i class="bi bi-calendar-event fs-5 me-3"></i> Seferler
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-link rounded-3 px-3 py-2 d-flex align-items-center" asp-controller="Ticket" asp-action="Index">
+                                <i class="bi bi-ticket-perforated fs-5 me-3"></i> Biletler
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-link rounded-3 px-3 py-2 d-flex align-items-center" asp-controller="Passenger" asp-action="Index">
+                                <i class="bi bi-people fs-5 me-3"></i> Yolcular
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-link rounded-3 px-3 py-2 d-flex align-items-center" asp-controller="Campaign" asp-action="Index">
+                                <i class="bi bi-megaphone fs-5 me-3"></i> Kampanyalar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-link rounded-3 px-3 py-2 d-flex align-items-center" asp-controller="Payment" asp-action="Index">
+                                <i class="bi bi-credit-card fs-5 me-3"></i> Ödemeler
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebar-link rounded-3 px-3 py-2 d-flex align-items-center" asp-controller="Review" asp-action="Index">
+                                <i class="bi bi-star fs-5 me-3"></i> Değerlendirmeler
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="text-uppercase small fw-bold mb-2 px-2" style="font-size: 0.7rem; letter-spacing: 1px; color: #94a3b8;">Raporlar</p>
+                    <ul class="nav flex-column gap-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50 px-2 py-2 rounded-3 d-flex align-items-center" href="/Report">
+                                <i class="bi bi-file-earmark-bar-graph me-2"></i> Tüm Raporlar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-3 border-top mt-auto" style="border-color: var(--border-color) !important;">
+                    <form asp-controller="Account" asp-action="Logout" method="post">
+                        <button type="submit" class="btn btn-outline-danger w-100 rounded-pill btn-sm">
+                            <i class="bi bi-box-arrow-left me-1"></i> Çıkış Yap
+                        </button>
+                    </form>
+                </div>
+            </nav>
+
+            <main class="flex-grow-1" style="margin-left: 260px; min-height: 100vh;">
+                <div class="p-4">
+                    @RenderBody()
+                </div>
+            </main>
+        </div>
+    }
+    else
+    {
+
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                        <i class="fa-solid fa-bus-simple text-primary me-2"></i>ObiletApp
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1 ms-4">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Booking" asp-action="FindTicket">Bilet Sorgula</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            @if (User.Identity != null && User.Identity.IsAuthenticated)
+                            {
+                                <span class="navbar-text text-white me-3">
+                                    Hoş geldin, <strong>@User.Identity.Name</strong>
+                                </span>
+                                <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                                    <button type="submit" class="btn btn-outline-danger rounded-pill px-4">Çıkış Yap</button>
+                                </form>
+                            }
+                            else
+                            {
+                                <a href="/Account/Login" class="btn btn-outline-light me-2 rounded-pill px-4">Giriş Yap</a>
+                                <a href="/Account/Register" class="btn btn-primary rounded-pill px-4">Kayıt Ol</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main role="main" class="flex-grow-1 pb-4" style="margin-top: 76px;">
+            @RenderBody()
+        </main>
+
+        <footer class="footer mt-auto py-3" style="background-color: var(--dark-surface); border-top: 1px solid var(--border-color);">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <span class="text-muted small">© 2026 ObiletApp. Tüm hakları saklıdır.</span>
+                @if (User.Identity == null || !User.Identity.IsAuthenticated)
+                {
+                    <a href="/Account/AdminRegister" class="text-decoration-none text-warning small opacity-75">
+                        <i class="fa-solid fa-user-shield me-1"></i>Sistem Yöneticisi Misiniz?
+                    </a>
+                }
+            </div>
+        </footer>
+    }
+
+    <div class="ai-bubble" id="aiBubble" onclick="toggleAiChat()">
+        <i class="fa-solid fa-robot"></i>
+    </div>
+
+    <div class="ai-chat-window" id="aiChatWindow">
+        <div class="ai-chat-header d-flex justify-content-between align-items-center">
+            <span><i class="fa-solid fa-sparkles text-primary me-2"></i> Akıllı Asistan</span>
+            <i class="fa-solid fa-times" style="cursor:pointer;" onclick="toggleAiChat()"></i>
+        </div>
+        <div class="ai-chat-body" id="aiChatBody">
+            <div class="mb-3">
+                <span class="badge bg-primary rounded-pill py-2 px-3">Merhaba! Sana nasıl yardımcı olabilirim?</span>
+            </div>
+        </div>
+        <div class="ai-chat-input">
+            <input type="text" id="aiInput" class="form-control" placeholder="Bir şeyler yazın...">
+            <button class="btn btn-primary" onclick="sendAiMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        function toggleAiChat() {
+            var chat = document.getElementById("aiChatWindow");
+            if (chat.style.display === "none" || chat.style.display === "") {
+                chat.style.display = "flex";
+            } else {
+                chat.style.display = "none";
+            }
+        }
+
+        async function sendAiMessage() {
+            var inputElem = document.getElementById("aiInput");
+            var input = inputElem.value.trim();
+            if(!input) return;
+
+            var body = document.getElementById("aiChatBody");
+
+            body.innerHTML += `<div class="mb-3 text-end"><span class="badge bg-secondary rounded-pill py-2 px-3">${input}</span></div>`;
+            inputElem.value = "";
+            body.scrollTop = body.scrollHeight;
+
+            var typingId = "typing_" + new Date().getTime();
+            body.innerHTML += `<div class="mb-3" id="${typingId}"><span class="badge bg-primary rounded-pill py-2 px-3"><i class="fa-solid fa-circle-notch fa-spin"></i> Asistan düşünüyor...</span></div>`;
+            body.scrollTop = body.scrollHeight;
+
+            try {
+
+                const response = await fetch('/Chatbot/Ask', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ Message: input })
+                });
+
+                const data = await response.json();
+
+                document.getElementById(typingId).remove();
+
+                body.innerHTML += `<div class="mb-3"><span class="badge bg-primary rounded-4 py-2 px-3 text-wrap text-start" style="line-height:1.5; font-weight: normal; font-size: 0.9rem;">${data.response}</span></div>`;
+                body.scrollTop = body.scrollHeight;
+            } catch (err) {
+
+                document.getElementById(typingId).remove();
+                body.innerHTML += `<div class="mb-3"><span class="badge bg-danger rounded-4 py-2 px-3 text-wrap text-start">Bağlantı hatası oluştu. Lütfen daha sonra tekrar deneyin.</span></div>`;
+                body.scrollTop = body.scrollHeight;
+            }
+        }
+
+        document.getElementById("aiInput").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                sendAiMessage();
+            }
+        });
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

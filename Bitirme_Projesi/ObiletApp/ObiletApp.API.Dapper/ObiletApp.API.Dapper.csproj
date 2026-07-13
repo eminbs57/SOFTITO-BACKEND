@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ObiletApp.Core\ObiletApp.Core.csproj" />
+    <ProjectReference Include="..\ObiletApp.Application\ObiletApp.Application.csproj" />
+    <ProjectReference Include="..\ObiletApp.Infrastructure\ObiletApp.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

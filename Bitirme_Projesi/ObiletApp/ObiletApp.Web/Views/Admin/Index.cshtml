@@ -1,0 +1,133 @@
+@{
+    ViewData["Title"] = "Admin Paneli";
+}
+
+<div class="container mt-5 pt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="fa-solid fa-gauge me-2 text-primary"></i>Yönetim Paneli</h2>
+        <div>
+            <a href="#" onclick="exportToExcel(event)" class="btn btn-outline-success me-2"><i class="fa-solid fa-file-excel me-2"></i>Excel Raporu</a>
+            <a href="#" onclick="exportToPdf(event)" class="btn btn-outline-danger"><i class="fa-solid fa-file-pdf me-2"></i>PDF Raporu</a>
+        </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+        <div class="col-md-3">
+            <div class="p-4 rounded-4" style="background: var(--dark-surface); border: 1px solid var(--border-color); border-left: 5px solid var(--primary-color);">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="mb-1" style="color: #cbd5e1;">Toplam Satılan Bilet</h6>
+                        <h3 class="mb-0">@ViewBag.TotalTickets</h3>
+                    </div>
+                    <div class="fs-1 text-primary opacity-50"><i class="bi bi-ticket-perforated"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="p-4 rounded-4" style="background: var(--dark-surface); border: 1px solid var(--border-color); border-left: 5px solid var(--accent-color);">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="mb-1" style="color: #cbd5e1;">Aktif Sefer Sayısı</h6>
+                        <h3 class="mb-0">@ViewBag.ActiveRoutes</h3>
+                    </div>
+                    <div class="fs-1 text-warning opacity-50"><i class="bi bi-signpost-split"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="p-4 rounded-4" style="background: var(--dark-surface); border: 1px solid var(--border-color); border-left: 5px solid #10b981;">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="mb-1" style="color: #cbd5e1;">Günlük Ciro</h6>
+                        <h3 class="mb-0">@ViewBag.DailyRevenue</h3>
+                    </div>
+                    <div class="fs-1 text-success opacity-50"><i class="bi bi-currency-dollar"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="p-4 rounded-4" style="background: var(--dark-surface); border: 1px solid var(--border-color); border-left: 5px solid #8b5cf6;">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="mb-1" style="color: #cbd5e1;">Kayıtlı Firmalar</h6>
+                        <h3 class="mb-0">@ViewBag.TotalCompanies</h3>
+                    </div>
+                    <div class="fs-1 text-info opacity-50"><i class="bi bi-buildings"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4 rounded-4" style="background: var(--dark-surface); border: 1px solid var(--border-color);">
+        <h5 class="mb-4">Son Alınan Biletler</h5>
+        <div class="table-responsive">
+            <table class="table table-dark table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>PNR Kodu</th>
+                        <th>Yolcu Adı</th>
+                        <th>Sefer</th>
+                        <th>Tarih</th>
+                        <th>Durum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (ViewBag.RecentTickets != null)
+                    {
+                        foreach (var ticket in ViewBag.RecentTickets)
+                        {
+                            var pnr = ticket.GetProperty("pnr").GetString();
+                            var name = ticket.GetProperty("passengerName").GetString();
+                            var route = ticket.GetProperty("routeName").GetString();
+                            var date = ticket.GetProperty("date").GetString();
+                            var status = ticket.GetProperty("status").GetString();
+
+                            var badgeClass = status == "Onaylandı" || status == "Kullanıldı" ? "bg-success" : 
+                                             status == "İptal Edildi" ? "bg-danger" : "bg-warning";
+
+                            <tr>
+                                <td><strong>@pnr</strong></td>
+                                <td>@name</td>
+                                <td>@route</td>
+                                <td>@date</td>
+                                <td><span class="badge @badgeClass">@status</span></td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" class="text-center text-muted">Bilet bulunamadı.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        function exportToExcel(e) {
+            e.preventDefault();
+            var table = document.querySelector('.table');
+            var wb = XLSX.utils.table_to_book(table, {sheet: "Rapor"});
+            XLSX.writeFile(wb, 'ObiletApp_Bilet_Raporu.xlsx');
+        }
+
+        function exportToPdf(e) {
+            e.preventDefault();
+            var element = document.querySelector('.table-responsive');
+            var opt = {
+                margin:       1,
+                filename:     'ObiletApp_Bilet_Raporu.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2 },
+                jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
+            };
+            html2pdf().set(opt).from(element).save();
+        }
+    </script>
+}

@@ -1,0 +1,45 @@
+@model ObiletApp.Core.Entities.Vehicle
+@{
+    ViewData["Title"] = "Yeni Araç";
+}
+
+<div class="max-w-700">
+    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="card-header bg-primary text-white p-4 border-0">
+            <h3 class="mb-0 fw-bold"><i class="bi bi-plus-circle me-2"></i> Yeni Araç Ekle</h3>
+        </div>
+        <div class="card-body p-5" style="background-color: var(--dark-surface);">
+            <form asp-action="Create" method="post">
+                <div asp-validation-summary="All" class="text-danger mb-4 p-3 bg-danger bg-opacity-25 rounded-3"></div>
+
+                                <div class="form-floating mb-4">
+                    <input asp-for="CompanyId" class="form-control bg-dark border-secondary text-white" placeholder="Firma" />
+                    <label asp-for="CompanyId" class="text-white-50">Firma</label>
+                    <span asp-validation-for="CompanyId" class="text-danger small mt-1 d-block"></span>
+                </div>
+                <div class="form-floating mb-4">
+                    <input asp-for="Type" class="form-control bg-dark border-secondary text-white" placeholder="Araç Tipi" />
+                    <label asp-for="Type" class="text-white-50">Araç Tipi</label>
+                    <span asp-validation-for="Type" class="text-danger small mt-1 d-block"></span>
+                </div>
+                <div class="form-floating mb-4">
+                    <input asp-for="Capacity" class="form-control bg-dark border-secondary text-white" placeholder="Kapasite" />
+                    <label asp-for="Capacity" class="text-white-50">Kapasite</label>
+                    <span asp-validation-for="Capacity" class="text-danger small mt-1 d-block"></span>
+                </div>
+                <div class="form-floating mb-4">
+                    <input asp-for="Plate" class="form-control bg-dark border-secondary text-white" placeholder="Plaka" />
+                    <label asp-for="Plate" class="text-white-50">Plaka</label>
+                    <span asp-validation-for="Plate" class="text-danger small mt-1 d-block"></span>
+                </div>
+
+                <div class="d-flex gap-3 mt-5 pt-3 border-top border-secondary">
+                    <a asp-action="Index" class="btn btn-light btn-lg flex-fill rounded-pill fw-bold bg-secondary bg-opacity-25 border-0 text-white">İptal</a>
+                    <button type="submit" class="btn btn-primary btn-lg flex-fill rounded-pill fw-bold shadow">
+                        <i class="bi bi-check2 me-1"></i> Kaydet
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

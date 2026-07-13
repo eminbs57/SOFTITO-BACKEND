@@ -1,0 +1,355 @@
+@model ObiletApp.Web.Models.ReportDashboardViewModel
+@{
+    ViewData["Title"] = "Gelişmiş Raporlar";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h3 mb-0 text-white"><i class="bi bi-bar-chart-line-fill me-2 text-primary"></i>Gelişmiş Analiz ve Raporlar</h1>
+</div>
+
+<div class="accordion accordion-flush" id="reportsAccordion" style="border-radius: 0.5rem; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+
+    <div class="accordion-item" style="background: var(--dark-surface); border: none; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed shadow-none text-white fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background: transparent;">
+                <i class="bi bi-building me-3 text-success fs-5"></i>Firmalara Göre Gelir Raporu
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#reportsAccordion">
+            <div class="accordion-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0 text-nowrap align-middle">
+                        <thead class="table-active">
+                            <tr>
+                                <th>Firma Adı</th>
+                                <th class="text-center">Satılan Bilet</th>
+                                <th class="text-end">Toplam Gelir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.CompanyRevenues.Any()) {
+                                @foreach (var item in Model.CompanyRevenues)
+                                {
+                                    <tr>
+                                        <td class="ps-4">@item.CompanyName</td>
+                                        <td class="text-center"><span class="badge bg-secondary rounded-pill">@item.TicketCount</span></td>
+                                        <td class="text-end text-success fw-bold pe-4">@item.TotalRevenue.ToString("C2")</td>
+                                    </tr>
+                                }
+                            } else {
+                                <tr><td colspan="3" class="text-center text-muted py-4">Veri bulunamadı.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item" style="background: var(--dark-surface); border: none; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed shadow-none text-white fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background: transparent;">
+                <i class="bi bi-signpost-split me-3 text-warning fs-5"></i>Popüler Rotalar (Yolcu Trafiği)
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#reportsAccordion">
+            <div class="accordion-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0 text-nowrap align-middle">
+                        <thead class="table-active">
+                            <tr>
+                                <th>Güzergah</th>
+                                <th class="text-center">Satılan Bilet</th>
+                                <th class="text-end">Hacim</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.RouteTraffic.Any()) {
+                                @foreach (var item in Model.RouteTraffic)
+                                {
+                                    <tr>
+                                        <td class="ps-4">@item.RouteName</td>
+                                        <td class="text-center"><span class="badge bg-secondary rounded-pill">@item.TicketCount</span></td>
+                                        <td class="text-end text-success fw-bold pe-4">@item.TotalRevenue.ToString("C2")</td>
+                                    </tr>
+                                }
+                            } else {
+                                <tr><td colspan="3" class="text-center text-muted py-4">Veri bulunamadı.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item" style="background: var(--dark-surface); border: none; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed shadow-none text-white fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background: transparent;">
+                <i class="bi bi-person-heart me-3 text-danger fs-5"></i>Müşteri Sadakat Raporu (Top 10)
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#reportsAccordion">
+            <div class="accordion-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0 text-nowrap align-middle">
+                        <thead class="table-active">
+                            <tr>
+                                <th>Müşteri</th>
+                                <th class="text-center">Aldığı Bilet</th>
+                                <th class="text-end">Harcama</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.UserLoyalty.Any()) {
+                                @foreach (var item in Model.UserLoyalty)
+                                {
+                                    <tr>
+                                        <td class="ps-4">@item.UserName</td>
+                                        <td class="text-center"><span class="badge bg-secondary rounded-pill">@item.TicketCount</span></td>
+                                        <td class="text-end text-success fw-bold pe-4">@item.TotalSpent.ToString("C2")</td>
+                                    </tr>
+                                }
+                            } else {
+                                <tr><td colspan="3" class="text-center text-muted py-4">Veri bulunamadı.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item" style="background: var(--dark-surface); border: none; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed shadow-none text-white fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="background: transparent;">
+                <i class="bi bi-bus-front me-3 text-info fs-5"></i>Araç Kapasite ve Doluluk Oranları
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#reportsAccordion">
+            <div class="accordion-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0 text-nowrap align-middle">
+                        <thead class="table-active">
+                            <tr>
+                                <th>Plaka & Firma</th>
+                                <th class="text-center">Kapasite</th>
+                                <th class="text-center">Satılan</th>
+                                <th>Doluluk</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.VehicleOccupancy.Any()) {
+                                @foreach (var item in Model.VehicleOccupancy)
+                                {
+                                    <tr>
+                                        <td class="ps-4">
+                                            <div class="fw-bold">@item.Plate</div>
+                                            <small class="text-muted">@item.CompanyName</small>
+                                        </td>
+                                        <td class="text-center">@item.Capacity</td>
+                                        <td class="text-center">@item.SoldTickets</td>
+                                        <td class="pe-4">
+                                            <div class="d-flex align-items-center">
+                                                <span class="me-2 small fw-bold @(item.OccupancyRate > 80 ? "text-success" : item.OccupancyRate > 50 ? "text-warning" : "text-danger")">
+                                                    %@item.OccupancyRate
+                                                </span>
+                                                <div class="progress flex-grow-1" style="height: 6px; background-color: rgba(255,255,255,0.1);">
+                                                    <div class="progress-bar @(item.OccupancyRate > 80 ? "bg-success" : item.OccupancyRate > 50 ? "bg-warning" : "bg-danger")" 
+                                                         role="progressbar" style="width: @item.OccupancyRate%" aria-valuenow="@item.OccupancyRate" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            } else {
+                                <tr><td colspan="4" class="text-center text-muted py-4">Veri bulunamadı.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item" style="background: var(--dark-surface); border: none; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed shadow-none text-white fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="background: transparent;">
+                <i class="bi bi-graph-up me-3 text-primary fs-5"></i>Aylık Satış Trendi
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#reportsAccordion">
+            <div class="accordion-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0 text-nowrap align-middle">
+                        <thead class="table-active">
+                            <tr>
+                                <th>Dönem</th>
+                                <th class="text-center">Bilet Satışı</th>
+                                <th class="text-end">Ciro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.MonthlySales.Any()) {
+                                @foreach (var item in Model.MonthlySales)
+                                {
+                                    <tr>
+                                        <td class="ps-4"><i class="bi bi-calendar-event me-2 text-muted"></i>@item.MonthName @item.Year</td>
+                                        <td class="text-center"><span class="badge bg-secondary rounded-pill">@item.TicketCount</span></td>
+                                        <td class="text-end text-success fw-bold pe-4">@item.TotalRevenue.ToString("C2")</td>
+                                    </tr>
+                                }
+                            } else {
+                                <tr><td colspan="3" class="text-center text-muted py-4">Veri bulunamadı.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item" style="background: var(--dark-surface); border: none; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed shadow-none text-white fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="background: transparent;">
+                <i class="bi bi-pie-chart me-3 fs-5" style="color: #a855f7;"></i>Bilet İptal ve Durum Analizi
+            </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#reportsAccordion">
+            <div class="accordion-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0 text-nowrap align-middle">
+                        <thead class="table-active">
+                            <tr>
+                                <th>Durum</th>
+                                <th class="text-center">Adet</th>
+                                <th class="text-end">Tutar Etkisi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.TicketStatus.Any()) {
+                                @foreach (var item in Model.TicketStatus)
+                                {
+                                    <tr>
+                                        <td class="ps-4">
+                                            @if(item.Status == "Onaylandı") { <span class="text-success"><i class="bi bi-check-circle-fill me-2"></i>Onaylandı</span> }
+                                            else if(item.Status == "İptal Edildi") { <span class="text-danger"><i class="bi bi-x-circle-fill me-2"></i>İptal Edildi</span> }
+                                            else { <span class="text-warning"><i class="bi bi-clock-fill me-2"></i>@item.Status</span> }
+                                        </td>
+                                        <td class="text-center"><span class="badge bg-secondary rounded-pill">@item.TicketCount</span></td>
+                                        <td class="text-end fw-bold @(item.Status == "İptal Edildi" ? "text-danger" : "text-success") pe-4">
+                                            @(item.Status == "İptal Edildi" ? "-" : "")@item.TotalAmount.ToString("C2")
+                                        </td>
+                                    </tr>
+                                }
+                            } else {
+                                <tr><td colspan="3" class="text-center text-muted py-4">Veri bulunamadı.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item" style="background: var(--dark-surface); border: none; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed shadow-none text-white fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style="background: transparent;">
+                <i class="bi bi-clock-history me-3 text-info fs-5"></i>Gelecek Seferlerin Rezervasyon Durumu
+            </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#reportsAccordion">
+            <div class="accordion-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0 text-nowrap align-middle">
+                        <thead class="table-active">
+                            <tr>
+                                <th>Sefer Bilgisi</th>
+                                <th>Tarih</th>
+                                <th class="text-center">Kapasite / Boş</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.UpcomingTrips.Any()) {
+                                @foreach (var item in Model.UpcomingTrips)
+                                {
+                                    <tr>
+                                        <td class="ps-4">
+                                            <div class="fw-bold">@item.RouteName</div>
+                                            <small class="text-muted">@item.CompanyName</small>
+                                        </td>
+                                        <td>@item.DepartureTime.ToString("dd.MM.yyyy HH:mm")</td>
+                                        <td class="text-center pe-4">
+                                            <span class="badge bg-secondary">@item.Capacity</span>
+                                            <span class="badge @(item.RemainingSeats < 5 ? "bg-danger" : "bg-success") ms-1">@item.RemainingSeats Boş</span>
+                                        </td>
+                                    </tr>
+                                }
+                            } else {
+                                <tr><td colspan="3" class="text-center text-muted py-4">Gelecek sefer bulunamadı.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item" style="background: var(--dark-surface); border: none;">
+        <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed shadow-none text-white fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" style="background: transparent;">
+                <i class="bi bi-geo-alt-fill me-3 text-primary fs-5"></i>Şehirlere Göre Hareketlilik (Terminal)
+            </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#reportsAccordion">
+            <div class="accordion-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0 text-nowrap align-middle">
+                        <thead class="table-active">
+                            <tr>
+                                <th>Şehir</th>
+                                <th class="text-center">Kalkış</th>
+                                <th class="text-center">Varış</th>
+                                <th class="text-center">Toplam</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if(Model.LocationTraffic.Any()) {
+                                @foreach (var item in Model.LocationTraffic)
+                                {
+                                    <tr>
+                                        <td class="ps-4"><span class="fw-bold"><i class="bi bi-pin-map-fill me-2 text-muted"></i>@item.CityName</span></td>
+                                        <td class="text-center text-warning">@item.DepartureCount <i class="bi bi-arrow-up-right"></i></td>
+                                        <td class="text-center text-info"><i class="bi bi-arrow-down-left"></i> @item.ArrivalCount</td>
+                                        <td class="text-center fw-bold pe-4">@item.TotalTraffic</td>
+                                    </tr>
+                                }
+                            } else {
+                                <tr><td colspan="4" class="text-center text-muted py-4">Veri bulunamadı.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<style>
+
+    .accordion-button::after {
+        filter: invert(1) grayscale(100%) brightness(200%);
+    }
+    .accordion-button:not(.collapsed) {
+        background-color: rgba(255,255,255,0.05) !important;
+        color: white !important;
+        box-shadow: inset 0 -1px 0 rgba(255,255,255,0.1);
+    }
+    .accordion-item {
+        transition: background-color 0.2s ease-in-out;
+    }
+    .accordion-item:hover {
+        background-color: rgba(255,255,255,0.02) !important;
+    }
+</style>

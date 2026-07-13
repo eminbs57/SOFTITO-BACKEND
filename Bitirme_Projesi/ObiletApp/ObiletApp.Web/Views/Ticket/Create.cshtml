@@ -1,0 +1,55 @@
+@model ObiletApp.Core.Entities.Ticket
+@{
+    ViewData["Title"] = "Yeni Bilet";
+}
+
+<div class="max-w-700">
+    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="card-header bg-primary text-white p-4 border-0">
+            <h3 class="mb-0 fw-bold"><i class="bi bi-plus-circle me-2"></i> Yeni Bilet Ekle</h3>
+        </div>
+        <div class="card-body p-5" style="background-color: var(--dark-surface);">
+            <form asp-action="Create" method="post">
+                <div asp-validation-summary="All" class="text-danger mb-4 p-3 bg-danger bg-opacity-25 rounded-3"></div>
+
+                                <div class="form-floating mb-4">
+                    <input asp-for="TripId" class="form-control bg-dark border-secondary text-white" placeholder="Sefer" />
+                    <label asp-for="TripId" class="text-white-50">Sefer</label>
+                    <span asp-validation-for="TripId" class="text-danger small mt-1 d-block"></span>
+                </div>
+                <div class="form-floating mb-4">
+                    <input asp-for="PassengerId" class="form-control bg-dark border-secondary text-white" placeholder="Yolcu" />
+                    <label asp-for="PassengerId" class="text-white-50">Yolcu</label>
+                    <span asp-validation-for="PassengerId" class="text-danger small mt-1 d-block"></span>
+                </div>
+                <div class="form-floating mb-4">
+                    <input asp-for="UserId" class="form-control bg-dark border-secondary text-white" placeholder="Kullanıcı" />
+                    <label asp-for="UserId" class="text-white-50">Kullanıcı</label>
+                    <span asp-validation-for="UserId" class="text-danger small mt-1 d-block"></span>
+                </div>
+                <div class="form-floating mb-4">
+                    <input asp-for="SeatNumber" class="form-control bg-dark border-secondary text-white" placeholder="Koltuk No" />
+                    <label asp-for="SeatNumber" class="text-white-50">Koltuk No</label>
+                    <span asp-validation-for="SeatNumber" class="text-danger small mt-1 d-block"></span>
+                </div>
+                <div class="form-floating mb-4">
+                    <input asp-for="PNR" class="form-control bg-dark border-secondary text-white" placeholder="PNR Kodu" />
+                    <label asp-for="PNR" class="text-white-50">PNR Kodu</label>
+                    <span asp-validation-for="PNR" class="text-danger small mt-1 d-block"></span>
+                </div>
+                <div class="form-floating mb-4">
+                    <input asp-for="Status" class="form-control bg-dark border-secondary text-white" placeholder="Durum" />
+                    <label asp-for="Status" class="text-white-50">Durum</label>
+                    <span asp-validation-for="Status" class="text-danger small mt-1 d-block"></span>
+                </div>
+
+                <div class="d-flex gap-3 mt-5 pt-3 border-top border-secondary">
+                    <a asp-action="Index" class="btn btn-light btn-lg flex-fill rounded-pill fw-bold bg-secondary bg-opacity-25 border-0 text-white">İptal</a>
+                    <button type="submit" class="btn btn-primary btn-lg flex-fill rounded-pill fw-bold shadow">
+                        <i class="bi bi-check2 me-1"></i> Kaydet
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+2026-07-14 00:05:57.206 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5108/api/Auth/login - application/json 53
+2026-07-14 00:05:57.214 +03:00 [INF] Executing endpoint 'ObiletApp.API.Controllers.AuthController.Login (ObiletApp.API)'
+2026-07-14 00:05:57.223 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ObiletApp.API.Controllers.LoginDto) on controller ObiletApp.API.Controllers.AuthController (ObiletApp.API).
+2026-07-14 00:05:57.412 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-07-14 00:05:57.416 +03:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2026-07-14 00:05:57.417 +03:00 [INF] Executed action ObiletApp.API.Controllers.AuthController.Login (ObiletApp.API) in 193.1832ms
+2026-07-14 00:05:57.417 +03:00 [INF] Executed endpoint 'ObiletApp.API.Controllers.AuthController.Login (ObiletApp.API)'
+2026-07-14 00:05:57.418 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5108/api/Auth/login - 401 null text/plain; charset=utf-8 212.7192ms
+2026-07-14 00:06:36.507 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5108/api/Auth/login - application/json 54
+2026-07-14 00:06:36.513 +03:00 [INF] Executing endpoint 'ObiletApp.API.Controllers.AuthController.Login (ObiletApp.API)'
+2026-07-14 00:06:36.514 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ObiletApp.API.Controllers.LoginDto) on controller ObiletApp.API.Controllers.AuthController (ObiletApp.API).
+2026-07-14 00:06:36.541 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-07-14 00:06:36.616 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-14 00:06:36.618 +03:00 [INF] Executed action ObiletApp.API.Controllers.AuthController.Login (ObiletApp.API) in 104.089ms
+2026-07-14 00:06:36.618 +03:00 [INF] Executed endpoint 'ObiletApp.API.Controllers.AuthController.Login (ObiletApp.API)'
+2026-07-14 00:06:36.618 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5108/api/Auth/login - 200 null application/json; charset=utf-8 111.872ms

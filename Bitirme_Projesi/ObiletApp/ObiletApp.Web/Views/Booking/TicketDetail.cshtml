@@ -1,0 +1,122 @@
+@model dynamic
+@{
+    ViewData["Title"] = "Bilet Detayları";
+    var pnr = Model.GetProperty("pnr").GetString();
+    var name = Model.GetProperty("passengerName").GetString();
+    var seat = Model.GetProperty("seatNumber").GetString();
+    var route = Model.GetProperty("routeName").GetString();
+    var company = Model.GetProperty("companyName").GetString();
+    var statusId = Model.GetProperty("status").GetInt32();
+    var ticketId = Model.GetProperty("id").GetInt32();
+
+    var statusText = statusId == 1 ? "Onaylandı" : statusId == 2 ? "İptal Edildi" : statusId == 3 ? "Kullanıldı" : "Bekliyor";
+    var isCancelled = statusId == 2;
+    var badgeClass = statusId == 1 ? "bg-success" : statusId == 2 ? "bg-danger" : statusId == 3 ? "bg-secondary" : "bg-warning";
+}
+
+<div class="container mt-5 pt-5 pb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-0 rounded-4 shadow" style="background: var(--dark-surface); overflow: hidden;">
+
+                <div class="@(isCancelled ? "bg-danger" : "bg-primary") text-white text-center p-4 position-relative">
+                    @if(isCancelled)
+                    {
+                        <div class="rounded-circle bg-white text-danger d-inline-flex justify-content-center align-items-center mb-3 shadow" style="width: 70px; height: 70px;">
+                            <i class="fa-solid fa-xmark fs-1"></i>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="rounded-circle bg-white text-primary d-inline-flex justify-content-center align-items-center mb-3 shadow" style="width: 70px; height: 70px;">
+                            <i class="fa-solid fa-ticket fs-1"></i>
+                        </div>
+                    }
+                    <h3 class="mb-0">Bilet @(isCancelled ? "İptal Edildi" : "Detayları")</h3>
+                    <p class="mb-0 opacity-75">Durum: @statusText</p>
+                </div>
+
+                <div class="p-4 p-md-5 bg-white text-dark position-relative">
+
+                    <div style="position: absolute; top: 0; left: 0; right: 0; height: 10px; background-image: radial-gradient(circle at 10px 0, transparent 12px, var(--dark-surface) 13px); background-size: 20px 10px; background-repeat: repeat-x;"></div>
+
+                    <div class="text-center mb-4 mt-2">
+                        <h6 class="text-muted text-uppercase fw-bold letter-spacing-1">PNR Kodu</h6>
+                        <h1 class="display-5 fw-bold font-monospace text-primary">@pnr</h1>
+                    </div>
+
+                    <hr class="border-secondary opacity-25 my-4">
+
+                    <div class="row mb-4">
+                        <div class="col-6 mb-3">
+                            <small class="text-muted d-block text-uppercase">Yolcu</small>
+                            <h6 class="fw-bold mb-0">@name</h6>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <small class="text-muted d-block text-uppercase">Firma</small>
+                            <h6 class="fw-bold mb-0">@company</h6>
+                        </div>
+                        <div class="col-8">
+                            <small class="text-muted d-block text-uppercase">Güzergah</small>
+                            <h6 class="fw-bold mb-0">@route</h6>
+                        </div>
+                        <div class="col-4">
+                            <small class="text-muted d-block text-uppercase">Koltuk No</small>
+                            <h6 class="fw-bold mb-0">@seat</h6>
+                        </div>
+                    </div>
+
+                    @if(!isCancelled)
+                    {
+                        <div class="d-flex flex-column align-items-center mt-4 p-3 bg-light rounded-4">
+                            <div class="mb-2 bg-white p-2 border rounded-3 shadow-sm">
+                                @{
+                                    var qrText = $"OBİLETAPP BİLET\nPNR: {pnr}\nYolcu: {name}\nKoltuk: {seat}";
+                                    var encodedQrText = Uri.EscapeDataString(qrText);
+                                }
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=@encodedQrText" alt="QR Code" width="150" height="150" />
+                            </div>
+                            <small class="text-muted">QR Kodu ile araca binebilirsiniz.</small>
+                        </div>
+                    }
+                </div>
+
+                <div class="p-4 bg-light border-top">
+                    <div class="d-flex gap-3 justify-content-between">
+                        <a href="/" class="btn btn-outline-secondary rounded-pill px-4">Ana Sayfa</a>
+
+                        @if(!isCancelled)
+                        {
+                            <button type="button" class="btn btn-outline-danger rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#cancelModal">
+                                <i class="fa-solid fa-trash me-2"></i>Bileti İptal Et
+                            </button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cancelModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 text-dark">
+      <div class="modal-header border-bottom-0 pb-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center pb-5 pt-0">
+        <div class="text-danger mb-4">
+            <i class="fa-solid fa-triangle-exclamation" style="font-size: 4rem;"></i>
+        </div>
+        <h4 class="fw-bold mb-3">Bileti İptal Etmek İstediğinize Emin Misiniz?</h4>
+        <p class="text-muted mb-4">Bu işlem geri alınamaz. Biletiniz iptal edilecek ve koltuğunuz diğer yolcular için tekrar satışa açılacaktır.</p>
+
+        <form asp-controller="Booking" asp-action="CancelTicket" method="post" class="d-flex gap-3 justify-content-center">
+            <input type="hidden" name="ticketId" value="@ticketId" />
+            <button type="button" class="btn btn-light border rounded-pill px-4 fw-semibold" data-bs-dismiss="modal">Vazgeç</button>
+            <button type="submit" class="btn btn-danger rounded-pill px-4 fw-semibold">Evet, İptal Et</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,99 @@
+@{
+    ViewData["Title"] = "Koltuk Seçimi";
+    var occupiedSeats = ViewBag.OccupiedSeats as List<string> ?? new List<string>();
+}
+
+<div class="container mt-5 pt-5 pb-5">
+    <div class="row g-4">
+        <div class="col-md-8">
+            <div class="card p-4 rounded-4 border-0 shadow-sm" style="background: var(--dark-surface);">
+                <h4 class="mb-4 text-light">Koltuk Seçimi</h4>
+                <div class="d-flex justify-content-center">
+                    <div class="bus-layout p-4 rounded-4" style="border: 2px solid var(--border-color); width: fit-content;">
+
+                        <div class="d-flex justify-content-end mb-4 border-bottom border-secondary pb-3">
+                            <div class="rounded p-2 text-center text-muted" style="border: 1px solid var(--border-color); width: 60px;">
+                                <i class="fa-solid fa-steering-wheel fs-4"></i>
+                            </div>
+                        </div>
+
+                        <div class="row gx-4 gy-3" style="max-width: 300px;">
+                            @for (int i = 1; i <= 20; i++)
+                            {
+                                bool isOccupied = occupiedSeats.Contains(i.ToString());
+                                string seatClass = isOccupied ? "btn-secondary disabled" : "btn-outline-success seat-btn";
+                                <div class="col-4">
+                                    <button type="button" class="btn @seatClass w-100 py-3 fw-bold text-light" data-seat="@i" @(isOccupied ? "disabled" : "")>
+                                        @i
+                                    </button>
+                                </div>
+
+                                if (i % 3 == 1)
+                                {
+                                    <div class="col-4"></div> 
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-4 gap-4">
+                    <div><span class="d-inline-block bg-secondary rounded" style="width: 20px; height: 20px;"></span> Dolu</div>
+                    <div><span class="d-inline-block bg-success rounded" style="width: 20px; height: 20px;"></span> Boş</div>
+                    <div><span class="d-inline-block bg-primary rounded" style="width: 20px; height: 20px;"></span> Seçili</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-4 rounded-4 border-0 shadow-sm sticky-top" style="background: var(--dark-surface); top: 100px;">
+                <h4 class="mb-4 text-light">Yolcu Bilgileri</h4>
+                <form action="/Booking/Checkout" method="post" id="checkoutForm">
+                    <input type="hidden" name="tripId" value="@ViewBag.TripId" />
+                    <input type="hidden" name="seatNumber" id="selectedSeatInput" required />
+
+                    <div class="mb-3">
+                        <label class="form-label text-muted">Seçilen Koltuk</label>
+                        <h3 id="selectedSeatDisplay" class="text-primary">-</h3>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label text-muted">Ad Soyad</label>
+                        <input type="text" name="passengerName" class="form-control" placeholder="Örn: Ahmet Yılmaz" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label text-muted">TC Kimlik No</label>
+                        <input type="text" class="form-control" placeholder="11 haneli kimlik no">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 py-3 fw-bold rounded-pill" id="btnSubmit" disabled>
+                        Bileti Satın Al <i class="fa-solid fa-check ms-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.querySelectorAll('.seat-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+
+                document.querySelectorAll('.seat-btn').forEach(b => {
+                    b.classList.remove('btn-primary', 'text-white');
+                    b.classList.add('btn-outline-success');
+                });
+
+                this.classList.remove('btn-outline-success');
+                this.classList.add('btn-primary', 'text-white');
+
+                const seatNo = this.getAttribute('data-seat');
+                document.getElementById('selectedSeatInput').value = seatNo;
+                document.getElementById('selectedSeatDisplay').innerText = seatNo;
+
+                document.getElementById('btnSubmit').disabled = false;
+            });
+        });
+    </script>
+}

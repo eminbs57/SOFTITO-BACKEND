@@ -1,0 +1,99 @@
+@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<section class="hero-section">
+    <div class="container">
+        <h1 class="hero-title">Yolculuğa Hazır Mısın?</h1>
+        <p class="text-muted fs-5 mb-5">En uygun otobüs ve uçak biletleri saniyeler içinde karşında.</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="search-box">
+        <form action="/Booking/Search" method="post">
+            <div class="row g-3 align-items-end">
+                <div class="col-md-3">
+                    <label class="form-label text-muted ms-2"><i class="fa-solid fa-location-dot me-2"></i>Nereden</label>
+                    <select name="originId" class="form-select border-0 shadow-none">
+                        @if (ViewBag.Locations != null)
+                        {
+                            foreach (var loc in ViewBag.Locations)
+                            {
+                                var id = loc.GetProperty("id").GetInt32();
+                                var cityName = loc.GetProperty("cityName").GetString();
+                                var terminalName = loc.GetProperty("terminalName").GetString();
+                                <option value="@id">@cityName - @terminalName</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="col-md-1 d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-light rounded-circle" style="width: 45px; height: 45px; border-color: rgba(255,255,255,0.1);">
+                        <i class="fa-solid fa-right-left"></i>
+                    </button>
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label text-muted ms-2"><i class="fa-solid fa-location-dot me-2"></i>Nereye</label>
+                    <select name="destinationId" class="form-select border-0 shadow-none">
+                        @if (ViewBag.Locations != null)
+                        {
+                            foreach (var loc in ViewBag.Locations)
+                            {
+                                var id = loc.GetProperty("id").GetInt32();
+                                var cityName = loc.GetProperty("cityName").GetString();
+                                var terminalName = loc.GetProperty("terminalName").GetString();
+
+                                if (id == 2)
+                                {
+                                    <option value="@id" selected>@cityName - @terminalName</option>
+                                }
+                                else
+                                {
+                                    <option value="@id">@cityName - @terminalName</option>
+                                }
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="col-md-3">
+                    <label class="form-label text-muted ms-2"><i class="fa-regular fa-calendar me-2"></i>Gidiş Tarihi</label>
+                    <input type="date" name="date" class="form-control border-0 shadow-none" value="@DateTime.Now.ToString("yyyy-MM-dd")">
+                </div>
+
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100 py-3">Bilet Bul <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container mt-5 pt-5 pb-5">
+    <div class="row g-4 text-center">
+        <div class="col-md-4">
+            <div class="p-4 rounded-4" style="background: var(--dark-surface); border: 1px solid var(--border-color);">
+                <i class="fa-solid fa-bolt text-warning fs-1 mb-3"></i>
+                <h4>Hızlı Satın Al</h4>
+                <p class="text-muted">UnitOfWork ve Redis ile ışık hızında işlem yapın.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-4 rounded-4" style="background: var(--dark-surface); border: 1px solid var(--border-color);">
+                <i class="fa-solid fa-shield-halved text-success fs-1 mb-3"></i>
+                <h4>Güvenli Altyapı</h4>
+                <p class="text-muted">JWT Token ve Identity ile tam güvenlik.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-4 rounded-4" style="background: var(--dark-surface); border: 1px solid var(--border-color);">
+                <i class="fa-solid fa-robot text-primary fs-1 mb-3"></i>
+                <h4>Akıllı Asistan</h4>
+                <p class="text-muted">OpenAI entegrasyonu ile sorularınız cevapsız kalmaz.</p>
+            </div>
+        </div>
+    </div>
+</div>

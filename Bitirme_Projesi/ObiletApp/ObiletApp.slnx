@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="ObiletApp.API/ObiletApp.API.csproj" />
+  <Project Path="ObiletApp.API.Dapper/ObiletApp.API.Dapper.csproj" />
+  <Project Path="ObiletApp.Application/ObiletApp.Application.csproj" />
+  <Project Path="ObiletApp.Core/ObiletApp.Core.csproj" />
+  <Project Path="ObiletApp.Infrastructure/ObiletApp.Infrastructure.csproj" />
+  <Project Path="ObiletApp.Web/ObiletApp.Web.csproj" />
+</Solution>

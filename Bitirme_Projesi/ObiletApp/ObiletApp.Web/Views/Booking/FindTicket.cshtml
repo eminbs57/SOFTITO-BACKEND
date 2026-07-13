@@ -1,0 +1,53 @@
+@{
+    ViewData["Title"] = "Bilet Sorgula";
+}
+
+<div class="container mt-5 pt-5 pb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card border-0 rounded-4 shadow-sm" style="background: var(--dark-surface);">
+                <div class="card-body p-4 p-md-5">
+                    <div class="text-center mb-4">
+                        <div class="d-inline-flex justify-content-center align-items-center bg-primary bg-opacity-10 rounded-circle mb-3" style="width: 70px; height: 70px;">
+                            <i class="fa-solid fa-magnifying-glass fs-2 text-primary"></i>
+                        </div>
+                        <h3 class="fw-bold text-light">Bilet Sorgula / İptal Et</h3>
+                        <p class="text-muted small">Satın aldığınız biletin detaylarını görüntülemek ve işlem yapmak için PNR kodu ve ad soyad bilgilerinizi giriniz.</p>
+                    </div>
+
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger rounded-3 border-0 py-2">
+                            <i class="fa-solid fa-circle-exclamation me-2"></i> @ViewBag.Error
+                        </div>
+                    }
+
+                    <form asp-controller="Booking" asp-action="FindTicket" method="post">
+                        <div class="mb-4">
+                            <label class="form-label text-light opacity-75 small fw-semibold">PNR Kodu</label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-dark border-secondary text-muted"><i class="fa-solid fa-ticket"></i></span>
+                                <input type="text" name="pnr" class="form-control bg-dark text-light border-secondary" placeholder="Örn: X7K9L2" required style="text-transform: uppercase;">
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label text-light opacity-75 small fw-semibold">Ad Soyad</label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-dark border-secondary text-muted"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" name="passengerName" class="form-control bg-dark text-light border-secondary" placeholder="Bileti alırken girdiğiniz ad soyad" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill fw-bold">
+                            Biletimi Bul <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="/" class="text-decoration-none text-muted"><i class="fa-solid fa-arrow-left me-1"></i> Ana Sayfaya Dön</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+@model ObiletApp.Core.Entities.Passenger
+@{
+    ViewData["Title"] = "Yolcu Düzenle";
+}
+
+<div class="max-w-700">
+    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="card-header bg-warning text-dark p-4 border-0">
+            <h3 class="mb-0 fw-bold"><i class="bi bi-pencil-square me-2"></i> Yolcu Düzenle</h3>
+        </div>
+        <div class="card-body p-5" style="background-color: var(--dark-surface);">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="CreatedDate" />
+
+                <div asp-validation-summary="All" class="text-danger mb-4 p-3 bg-danger bg-opacity-25 rounded-3"></div>
+
+                                <div class="form-floating mb-4">
+                    <input asp-for="FirstName" class="form-control bg-dark border-secondary text-white" placeholder="Ad" />
+                    <label asp-for="FirstName" class="text-white-50">Ad</label>
+                    <span asp-validation-for="FirstName" class="text-danger small mt-1 d-block"></span>
+                </div>
+                <div class="form-floating mb-4">
+                    <input asp-for="LastName" class="form-control bg-dark border-secondary text-white" placeholder="Soyad" />
+                    <label asp-for="LastName" class="text-white-50">Soyad</label>
+                    <span asp-validation-for="LastName" class="text-danger small mt-1 d-block"></span>
+                </div>
+                <div class="form-floating mb-4">
+                    <input asp-for="IdentityNumber" class="form-control bg-dark border-secondary text-white" placeholder="TC Kimlik No" />
+                    <label asp-for="IdentityNumber" class="text-white-50">TC Kimlik No</label>
+                    <span asp-validation-for="IdentityNumber" class="text-danger small mt-1 d-block"></span>
+                </div>
+                <div class="form-floating mb-4">
+                    <input asp-for="Gender" class="form-control bg-dark border-secondary text-white" placeholder="Cinsiyet" />
+                    <label asp-for="Gender" class="text-white-50">Cinsiyet</label>
+                    <span asp-validation-for="Gender" class="text-danger small mt-1 d-block"></span>
+                </div>
+
+                <div class="d-flex gap-3 mt-5 pt-3 border-top border-secondary">
+                    <a asp-action="Index" class="btn btn-light btn-lg flex-fill rounded-pill fw-bold bg-secondary bg-opacity-25 border-0 text-white">İptal</a>
+                    <button type="submit" class="btn btn-warning btn-lg flex-fill rounded-pill fw-bold shadow">
+                        <i class="bi bi-save me-1"></i> Değişiklikleri Kaydet
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

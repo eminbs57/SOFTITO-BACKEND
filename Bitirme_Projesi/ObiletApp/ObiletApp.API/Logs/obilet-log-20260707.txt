@@ -1,0 +1,460 @@
+2026-07-07 14:19:07.510 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 14:19:07.546 +03:00 [ERR] Hosting failed to start
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer.InitRabbitMQ() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 25
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer..ctor() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 19
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Constructor(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+2026-07-07 14:21:41.283 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 14:21:41.316 +03:00 [ERR] Hosting failed to start
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer.InitRabbitMQ() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 25
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer..ctor() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 19
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Constructor(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+2026-07-07 15:26:32.686 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 15:26:32.755 +03:00 [ERR] Hosting failed to start
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer.InitRabbitMQ() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 25
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer..ctor() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 19
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Constructor(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+2026-07-07 15:27:26.702 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 15:27:26.734 +03:00 [ERR] Hosting failed to start
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer.InitRabbitMQ() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 25
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer..ctor() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 19
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Constructor(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+2026-07-07 15:28:51.567 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 15:28:51.599 +03:00 [ERR] Hosting failed to start
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer.InitRabbitMQ() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 25
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer..ctor() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 19
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Constructor(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+2026-07-07 15:36:32.373 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 15:36:32.404 +03:00 [ERR] Hosting failed to start
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer.InitRabbitMQ() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 25
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer..ctor() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 19
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Constructor(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+2026-07-07 15:45:56.256 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 15:45:56.289 +03:00 [ERR] Hosting failed to start
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.Framing.Impl.AutorecoveringConnection.Init(IEndpointResolver endpoints)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection()
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer.InitRabbitMQ() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 25
+   at ObiletApp.API.BackgroundServices.TicketEmailConsumer..ctor() in /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API/BackgroundServices/TicketEmailConsumer.cs:line 19
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Constructor(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+2026-07-07 20:11:17.669 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 20:11:17.718 +03:00 [INF] Now listening on: http://localhost:5108
+2026-07-07 20:11:17.719 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-07 20:11:17.719 +03:00 [INF] Hosting environment: Development
+2026-07-07 20:11:17.719 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API
+2026-07-07 20:11:51.387 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/ - null null
+2026-07-07 20:11:51.424 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-07 20:11:51.443 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/ - 404 0 null 57.6355ms
+2026-07-07 20:11:51.444 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5108/, Response status code: 404
+2026-07-07 20:11:51.534 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/ - null null
+2026-07-07 20:11:51.536 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/ - 404 0 null 2.27ms
+2026-07-07 20:11:51.536 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5108/, Response status code: 404
+2026-07-07 20:15:35.289 +03:00 [INF] Application is shutting down...
+2026-07-07 20:15:40.234 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 20:15:40.275 +03:00 [INF] Now listening on: http://localhost:5108
+2026-07-07 20:15:40.276 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-07 20:15:40.276 +03:00 [INF] Hosting environment: Development
+2026-07-07 20:15:40.276 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API
+2026-07-07 20:15:52.760 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/ - null null
+2026-07-07 20:15:52.773 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-07 20:15:52.789 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/ - 404 0 null 29.4634ms
+2026-07-07 20:15:52.791 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5108/, Response status code: 404
+2026-07-07 20:15:53.102 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/ - null null
+2026-07-07 20:15:53.103 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/ - 404 0 null 1.1715ms
+2026-07-07 20:15:53.103 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5108/, Response status code: 404
+2026-07-07 20:15:53.269 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/ - null null
+2026-07-07 20:15:53.273 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/ - 404 0 null 3.8114ms
+2026-07-07 20:15:53.274 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5108/, Response status code: 404
+2026-07-07 20:15:53.382 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/ - null null
+2026-07-07 20:15:53.383 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/ - 404 0 null 0.9559ms
+2026-07-07 20:15:53.383 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5108/, Response status code: 404
+2026-07-07 20:19:00.539 +03:00 [INF] Application is shutting down...
+2026-07-07 20:19:03.855 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 20:19:03.899 +03:00 [INF] Now listening on: http://localhost:5108
+2026-07-07 20:19:03.900 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-07 20:19:03.900 +03:00 [INF] Hosting environment: Development
+2026-07-07 20:19:03.900 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API
+2026-07-07 20:19:14.523 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/ - null null
+2026-07-07 20:19:14.544 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-07 20:19:14.561 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/ - 404 0 null 39.8104ms
+2026-07-07 20:19:14.563 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5108/, Response status code: 404
+2026-07-07 20:20:55.840 +03:00 [INF] Application is shutting down...
+2026-07-07 20:20:59.418 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 20:20:59.460 +03:00 [INF] Now listening on: http://localhost:5108
+2026-07-07 20:20:59.461 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-07 20:20:59.461 +03:00 [INF] Hosting environment: Development
+2026-07-07 20:20:59.461 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API
+2026-07-07 20:21:12.972 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5108/api/Company - application/json; charset=utf-8 null
+2026-07-07 20:21:12.981 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-07 20:21:12.996 +03:00 [INF] Executing endpoint 'ObiletApp.API.Controllers.CompanyController.Create (ObiletApp.API)'
+2026-07-07 20:21:13.008 +03:00 [INF] Route matched with {action = "Create", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ObiletApp.Core.Entities.Company) on controller ObiletApp.API.Controllers.CompanyController (ObiletApp.API).
+2026-07-07 20:21:13.681 +03:00 [INF] Executed DbCommand (59ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Companies] ([ContactInfo], [CreatedDate], [IsActive], [LogoUrl], [Name], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-07-07 20:21:13.706 +03:00 [INF] Executing OkObjectResult, writing value of type 'ObiletApp.Core.Entities.Company'.
+2026-07-07 20:21:13.710 +03:00 [INF] Executed action ObiletApp.API.Controllers.CompanyController.Create (ObiletApp.API) in 700.4712ms
+2026-07-07 20:21:13.711 +03:00 [INF] Executed endpoint 'ObiletApp.API.Controllers.CompanyController.Create (ObiletApp.API)'
+2026-07-07 20:21:13.714 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5108/api/Company - 200 null application/json; charset=utf-8 743.9122ms
+2026-07-07 20:21:24.709 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5108/api/Company/1 - null null
+2026-07-07 20:21:24.713 +03:00 [INF] Executing endpoint 'ObiletApp.API.Controllers.CompanyController.Delete (ObiletApp.API)'
+2026-07-07 20:21:24.724 +03:00 [INF] Route matched with {action = "Delete", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller ObiletApp.API.Controllers.CompanyController (ObiletApp.API).
+2026-07-07 20:21:24.886 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ContactInfo], [c].[CreatedDate], [c].[IsActive], [c].[LogoUrl], [c].[Name], [c].[UpdatedDate]
+FROM [Companies] AS [c]
+WHERE [c].[Id] = @p
+2026-07-07 20:21:24.924 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Companies]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-07-07 20:21:24.927 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2026-07-07 20:21:24.927 +03:00 [INF] Executed action ObiletApp.API.Controllers.CompanyController.Delete (ObiletApp.API) in 203.0412ms
+2026-07-07 20:21:24.927 +03:00 [INF] Executed endpoint 'ObiletApp.API.Controllers.CompanyController.Delete (ObiletApp.API)'
+2026-07-07 20:21:24.928 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5108/api/Company/1 - 200 0 null 219.3883ms
+2026-07-07 20:21:35.010 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5108/api/Company - application/json; charset=utf-8 null
+2026-07-07 20:21:35.014 +03:00 [INF] Executing endpoint 'ObiletApp.API.Controllers.CompanyController.Create (ObiletApp.API)'
+2026-07-07 20:21:35.014 +03:00 [INF] Route matched with {action = "Create", controller = "Company"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ObiletApp.Core.Entities.Company) on controller ObiletApp.API.Controllers.CompanyController (ObiletApp.API).
+2026-07-07 20:21:35.038 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Companies] ([ContactInfo], [CreatedDate], [IsActive], [LogoUrl], [Name], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-07-07 20:21:35.038 +03:00 [INF] Executing OkObjectResult, writing value of type 'ObiletApp.Core.Entities.Company'.
+2026-07-07 20:21:35.039 +03:00 [INF] Executed action ObiletApp.API.Controllers.CompanyController.Create (ObiletApp.API) in 24.2237ms
+2026-07-07 20:21:35.039 +03:00 [INF] Executed endpoint 'ObiletApp.API.Controllers.CompanyController.Create (ObiletApp.API)'
+2026-07-07 20:21:35.039 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5108/api/Company - 200 null application/json; charset=utf-8 28.8793ms
+2026-07-07 20:24:44.896 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/ - null null
+2026-07-07 20:24:44.901 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/ - 404 0 null 5.2822ms
+2026-07-07 20:24:44.903 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5108/, Response status code: 404
+2026-07-07 20:29:07.947 +03:00 [INF] Application is shutting down...
+2026-07-07 20:29:11.668 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 20:29:11.717 +03:00 [INF] Now listening on: http://localhost:5108
+2026-07-07 20:29:11.718 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-07 20:29:11.718 +03:00 [INF] Hosting environment: Development
+2026-07-07 20:29:11.718 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API
+2026-07-07 20:29:19.887 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/ - null null
+2026-07-07 20:29:19.915 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-07-07 20:29:19.927 +03:00 [INF] Executing endpoint 'HTTP: GET /'
+2026-07-07 20:29:19.929 +03:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2026-07-07 20:29:19.929 +03:00 [INF] Executed endpoint 'HTTP: GET /'
+2026-07-07 20:29:19.931 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/ - 302 0 null 45.3285ms
+2026-07-07 20:29:19.933 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger - null null
+2026-07-07 20:29:19.934 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger - 301 0 null 0.981ms
+2026-07-07 20:29:19.935 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/index.html - null null
+2026-07-07 20:29:19.957 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/index.html - 200 null text/html;charset=utf-8 22.7574ms
+2026-07-07 20:29:19.983 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/swagger-ui.css - null null
+2026-07-07 20:29:19.985 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/swagger-ui-bundle.js - null null
+2026-07-07 20:29:19.985 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-07 20:29:19.986 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/index.css - null null
+2026-07-07 20:29:19.986 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/index.js - null null
+2026-07-07 20:29:19.988 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/index.js - 200 null application/javascript;charset=utf-8 2.2957ms
+2026-07-07 20:29:19.993 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/index.css - 200 152 text/css 6.7314ms
+2026-07-07 20:29:19.993 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/swagger-ui.css - 200 26499 text/css 12.9948ms
+2026-07-07 20:29:20.004 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/swagger-ui-standalone-preset.js - 200 77731 text/javascript 18.3625ms
+2026-07-07 20:29:20.005 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/swagger-ui-bundle.js - 200 421507 text/javascript 18.8665ms
+2026-07-07 20:29:20.092 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/v1/swagger.json - null null
+2026-07-07 20:29:20.104 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/favicon-32x32.png - null null
+2026-07-07 20:29:20.105 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/favicon-32x32.png - 200 628 image/png 1.0165ms
+2026-07-07 20:29:20.162 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.8929ms
+2026-07-07 21:14:21.257 +03:00 [INF] Application is shutting down...
+2026-07-07 21:30:52.105 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 21:30:52.155 +03:00 [INF] Now listening on: http://localhost:5108
+2026-07-07 21:30:52.157 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-07 21:30:52.157 +03:00 [INF] Hosting environment: Development
+2026-07-07 21:30:52.157 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API
+2026-07-07 21:31:07.232 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/index.html - null null
+2026-07-07 21:31:07.280 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/index.html - 304 null null 49.7097ms
+2026-07-07 21:31:07.300 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-07 21:31:07.300 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/index.js - null null
+2026-07-07 21:31:07.300 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/swagger-ui-bundle.js - null null
+2026-07-07 21:31:07.300 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/index.css - null null
+2026-07-07 21:31:07.300 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/swagger-ui.css - null null
+2026-07-07 21:31:07.303 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/index.js - 304 null null 3.1104ms
+2026-07-07 21:31:07.307 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/index.css - 304 null null 7.0209ms
+2026-07-07 21:31:07.307 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/swagger-ui.css - 304 null null 6.6831ms
+2026-07-07 21:31:07.308 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/swagger-ui-standalone-preset.js - 304 null null 7.92ms
+2026-07-07 21:31:07.311 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/swagger-ui-bundle.js - 304 null null 11.166ms
+2026-07-07 21:31:07.404 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/v1/swagger.json - null null
+2026-07-07 21:31:07.406 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5108/swagger/favicon-32x32.png - null null
+2026-07-07 21:31:07.407 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/favicon-32x32.png - 304 null null 0.3551ms
+2026-07-07 21:31:07.473 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5108/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.7928ms
+2026-07-07 22:03:18.842 +03:00 [INF] Application is shutting down...
+2026-07-07 22:03:25.175 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 22:03:25.231 +03:00 [INF] Now listening on: http://localhost:5108
+2026-07-07 22:03:25.232 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-07 22:03:25.232 +03:00 [INF] Hosting environment: Development
+2026-07-07 22:03:25.233 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API
+2026-07-07 22:12:01.135 +03:00 [INF] Application is shutting down...
+2026-07-07 22:12:04.301 +03:00 [INF] User profile is available. Using '/Users/muhammeteminbas/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-07-07 22:12:04.353 +03:00 [INF] Now listening on: http://localhost:5108
+2026-07-07 22:12:04.354 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-07 22:12:04.354 +03:00 [INF] Hosting environment: Development
+2026-07-07 22:12:04.354 +03:00 [INF] Content root path: /Users/muhammeteminbas/Desktop/Bitirme_Projesi/ObiletApp/ObiletApp.API
+2026-07-07 22:13:17.086 +03:00 [INF] Application is shutting down...

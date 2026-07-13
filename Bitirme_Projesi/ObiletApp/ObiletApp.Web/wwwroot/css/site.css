@@ -1,0 +1,253 @@
+/* Modern Premium Design System */
+:root {
+    --primary-color: #2563eb; /* Modern Blue */
+    --primary-hover: #1d4ed8;
+    --accent-color: #f59e0b;
+    --dark-bg: #0f172a;
+    --dark-surface: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --glass-bg: rgba(30, 41, 59, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.125);
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Glassmorphism Navbar */
+.navbar {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #fff !important;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    color: var(--text-muted) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #fff !important;
+}
+
+/* Hero Section & Search Box */
+.hero-section {
+    padding: 4rem 0 6rem;
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, #1e293b 0%, #0f172a 100%);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.search-box {
+    background: var(--dark-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    margin-top: -3rem;
+    position: relative;
+    z-index: 10;
+}
+
+.form-control, .form-select {
+    background-color: #0f172a;
+    border: 1px solid var(--border-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #0f172a;
+    color: white;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -10px var(--primary-color);
+}
+
+/* AI Chat Bubble */
+.ai-bubble {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.ai-bubble:hover {
+    transform: scale(1.1);
+}
+
+.ai-bubble i {
+    font-size: 24px;
+    color: white;
+}
+
+.ai-chat-window {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 350px;
+    background: var(--dark-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.ai-chat-header {
+    background: var(--glass-bg);
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 600;
+}
+
+.ai-chat-body {
+    padding: 1rem;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.ai-chat-input {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    gap: 10px;
+}
+
+/* ===== SIDEBAR STYLES ===== */
+.sidebar-link {
+    color: var(--text-muted) !important;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.sidebar-link:hover {
+    background-color: rgba(37, 99, 235, 0.1) !important;
+    color: #fff !important;
+}
+
+.sidebar-link.active,
+.sidebar-link:focus {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+/* ===== FORM FLOATING LABELS (Dark Theme Fix) ===== */
+.form-floating > .form-control {
+    background-color: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #f8fafc;
+}
+
+.form-floating > .form-control:focus {
+    background-color: #0f172a;
+    color: #f8fafc;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+
+.form-floating > label {
+    color: #94a3b8 !important;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: #60a5fa !important;
+    opacity: 1 !important;
+}
+
+/* ===== TABLE DARK OVERRIDES ===== */
+.table {
+    --bs-table-bg: var(--dark-surface);
+    --bs-table-color: #f8fafc;
+    --bs-table-border-color: rgba(255, 255, 255, 0.08);
+    --bs-table-hover-bg: rgba(37, 99, 235, 0.08);
+    --bs-table-hover-color: #f8fafc;
+}
+
+.table thead.bg-light {
+    --bs-table-bg: rgba(255, 255, 255, 0.05) !important;
+}
+
+.table thead th {
+    color: #94a3b8 !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* ===== CARD DARK OVERRIDES ===== */
+.card {
+    background-color: var(--dark-surface) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* ===== MAX WIDTH HELPER ===== */
+.max-w-700 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ===== FORM SWITCH DARK ===== */
+.form-check-input {
+    background-color: #334155;
+    border-color: #475569;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}

@@ -1,0 +1,6 @@
+@ObiletApp.API.Dapper_HostAddress = http://localhost:5028
+
+GET {{ObiletApp.API.Dapper_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

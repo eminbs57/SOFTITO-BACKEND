@@ -1,0 +1,102 @@
+@model IEnumerable<ObiletApp.Core.Entities.Company>
+
+@{
+    ViewData["Title"] = "Firmalar";
+}
+
+<div class="container-fluid py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold text-primary mb-0"><i class="bi bi-building"></i> Firmalar</h2>
+
+        <div class="d-flex gap-3 align-items-center">
+            <div class="input-group shadow-sm" style="max-width: 250px;">
+                <span class="input-group-text bg-dark border-secondary text-muted"><i class="bi bi-search"></i></span>
+                <input type="text" class="form-control table-search-input border-secondary bg-dark text-light" placeholder="Tabloda ara...">
+            </div>
+            <a asp-action="Create" class="btn btn-primary rounded-pill px-4 shadow-sm">
+            <i class="bi bi-plus-lg"></i> Yeni Firma Ekle
+        </a>
+        </div>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-dark table-hover align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th class="px-4 py-3 text-muted">Firma Adı</th>
+                            <th class="px-4 py-3 text-muted">Logo</th>
+                            <th class="px-4 py-3 text-muted">Tip</th>
+                            <th class="px-4 py-3 text-muted">Durum</th>
+                            <th class="px-4 py-3 text-muted text-end">İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="px-4 fw-semibold ">@item.Name</td>
+                                <td class="px-4">
+                                    @if (!string.IsNullOrEmpty(item.LogoUrl))
+                                    {
+                                        <img src="@item.LogoUrl" alt="@item.Name" class="rounded shadow-sm" style="height: 40px; width: auto;" />
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted fst-italic"><i class="bi bi-image"></i> Logo Yok</span>
+                                    }
+                                </td>
+                                <td class="px-4">
+                                    <span class="badge bg-secondary rounded-pill px-3 py-2">
+                                        @(item.Type == ObiletApp.Core.Enums.VehicleType.Bus ? "Otobüs" : "Uçak")
+                                    </span>
+                                </td>
+                                <td class="px-4">
+                                    @if (item.IsActive)
+                                    {
+                                        <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2">Aktif</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2">Pasif</span>
+                                    }
+                                </td>
+                                <td class="px-4 text-end">
+                                    <div class="btn-group" role="group">
+                                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary shadow-sm" title="Düzenle">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </a>
+                                        <form asp-action="Delete" asp-route-id="@item.Id" method="post" class="d-inline" onsubmit="return confirm('Bu firmayı silmek istediğinize emin misiniz?');">
+                                            <button type="submit" class="btn btn-sm btn-outline-danger shadow-sm" title="Sil">
+                                                <i class="bi bi-trash"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+                        @if (!Model.Any())
+                        {
+                            <tr>
+                                <td colspan="5" class="text-center py-5 text-muted">
+                                    <i class="bi bi-inbox fs-1 d-block mb-3"></i>
+                                    Henüz hiç firma eklenmemiş.
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
