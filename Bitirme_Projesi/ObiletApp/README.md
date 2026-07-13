@@ -75,4 +75,4 @@ Sistemin arkasında çalışan güçlü API mimarisi Swagger ile belgelenmiştir
     ```
 5.  Uygulama ayağa kalktığında hem MVC paneline hem de `/swagger` adresi üzerinden API dökümantasyonuna erişebilirsiniz.
 
-*Geliştirici: Muhammet Emin Baş*
+
