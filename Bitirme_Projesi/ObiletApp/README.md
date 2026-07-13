@@ -212,6 +212,27 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsIn... (JWT Token)
 
 ---
 
+## 🔒 Güvenlik Mimarisi (Security Strategy)
+
+Sistemin bütünlüğü ve kullanıcı verilerinin gizliliği için çok katmanlı bir güvenlik yapısı kurgulanmıştır:
+
+- **Şifreleme:** Kullanıcı parolaları veritabanında asla düz metin (plain-text) olarak tutulmaz. **ASP.NET Core Identity** altyapısı kullanılarak PBKDF2 algoritması ile dönüştürülmüş Hash'ler olarak (PasswordHash) saklanır.
+- **Kimlik Doğrulama (Authentication):** Web arayüzünde güvenli Cookie (Çerez) tabanlı oturum yönetimi sağlanırken, dışa açık API uç noktaları endüstri standardı olan **JWT (JSON Web Token)** ile korunmaktadır. API'ye yapılan izinsiz istekler (401 Unauthorized) anında reddedilir.
+- **Yetkilendirme (Authorization):** Rol bazlı (Role-Based) yetkilendirme sistemi sayesinde sıradan kullanıcılar Admin paneline ve kritik API uç noktalarına (Örn: Sefer İptali, Rapor Görüntüleme) erişemez (403 Forbidden).
+
+---
+
+## ⚡ Performans ve Optimizasyon Kararları
+
+Projede yüksek trafiği kaldırabilecek, bekleme sürelerini minimize eden mühendislik tercihleri yapılmıştır:
+
+- **Çift ORM Stratejisi (CQRS Temelli):**
+  - "Okuma" operasyonlarının (Örn: Ana sayfada binlerce seferi filtreleme, Rapor çekme) milisaniyeler sürmesi gerektiği için nesne takibi (Tracking) yapmayan, saf ADO.NET hızında çalışan mikro-ORM **Dapper** kullanılmıştır. Performansı boğan karmaşık LINQ sorguları yerine optimize edilmiş SQL (JOIN, GROUP BY) sorguları yazılmıştır.
+  - "Yazma" operasyonları (Bilet Alma, Kullanıcı Kaydı) ise veri bütünlüğünün ve validasyon kurallarının kusursuz işlemesi için **Entity Framework Core** ile gerçekleştirilmiştir. Böylece hız ve güvenlik kusursuz bir dengeye oturtulmuştur.
+- **Veritabanı Normalizasyonu:** Tablolar (Vehicle, Route, Voyage, Ticket vb.) 3. Normal Form'a (3NF) uygun tasarlanarak veri tekrarı önlenmiş ve veritabanı boyutunun gereksiz şişmesinin önüne geçilmiştir.
+
+---
+
 ## 🚀 Kapsamlı Özellikler
 
 ### 👤 Müşteri (B2C) Özellikleri
