@@ -12,7 +12,7 @@
 *   **Kapsamlı Admin Paneli:** Güzergahlar, Firmalar, Araçlar, Seferler, Kampanyalar, Biletler ve Yolcular için gelişmiş CRUD işlemleri.
 *   **Gelişmiş Raporlama:** Dapper kullanılarak birden fazla tablonun (JOIN) birleştirilmesiyle oluşturulan, anlık finansal ve operasyonel raporlar.
 *   **Akıllı Asistan (Chatbot):** NLP kurallarıyla çalışan, kullanıcıların "Bagaj hakkı", "Bilet iptali" gibi sorularına saniyeler içinde cevap veren entegre yapay zeka asistanı.
-*   **RESTful API & Swagger:** Sistemin tüm özelliklerini dışa açan, mobil uygulamalarla veya farklı servislerle entegre olmaya hazır, tam belgelenmiş API katmanı.
+*   **RESTful API & Swagger:** Sistemin tüm özelliklerini dışa açan, **JWT (JSON Web Token)** ile korunan ve mobil/dış sistemlere entegre olmaya hazır tam belgelenmiş API katmanı.
 *   **Gerçek Zamanlı Filtreleme & Bilet Alma:** Seferlerin dinamik olarak filtrelenmesi, koltuk seçimi ve PNR koduyla bilet iptal/sorgulama modülü.
 
 ---
@@ -61,7 +61,7 @@ Sistemin arkasında çalışan güçlü API mimarisi Swagger ile belgelenmiştir
 *   **Mimari:** Clean Architecture, Repository Pattern, CQRS, Dependency Injection
 *   **Veritabanı & ORM:** Microsoft SQL Server, Entity Framework Core (Code-First), Dapper
 *   **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 5, FontAwesome
-*   **Kimlik Doğrulama:** ASP.NET Core Identity (IdentityRole, IdentityUser)
+*   **Kimlik Doğrulama ve Güvenlik:** ASP.NET Core Identity (IdentityRole, IdentityUser), **JWT (JSON Web Token)** Authentication
 
 ## 🚀 Kurulum ve Çalıştırma
 
