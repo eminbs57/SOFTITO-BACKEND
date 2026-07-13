@@ -14,6 +14,8 @@
 *   **Akıllı Asistan (Chatbot):** NLP kurallarıyla çalışan, kullanıcıların "Bagaj hakkı", "Bilet iptali" gibi sorularına saniyeler içinde cevap veren entegre yapay zeka asistanı.
 *   **RESTful API & Swagger:** Sistemin tüm özelliklerini dışa açan, **JWT (JSON Web Token)** ile korunan ve mobil/dış sistemlere entegre olmaya hazır tam belgelenmiş API katmanı.
 *   **Gerçek Zamanlı Filtreleme & Bilet Alma:** Seferlerin dinamik olarak filtrelenmesi, koltuk seçimi ve PNR koduyla bilet iptal/sorgulama modülü.
+*   **QR Kod Entegrasyonu:** Bilet satın alındıktan sonra yolculara özel dijital bilet doğrulama imkanı sunan QR (Karekod) oluşturma desteği.
+*   **Dışa Aktarma (Export):** Admin panelindeki raporların profesyonel şekilde **Excel (ClosedXML)** ve **PDF (QuestPDF vb.)** formatlarında dışa aktarılabilmesi.
 
 ---
 
@@ -60,8 +62,9 @@ Sistemin arkasında çalışan güçlü API mimarisi Swagger ile belgelenmiştir
 *   **Backend:** C#, .NET Core, ASP.NET Core MVC, ASP.NET Core Web API
 *   **Mimari:** Clean Architecture, Repository Pattern, CQRS, Dependency Injection
 *   **Veritabanı & ORM:** Microsoft SQL Server, Entity Framework Core (Code-First), Dapper
-*   **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 5, FontAwesome
+*   **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 5, FontAwesome, SweetAlert2
 *   **Kimlik Doğrulama ve Güvenlik:** ASP.NET Core Identity (IdentityRole, IdentityUser), **JWT (JSON Web Token)** Authentication
+*   **Araçlar ve Kütüphaneler:** QRCoder (QR Kod Üretimi), ClosedXML (Excel İşlemleri), PDF Oluşturma Kütüphaneleri, Swagger/OpenAPI
 
 ## 🚀 Kurulum ve Çalıştırma
 
