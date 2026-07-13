@@ -9,7 +9,7 @@
 <br />
 
 <div align="center">
-  <h1 align="center">🚌 ObiletApp - Yeni Nesil Otobüs Bileti Rezervasyon ve Yönetim Sistemi</h1>
+  <h1 align="center">🚌 ObiletApp - Yeni Nesil Otobüs/Uçak Bileti Rezervasyon ve Yönetim Sistemi</h1>
   <p align="center">
     <strong>Clean Architecture</strong> ve <strong>CQRS</strong> prensipleriyle inşa edilmiş, yüksek performanslı ve tam donanımlı kurumsal B2B/B2C çözümü.
     <br />
@@ -28,7 +28,8 @@
 
 ## 📖 Proje Hakkında
 
-**ObiletApp**, otobüs firmaları ve yolcuları dijital bir platformda buluşturan, uçtan uca yönetilebilir bir bilet rezervasyon sistemidir. Günümüz modern yazılım mühendisliği standartlarına uygun olarak tasarlanan bu proje, sadece çalışan bir web sitesi olmakla kalmaz; arka planda mikroservis mantığına uygun, genişletilebilir ve sağlam bir altyapı barındırır.
+**ObiletApp**, otobüs/uçak
+firmaları ve yolcuları dijital bir platformda buluşturan, uçtan uca yönetilebilir bir bilet rezervasyon sistemidir. Günümüz modern yazılım mühendisliği standartlarına uygun olarak tasarlanan bu proje, sadece çalışan bir web sitesi olmakla kalmaz; arka planda mikroservis mantığına uygun, genişletilebilir ve sağlam bir altyapı barındırır.
 
 Kullanıcılar sisteme girip seferleri filtreleyebilir, dinamik koltuk haritası üzerinden istedikleri koltuğu seçip güvenle satın alabilirler. Bilet işlemi sonrasında oluşan PNR kodu ve özel olarak üretilen **QR Kod** sayesinde dijital biletlerini her an yanlarında taşıyabilirler. Sistem yöneticileri ise gelişmiş Admin Paneli sayesinde firmaları, güzergahları, seferleri ve kampanyaları yönetirken, sistemin ürettiği karmaşık finansal verileri **Excel** ve **PDF** raporlarına dönüştürebilirler.
 
@@ -249,7 +250,7 @@ Projede yüksek trafiği kaldırabilecek, bekleme sürelerini minimize eden müh
 ### 🛡 Admin ve Yönetim (B2B) Özellikleri
 - **Rol Tabanlı Kimlik Doğrulama:** ASP.NET Core Identity altyapısı kullanılarak SuperAdmin, Firma Yöneticisi gibi farklı rol hiyerarşileri oluşturulmuştur.
 - **Gelişmiş CRUD ve İlişkisel Yönetim:** 
-  - **Araçlar & Filo:** Otobüslerin plaka, koltuk kapasitesi ve Wi-fi/TV özelliklerinin yönetimi.
+  - **Araçlar & Filo:** Araçların plaka, koltuk kapasitesi ve Wi-fi/TV özelliklerinin yönetimi.
   - **Firmalar & Güzergahlar:** Platformda bilet satan firmaların (Kamil Koç, Pamukkale vb.) ve sefer yapılan şehir/lokasyon verilerinin yönetimi.
   - **Kampanyalar:** Dinamik kampanya afişleri ve indirim kodlarının sisteme girilmesi.
 - **Dapper Destekli Detaylı Raporlar:** Admin paneli, klasik Entity Framework'ün yavaş kalabileceği çoklu tablo (JOIN) sorgularını saf SQL gücüyle **Dapper** kullanarak çeker. "Aylık en çok bilet satan firma", "Doluluk oranı en yüksek sefer" gibi analizler saniyeler içinde sunulur.
