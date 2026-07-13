@@ -190,6 +190,8 @@ ObiletApp/
 | :---: | :---: |
 | ![Swagger API](screenshots/Swagger_Api.png) | ![Swagger Dapper](screenshots/Swagger_ApiDapper.png) |
 
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
+
 ---
 
 ## 💻 Kurulum ve Çalıştırma Adımları
