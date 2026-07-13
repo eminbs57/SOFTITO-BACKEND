@@ -100,6 +100,99 @@ Proje sürdürülebilirliği artırmak, bağımlılıkları (coupling) azaltmak 
 
 ---
 
+## 🗄 Veritabanı Şeması (ER Diagram)
+
+Projenin arkasında yatan sağlam veritabanı ilişkilerini aşağıdaki Entity-Relationship (ER) şemasından inceleyebilirsiniz:
+
+```mermaid
+erDiagram
+    COMPANY ||--o{ VEHICLE : "owns"
+    COMPANY ||--o{ ROUTE : "operates"
+    VEHICLE ||--o{ VOYAGE : "assigned to"
+    ROUTE ||--o{ VOYAGE : "has"
+    VOYAGE ||--o{ TICKET : "contains"
+    PASSENGER ||--o{ TICKET : "buys"
+    
+    COMPANY {
+        int Id PK
+        string Name
+        string ContactNumber
+        bool IsActive
+    }
+    VEHICLE {
+        int Id PK
+        string PlateNumber
+        int Capacity
+        bool HasWifi
+        bool HasTv
+        int CompanyId FK
+    }
+    ROUTE {
+        int Id PK
+        string DepartureCity
+        string ArrivalCity
+        decimal BasePrice
+    }
+    VOYAGE {
+        int Id PK
+        datetime DepartureTime
+        datetime ArrivalTime
+        int VehicleId FK
+        int RouteId FK
+    }
+    PASSENGER {
+        int Id PK
+        string IdentityNumber
+        string FirstName
+        string LastName
+        string Gender
+    }
+    TICKET {
+        int Id PK
+        string PNR
+        int SeatNumber
+        decimal Price
+        string Status
+        int VoyageId FK
+        int PassengerId FK
+    }
+```
+
+---
+
+## 📂 Proje Klasör Yapısı (Solution Tree)
+
+Aşağıdaki yapı, **Clean Architecture** prensiplerinin klasör düzeyinde nasıl titizlikle uygulandığını göstermektedir:
+
+```text
+ObiletApp/
+├── ObiletApp.Core/                  # [Domain Layer] Dışa bağımlılığı SIFIR olan çekirdek
+│   ├── Entities/                    # Veritabanı tablolarının C# karşılıkları (Vehicle, Ticket vb.)
+│   ├── Enums/                       # Cinsiyet, Bilet Durumu gibi sabitler
+│   └── Interfaces/                  # IRepository gibi temel soyutlamalar
+│
+├── ObiletApp.Application/           # [Use Cases Layer] İş Kuralları
+│   ├── DTOs/                        # Veri transfer objeleri (Frontend'e giden hafifleştirilmiş veriler)
+│   ├── Mapping/                     # Entity -> DTO dönüşümleri (AutoMapper)
+│   └── Services/                    # Gerçek iş mantığının (Business Logic) yazıldığı yer
+│
+├── ObiletApp.Infrastructure/        # [Data Layer] Veritabanı ve Dış Servisler
+│   ├── Data/                        # ApplicationDbContext (EF Core) konfigürasyonları
+│   ├── Repositories/                # EF Core (Generic) ve Dapper için Repository pattern uygulamaları
+│   └── Migrations/                  # Veritabanı versiyon kontrolü
+│
+├── ObiletApp.API/                   # [Presentation - 1] RESTful Servisler
+│   ├── Controllers/                 # Swagger ile test edilebilen, JWT korumalı endpointler
+│   └── Program.cs                   # API ayağa kalkış ayarları ve DI Container
+│
+└── ObiletApp.Web/                   # [Presentation - 2] MVC Kullanıcı Arayüzü
+    ├── Controllers/                 # Admin ve Müşteri sayfalarının yönlendiricileri
+    ├── Views/                       # HTML/CSS/JS/Razor dosyaları (UI)
+    └── wwwroot/                     # Statik dosyalar, Bootstrap, JS scriptleri
+```
+
+---
+
 ## 🚀 Kapsamlı Özellikler
 
 ### 👤 Müşteri (B2C) Özellikleri
