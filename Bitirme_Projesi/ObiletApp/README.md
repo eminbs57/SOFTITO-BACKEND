@@ -136,6 +136,82 @@ ObiletApp/
 
 ---
 
+## 🔄 Bilet Satın Alma İş Akışı (Sequence Diagram)
+
+Kullanıcının koltuk seçip bileti satın alana kadar arka planda sistemin nasıl haberleştiğini gösteren iş akışı:
+
+```mermaid
+sequenceDiagram
+    actor Müşteri
+    participant WebUI as MVC Web Arayüzü
+    participant API as RESTful API (JWT Korumalı)
+    participant App as Application Layer (CQRS/Services)
+    participant EF as EF Core (Veritabanı Yazma)
+    participant Dapper as Dapper (Veritabanı Okuma)
+
+    Müşteri->>WebUI: Sefer arar ve listeler
+    WebUI->>Dapper: Hızlı okuma ile seferleri getir (JOINs)
+    Dapper-->>WebUI: Sefer listesi döndürür
+    Müşteri->>WebUI: Koltuk seçer ve satın al butonuna tıklar
+    WebUI->>API: HTTP POST /api/tickets (Satın Alma İsteği)
+    API->>App: TicketCreateCommand tetiklenir
+    App->>App: İş Kuralları: Koltuk boş mu? Fiyat doğru mu?
+    App->>EF: Yeni bileti veritabanına kaydet
+    EF-->>App: İşlem Başarılı (PNR Kodu üretildi)
+    App->>App: QR Kod Üretici (QRCoder) çalışır
+    App-->>API: Başarı Yanıtı + PNR + QR Kod
+    API-->>WebUI: 200 OK
+    WebUI-->>Müşteri: Biletiniz başarıyla oluşturuldu! (SweetAlert2)
+```
+
+---
+
+## 💡 Kullanılan Tasarım Desenleri (Design Patterns)
+
+Projenin sürdürülebilirliği ve kod kalitesi için aşağıdaki yazılım tasarım desenleri ve prensipleri titizlikle uygulanmıştır:
+
+- **Repository Pattern & Unit of Work:** Veritabanı işlemleri (EF Core ve Dapper) soyutlanarak, iş katmanının (Application) doğrudan veritabanına bağımlı olması engellenmiştir. Değişiklikler Unit of Work ile tek bir transaction üzerinden güvenle yönetilir.
+- **CQRS (Command Query Responsibility Segregation):** Sistemi yormamak adına "Okuma" (Query) işlemleri Dapper ile yüksek performansla yapılırken, "Yazma/Güncelleme" (Command) işlemleri EF Core'un veri bütünlüğü güvenliğiyle sağlanmıştır.
+- **Dependency Injection (DI):** Tüm servisler ve arayüzler `Program.cs` içerisinde IoC Container'a kaydedilmiş olup, nesne oluşturma maliyetleri azaltılmış ve bağımlılıklar gevşek (loosely coupled) hale getirilmiştir.
+- **Singleton Pattern:** Uygulama genelinde tek bir örnekte çalışması gereken yardımcı servisler (Örneğin; sistem loglayıcılar veya yapay zeka yapılandırmaları) için kullanılmıştır.
+
+---
+
+## ⚡ Örnek API İstek ve Yanıtları
+
+Sistemin API mimarisinin ne kadar temiz ve standartlara uygun çalıştığını gösteren örnek bir uç nokta (Endpoint):
+
+**İstek (Request):** Seçili seferin detaylarını getiren API çağrısı
+```http
+GET /api/Voyages/5 HTTP/1.1
+Host: localhost:5121
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsIn... (JWT Token)
+```
+
+**Yanıt (Response):** Dapper tarafından milisaniyeler içinde üretilen ilişkisel JSON dönüşü
+```json
+{
+  "success": true,
+  "data": {
+    "voyageId": 5,
+    "departureCity": "İstanbul",
+    "arrivalCity": "Ankara",
+    "departureTime": "2026-08-15T14:30:00Z",
+    "price": 450.00,
+    "vehicle": {
+      "plateNumber": "34 ABC 123",
+      "capacity": 40,
+      "hasWifi": true
+    },
+    "companyName": "Kamil Koç",
+    "availableSeats": 24
+  },
+  "message": "Sefer bilgileri başarıyla getirildi."
+}
+```
+
+---
+
 ## 🚀 Kapsamlı Özellikler
 
 ### 👤 Müşteri (B2C) Özellikleri
