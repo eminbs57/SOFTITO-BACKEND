@@ -1,6 +1,6 @@
-# 🚌 ObiletApp - Otobüs Bileti Rezervasyon & Yönetim Sistemi
+# 🚌 ObiletApp - Otobüs / Uçak Bileti Rezervasyon & Yönetim Sistemi
 
-**ObiletApp**, modern web teknolojileri ve kurumsal yazılım mimarisi standartları (Clean Architecture) kullanılarak geliştirilmiş, uçtan uca kapsamlı bir Otobüs Bileti Rezervasyon ve Yönetim Sistemidir. Gelişmiş bir Admin paneli, RESTful API desteği, yapay zeka destekli akıllı asistanı ve kullanıcı dostu ön yüzü ile tam teşekküllü bir B2C ve B2B çözümü sunar.
+**ObiletApp**, modern web teknolojileri ve kurumsal yazılım mimarisi standartları (Clean Architecture) kullanılarak geliştirilmiş, uçtan uca kapsamlı bir Otobüs /Uçak Bileti Rezervasyon ve Yönetim Sistemidir. Gelişmiş bir Admin paneli, RESTful API desteği, yapay zeka destekli akıllı asistanı ve kullanıcı dostu ön yüzü ile tam teşekküllü bir B2C ve B2B çözümü sunar.
 
 ## 🌟 Öne Çıkan Özellikler
 
@@ -51,6 +51,8 @@ Sistemin arkasında çalışan güçlü API mimarisi Swagger ile belgelenmiştir
 | Genel API Yapısı | Dapper Endpointleri |
 | :---: | :---: |
 | ![Swagger API](screenshots/Swagger_Api.png) | ![Swagger Dapper](screenshots/Swagger_ApiDapper.png) |
+
+> 💡 **Not:** Projeye ait diğer tüm detaylı ekran görüntülerine yukarıdaki dosya listesinden `screenshots` klasörüne tıklayarak erişebilirsiniz.
 
 ---
 
