@@ -98,65 +98,8 @@ Proje sürdürülebilirliği artırmak, bağımlılıkları (coupling) azaltmak 
 4. **ObiletApp.Web & ObiletApp.API (Presentation Layer):**
    Kullanıcının ve diğer sistemlerin etkileşime geçtiği yüzdür. Web tarafı **ASP.NET Core MVC** ile geliştirilmiş olup Bootstrap 5 ile şekillendirilmiştir. API tarafı ise mobil uygulamalar veya dış servisler için tasarlanmış, **JWT Token** ile korunan tamamen RESTful bir altyapıya sahiptir.
 
----
 
-## 🗄 Veritabanı Şeması (ER Diagram)
 
-Projenin arkasında yatan sağlam veritabanı ilişkilerini aşağıdaki Entity-Relationship (ER) şemasından inceleyebilirsiniz:
-
-```mermaid
-erDiagram
-    COMPANY ||--o{ VEHICLE : "owns"
-    COMPANY ||--o{ ROUTE : "operates"
-    VEHICLE ||--o{ VOYAGE : "assigned to"
-    ROUTE ||--o{ VOYAGE : "has"
-    VOYAGE ||--o{ TICKET : "contains"
-    PASSENGER ||--o{ TICKET : "buys"
-    
-    COMPANY {
-        int Id PK
-        string Name
-        string ContactNumber
-        bool IsActive
-    }
-    VEHICLE {
-        int Id PK
-        string PlateNumber
-        int Capacity
-        bool HasWifi
-        bool HasTv
-        int CompanyId FK
-    }
-    ROUTE {
-        int Id PK
-        string DepartureCity
-        string ArrivalCity
-        decimal BasePrice
-    }
-    VOYAGE {
-        int Id PK
-        datetime DepartureTime
-        datetime ArrivalTime
-        int VehicleId FK
-        int RouteId FK
-    }
-    PASSENGER {
-        int Id PK
-        string IdentityNumber
-        string FirstName
-        string LastName
-        string Gender
-    }
-    TICKET {
-        int Id PK
-        string PNR
-        int SeatNumber
-        decimal Price
-        string Status
-        int VoyageId FK
-        int PassengerId FK
-    }
-```
 
 ---
 
