@@ -283,9 +283,9 @@ Projede yüksek trafiği kaldırabilecek, bekleme sürelerini minimize eden müh
 | :---: | :---: |
 | ![Dashboard](screenshots/dashboard.png) | ![Rapor](screenshots/rapor8.png) |
 
-| Firma Yönetimi | Dinamik Arama (Search) |
+| Sefer Yönetimi | Dinamik Arama (Search) |
 | :---: | :---: |
-| ![Firma](screenshots/firma.png) | ![Search](screenshots/firmaSearch.png) |
+| ![Firma](screenshots/sefer.png) | ![Search](screenshots/firmaSearch.png) |
 
 ### API ve Dokümantasyon
 | Genel API Yapısı | Dapper Güçlü Endpointler |
