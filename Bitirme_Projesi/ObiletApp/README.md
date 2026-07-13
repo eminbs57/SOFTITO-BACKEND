@@ -270,9 +270,9 @@ Projede yüksek trafiği kaldırabilecek, bekleme sürelerini minimize eden müh
 | :---: | :---: |
 | ![Ana Sayfa](screenshots/user-anaSayfa.png) | ![Seferler](screenshots/seferrSonuclari.png) |
 
-| Koltuk Seçimi | Bilet İptal / Sorgulama |
+| Bilet İptal / Sorgulama | Bilet İptal / Sorgulama |
 | :---: | :---: |
-| ![Koltuk Sec](screenshots/user-koltukSec.png) | ![Bilet Iptal](screenshots/user-biletIptal.png) |
+| ![Koltuk Sec](screenshots/user-bilet-goruntule.png ) | ![Bilet Iptal](screenshots/user-biletIptal.png) |
 
 | Akıllı Asistan (Chatbot) | Kullanıcı Giriş |
 | :---: | :---: |
@@ -283,9 +283,9 @@ Projede yüksek trafiği kaldırabilecek, bekleme sürelerini minimize eden müh
 | :---: | :---: |
 | ![Dashboard](screenshots/dashboard.png) | ![Rapor](screenshots/rapor8.png) |
 
-| Sefer Yönetimi | Dinamik Arama (Search) |
+| Sefer Yönetimi | Koltuk Seçimi |
 | :---: | :---: |
-| ![Firma](screenshots/Sefer.png) | ![Search](screenshots/firmaSearch.png) |
+| ![Firma](screenshots/Sefer.png) | ![Search](screenshots/user-koltukSec.png) |
 
 ### API ve Dokümantasyon
 | Genel API Yapısı | Dapper Güçlü Endpointler |
